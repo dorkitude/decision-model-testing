@@ -1,0 +1,143 @@
+{
+  "llmbar": {
+    "repository": "princeton-nlp/LLMBar",
+    "revision": "900616bff90b6c6c8e1681f7d079250637c55992"
+  },
+  "judgebench": {
+    "repository": "ScalerLab/JudgeBench",
+    "revision": "e2c52c284e735e139b3daa61c206ee208f36c461"
+  },
+  "rewardbench": {
+    "repository": "allenai/reward-bench",
+    "revision": "05a9005efb607249822c193590c8ecab87c77052"
+  },
+  "rewardbench2_data": {
+    "repository": "allenai/reward-bench-2",
+    "revision": "7ff08853b0d5686e79b13fda8677024f566a104a"
+  },
+  "files": {
+    "llmbar/Dataset/LLMBar/Natural/dataset.json": {
+      "url": "https://raw.githubusercontent.com/princeton-nlp/LLMBar/900616bff90b6c6c8e1681f7d079250637c55992/Dataset/LLMBar/Natural/dataset.json",
+      "sha256": "f7127b7aa78104cb8e03a2b1b3ac0077e95b125714dd441a8ee63666145a3375"
+    },
+    "llmbar/Dataset/LLMBar/Adversarial/Manual/dataset.json": {
+      "url": "https://raw.githubusercontent.com/princeton-nlp/LLMBar/900616bff90b6c6c8e1681f7d079250637c55992/Dataset/LLMBar/Adversarial/Manual/dataset.json",
+      "sha256": "0d9598769a39cdbbd265778c37e49939d41d5f76dcfb17bd75dcfa07516d3837"
+    },
+    "llmbar/Dataset/LLMBar/Adversarial/GPTOut/dataset.json": {
+      "url": "https://raw.githubusercontent.com/princeton-nlp/LLMBar/900616bff90b6c6c8e1681f7d079250637c55992/Dataset/LLMBar/Adversarial/GPTOut/dataset.json",
+      "sha256": "1ff56e520d7607750a9866a3be0f5b850392ca4477a1f69d80f32bd3e310f561"
+    },
+    "llmbar/Dataset/LLMBar/Adversarial/Neighbor/dataset.json": {
+      "url": "https://raw.githubusercontent.com/princeton-nlp/LLMBar/900616bff90b6c6c8e1681f7d079250637c55992/Dataset/LLMBar/Adversarial/Neighbor/dataset.json",
+      "sha256": "6712c7eda6342602e0bc7c06c282fa95e2110d4e741a284026a62d937f9780a0"
+    },
+    "llmbar/Dataset/LLMBar/Adversarial/GPTInst/dataset.json": {
+      "url": "https://raw.githubusercontent.com/princeton-nlp/LLMBar/900616bff90b6c6c8e1681f7d079250637c55992/Dataset/LLMBar/Adversarial/GPTInst/dataset.json",
+      "sha256": "1002425f73c2cf54b6e6de99bce3f6c60fa2a17d13194772e37d7481c1351d42"
+    },
+    "judgebench/data/dataset=judgebench,response_model=claude-3-5-sonnet-20240620.jsonl": {
+      "url": "https://raw.githubusercontent.com/ScalerLab/JudgeBench/e2c52c284e735e139b3daa61c206ee208f36c461/data/dataset=judgebench,response_model=claude-3-5-sonnet-20240620.jsonl",
+      "sha256": "3b70504588e400613bf5744a20a345da8701b7150be9a30c9db0e6f3d7b70a62"
+    },
+    "judgebench/data/dataset=judgebench,response_model=gpt-4o-2024-05-13.jsonl": {
+      "url": "https://raw.githubusercontent.com/ScalerLab/JudgeBench/e2c52c284e735e139b3daa61c206ee208f36c461/data/dataset=judgebench,response_model=gpt-4o-2024-05-13.jsonl",
+      "sha256": "d5106306b38dead1b2e964ecf5534a3e7b2fc4b8d3b8da327599edfcebd76042"
+    },
+    "judgebench/utils/templates/skywork_critic_prompt.jinja2": {
+      "url": "https://raw.githubusercontent.com/ScalerLab/JudgeBench/e2c52c284e735e139b3daa61c206ee208f36c461/utils/templates/skywork_critic_prompt.jinja2",
+      "sha256": "4b0e07aaa873da013bff00b9b3a1e137f956b5aa13aab9ea3f6b9840902a5186"
+    },
+    "judgebench/utils/templates/judgelm_prompt.jinja2": {
+      "url": "https://raw.githubusercontent.com/ScalerLab/JudgeBench/e2c52c284e735e139b3daa61c206ee208f36c461/utils/templates/judgelm_prompt.jinja2",
+      "sha256": "cc9ea7ee7e6506fd3bb89acb7adb7387f4b12d8563fc44a79f649dd4c9765d1b"
+    },
+    "judgebench/utils/templates/arena_hard_judge_prompt.jinja2": {
+      "url": "https://raw.githubusercontent.com/ScalerLab/JudgeBench/e2c52c284e735e139b3daa61c206ee208f36c461/utils/templates/arena_hard_judge_prompt.jinja2",
+      "sha256": "16c2290ec6737343982773be71f80bd1caa8a8eaffe65077736586252ddda4c3"
+    },
+    "judgebench/utils/templates/autoj_prompt.jinja2": {
+      "url": "https://raw.githubusercontent.com/ScalerLab/JudgeBench/e2c52c284e735e139b3daa61c206ee208f36c461/utils/templates/autoj_prompt.jinja2",
+      "sha256": "465e22810bba39cd615ef04a0f14fdcb5e0e753c51bb40bb157349223020b395"
+    },
+    "judgebench/utils/templates/prometheus2_prompt.jinja2": {
+      "url": "https://raw.githubusercontent.com/ScalerLab/JudgeBench/e2c52c284e735e139b3daa61c206ee208f36c461/utils/templates/prometheus2_prompt.jinja2",
+      "sha256": "9894b506210fce47f7acb506bea44d5f0c1077c563a191fd2555235a7a13b592"
+    },
+    "judgebench/utils/templates/vanilla_prompt.jinja2": {
+      "url": "https://raw.githubusercontent.com/ScalerLab/JudgeBench/e2c52c284e735e139b3daa61c206ee208f36c461/utils/templates/vanilla_prompt.jinja2",
+      "sha256": "45d0b0bd8304b032c9b34a2fece15ac9ad5c241ef296aff9896e5d5666d77026"
+    },
+    "judgebench/utils/templates/arena_hard_judge_system_notie.jinja2": {
+      "url": "https://raw.githubusercontent.com/ScalerLab/JudgeBench/e2c52c284e735e139b3daa61c206ee208f36c461/utils/templates/arena_hard_judge_system_notie.jinja2",
+      "sha256": "951c71fb8fb5c417577c30f41d57a009abedf7251811be41014821c0255952da"
+    },
+    "judgebench/utils/templates/pandalm_prompt.jinja2": {
+      "url": "https://raw.githubusercontent.com/ScalerLab/JudgeBench/e2c52c284e735e139b3daa61c206ee208f36c461/utils/templates/pandalm_prompt.jinja2",
+      "sha256": "98c3cf9b690c42cd5b7212a0e6010476285bb036925cbe9b67cda402a1dc0960"
+    },
+    "judgebench/utils/templates/arena_hard_judge_system.jinja2": {
+      "url": "https://raw.githubusercontent.com/ScalerLab/JudgeBench/e2c52c284e735e139b3daa61c206ee208f36c461/utils/templates/arena_hard_judge_system.jinja2",
+      "sha256": "03f68010febd7a6405102ef882b4dd5a9700c56b2e1ff286d3b38f5d3a929bbf"
+    },
+    "judgebench/utils/metrics.py": {
+      "url": "https://raw.githubusercontent.com/ScalerLab/JudgeBench/e2c52c284e735e139b3daa61c206ee208f36c461/utils/metrics.py",
+      "sha256": "dc17a84fb6cd3cc3dd2d008c6922910e5f0065df13bba2e114a3dfcf405a65c3"
+    },
+    "rewardbench/scripts/run_generative_v2.py": {
+      "url": "https://raw.githubusercontent.com/allenai/reward-bench/05a9005efb607249822c193590c8ecab87c77052/scripts/run_generative_v2.py",
+      "sha256": "e909593742b06160fc7d0fd7d97b2bbc52183d787663ade7273e667300df6e0d"
+    },
+    "rewardbench/rewardbench/generative_v2.py": {
+      "url": "https://raw.githubusercontent.com/allenai/reward-bench/05a9005efb607249822c193590c8ecab87c77052/rewardbench/generative_v2.py",
+      "sha256": "eeb3986569fc29b761ae8d9ecda5599adf52733bbfd3cd0ae348888950ce76c7"
+    },
+    "rewardbench/rewardbench/utils.py": {
+      "url": "https://raw.githubusercontent.com/allenai/reward-bench/05a9005efb607249822c193590c8ecab87c77052/rewardbench/utils.py",
+      "sha256": "56b32e5a56af46716de3308537d9ba7bbd3ac3db07face66f4b10bd6ed38d7db"
+    },
+    "rewardbench2_data/test.parquet": {
+      "url": "https://huggingface.co/datasets/allenai/reward-bench-2/resolve/7ff08853b0d5686e79b13fda8677024f566a104a/data/test-00000-of-00001.parquet",
+      "sha256": "c8ec60efbd75d2f9dcba4121e6101f7a6015abc38a34e034ae2c7ae886265958"
+    }
+  },
+  "vendor_sha256": {
+    "vendor/llmbar/upstream_evaluate.py": "8f9a645239d91d5ad0ffcf977425714e285663a853eefcd21b11bf43a525229a",
+    "vendor/llmbar/LICENSE": "8872dbf8660b00890b5e07ce1ea1f7a44fa7ae4e1857da56caba172b51dab3cb",
+    "vendor/rewardbench/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "vendor/rewardbench/reference_scoring.py": "db24432011e55413d6f8ac0d85e8a642c69db3ed22e035e3d59d257c3d857893",
+    "vendor/rewardbench/prompts.json": "859fcc2a4f8d2d2fb5ae2cca858301c5e491ba38e182f12d16ceed282efa678a",
+    "vendor/llmbar/configs/Reference.json": "7eedda881af048f3917c6a44d76d082e7922ea14a19a563e4cec0f8dd85b0eb1",
+    "vendor/llmbar/configs/Swap.json": "a4c614ee3d20864e423318cfac28083de1b8e5d2cd3ba0cb27e5214255c02a14",
+    "vendor/llmbar/configs/Rating_NoRules.json": "f0c3d791bf1cdb972df6eb6bd1655c78d770f73696323d830ed3d323afe16c13",
+    "vendor/llmbar/configs/Metrics.json": "f73d7f7affcaef406ac589ad9cf26adfbe2246d46b65fdefc503066fc2bae714",
+    "vendor/llmbar/configs/Vanilla.json": "2f03c7d7f06b9901b48f77b39ed338e057bea30ea2605b7d41a588cf767e8087",
+    "vendor/llmbar/configs/Vanilla_NoRules.json": "64ed1ac706a1bd1e0cce4d1e1d179387b109ecfa6cbe2ad8d30746cb9e6ba45a",
+    "vendor/llmbar/configs/Vanilla_1shot.json": "afdd3001047db81a442452f0f513e8df9ae52ebd30e4e5e3e3e04404aa815d51",
+    "vendor/llmbar/configs/Rating.json": "dd3856da12cb4e253ce6b7f7145cacd498b3c8d9e167d162629071ea361f4477",
+    "vendor/llmbar/configs/Vanilla_2shot.json": "30eac7b2537f03385b37b1d8134624f146227fdb5d782c4f39af064fe259cb5d",
+    "vendor/llmbar/configs/Swap_CoT.json": "2bd3ee544021659de7899f5bd741950589987c28457ca595164b52e900b7277a",
+    "vendor/llmbar/configs/Metrics_Reference.json": "1a1db436a9bcbaebbdb508be1fe3bcefdaf9952dd9da8333fb59acadc1bb58fd",
+    "vendor/llmbar/configs/CoT.json": "0873670d6714a4eafa61101d9cf8b05bf856433a94cebb427aca9ea4f28778a0",
+    "vendor/llmbar/configs/Rating_Metrics.json": "89ca6172fda15609c81855c5a14781e19f4315a40405dfc481f1ae6a92b59309",
+    "vendor/llmbar/configs/Rating_Metrics_Reference.json": "bd81cb8a835444f0596007997c078613ab84303375d55010dcb808a81447ad60",
+    "vendor/llmbar/configs/Rating_Reference.json": "fa9226c089dd6414e8c4dc51e3c2df2976835d9365e66add62b7b46e761c4c57",
+    "vendor/llmbar/prompts/swap_and_synthesize/Swap_CoT.txt": "4f74f144f3dcc670a47b45793c7056265a79ca2b4241a6713bf998fc5df585e3",
+    "vendor/llmbar/prompts/swap_and_synthesize/Swap.txt": "cefbd81e8adfd6f527b35197f43a3edd41c8a34053ae74df89aa97fbfa3abb99",
+    "vendor/llmbar/prompts/rating/Rating_Reference.txt": "ba2029222833f32b85572556d5444ee7d2927a31266f456e57e687d4ea5e5c79",
+    "vendor/llmbar/prompts/rating/Rating_Metrics_Reference.txt": "90630ec0ef0a79920c2db92d6332ac78e4f270544741642b7611b22354fcb315",
+    "vendor/llmbar/prompts/rating/Rating.txt": "4c1fbf0c857ea70666eda4ad7f4e0cf8d940e6d21c8ad0ecc5a76b53fbd3cda3",
+    "vendor/llmbar/prompts/rating/Rating_Metrics.txt": "8b6133dac7908fca302704a92463c28ac2cdadff05f6666e6f11a8ad1b588e23",
+    "vendor/llmbar/prompts/rating/Rating_NoRules.txt": "4ee7762365503ced2220bde2cdf31a5fb109824ba2fe804eac4eda05bdc9e778",
+    "vendor/llmbar/prompts/comparison/Vanilla_1shot.txt": "bdc127c0ca413b1fda86eeb5536cc4b9c567b339b72ae82a8b1101572af44998",
+    "vendor/llmbar/prompts/comparison/Vanilla_2shot.txt": "e29be9c04236a7974821b567e0e67d5567c3d423d680f53f93064e63d0fc1cc1",
+    "vendor/llmbar/prompts/comparison/Metrics.txt": "75b5fd4c8b24bbb187d958d4f18602a8abbcee51a9fd67f9a1ab9db5d609284a",
+    "vendor/llmbar/prompts/comparison/Vanilla.txt": "77a3a8f354472bc3b39a78847246c93b824bd1c59c57070bf91e06da927aa7da",
+    "vendor/llmbar/prompts/comparison/CoT.txt": "fe8768534e491481426c55b6f17fb5df2f0e4b3621300487be3b8e4c4a01bed8",
+    "vendor/llmbar/prompts/comparison/Metrics_Reference.txt": "a75730d4a3e76bab45e573e25eb670f65f53d13448b52e4b948bc0e928b5758e",
+    "vendor/llmbar/prompts/comparison/Reference.txt": "5e0f2645cd41c94acd56850d4c1b94909bd3e5a1acc91cf5f439e7df0d2ada16",
+    "vendor/llmbar/prompts/comparison/Vanilla_NoRules.txt": "c5759aaedc9df7d9e856fda7a8d88b3fdda224ae797542fe97e00b0a8700e3ff",
+    "vendor/llmbar/prompts/auxiliary/Metrics.txt": "582d0cdf593c47fd583228cd45e695febc09d35955981fdef90a824d77e0c8e6",
+    "vendor/llmbar/prompts/auxiliary/Reference.txt": "8403681024047a9113ae5b054864f789c7530d630e5d381b14141f2742fbb140"
+  }
+}
