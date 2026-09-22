@@ -1,0 +1,31 @@
+{
+  "projection": "numeric-and-machine-identifiers-v1",
+  "source_sha256": "bae1855b859a62888326d863210cd8e4e4b92443b39ad443193288cd75804fc5",
+  "data": [
+    {
+      "id": "kimi-question-to-final-answer-latency",
+      "pipelines": {
+        "baseline": {
+          "n": 100,
+          "mean_s": 5.502565571390001,
+          "median_s": 5.182166415499999,
+          "p95_s": 8.732193475999999,
+          "kimi_attempts": 100,
+          "failed_attempts": 0
+        },
+        "jev_filtered": {
+          "n": 100,
+          "mean_s": 4.8188540055999995,
+          "median_s": 4.520756695,
+          "p95_s": 7.625732283,
+          "kimi_attempts": 101,
+          "failed_attempts": 0
+        }
+      },
+      "archive_sha256": "383d7893a04b3d9018ed3348eb9e732a15b1588edf2110ecf58f8e214c1ac113",
+      "source_sha256": {
+        "run/requests.jsonl": "9454b7072a3f623a8fcf324a886baf554d2458e5e57f5c13557b326cdf309d1d"
+      }
+    }
+  ]
+}

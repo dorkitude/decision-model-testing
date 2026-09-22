@@ -1,0 +1,27 @@
+{
+  "projection": "numeric-and-machine-identifiers-v1",
+  "source_sha256": "505e5cbc3167ff7937e728b61ca645a8f4010f42090a6f4b3b6c0af7d8ac6ea2",
+  "data": [
+    {
+      "baseline_usd": "5.0632299",
+      "id": "primary",
+      "jev_filtered_usd": "1.650866726",
+      "savings_percent": "67.39498781202883953580697570",
+      "savings_usd": "3.412363174"
+    },
+    {
+      "baseline_usd": "5.0632299",
+      "id": "no_cache",
+      "jev_filtered_usd": "1.681563026",
+      "savings_percent": "66.78872855447468423268712329",
+      "savings_usd": "3.381666874"
+    },
+    {
+      "baseline_usd": "5.0178888",
+      "id": "qwen_default_cache",
+      "jev_filtered_usd": "1.605160726",
+      "savings_percent": "68.01123360884362363709614290",
+      "savings_usd": "3.412728074"
+    }
+  ]
+}

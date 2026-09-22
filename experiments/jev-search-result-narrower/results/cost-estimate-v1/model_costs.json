@@ -1,0 +1,110 @@
+{
+  "projection": "numeric-and-machine-identifiers-v1",
+  "source_sha256": "2c7164d4a9b97129e7d82b51291b721a9b8c4457f7d7104b96a02e90a8bb1e52",
+  "data": [
+    {
+      "arm": "baseline",
+      "cached_input_tokens": 0,
+      "id": "baseline/answer",
+      "input_tokens": 1395339,
+      "model": "kimi-k3",
+      "no_cache_usd": "4.368042",
+      "output_tokens": 12135,
+      "phase": "answer",
+      "primary_usd": "4.368042",
+      "qwen_default_cache_usd": "4.368042",
+      "requests": 100
+    },
+    {
+      "arm": "baseline",
+      "cached_input_tokens": 0,
+      "id": "baseline/filter",
+      "input_tokens": 0,
+      "model": "jev-1.13.0",
+      "no_cache_usd": "0.000",
+      "output_tokens": 0,
+      "phase": "filter",
+      "primary_usd": "0.000",
+      "qwen_default_cache_usd": "0.000",
+      "requests": 0
+    },
+    {
+      "arm": "baseline",
+      "cached_input_tokens": 452758,
+      "id": "baseline/rerank",
+      "input_tokens": 3473349,
+      "model": "qwen3-reranker-8b",
+      "no_cache_usd": "0.6946698",
+      "output_tokens": 0,
+      "phase": "rerank",
+      "primary_usd": "0.6946698",
+      "qwen_default_cache_usd": "0.649394",
+      "requests": 100
+    },
+    {
+      "arm": "baseline",
+      "cached_input_tokens": 1306,
+      "id": "baseline/embedding",
+      "input_tokens": 5181,
+      "model": "qwen3-embedding-8b",
+      "no_cache_usd": "0.0005181",
+      "output_tokens": 0,
+      "phase": "embedding",
+      "primary_usd": "0.0005181",
+      "qwen_default_cache_usd": "0.0004528",
+      "requests": 100
+    },
+    {
+      "arm": "jev_filtered",
+      "cached_input_tokens": 11369,
+      "id": "jev_filtered/answer",
+      "input_tokens": 247705,
+      "model": "kimi-k3",
+      "no_cache_usd": "0.906195",
+      "output_tokens": 10872,
+      "phase": "answer",
+      "primary_usd": "0.8754987",
+      "qwen_default_cache_usd": "0.8754987",
+      "requests": 101
+    },
+    {
+      "arm": "jev_filtered",
+      "cached_input_tokens": 0,
+      "id": "jev_filtered/filter",
+      "input_tokens": 1762053,
+      "model": "jev-1.13.0",
+      "no_cache_usd": "0.074006226",
+      "output_tokens": 35968,
+      "phase": "filter",
+      "primary_usd": "0.074006226",
+      "qwen_default_cache_usd": "0.074006226",
+      "requests": 407
+    },
+    {
+      "arm": "jev_filtered",
+      "cached_input_tokens": 456407,
+      "id": "jev_filtered/rerank",
+      "input_tokens": 3504201,
+      "model": "qwen3-reranker-8b",
+      "no_cache_usd": "0.7008402",
+      "output_tokens": 0,
+      "phase": "rerank",
+      "primary_usd": "0.7008402",
+      "qwen_default_cache_usd": "0.6551995",
+      "requests": 101
+    },
+    {
+      "arm": "jev_filtered",
+      "cached_input_tokens": 1306,
+      "id": "jev_filtered/embedding",
+      "input_tokens": 5216,
+      "model": "qwen3-embedding-8b",
+      "no_cache_usd": "0.0005216",
+      "output_tokens": 0,
+      "phase": "embedding",
+      "primary_usd": "0.0005216",
+      "qwen_default_cache_usd": "0.0004563",
+      "requests": 101
+    }
+  ]
+}

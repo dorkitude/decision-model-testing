@@ -1,0 +1,226 @@
+{
+  "projection": "numeric-and-machine-identifiers-v1",
+  "source_sha256": "b34bcd3bcd708c48fca2f3cad6513830f28f894b10b14968307fb5fd30681b1e",
+  "data": [
+    {
+      "actual_request_totals_by_phase": {
+        "embedding": {
+          "input_tokens": 5242,
+          "output_tokens": 0,
+          "requests": 102,
+          "requests_without_usage": 0,
+          "summed_api_seconds": 17.092257774
+        },
+        "filter": {
+          "input_tokens": 1762053,
+          "output_tokens": 35968,
+          "requests": 407,
+          "requests_without_usage": 0,
+          "summed_api_seconds": 65.69284021199996
+        },
+        "index": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "requests": 330,
+          "requests_without_usage": 330,
+          "summed_api_seconds": 377.41038542000024
+        },
+        "index-audit": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "requests": 2,
+          "requests_without_usage": 2,
+          "summed_api_seconds": 0.402532636
+        },
+        "judge-deepseek": {
+          "input_tokens": 182943,
+          "output_tokens": 1200,
+          "requests": 205,
+          "requests_without_usage": 5,
+          "summed_api_seconds": 1704.3120902229996
+        },
+        "judge-jev": {
+          "input_tokens": 240788,
+          "output_tokens": 6200,
+          "requests": 200,
+          "requests_without_usage": 0,
+          "summed_api_seconds": 29.674266624000005
+        },
+        "preflight": {
+          "input_tokens": 1307,
+          "output_tokens": 154,
+          "requests": 7,
+          "requests_without_usage": 1,
+          "summed_api_seconds": 7.861057018
+        },
+        "rerank": {
+          "input_tokens": 3504201,
+          "output_tokens": 0,
+          "requests": 101,
+          "requests_without_usage": 0,
+          "summed_api_seconds": 212.46082538500002
+        },
+        "retrieval": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "requests": 202,
+          "requests_without_usage": 202,
+          "summed_api_seconds": 148.34162434800004
+        }
+      },
+      "complete": true,
+      "filtering": {
+        "calls": 101,
+        "initial_gold_source_hit_baseline": 100,
+        "initial_gold_source_hit_filtered": 100,
+        "pages": 407,
+        "results_kept": 307,
+        "results_scored": 2020,
+        "retained_fraction": 0.15198019801980198
+      },
+      "id": "summary",
+      "jev_context": {
+        "guard_passed": true,
+        "max_proxy_tokens": 5989,
+        "max_serialized_bytes": 23879
+      },
+      "judge_agreement": {
+        "baseline": {
+          "agree": 92,
+          "n": 100
+        },
+        "jev_filtered": {
+          "agree": 96,
+          "n": 100
+        }
+      },
+      "judgments": 400,
+      "paired_comparisons": [
+        {
+          "baseline_only_correct": 1,
+          "cluster": "source_document_id",
+          "cluster_bootstrap_95_percent_pp": [
+            0,
+            9
+          ],
+          "filtered_minus_baseline_pp": 4,
+          "filtered_only_correct": 5,
+          "judge": "jev",
+          "resamples": 5000
+        },
+        {
+          "baseline_only_correct": 0,
+          "cluster": "source_document_id",
+          "cluster_bootstrap_95_percent_pp": [
+            0,
+            0
+          ],
+          "filtered_minus_baseline_pp": 0,
+          "filtered_only_correct": 0,
+          "judge": "deepseek",
+          "resamples": 5000
+        }
+      ],
+      "resources": {
+        "baseline": {
+          "filter": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "requests": 0,
+            "requests_without_usage": 0,
+            "summed_api_seconds": 0
+          },
+          "mean_search_calls": 1,
+          "qa": {
+            "input_tokens": 1395339,
+            "output_tokens": 12135,
+            "requests": 100,
+            "requests_without_usage": 0,
+            "summed_api_seconds": 550.2565571390002
+          },
+          "returned_chunks": 2000,
+          "returned_context_proxy_tokens": 1351041,
+          "search": {
+            "input_tokens": 3478530,
+            "output_tokens": 0,
+            "requests": 400,
+            "requests_without_usage": 200,
+            "summed_api_seconds": 375.15798906500055
+          },
+          "search_calls": 100,
+          "total": {
+            "input_tokens": 4873869,
+            "output_tokens": 12135,
+            "requests": 500,
+            "requests_without_usage": 200,
+            "summed_api_seconds": 925.4145462039993
+          }
+        },
+        "jev_filtered": {
+          "filter": {
+            "input_tokens": 1762053,
+            "output_tokens": 35968,
+            "requests": 407,
+            "requests_without_usage": 0,
+            "summed_api_seconds": 65.69284021199996
+          },
+          "mean_search_calls": 1.01,
+          "qa": {
+            "input_tokens": 247705,
+            "output_tokens": 10872,
+            "requests": 101,
+            "requests_without_usage": 0,
+            "summed_api_seconds": 478.2209453640003
+          },
+          "returned_chunks": 307,
+          "returned_context_proxy_tokens": 199277,
+          "search": {
+            "input_tokens": 3509417,
+            "output_tokens": 0,
+            "requests": 404,
+            "requests_without_usage": 202,
+            "summed_api_seconds": 377.7841626060005
+          },
+          "search_calls": 101,
+          "total": {
+            "input_tokens": 5519175,
+            "output_tokens": 46840,
+            "requests": 912,
+            "requests_without_usage": 202,
+            "summed_api_seconds": 921.697948182
+          }
+        }
+      },
+      "scores": [
+        {
+          "accuracy": 0.9,
+          "arm": "baseline",
+          "correct": 90,
+          "judge": "jev",
+          "n": 100
+        },
+        {
+          "accuracy": 0.94,
+          "arm": "jev_filtered",
+          "correct": 94,
+          "judge": "jev",
+          "n": 100
+        },
+        {
+          "accuracy": 0.98,
+          "arm": "baseline",
+          "correct": 98,
+          "judge": "deepseek",
+          "n": 100
+        },
+        {
+          "accuracy": 0.98,
+          "arm": "jev_filtered",
+          "correct": 98,
+          "judge": "deepseek",
+          "n": 100
+        }
+      ]
+    }
+  ]
+}
