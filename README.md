@@ -5,7 +5,7 @@ type: public-release-documentation
 
 # Decision Model Revolution
 
-Experiments testing specialized decision models against LLM and retrieval baselines, by Kyle Wild. Each experiment is a subfolder of `experiments/`.
+Experiments testing specialized decision models against LLM and retrieval baselines. Each experiment is a self-contained subfolder of `experiments/`:
 
 - [Jev vs. LLM judges](experiments/jev-vs-LLM-for-evals/README.md): benchmark-label agreement, failures, resources, and selective routing.
 - [Kimi RAG filtering](experiments/jev-search-result-narrower/README.md): can Jev reduce answering costs?
