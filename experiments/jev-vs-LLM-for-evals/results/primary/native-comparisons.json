@@ -1,0 +1,687 @@
+{
+  "projection": "numeric-and-machine-identifiers-v1",
+  "source_sha256": "afb35d55ff3abe158dc9e6fa869e21bc9152841a83bdbcd98e476bf4548af7c1",
+  "data": {
+    "comparisons": [
+      {
+        "available_a": 419,
+        "available_b": 419,
+        "benchmark": "llmbar",
+        "matched_units": 419,
+        "method_a": "Compact",
+        "method_b": "Vanilla",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 1.17352979416254,
+          "accounting_cost_ratio_ci95": [
+            1.078558058551686,
+            1.2813493783120038
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 419,
+          "matched_units": 419,
+          "method": "Compact",
+          "model_a": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.004457384676985102,
+          "published_delta_ci95": [
+            -0.025230133099534705,
+            0.01609080315352009
+          ],
+          "right_units": 419,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.004005550416281221,
+          "strict_delta_ci95": [
+            -0.02493702693746807,
+            0.017303453477294374
+          ]
+        },
+        "published_score_a": 0.8875171828185622,
+        "published_score_b": 0.8919745674955473,
+        "strict_score_a": 0.8832618636696261,
+        "strict_score_b": 0.8872674140859071
+      },
+      {
+        "available_a": 419,
+        "available_b": 419,
+        "benchmark": "llmbar",
+        "matched_units": 419,
+        "method_a": "Atomic",
+        "method_b": "Vanilla",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 3.0686706052022634,
+          "accounting_cost_ratio_ci95": [
+            2.778804848164995,
+            3.3746000196071497
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 419,
+          "matched_units": 419,
+          "method": "Atomic",
+          "model_a": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.047549180554213206,
+          "published_delta_ci95": [
+            -0.07274774186422191,
+            -0.02316094533116104
+          ],
+          "right_units": 419,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.05666085161611002,
+          "strict_delta_ci95": [
+            -0.08699652201527056,
+            -0.02754744829276376
+          ]
+        },
+        "published_score_a": 0.8444253869413341,
+        "published_score_b": 0.8919745674955473,
+        "strict_score_a": 0.8306065624697972,
+        "strict_score_b": 0.8872674140859071
+      },
+      {
+        "available_a": 419,
+        "available_b": 419,
+        "benchmark": "llmbar",
+        "matched_units": 419,
+        "method_a": "Atomic",
+        "method_b": "Compact",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 2.6149064305539365,
+          "accounting_cost_ratio_ci95": [
+            2.3610733222557183,
+            2.878838873058969
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 419,
+          "matched_units": 419,
+          "method": "Atomic",
+          "model_a": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.04309179587722811,
+          "published_delta_ci95": [
+            -0.07228057803029257,
+            -0.014877847522332852
+          ],
+          "right_units": 419,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.052655301199828794,
+          "strict_delta_ci95": [
+            -0.08626905780993277,
+            -0.020486623600314863
+          ]
+        },
+        "published_score_a": 0.8444253869413341,
+        "published_score_b": 0.8875171828185622,
+        "strict_score_a": 0.8306065624697972,
+        "strict_score_b": 0.8832618636696261
+      },
+      {
+        "available_a": 419,
+        "available_b": 419,
+        "benchmark": "llmbar",
+        "matched_units": 419,
+        "method_a": "Compact",
+        "method_b": "Vanilla",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.9702368366323806,
+          "accounting_cost_ratio_ci95": [
+            0.7592534950005552,
+            1.1988432315859683
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 419,
+          "matched_units": 419,
+          "method": "Compact",
+          "model_a": "accounts/fireworks/models/glm-5p3",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": 0.0030165131787869173,
+          "published_delta_ci95": [
+            -0.01740132374666906,
+            0.024079256009499218
+          ],
+          "right_units": 419,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": 0.002905366783105748,
+          "strict_delta_ci95": [
+            -0.018728885291396855,
+            0.025680845886202654
+          ]
+        },
+        "published_score_a": 0.9126601681693292,
+        "published_score_b": 0.9096436549905424,
+        "strict_score_a": 0.9104213621991799,
+        "strict_score_b": 0.9075159954160743
+      },
+      {
+        "available_a": 419,
+        "available_b": 419,
+        "benchmark": "llmbar",
+        "matched_units": 419,
+        "method_a": "Atomic",
+        "method_b": "Vanilla",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 5.692623821599716,
+          "accounting_cost_ratio_ci95": [
+            4.555257192484271,
+            6.950956381386766
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 419,
+          "matched_units": 419,
+          "method": "Atomic",
+          "model_a": "accounts/fireworks/models/glm-5p3",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.15385146423295182,
+          "published_delta_ci95": [
+            -0.18730957567619813,
+            -0.1214531039874633
+          ],
+          "right_units": 419,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.2251969500324465,
+          "strict_delta_ci95": [
+            -0.27013063929888026,
+            -0.18199784886851592
+          ]
+        },
+        "published_score_a": 0.7557921907575904,
+        "published_score_b": 0.9096436549905424,
+        "strict_score_a": 0.6823190453836276,
+        "strict_score_b": 0.9075159954160743
+      },
+      {
+        "available_a": 419,
+        "available_b": 419,
+        "benchmark": "llmbar",
+        "matched_units": 419,
+        "method_a": "Atomic",
+        "method_b": "Compact",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 5.867251795302256,
+          "accounting_cost_ratio_ci95": [
+            5.16417320501532,
+            6.735526595279923
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 419,
+          "matched_units": 419,
+          "method": "Atomic",
+          "model_a": "accounts/fireworks/models/glm-5p3",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.15686797741173872,
+          "published_delta_ci95": [
+            -0.1915067861432891,
+            -0.12435611961009017
+          ],
+          "right_units": 419,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.2281023168155522,
+          "strict_delta_ci95": [
+            -0.27333080446518565,
+            -0.18467017652256754
+          ]
+        },
+        "published_score_a": 0.7557921907575904,
+        "published_score_b": 0.9126601681693292,
+        "strict_score_a": 0.6823190453836276,
+        "strict_score_b": 0.9104213621991799
+      },
+      {
+        "available_a": 419,
+        "available_b": 419,
+        "benchmark": "llmbar",
+        "matched_units": 419,
+        "method_a": "Compact",
+        "method_b": "Vanilla",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 1.075904753055177,
+          "accounting_cost_ratio_ci95": [
+            1.0539383072485828,
+            1.0976413180448397
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 419,
+          "matched_units": 419,
+          "method": "Compact",
+          "model_a": "accounts/fireworks/models/gpt-oss-120b",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": -0.010107183785052536,
+          "published_delta_ci95": [
+            -0.03176629330222155,
+            0.013395103690612578
+          ],
+          "right_units": 419,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.010107183785052536,
+          "strict_delta_ci95": [
+            -0.03176629330222155,
+            0.013395103690612578
+          ]
+        },
+        "published_score_a": 0.8603920085051155,
+        "published_score_b": 0.8704991922901681,
+        "strict_score_a": 0.8603920085051155,
+        "strict_score_b": 0.8704991922901681
+      },
+      {
+        "available_a": 419,
+        "available_b": 419,
+        "benchmark": "llmbar",
+        "matched_units": 419,
+        "method_a": "Atomic",
+        "method_b": "Vanilla",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 2.1489031664146983,
+          "accounting_cost_ratio_ci95": [
+            2.0917316072192897,
+            2.2076123134662136
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 419,
+          "matched_units": 419,
+          "method": "Atomic",
+          "model_a": "accounts/fireworks/models/gpt-oss-120b",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": -0.05646446076739337,
+          "published_delta_ci95": [
+            -0.08604897172325238,
+            -0.029193995333232088
+          ],
+          "right_units": 419,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.05646446076739337,
+          "strict_delta_ci95": [
+            -0.08604897172325238,
+            -0.029193995333232088
+          ]
+        },
+        "published_score_a": 0.8140347315227746,
+        "published_score_b": 0.8704991922901681,
+        "strict_score_a": 0.8140347315227746,
+        "strict_score_b": 0.8704991922901681
+      },
+      {
+        "available_a": 419,
+        "available_b": 419,
+        "benchmark": "llmbar",
+        "matched_units": 419,
+        "method_a": "Atomic",
+        "method_b": "Compact",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 1.9972987016858108,
+          "accounting_cost_ratio_ci95": [
+            1.946260713000357,
+            2.050755789144194
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 419,
+          "matched_units": 419,
+          "method": "Atomic",
+          "model_a": "accounts/fireworks/models/gpt-oss-120b",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": -0.04635727698234084,
+          "published_delta_ci95": [
+            -0.07499967242879037,
+            -0.01898654800695874
+          ],
+          "right_units": 419,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.04635727698234084,
+          "strict_delta_ci95": [
+            -0.07499967242879037,
+            -0.01898654800695874
+          ]
+        },
+        "published_score_a": 0.8140347315227746,
+        "published_score_b": 0.8603920085051155,
+        "strict_score_a": 0.8140347315227746,
+        "strict_score_b": 0.8603920085051155
+      },
+      {
+        "available_a": 419,
+        "available_b": 419,
+        "benchmark": "llmbar",
+        "matched_units": 419,
+        "method_a": "Compact",
+        "method_b": "Vanilla",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.9601867637705759,
+          "accounting_cost_ratio_ci95": [
+            0.8410038056258095,
+            1.0448660291628715
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 419,
+          "matched_units": 419,
+          "method": "Compact",
+          "model_a": "accounts/fireworks/models/qwen3p8-max",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": 0.0007627818355033355,
+          "published_delta_ci95": [
+            -0.015929252557747804,
+            0.01584946428817981
+          ],
+          "right_units": 419,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": 0.0007627818355033355,
+          "strict_delta_ci95": [
+            -0.015929252557747804,
+            0.01584946428817981
+          ]
+        },
+        "published_score_a": 0.9260259847846797,
+        "published_score_b": 0.9252632029491765,
+        "strict_score_a": 0.9260259847846797,
+        "strict_score_b": 0.9252632029491765
+      },
+      {
+        "available_a": 419,
+        "available_b": 419,
+        "benchmark": "llmbar",
+        "matched_units": 419,
+        "method_a": "Atomic",
+        "method_b": "Vanilla",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 4.471367086344385,
+          "accounting_cost_ratio_ci95": [
+            3.892143242419671,
+            4.955953731623634
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 419,
+          "matched_units": 419,
+          "method": "Atomic",
+          "model_a": "accounts/fireworks/models/qwen3p8-max",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.04235107763679291,
+          "published_delta_ci95": [
+            -0.06503698033882392,
+            -0.0181095040523562
+          ],
+          "right_units": 419,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.04527125933698759,
+          "strict_delta_ci95": [
+            -0.069221762774932,
+            -0.019261971709445377
+          ]
+        },
+        "published_score_a": 0.8829121253123836,
+        "published_score_b": 0.9252632029491765,
+        "strict_score_a": 0.8799919436121889,
+        "strict_score_b": 0.9252632029491765
+      },
+      {
+        "available_a": 419,
+        "available_b": 419,
+        "benchmark": "llmbar",
+        "matched_units": 419,
+        "method_a": "Atomic",
+        "method_b": "Compact",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 4.656768094558696,
+          "accounting_cost_ratio_ci95": [
+            4.3701193384496255,
+            4.939863660138967
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 419,
+          "matched_units": 419,
+          "method": "Atomic",
+          "model_a": "accounts/fireworks/models/qwen3p8-max",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.04311385947229625,
+          "published_delta_ci95": [
+            -0.06653306070250045,
+            -0.019384981084402234
+          ],
+          "right_units": 419,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.04603404117249092,
+          "strict_delta_ci95": [
+            -0.06978793561102904,
+            -0.021162149647231017
+          ]
+        },
+        "published_score_a": 0.8829121253123836,
+        "published_score_b": 0.9260259847846797,
+        "strict_score_a": 0.8799919436121889,
+        "strict_score_b": 0.9260259847846797
+      },
+      {
+        "available_a": 419,
+        "available_b": 419,
+        "benchmark": "llmbar",
+        "matched_units": 419,
+        "method_a": "Compact",
+        "method_b": "Vanilla",
+        "model": "jev-latest",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.5790968640753179,
+          "accounting_cost_ratio_ci95": [
+            0.5095564105751157,
+            0.6445865954286452
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 419,
+          "matched_units": 419,
+          "method": "Compact",
+          "model_a": "jev-latest",
+          "model_b": "jev-latest",
+          "published_delta": 0.013327350297540973,
+          "published_delta_ci95": [
+            -0.008531049539536364,
+            0.036398823643116515
+          ],
+          "right_units": 419,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": 0.015501263341019235,
+          "strict_delta_ci95": [
+            -0.006781064727242604,
+            0.03924730314661659
+          ]
+        },
+        "published_score_a": 0.8742713490825245,
+        "published_score_b": 0.8609439987849836,
+        "strict_score_a": 0.8742713490825245,
+        "strict_score_b": 0.8587700857415054
+      },
+      {
+        "available_a": 419,
+        "available_b": 419,
+        "benchmark": "llmbar",
+        "matched_units": 419,
+        "method_a": "Atomic",
+        "method_b": "Vanilla",
+        "model": "jev-latest",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.716873334256343,
+          "accounting_cost_ratio_ci95": [
+            0.6356372095442617,
+            0.7973973338870167
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 419,
+          "matched_units": 419,
+          "method": "Atomic",
+          "model_a": "jev-latest",
+          "model_b": "jev-latest",
+          "published_delta": -0.04626689632319438,
+          "published_delta_ci95": [
+            -0.07619356127549119,
+            -0.01746027914313727
+          ],
+          "right_units": 419,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.04409298327971612,
+          "strict_delta_ci95": [
+            -0.07528541238074199,
+            -0.014779347308324262
+          ]
+        },
+        "published_score_a": 0.8146771024617893,
+        "published_score_b": 0.8609439987849836,
+        "strict_score_a": 0.8146771024617893,
+        "strict_score_b": 0.8587700857415054
+      },
+      {
+        "available_a": 419,
+        "available_b": 419,
+        "benchmark": "llmbar",
+        "matched_units": 419,
+        "method_a": "Atomic",
+        "method_b": "Compact",
+        "model": "jev-latest",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 1.2379161047625804,
+          "accounting_cost_ratio_ci95": [
+            1.2306732015668111,
+            1.2454695216591298
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 419,
+          "matched_units": 419,
+          "method": "Atomic",
+          "model_a": "jev-latest",
+          "model_b": "jev-latest",
+          "published_delta": -0.05959424662073536,
+          "published_delta_ci95": [
+            -0.08452686739751751,
+            -0.03571962217128971
+          ],
+          "right_units": 419,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.05959424662073536,
+          "strict_delta_ci95": [
+            -0.08452686739751751,
+            -0.03571962217128971
+          ]
+        },
+        "published_score_a": 0.8146771024617893,
+        "published_score_b": 0.8742713490825245,
+        "strict_score_a": 0.8146771024617893,
+        "strict_score_b": 0.8742713490825245
+      }
+    ],
+    "native_complete": true,
+    "native_jobs": 4190,
+    "primary_complete": true,
+    "primary_jobs": 56275
+  }
+}

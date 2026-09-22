@@ -1,0 +1,573 @@
+{
+  "projection": "numeric-and-machine-identifiers-v1",
+  "source_sha256": "a4ffe823b30309806090b14480a69c99deb54bb414dab6c454aa4f753ec17226",
+  "data": {
+    "expected_scores_available": 12942,
+    "expected_scores_total": 13167,
+    "jobs": 3960,
+    "paired_expected_minus_modal": [
+      {
+        "accounting_cost_ratio_a_over_b": 1,
+        "accounting_cost_ratio_ci95": [
+          1,
+          1
+        ],
+        "benchmark": "llmbar",
+        "bootstrap_replicates": 2000,
+        "left_units": 419,
+        "matched_units": 419,
+        "method": "Rating",
+        "model_a": "jev-expected-score-offline",
+        "model_b": "jev-latest",
+        "published_delta": 0.031668576635785,
+        "published_delta_ci95": [
+          0.008716218054040622,
+          0.055800880541786904
+        ],
+        "right_units": 419,
+        "strata": [
+          "Adversarial/GPTInst",
+          "Adversarial/GPTOut",
+          "Adversarial/Manual",
+          "Adversarial/Neighbor",
+          "Natural"
+        ],
+        "strict_delta": 0.031668576635785,
+        "strict_delta_ci95": [
+          0.008716218054040622,
+          0.055800880541786904
+        ]
+      },
+      {
+        "accounting_cost_ratio_a_over_b": 1,
+        "accounting_cost_ratio_ci95": [
+          1,
+          1
+        ],
+        "benchmark": "llmbar",
+        "bootstrap_replicates": 2000,
+        "left_units": 419,
+        "matched_units": 419,
+        "method": "Rating_Metrics",
+        "model_a": "jev-expected-score-offline",
+        "model_b": "jev-latest",
+        "published_delta": 0.03974998274124291,
+        "published_delta_ci95": [
+          0.01662530444447513,
+          0.061295644580059885
+        ],
+        "right_units": 419,
+        "strata": [
+          "Adversarial/GPTInst",
+          "Adversarial/GPTOut",
+          "Adversarial/Manual",
+          "Adversarial/Neighbor",
+          "Natural"
+        ],
+        "strict_delta": 0.03974998274124291,
+        "strict_delta_ci95": [
+          0.01662530444447513,
+          0.061295644580059885
+        ]
+      },
+      {
+        "accounting_cost_ratio_a_over_b": 1,
+        "accounting_cost_ratio_ci95": [
+          1,
+          1
+        ],
+        "benchmark": "llmbar",
+        "bootstrap_replicates": 2000,
+        "left_units": 419,
+        "matched_units": 419,
+        "method": "Rating_Metrics_Reference",
+        "model_a": "jev-expected-score-offline",
+        "model_b": "jev-latest",
+        "published_delta": 0.01667860052190482,
+        "published_delta_ci95": [
+          -0.007263200187775275,
+          0.03963294248001435
+        ],
+        "right_units": 419,
+        "strata": [
+          "Adversarial/GPTInst",
+          "Adversarial/GPTOut",
+          "Adversarial/Manual",
+          "Adversarial/Neighbor",
+          "Natural"
+        ],
+        "strict_delta": 0.01667860052190482,
+        "strict_delta_ci95": [
+          -0.007263200187775275,
+          0.03963294248001435
+        ]
+      },
+      {
+        "accounting_cost_ratio_a_over_b": 1,
+        "accounting_cost_ratio_ci95": [
+          1,
+          1
+        ],
+        "benchmark": "llmbar",
+        "bootstrap_replicates": 2000,
+        "left_units": 419,
+        "matched_units": 419,
+        "method": "Rating_NoRules",
+        "model_a": "jev-expected-score-offline",
+        "model_b": "jev-latest",
+        "published_delta": 0.040778287102876,
+        "published_delta_ci95": [
+          0.013662915763458381,
+          0.065497559611747
+        ],
+        "right_units": 419,
+        "strata": [
+          "Adversarial/GPTInst",
+          "Adversarial/GPTOut",
+          "Adversarial/Manual",
+          "Adversarial/Neighbor",
+          "Natural"
+        ],
+        "strict_delta": 0.040778287102876,
+        "strict_delta_ci95": [
+          0.013662915763458381,
+          0.065497559611747
+        ]
+      },
+      {
+        "accounting_cost_ratio_a_over_b": 1,
+        "accounting_cost_ratio_ci95": [
+          1,
+          1
+        ],
+        "benchmark": "llmbar",
+        "bootstrap_replicates": 2000,
+        "left_units": 419,
+        "matched_units": 419,
+        "method": "Rating_Reference",
+        "model_a": "jev-expected-score-offline",
+        "model_b": "jev-latest",
+        "published_delta": 0.02397451226752454,
+        "published_delta_ci95": [
+          -0.0017614781089925027,
+          0.04835163543982216
+        ],
+        "right_units": 419,
+        "strata": [
+          "Adversarial/GPTInst",
+          "Adversarial/GPTOut",
+          "Adversarial/Manual",
+          "Adversarial/Neighbor",
+          "Natural"
+        ],
+        "strict_delta": 0.02397451226752454,
+        "strict_delta_ci95": [
+          -0.0017614781089925027,
+          0.04835163543982216
+        ]
+      },
+      {
+        "accounting_cost_ratio_a_over_b": 1,
+        "accounting_cost_ratio_ci95": [
+          1,
+          1
+        ],
+        "benchmark": "rewardbench2",
+        "bootstrap_replicates": 2000,
+        "left_units": 1814,
+        "matched_units": 1814,
+        "method": "ratings",
+        "model_a": "jev-expected-score-offline",
+        "model_b": "jev-latest",
+        "published_delta": 0.08692409451107266,
+        "published_delta_ci95": [
+          0.06660888948047809,
+          0.10742085911799135
+        ],
+        "right_units": 1814,
+        "strata": [
+          "Factuality",
+          "Focus",
+          "Math",
+          "Precise IF",
+          "Safety",
+          "Ties"
+        ],
+        "strict_delta": 0.08744492784440601,
+        "strict_delta_ci95": [
+          0.0669987397694588,
+          0.1077992421079087
+        ]
+      }
+    ],
+    "resources_and_strict_scores": [
+      {
+        "accounting_usd": 0.038223738,
+        "accounting_usd_per_job": 0.00009122610501193317,
+        "benchmark": "llmbar",
+        "cached_input_tokens": 0,
+        "estimated_total_usd": null,
+        "helper_accounting_usd": 0,
+        "input_tokens": 647335,
+        "input_tokens_per_job": 1544.9522673031026,
+        "jobs": 419,
+        "known_input_usd": 0.027188070000000005,
+        "known_output_usd": 0,
+        "known_total_usd": 0.027188070000000005,
+        "method": "Rating",
+        "model": "jev-expected-score-offline",
+        "native_wall_p50_s": 0.25652361,
+        "native_wall_p95_s": 0.7711618304,
+        "output_tokens": 13838,
+        "output_tokens_per_job": 33.02625298329355,
+        "request_p50_s": 0.116861698,
+        "request_p95_s": 0.27652459095,
+        "retained_unknown_cost_usd": 0.011035667999999995,
+        "strict_score": 0.8531966807958358,
+        "strict_subsets": {
+          "Adversarial/GPTInst": 0.8478260869565217,
+          "Adversarial/GPTOut": 0.7659574468085106,
+          "Adversarial/Manual": 0.8913043478260869,
+          "Adversarial/Neighbor": 0.8208955223880597,
+          "Natural": 0.94
+        },
+        "units": 419,
+        "unknown_cost_attempts": 56,
+        "valid_jobs": 407,
+        "valid_order_agreement": 0.9713603818615751
+      },
+      {
+        "accounting_usd": 0.10637159100000006,
+        "accounting_usd_per_job": 0.00025387014558472565,
+        "benchmark": "llmbar",
+        "cached_input_tokens": 76433,
+        "estimated_total_usd": null,
+        "helper_accounting_usd": 0.070645845,
+        "input_tokens": 854403,
+        "input_tokens_per_job": 2039.147971360382,
+        "jobs": 419,
+        "known_input_usd": 0.03846750300000003,
+        "known_output_usd": 0.06304620000000001,
+        "known_total_usd": 0.10151370300000014,
+        "method": "Rating_Metrics",
+        "model": "jev-expected-score-offline",
+        "native_wall_p50_s": 1.663437963,
+        "native_wall_p95_s": 3.9182565147999924,
+        "output_tokens": 119136,
+        "output_tokens_per_job": 284.3341288782816,
+        "request_p50_s": 0.146702123,
+        "request_p95_s": 2.4278960601999984,
+        "retained_unknown_cost_usd": 0.004857887999999921,
+        "strict_score": 0.8482710867494165,
+        "strict_subsets": {
+          "Adversarial/GPTInst": 0.8695652173913043,
+          "Adversarial/GPTOut": 0.7021276595744681,
+          "Adversarial/Manual": 0.8913043478260869,
+          "Adversarial/Neighbor": 0.8283582089552238,
+          "Natural": 0.95
+        },
+        "units": 419,
+        "unknown_cost_attempts": 23,
+        "valid_jobs": 413,
+        "valid_order_agreement": 0.9856801909307876
+      },
+      {
+        "accounting_usd": 0.2114155890000001,
+        "accounting_usd_per_job": 0.0005045718114558475,
+        "benchmark": "llmbar",
+        "cached_input_tokens": 118829,
+        "estimated_total_usd": null,
+        "helper_accounting_usd": 0.15634153499999995,
+        "input_tokens": 1117453,
+        "input_tokens_per_job": 2666.9522673031024,
+        "jobs": 419,
+        "known_input_usd": 0.049305867,
+        "known_output_usd": 0.14680740000000003,
+        "known_total_usd": 0.19611326700000006,
+        "method": "Rating_Metrics_Reference",
+        "model": "jev-expected-score-offline",
+        "native_wall_p50_s": 3.210980074,
+        "native_wall_p95_s": 12.067633908699998,
+        "output_tokens": 258466,
+        "output_tokens_per_job": 616.8639618138425,
+        "request_p50_s": 0.33456847700000003,
+        "request_p95_s": 3.921655802999999,
+        "retained_unknown_cost_usd": 0.015302322000000035,
+        "strict_score": 0.8407233214132852,
+        "strict_subsets": {
+          "Adversarial/GPTInst": 0.8260869565217391,
+          "Adversarial/GPTOut": 0.7446808510638298,
+          "Adversarial/Manual": 0.8695652173913043,
+          "Adversarial/Neighbor": 0.8432835820895522,
+          "Natural": 0.92
+        },
+        "units": 419,
+        "unknown_cost_attempts": 61,
+        "valid_jobs": 405,
+        "valid_order_agreement": 0.9665871121718377
+      },
+      {
+        "accounting_usd": 0.029965320000000007,
+        "accounting_usd_per_job": 0.00007151627684964202,
+        "benchmark": "llmbar",
+        "cached_input_tokens": 0,
+        "estimated_total_usd": null,
+        "helper_accounting_usd": 0,
+        "input_tokens": 573835,
+        "input_tokens_per_job": 1369.5346062052506,
+        "jobs": 419,
+        "known_input_usd": 0.02410107,
+        "known_output_usd": 0,
+        "known_total_usd": 0.02410107,
+        "method": "Rating_NoRules",
+        "model": "jev-expected-score-offline",
+        "native_wall_p50_s": 0.25904476,
+        "native_wall_p95_s": 0.755856071399999,
+        "output_tokens": 13974,
+        "output_tokens_per_job": 33.35083532219571,
+        "request_p50_s": 0.118370615,
+        "request_p95_s": 0.32852974825000003,
+        "retained_unknown_cost_usd": 0.005864250000000008,
+        "strict_score": 0.8079273061151229,
+        "strict_subsets": {
+          "Adversarial/GPTInst": 0.8206521739130435,
+          "Adversarial/GPTOut": 0.8085106382978723,
+          "Adversarial/Manual": 0.7391304347826086,
+          "Adversarial/Neighbor": 0.7313432835820896,
+          "Natural": 0.94
+        },
+        "units": 419,
+        "unknown_cost_attempts": 34,
+        "valid_jobs": 411,
+        "valid_order_agreement": 0.9785202863961814
+      },
+      {
+        "accounting_usd": 0.13064178900000004,
+        "accounting_usd_per_job": 0.0003117942458233891,
+        "benchmark": "llmbar",
+        "cached_input_tokens": 39779,
+        "estimated_total_usd": null,
+        "helper_accounting_usd": 0.08813938500000003,
+        "input_tokens": 944971,
+        "input_tokens_per_job": 2255.3007159904537,
+        "jobs": 419,
+        "known_input_usd": 0.039832341000000014,
+        "known_output_usd": 0.08585159999999996,
+        "known_total_usd": 0.12568394100000002,
+        "method": "Rating_Reference",
+        "model": "jev-expected-score-offline",
+        "native_wall_p50_s": 1.595579987,
+        "native_wall_p95_s": 8.661478323799994,
+        "output_tokens": 157128,
+        "output_tokens_per_job": 375.0071599045346,
+        "request_p50_s": 0.1492465195,
+        "request_p95_s": 4.2911909770499985,
+        "retained_unknown_cost_usd": 0.004957848000000015,
+        "strict_score": 0.8419121598298978,
+        "strict_subsets": {
+          "Adversarial/GPTInst": 0.8804347826086957,
+          "Adversarial/GPTOut": 0.7446808510638298,
+          "Adversarial/Manual": 0.8260869565217391,
+          "Adversarial/Neighbor": 0.8283582089552238,
+          "Natural": 0.93
+        },
+        "units": 419,
+        "unknown_cost_attempts": 25,
+        "valid_jobs": 412,
+        "valid_order_agreement": 0.9832935560859188
+      },
+      {
+        "accounting_usd": 0.39439869000000055,
+        "accounting_usd_per_job": 0.00021147382841823085,
+        "benchmark": "rewardbench2",
+        "cached_input_tokens": 0,
+        "estimated_total_usd": null,
+        "helper_accounting_usd": 0,
+        "input_tokens": 8095412,
+        "input_tokens_per_job": 4340.703485254691,
+        "jobs": 1865,
+        "known_input_usd": 0.34000730399999973,
+        "known_output_usd": 0,
+        "known_total_usd": 0.3400073039999999,
+        "method": "ratings",
+        "model": "jev-expected-score-offline",
+        "native_wall_p50_s": 0.530024061,
+        "native_wall_p95_s": 2.4389088215999997,
+        "output_tokens": 150314,
+        "output_tokens_per_job": 80.59731903485255,
+        "request_p50_s": 0.117545939,
+        "request_p95_s": 0.2868696455999999,
+        "retained_unknown_cost_usd": 0.05439138600000065,
+        "strict_score": 0.7543801244989722,
+        "strict_subsets": {
+          "Factuality": 0.7894736842105263,
+          "Focus": 0.8252525252525252,
+          "Math": 0.7595628415300546,
+          "Precise IF": 0.40625,
+          "Safety": 0.8877777777777778,
+          "Ties": 0.8579639182229494
+        },
+        "units": 1814,
+        "unknown_cost_attempts": 255,
+        "valid_jobs": 1825,
+        "valid_order_agreement": null
+      }
+    ],
+    "scores": [
+      {
+        "adversarial_macro_score": 0.8456130828282271,
+        "benchmark": "llmbar",
+        "method": "Rating",
+        "metrics": {
+          "correct_False": 0.8806682577565632,
+          "correct_True": 0.8615751789976134,
+          "correct_average": 0.8711217183770883,
+          "correct_both": 0.8568019093078759,
+          "equal": 0.9713603818615751,
+          "valid_agreement": 0.9713603818615751
+        },
+        "model": "jev-expected-score-offline",
+        "n": 419,
+        "pooled_score": 0.8711217183770883,
+        "published_macro_score": 0.8654904662625817,
+        "published_score": 0.8711217183770883,
+        "subsets": {
+          "Adversarial/GPTInst": 0.875,
+          "Adversarial/GPTOut": 0.776595744680851,
+          "Adversarial/Manual": 0.8913043478260869,
+          "Adversarial/Neighbor": 0.8395522388059702,
+          "Natural": 0.945
+        },
+        "valid_jobs": 407
+      },
+      {
+        "adversarial_macro_score": 0.8344678089662695,
+        "benchmark": "llmbar",
+        "method": "Rating_Metrics",
+        "metrics": {
+          "correct_False": 0.8663484486873508,
+          "correct_True": 0.8663484486873508,
+          "correct_average": 0.8663484486873508,
+          "correct_both": 0.8591885441527446,
+          "equal": 0.9856801909307876,
+          "valid_agreement": 0.9856801909307876
+        },
+        "model": "jev-expected-score-offline",
+        "n": 419,
+        "pooled_score": 0.8663484486873508,
+        "published_macro_score": 0.8575742471730156,
+        "published_score": 0.8663484486873508,
+        "subsets": {
+          "Adversarial/GPTInst": 0.8804347826086957,
+          "Adversarial/GPTOut": 0.7340425531914894,
+          "Adversarial/Manual": 0.8913043478260869,
+          "Adversarial/Neighbor": 0.832089552238806,
+          "Natural": 0.95
+        },
+        "valid_jobs": 413
+      },
+      {
+        "adversarial_macro_score": 0.8337205047841274,
+        "benchmark": "llmbar",
+        "method": "Rating_Metrics_Reference",
+        "metrics": {
+          "correct_False": 0.8735083532219571,
+          "correct_True": 0.8591885441527446,
+          "correct_average": 0.8663484486873508,
+          "correct_both": 0.8496420047732697,
+          "equal": 0.9665871121718377,
+          "valid_agreement": 0.9665871121718377
+        },
+        "model": "jev-expected-score-offline",
+        "n": 419,
+        "pooled_score": 0.8663484486873508,
+        "published_macro_score": 0.853976403827302,
+        "published_score": 0.8663484486873508,
+        "subsets": {
+          "Adversarial/GPTInst": 0.8586956521739131,
+          "Adversarial/GPTOut": 0.7446808510638298,
+          "Adversarial/Manual": 0.8695652173913043,
+          "Adversarial/Neighbor": 0.8619402985074627,
+          "Natural": 0.935
+        },
+        "valid_jobs": 405
+      },
+      {
+        "adversarial_macro_score": 0.7845011183674596,
+        "benchmark": "llmbar",
+        "method": "Rating_NoRules",
+        "metrics": {
+          "correct_False": 0.8233890214797136,
+          "correct_True": 0.8162291169451074,
+          "correct_average": 0.8198090692124105,
+          "correct_both": 0.8090692124105012,
+          "equal": 0.9785202863961814,
+          "valid_agreement": 0.9785202863961814
+        },
+        "model": "jev-expected-score-offline",
+        "n": 419,
+        "pooled_score": 0.8198090692124105,
+        "published_macro_score": 0.8176008946939678,
+        "published_score": 0.8198090692124105,
+        "subsets": {
+          "Adversarial/GPTInst": 0.8260869565217391,
+          "Adversarial/GPTOut": 0.8085106382978723,
+          "Adversarial/Manual": 0.7608695652173914,
+          "Adversarial/Neighbor": 0.7425373134328358,
+          "Natural": 0.95
+        },
+        "valid_jobs": 411
+      },
+      {
+        "adversarial_macro_score": 0.8302993876592983,
+        "benchmark": "llmbar",
+        "method": "Rating_Reference",
+        "metrics": {
+          "correct_False": 0.8591885441527446,
+          "correct_True": 0.8663484486873508,
+          "correct_average": 0.8627684964200477,
+          "correct_both": 0.8544152744630071,
+          "equal": 0.9832935560859188,
+          "valid_agreement": 0.9832935560859188
+        },
+        "model": "jev-expected-score-offline",
+        "n": 419,
+        "pooled_score": 0.8627684964200477,
+        "published_macro_score": 0.8502395101274386,
+        "published_score": 0.8627684964200477,
+        "subsets": {
+          "Adversarial/GPTInst": 0.8858695652173914,
+          "Adversarial/GPTOut": 0.7659574468085106,
+          "Adversarial/Manual": 0.8260869565217391,
+          "Adversarial/Neighbor": 0.8432835820895522,
+          "Natural": 0.93
+        },
+        "valid_jobs": 412
+      },
+      {
+        "benchmark": "rewardbench2",
+        "method": "ratings",
+        "model": "jev-expected-score-offline",
+        "n": 1865,
+        "published_macro_score": 0.7589333528930656,
+        "subsets": {
+          "Factuality": 0.7957894736842105,
+          "Focus": 0.8272727272727273,
+          "Math": 0.7663934426229508,
+          "Precise IF": 0.415625,
+          "Safety": 0.8905555555555555,
+          "Ties": 0.8579639182229496
+        },
+        "ties": {
+          "correctness_margin_score": 0.5022741752360916,
+          "correctness_preferred": 0.7450980392156865,
+          "correctness_preferred_hard": 0.7254901960784316,
+          "ref_accuracy": 1.0000000000000007,
+          "score": 0.8579639182229496,
+          "tied_accuracy": 0.8627450980392162
+        },
+        "valid_jobs": 1825
+      }
+    ]
+  }
+}

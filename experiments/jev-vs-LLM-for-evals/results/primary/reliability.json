@@ -1,0 +1,4256 @@
+{
+  "projection": "numeric-and-machine-identifiers-v1",
+  "source_sha256": "213670f708c5a4587e901f107bcaa1a0a653cffce66fa8a4f4674854aebbfa55",
+  "data": {
+    "all_attempt_reliability": [
+      {
+        "attempts": 1352,
+        "benchmark": "judgebench",
+        "error_attempts": {
+          "cancelled": 1
+        },
+        "invalid_jobs": 86,
+        "jobs": 620,
+        "method": "arena_hard",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "truncated_replies": 150
+      },
+      {
+        "attempts": 1716,
+        "benchmark": "judgebench",
+        "error_attempts": {
+          "HTTP 429": 15,
+          "cancelled": 3
+        },
+        "invalid_jobs": 272,
+        "jobs": 620,
+        "method": "arena_hard",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "truncated_replies": 794
+      },
+      {
+        "attempts": 1271,
+        "benchmark": "judgebench",
+        "error_attempts": {
+          "HTTP 400": 3
+        },
+        "invalid_jobs": 19,
+        "jobs": 620,
+        "method": "arena_hard",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "truncated_replies": 26
+      },
+      {
+        "attempts": 1525,
+        "benchmark": "judgebench",
+        "error_attempts": {
+          "HTTP 429": 2,
+          "cancelled": 4,
+          "timeout": 35
+        },
+        "invalid_jobs": 138,
+        "jobs": 620,
+        "method": "arena_hard",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "truncated_replies": 308
+      },
+      {
+        "attempts": 1272,
+        "benchmark": "judgebench",
+        "error_attempts": {
+          "HTTP 503": 38,
+          "HTTP 529": 9,
+          "timeout": 8
+        },
+        "invalid_jobs": 13,
+        "jobs": 620,
+        "method": "arena_hard",
+        "model": "jev-latest",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 1241,
+        "benchmark": "judgebench",
+        "error_attempts": {
+          "cancelled": 1
+        },
+        "invalid_jobs": 50,
+        "jobs": 620,
+        "method": "vanilla",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "truncated_replies": 60
+      },
+      {
+        "attempts": 1245,
+        "benchmark": "judgebench",
+        "error_attempts": {
+          "HTTP 429": 6,
+          "cancelled": 1,
+          "timeout": 1
+        },
+        "invalid_jobs": 129,
+        "jobs": 620,
+        "method": "vanilla",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "truncated_replies": 192
+      },
+      {
+        "attempts": 1240,
+        "benchmark": "judgebench",
+        "error_attempts": {},
+        "invalid_jobs": 2,
+        "jobs": 620,
+        "method": "vanilla",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "truncated_replies": 2
+      },
+      {
+        "attempts": 1240,
+        "benchmark": "judgebench",
+        "error_attempts": {
+          "timeout": 6
+        },
+        "invalid_jobs": 40,
+        "jobs": 620,
+        "method": "vanilla",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "truncated_replies": 52
+      },
+      {
+        "attempts": 1263,
+        "benchmark": "judgebench",
+        "error_attempts": {
+          "HTTP 503": 29,
+          "HTTP 529": 4,
+          "timeout": 5
+        },
+        "invalid_jobs": 9,
+        "jobs": 620,
+        "method": "vanilla",
+        "model": "jev-latest",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 5,
+        "jobs": 419,
+        "method": "CoT",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "truncated_replies": 7
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 6,
+        "jobs": 419,
+        "method": "CoT",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "truncated_replies": 7
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "CoT",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "CoT",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 856,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 503": 24,
+          "HTTP 529": 2,
+          "timeout": 5
+        },
+        "invalid_jobs": 7,
+        "jobs": 419,
+        "method": "CoT",
+        "model": "jev-latest",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 1257,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 11,
+        "jobs": 419,
+        "method": "Metrics",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "truncated_replies": 11
+      },
+      {
+        "attempts": 1266,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 429": 11
+        },
+        "invalid_jobs": 2,
+        "jobs": 419,
+        "method": "Metrics",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 1257,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "Metrics",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 1257,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 1,
+        "jobs": 419,
+        "method": "Metrics",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "truncated_replies": 2
+      },
+      {
+        "attempts": 1281,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 503": 30,
+          "HTTP 529": 4,
+          "timeout": 11
+        },
+        "invalid_jobs": 11,
+        "jobs": 419,
+        "method": "Metrics",
+        "model": "jev-latest",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 1676,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 13,
+        "jobs": 419,
+        "method": "Metrics_Reference",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "truncated_replies": 16
+      },
+      {
+        "attempts": 1678,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 429": 3
+        },
+        "invalid_jobs": 8,
+        "jobs": 419,
+        "method": "Metrics_Reference",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "truncated_replies": 8
+      },
+      {
+        "attempts": 1676,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "Metrics_Reference",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 1677,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "cancelled": 1
+        },
+        "invalid_jobs": 7,
+        "jobs": 419,
+        "method": "Metrics_Reference",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "truncated_replies": 7
+      },
+      {
+        "attempts": 1684,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 503": 12,
+          "timeout": 3
+        },
+        "invalid_jobs": 4,
+        "jobs": 419,
+        "method": "Metrics_Reference",
+        "model": "jev-latest",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 4,
+        "jobs": 419,
+        "method": "Rating",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "truncated_replies": 4
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 2,
+        "jobs": 419,
+        "method": "Rating",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "truncated_replies": 2
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "Rating",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "Rating",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 870,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 503": 42,
+          "HTTP 529": 4,
+          "timeout": 10
+        },
+        "invalid_jobs": 12,
+        "jobs": 419,
+        "method": "Rating",
+        "model": "jev-latest",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 1257,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 3,
+        "jobs": 419,
+        "method": "Rating_Metrics",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "truncated_replies": 3
+      },
+      {
+        "attempts": 1258,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "cancelled": 1
+        },
+        "invalid_jobs": 1,
+        "jobs": 419,
+        "method": "Rating_Metrics",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "truncated_replies": 1
+      },
+      {
+        "attempts": 1257,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "Rating_Metrics",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 1257,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "Rating_Metrics",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 1269,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 503": 12,
+          "HTTP 529": 5,
+          "timeout": 6
+        },
+        "invalid_jobs": 6,
+        "jobs": 419,
+        "method": "Rating_Metrics",
+        "model": "jev-latest",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 1676,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 16,
+        "jobs": 419,
+        "method": "Rating_Metrics_Reference",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "truncated_replies": 17
+      },
+      {
+        "attempts": 1689,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 429": 18
+        },
+        "invalid_jobs": 6,
+        "jobs": 419,
+        "method": "Rating_Metrics_Reference",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "truncated_replies": 4
+      },
+      {
+        "attempts": 1676,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "Rating_Metrics_Reference",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 1676,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "timeout": 1
+        },
+        "invalid_jobs": 6,
+        "jobs": 419,
+        "method": "Rating_Metrics_Reference",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "truncated_replies": 5
+      },
+      {
+        "attempts": 1710,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 503": 48,
+          "HTTP 529": 2,
+          "timeout": 11
+        },
+        "invalid_jobs": 14,
+        "jobs": 419,
+        "method": "Rating_Metrics_Reference",
+        "model": "jev-latest",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 3,
+        "jobs": 419,
+        "method": "Rating_NoRules",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "truncated_replies": 3
+      },
+      {
+        "attempts": 846,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 429": 12
+        },
+        "invalid_jobs": 4,
+        "jobs": 419,
+        "method": "Rating_NoRules",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "truncated_replies": 2
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "Rating_NoRules",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "Rating_NoRules",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 856,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 503": 24,
+          "HTTP 529": 2,
+          "timeout": 8
+        },
+        "invalid_jobs": 8,
+        "jobs": 419,
+        "method": "Rating_NoRules",
+        "model": "jev-latest",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 1257,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 8,
+        "jobs": 419,
+        "method": "Rating_Reference",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "truncated_replies": 8
+      },
+      {
+        "attempts": 1257,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 3,
+        "jobs": 419,
+        "method": "Rating_Reference",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "truncated_replies": 3
+      },
+      {
+        "attempts": 1257,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "Rating_Reference",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 1257,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "timeout": 1
+        },
+        "invalid_jobs": 4,
+        "jobs": 419,
+        "method": "Rating_Reference",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "truncated_replies": 3
+      },
+      {
+        "attempts": 1270,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 503": 18,
+          "HTTP 529": 1,
+          "timeout": 6
+        },
+        "invalid_jobs": 7,
+        "jobs": 419,
+        "method": "Rating_Reference",
+        "model": "jev-latest",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 1258,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "cancelled": 1
+        },
+        "invalid_jobs": 14,
+        "jobs": 419,
+        "method": "Reference",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "truncated_replies": 16
+      },
+      {
+        "attempts": 1263,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 429": 8
+        },
+        "invalid_jobs": 4,
+        "jobs": 419,
+        "method": "Reference",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "truncated_replies": 2
+      },
+      {
+        "attempts": 1257,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "Reference",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 1257,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "timeout": 1
+        },
+        "invalid_jobs": 8,
+        "jobs": 419,
+        "method": "Reference",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "truncated_replies": 7
+      },
+      {
+        "attempts": 1270,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 503": 18,
+          "HTTP 529": 1,
+          "timeout": 5
+        },
+        "invalid_jobs": 6,
+        "jobs": 419,
+        "method": "Reference",
+        "model": "jev-latest",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 896,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 6,
+        "jobs": 419,
+        "method": "Swap",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "truncated_replies": 6
+      },
+      {
+        "attempts": 870,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 429": 10,
+          "cancelled": 1
+        },
+        "invalid_jobs": 13,
+        "jobs": 419,
+        "method": "Swap",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "truncated_replies": 10
+      },
+      {
+        "attempts": 898,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "Swap",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 864,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 1,
+        "jobs": 419,
+        "method": "Swap",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "truncated_replies": 1
+      },
+      {
+        "attempts": 925,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 503": 26,
+          "HTTP 529": 5,
+          "timeout": 7
+        },
+        "invalid_jobs": 9,
+        "jobs": 419,
+        "method": "Swap",
+        "model": "jev-latest",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 906,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 2,
+        "jobs": 419,
+        "method": "Swap_CoT",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "truncated_replies": 3
+      },
+      {
+        "attempts": 881,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 429": 9,
+          "cancelled": 1
+        },
+        "invalid_jobs": 8,
+        "jobs": 419,
+        "method": "Swap_CoT",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "truncated_replies": 8
+      },
+      {
+        "attempts": 898,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "Swap_CoT",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 866,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 1,
+        "jobs": 419,
+        "method": "Swap_CoT",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "truncated_replies": 1
+      },
+      {
+        "attempts": 912,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 503": 6,
+          "HTTP 529": 2,
+          "timeout": 6
+        },
+        "invalid_jobs": 4,
+        "jobs": 419,
+        "method": "Swap_CoT",
+        "model": "jev-latest",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 5,
+        "jobs": 419,
+        "method": "Vanilla",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "truncated_replies": 5
+      },
+      {
+        "attempts": 844,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 429": 7
+        },
+        "invalid_jobs": 3,
+        "jobs": 419,
+        "method": "Vanilla",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "truncated_replies": 2
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "Vanilla",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 840,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 429": 2
+        },
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "Vanilla",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 853,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 503": 19,
+          "HTTP 529": 1,
+          "timeout": 8
+        },
+        "invalid_jobs": 7,
+        "jobs": 419,
+        "method": "Vanilla",
+        "model": "jev-latest",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 3,
+        "jobs": 419,
+        "method": "Vanilla_1shot",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "truncated_replies": 3
+      },
+      {
+        "attempts": 842,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 429": 5
+        },
+        "invalid_jobs": 3,
+        "jobs": 419,
+        "method": "Vanilla_1shot",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "truncated_replies": 2
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "Vanilla_1shot",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "Vanilla_1shot",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 857,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 503": 24,
+          "HTTP 529": 3,
+          "timeout": 6
+        },
+        "invalid_jobs": 7,
+        "jobs": 419,
+        "method": "Vanilla_1shot",
+        "model": "jev-latest",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 839,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "cancelled": 1
+        },
+        "invalid_jobs": 3,
+        "jobs": 419,
+        "method": "Vanilla_2shot",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "truncated_replies": 3
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 1,
+        "jobs": 419,
+        "method": "Vanilla_2shot",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "truncated_replies": 2
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 1,
+        "jobs": 419,
+        "method": "Vanilla_2shot",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "Vanilla_2shot",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 844,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 503": 6,
+          "HTTP 529": 2,
+          "timeout": 2
+        },
+        "invalid_jobs": 2,
+        "jobs": 419,
+        "method": "Vanilla_2shot",
+        "model": "jev-latest",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 3,
+        "jobs": 419,
+        "method": "Vanilla_NoRules",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "truncated_replies": 3
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 2,
+        "jobs": 419,
+        "method": "Vanilla_NoRules",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "truncated_replies": 3
+      },
+      {
+        "attempts": 838,
+        "benchmark": "llmbar",
+        "error_attempts": {},
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "Vanilla_NoRules",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 839,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "cancelled": 1
+        },
+        "invalid_jobs": 0,
+        "jobs": 419,
+        "method": "Vanilla_NoRules",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 854,
+        "benchmark": "llmbar",
+        "error_attempts": {
+          "HTTP 503": 18,
+          "HTTP 529": 6,
+          "timeout": 5
+        },
+        "invalid_jobs": 7,
+        "jobs": 419,
+        "method": "Vanilla_NoRules",
+        "model": "jev-latest",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 3688,
+        "benchmark": "rewardbench2",
+        "error_attempts": {},
+        "invalid_jobs": 46,
+        "jobs": 1865,
+        "method": "fourway",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "truncated_replies": 31
+      },
+      {
+        "attempts": 3697,
+        "benchmark": "rewardbench2",
+        "error_attempts": {
+          "HTTP 429": 10,
+          "cancelled": 1,
+          "timeout": 2
+        },
+        "invalid_jobs": 196,
+        "jobs": 1865,
+        "method": "fourway",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "truncated_replies": 160
+      },
+      {
+        "attempts": 3689,
+        "benchmark": "rewardbench2",
+        "error_attempts": {
+          "cancelled": 1
+        },
+        "invalid_jobs": 5,
+        "jobs": 1865,
+        "method": "fourway",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "truncated_replies": 1
+      },
+      {
+        "attempts": 3690,
+        "benchmark": "rewardbench2",
+        "error_attempts": {
+          "cancelled": 2,
+          "timeout": 8
+        },
+        "invalid_jobs": 73,
+        "jobs": 1865,
+        "method": "fourway",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "truncated_replies": 65
+      },
+      {
+        "attempts": 3724,
+        "benchmark": "rewardbench2",
+        "error_attempts": {
+          "HTTP 503": 43,
+          "HTTP 529": 8,
+          "timeout": 24
+        },
+        "invalid_jobs": 34,
+        "jobs": 1865,
+        "method": "fourway",
+        "model": "jev-latest",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 8977,
+        "benchmark": "rewardbench2",
+        "error_attempts": {},
+        "invalid_jobs": 144,
+        "jobs": 1865,
+        "method": "ratings",
+        "model": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "truncated_replies": 30
+      },
+      {
+        "attempts": 9036,
+        "benchmark": "rewardbench2",
+        "error_attempts": {
+          "HTTP 429": 69,
+          "cancelled": 7,
+          "timeout": 2
+        },
+        "invalid_jobs": 1292,
+        "jobs": 1865,
+        "method": "ratings",
+        "model": "accounts/fireworks/models/glm-5p3",
+        "truncated_replies": 92
+      },
+      {
+        "attempts": 8977,
+        "benchmark": "rewardbench2",
+        "error_attempts": {},
+        "invalid_jobs": 3,
+        "jobs": 1865,
+        "method": "ratings",
+        "model": "accounts/fireworks/models/gpt-oss-120b",
+        "truncated_replies": 0
+      },
+      {
+        "attempts": 8981,
+        "benchmark": "rewardbench2",
+        "error_attempts": {
+          "cancelled": 4,
+          "timeout": 1
+        },
+        "invalid_jobs": 22,
+        "jobs": 1865,
+        "method": "ratings",
+        "model": "accounts/fireworks/models/qwen3p8-max",
+        "truncated_replies": 27
+      },
+      {
+        "attempts": 9097,
+        "benchmark": "rewardbench2",
+        "error_attempts": {
+          "HTTP 503": 130,
+          "HTTP 529": 38,
+          "timeout": 87
+        },
+        "invalid_jobs": 40,
+        "jobs": 1865,
+        "method": "ratings",
+        "model": "jev-latest",
+        "truncated_replies": 0
+      }
+    ],
+    "jointly_valid_comparisons": [
+      {
+        "benchmark": "judgebench",
+        "coverage": 0.8403225806451613,
+        "jointly_valid_units": 521,
+        "matched_units": 620,
+        "method": "arena_hard",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.04964328799669573,
+          "accounting_cost_ratio_ci95": [
+            0.04762455290661191,
+            0.05186103194268431
+          ],
+          "benchmark": "judgebench",
+          "bootstrap_replicates": 2000,
+          "left_units": 521,
+          "matched_units": 521,
+          "method": "arena_hard",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.2092130518234165,
+          "published_delta_ci95": [
+            -0.2456813819577735,
+            -0.1727447216890595
+          ],
+          "right_units": 521,
+          "strata": [
+            "claude/livebench-math",
+            "claude/livebench-reasoning",
+            "claude/livecodebench",
+            "claude/mmlu-pro",
+            "gpt/livebench-math",
+            "gpt/livebench-reasoning",
+            "gpt/livecodebench",
+            "gpt/mmlu-pro"
+          ],
+          "strict_delta": -0.2092130518234165,
+          "strict_delta_ci95": [
+            -0.2456813819577735,
+            -0.1727447216890595
+          ]
+        }
+      },
+      {
+        "benchmark": "judgebench",
+        "coverage": 0.5467741935483871,
+        "jointly_valid_units": 339,
+        "matched_units": 620,
+        "method": "arena_hard",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.0051336813516819,
+          "accounting_cost_ratio_ci95": [
+            0.004913951143042754,
+            0.005368670309773682
+          ],
+          "benchmark": "judgebench",
+          "bootstrap_replicates": 2000,
+          "left_units": 339,
+          "matched_units": 339,
+          "method": "arena_hard",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.19174041297935102,
+          "published_delta_ci95": [
+            -0.23303834808259588,
+            -0.14749262536873156
+          ],
+          "right_units": 339,
+          "strata": [
+            "claude/livebench-math",
+            "claude/livebench-reasoning",
+            "claude/livecodebench",
+            "claude/mmlu-pro",
+            "gpt/livebench-math",
+            "gpt/livebench-reasoning",
+            "gpt/livecodebench",
+            "gpt/mmlu-pro"
+          ],
+          "strict_delta": -0.19174041297935102,
+          "strict_delta_ci95": [
+            -0.23303834808259588,
+            -0.14749262536873156
+          ]
+        }
+      },
+      {
+        "benchmark": "judgebench",
+        "coverage": 0.95,
+        "jointly_valid_units": 589,
+        "matched_units": 620,
+        "method": "arena_hard",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.07014448890888499,
+          "accounting_cost_ratio_ci95": [
+            0.06780241423017348,
+            0.0724580235141162
+          ],
+          "benchmark": "judgebench",
+          "bootstrap_replicates": 2000,
+          "left_units": 589,
+          "matched_units": 589,
+          "method": "arena_hard",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": -0.11544991511035656,
+          "published_delta_ci95": [
+            -0.15619694397283532,
+            -0.07470288624787776
+          ],
+          "right_units": 589,
+          "strata": [
+            "claude/livebench-math",
+            "claude/livebench-reasoning",
+            "claude/livecodebench",
+            "claude/mmlu-pro",
+            "gpt/livebench-math",
+            "gpt/livebench-reasoning",
+            "gpt/livecodebench",
+            "gpt/mmlu-pro"
+          ],
+          "strict_delta": -0.11544991511035656,
+          "strict_delta_ci95": [
+            -0.15619694397283532,
+            -0.07470288624787776
+          ]
+        }
+      },
+      {
+        "benchmark": "judgebench",
+        "coverage": 0.7629032258064516,
+        "jointly_valid_units": 473,
+        "matched_units": 620,
+        "method": "arena_hard",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.0037081607972089593,
+          "accounting_cost_ratio_ci95": [
+            0.003570274648219856,
+            0.0038574608972382464
+          ],
+          "benchmark": "judgebench",
+          "bootstrap_replicates": 2000,
+          "left_units": 473,
+          "matched_units": 473,
+          "method": "arena_hard",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.26004228329809725,
+          "published_delta_ci95": [
+            -0.30021141649048627,
+            -0.2219873150105708
+          ],
+          "right_units": 473,
+          "strata": [
+            "claude/livebench-math",
+            "claude/livebench-reasoning",
+            "claude/livecodebench",
+            "claude/mmlu-pro",
+            "gpt/livebench-math",
+            "gpt/livebench-reasoning",
+            "gpt/livecodebench",
+            "gpt/mmlu-pro"
+          ],
+          "strict_delta": -0.26004228329809725,
+          "strict_delta_ci95": [
+            -0.30021141649048627,
+            -0.2219873150105708
+          ]
+        }
+      },
+      {
+        "benchmark": "judgebench",
+        "coverage": 0.9096774193548387,
+        "jointly_valid_units": 564,
+        "matched_units": 620,
+        "method": "vanilla",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.09390172336779189,
+          "accounting_cost_ratio_ci95": [
+            0.08809470581239644,
+            0.10030371017939259
+          ],
+          "benchmark": "judgebench",
+          "bootstrap_replicates": 2000,
+          "left_units": 564,
+          "matched_units": 564,
+          "method": "vanilla",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.11879432624113474,
+          "published_delta_ci95": [
+            -0.15425531914893614,
+            -0.08328900709219882
+          ],
+          "right_units": 564,
+          "strata": [
+            "claude/livebench-math",
+            "claude/livebench-reasoning",
+            "claude/livecodebench",
+            "claude/mmlu-pro",
+            "gpt/livebench-math",
+            "gpt/livebench-reasoning",
+            "gpt/livecodebench",
+            "gpt/mmlu-pro"
+          ],
+          "strict_delta": -0.11879432624113474,
+          "strict_delta_ci95": [
+            -0.15425531914893614,
+            -0.08328900709219882
+          ]
+        }
+      },
+      {
+        "benchmark": "judgebench",
+        "coverage": 0.7806451612903226,
+        "jointly_valid_units": 484,
+        "matched_units": 620,
+        "method": "vanilla",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.008514113710835408,
+          "accounting_cost_ratio_ci95": [
+            0.008011523116248358,
+            0.00906750885031218
+          ],
+          "benchmark": "judgebench",
+          "bootstrap_replicates": 2000,
+          "left_units": 484,
+          "matched_units": 484,
+          "method": "vanilla",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.21694214876033058,
+          "published_delta_ci95": [
+            -0.2541322314049587,
+            -0.17768595041322313
+          ],
+          "right_units": 484,
+          "strata": [
+            "claude/livebench-math",
+            "claude/livebench-reasoning",
+            "claude/livecodebench",
+            "claude/mmlu-pro",
+            "gpt/livebench-math",
+            "gpt/livebench-reasoning",
+            "gpt/livecodebench",
+            "gpt/mmlu-pro"
+          ],
+          "strict_delta": -0.21694214876033058,
+          "strict_delta_ci95": [
+            -0.2541322314049587,
+            -0.17768595041322313
+          ]
+        }
+      },
+      {
+        "benchmark": "judgebench",
+        "coverage": 0.9822580645161291,
+        "jointly_valid_units": 609,
+        "matched_units": 620,
+        "method": "vanilla",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.10266650378167745,
+          "accounting_cost_ratio_ci95": [
+            0.09791170570036971,
+            0.1078782429467639
+          ],
+          "benchmark": "judgebench",
+          "bootstrap_replicates": 2000,
+          "left_units": 609,
+          "matched_units": 609,
+          "method": "vanilla",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": -0.08538587848932677,
+          "published_delta_ci95": [
+            -0.12807881773399016,
+            -0.04597701149425286
+          ],
+          "right_units": 609,
+          "strata": [
+            "claude/livebench-math",
+            "claude/livebench-reasoning",
+            "claude/livecodebench",
+            "claude/mmlu-pro",
+            "gpt/livebench-math",
+            "gpt/livebench-reasoning",
+            "gpt/livecodebench",
+            "gpt/mmlu-pro"
+          ],
+          "strict_delta": -0.08538587848932677,
+          "strict_delta_ci95": [
+            -0.12807881773399016,
+            -0.04597701149425286
+          ]
+        }
+      },
+      {
+        "benchmark": "judgebench",
+        "coverage": 0.9209677419354839,
+        "jointly_valid_units": 571,
+        "matched_units": 620,
+        "method": "vanilla",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.007563064623440069,
+          "accounting_cost_ratio_ci95": [
+            0.007131490642779708,
+            0.008019101171820853
+          ],
+          "benchmark": "judgebench",
+          "bootstrap_replicates": 2000,
+          "left_units": 571,
+          "matched_units": 571,
+          "method": "vanilla",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.2556917688266199,
+          "published_delta_ci95": [
+            -0.2924693520140105,
+            -0.2189141856392294
+          ],
+          "right_units": 571,
+          "strata": [
+            "claude/livebench-math",
+            "claude/livebench-reasoning",
+            "claude/livecodebench",
+            "claude/mmlu-pro",
+            "gpt/livebench-math",
+            "gpt/livebench-reasoning",
+            "gpt/livecodebench",
+            "gpt/mmlu-pro"
+          ],
+          "strict_delta": -0.2556917688266199,
+          "strict_delta_ci95": [
+            -0.2924693520140105,
+            -0.2189141856392294
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9713603818615751,
+        "jointly_valid_units": 407,
+        "matched_units": 419,
+        "method": "CoT",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.11551933423034838,
+          "accounting_cost_ratio_ci95": [
+            0.11111153150852268,
+            0.12006603079784678
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 407,
+          "matched_units": 407,
+          "method": "CoT",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.03514669833260905,
+          "published_delta_ci95": [
+            -0.06563667352145883,
+            -0.005924504002904785
+          ],
+          "right_units": 407,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.03514669833260905,
+          "strict_delta_ci95": [
+            -0.06563667352145883,
+            -0.005924504002904785
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9689737470167065,
+        "jointly_valid_units": 406,
+        "matched_units": 419,
+        "method": "CoT",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.010044568126848497,
+          "accounting_cost_ratio_ci95": [
+            0.009316511441149086,
+            0.010839919503463068
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 406,
+          "matched_units": 406,
+          "method": "CoT",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.0495842688712254,
+          "published_delta_ci95": [
+            -0.08054951526734135,
+            -0.019979632830937205
+          ],
+          "right_units": 406,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.0495842688712254,
+          "strict_delta_ci95": [
+            -0.08054951526734135,
+            -0.019979632830937205
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9832935560859188,
+        "jointly_valid_units": 412,
+        "matched_units": 419,
+        "method": "CoT",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.17758743008857264,
+          "accounting_cost_ratio_ci95": [
+            0.1732755592505396,
+            0.18223898228612598
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 412,
+          "matched_units": 412,
+          "method": "CoT",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": -0.006329271846587991,
+          "published_delta_ci95": [
+            -0.040081722674536774,
+            0.02375449978508489
+          ],
+          "right_units": 412,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.006329271846587991,
+          "strict_delta_ci95": [
+            -0.040081722674536774,
+            0.02375449978508489
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9832935560859188,
+        "jointly_valid_units": 412,
+        "matched_units": 419,
+        "method": "CoT",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.012509599003359266,
+          "accounting_cost_ratio_ci95": [
+            0.011739578822488267,
+            0.013306107131595133
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 412,
+          "matched_units": 412,
+          "method": "CoT",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.058554701735205904,
+          "published_delta_ci95": [
+            -0.09072052936423673,
+            -0.027634587666676015
+          ],
+          "right_units": 412,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.058554701735205904,
+          "strict_delta_ci95": [
+            -0.09072052936423673,
+            -0.027634587666676015
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9498806682577565,
+        "jointly_valid_units": 398,
+        "matched_units": 419,
+        "method": "Metrics",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.19985709661172213,
+          "accounting_cost_ratio_ci95": [
+            0.19223303324287924,
+            0.20759395823561302
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 398,
+          "matched_units": 398,
+          "method": "Metrics",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.02965795612438704,
+          "published_delta_ci95": [
+            -0.05817083779150968,
+            -0.00207995280509137
+          ],
+          "right_units": 398,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.02965795612438704,
+          "strict_delta_ci95": [
+            -0.05817083779150968,
+            -0.00207995280509137
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9689737470167065,
+        "jointly_valid_units": 406,
+        "matched_units": 419,
+        "method": "Metrics",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.029325206625351857,
+          "accounting_cost_ratio_ci95": [
+            0.02676622526150145,
+            0.03187991539969853
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 406,
+          "matched_units": 406,
+          "method": "Metrics",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.05196927648361506,
+          "published_delta_ci95": [
+            -0.08160163148599783,
+            -0.02458261500294341
+          ],
+          "right_units": 406,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.05196927648361506,
+          "strict_delta_ci95": [
+            -0.08160163148599783,
+            -0.02458261500294341
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9737470167064439,
+        "jointly_valid_units": 408,
+        "matched_units": 419,
+        "method": "Metrics",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.44849903219054127,
+          "accounting_cost_ratio_ci95": [
+            0.43858571321849016,
+            0.4587435153766941
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 408,
+          "matched_units": 408,
+          "method": "Metrics",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": 0.006500341763499659,
+          "published_delta_ci95": [
+            -0.013660976180570002,
+            0.027098634060447536
+          ],
+          "right_units": 408,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": 0.006500341763499659,
+          "strict_delta_ci95": [
+            -0.013660976180570002,
+            0.027098634060447536
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9713603818615751,
+        "jointly_valid_units": 407,
+        "matched_units": 419,
+        "method": "Metrics",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.03220105037332223,
+          "accounting_cost_ratio_ci95": [
+            0.030994161412547985,
+            0.03346369408563295
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 407,
+          "matched_units": 407,
+          "method": "Metrics",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.04236811561182271,
+          "published_delta_ci95": [
+            -0.0706443585495359,
+            -0.017300666438824337
+          ],
+          "right_units": 407,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.04236811561182271,
+          "strict_delta_ci95": [
+            -0.0706443585495359,
+            -0.017300666438824337
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9594272076372315,
+        "jointly_valid_units": 402,
+        "matched_units": 419,
+        "method": "Metrics_Reference",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.27155435507695214,
+          "accounting_cost_ratio_ci95": [
+            0.2591822257706939,
+            0.2840716336110385
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 402,
+          "matched_units": 402,
+          "method": "Metrics_Reference",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.010185562106694565,
+          "published_delta_ci95": [
+            -0.03919386109761489,
+            0.018232135379506437
+          ],
+          "right_units": 402,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.010185562106694565,
+          "strict_delta_ci95": [
+            -0.03919386109761489,
+            0.018232135379506437
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9713603818615751,
+        "jointly_valid_units": 407,
+        "matched_units": 419,
+        "method": "Metrics_Reference",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.039879589243912376,
+          "accounting_cost_ratio_ci95": [
+            0.037607533223975816,
+            0.042159674049710855
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 407,
+          "matched_units": 407,
+          "method": "Metrics_Reference",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.036616161616161616,
+          "published_delta_ci95": [
+            -0.06376578282828284,
+            -0.01186553030303032
+          ],
+          "right_units": 407,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.036616161616161616,
+          "strict_delta_ci95": [
+            -0.06376578282828284,
+            -0.01186553030303032
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9904534606205251,
+        "jointly_valid_units": 415,
+        "matched_units": 419,
+        "method": "Metrics_Reference",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.5576912254300384,
+          "accounting_cost_ratio_ci95": [
+            0.5464945483290627,
+            0.5681472230707985
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 415,
+          "matched_units": 415,
+          "method": "Metrics_Reference",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": 0.035331729546832516,
+          "published_delta_ci95": [
+            0.008258221361653858,
+            0.06200781426811175
+          ],
+          "right_units": 415,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": 0.035331729546832516,
+          "strict_delta_ci95": [
+            0.008258221361653858,
+            0.06200781426811175
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9737470167064439,
+        "jointly_valid_units": 408,
+        "matched_units": 419,
+        "method": "Metrics_Reference",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.037917458318076684,
+          "accounting_cost_ratio_ci95": [
+            0.03583695468525543,
+            0.04005787991889919
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 408,
+          "matched_units": 408,
+          "method": "Metrics_Reference",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.0312225776875804,
+          "published_delta_ci95": [
+            -0.059211147303591685,
+            -0.002277571564807066
+          ],
+          "right_units": 408,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.0312225776875804,
+          "strict_delta_ci95": [
+            -0.059211147303591685,
+            -0.002277571564807066
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9618138424821002,
+        "jointly_valid_units": 403,
+        "matched_units": 419,
+        "method": "Rating",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.09270043299919585,
+          "accounting_cost_ratio_ci95": [
+            0.08904661658754863,
+            0.09696891556637731
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 403,
+          "matched_units": 403,
+          "method": "Rating",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.011566866292456249,
+          "published_delta_ci95": [
+            -0.046969803320124716,
+            0.024765871582819895
+          ],
+          "right_units": 403,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.011566866292456249,
+          "strict_delta_ci95": [
+            -0.046969803320124716,
+            0.024765871582819895
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9665871121718377,
+        "jointly_valid_units": 405,
+        "matched_units": 419,
+        "method": "Rating",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.01817054788194624,
+          "accounting_cost_ratio_ci95": [
+            0.017153526431929307,
+            0.01918210455575615
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 405,
+          "matched_units": 405,
+          "method": "Rating",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.06135680397996914,
+          "published_delta_ci95": [
+            -0.09244712804802675,
+            -0.029529652897300477
+          ],
+          "right_units": 405,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.06135680397996914,
+          "strict_delta_ci95": [
+            -0.09244712804802675,
+            -0.029529652897300477
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9713603818615751,
+        "jointly_valid_units": 407,
+        "matched_units": 419,
+        "method": "Rating",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.2284637918872208,
+          "accounting_cost_ratio_ci95": [
+            0.22054772119129853,
+            0.2370288767203831
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 407,
+          "matched_units": 407,
+          "method": "Rating",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": -0.009554824420066218,
+          "published_delta_ci95": [
+            -0.04033495012536016,
+            0.02383800612026615
+          ],
+          "right_units": 407,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.009554824420066218,
+          "strict_delta_ci95": [
+            -0.04033495012536016,
+            0.02383800612026615
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9713603818615751,
+        "jointly_valid_units": 407,
+        "matched_units": 419,
+        "method": "Rating",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.016497771194976005,
+          "accounting_cost_ratio_ci95": [
+            0.01564874768951217,
+            0.017372118416411477
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 407,
+          "matched_units": 407,
+          "method": "Rating",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.06694179337392614,
+          "published_delta_ci95": [
+            -0.09481534294515886,
+            -0.040187501826958294
+          ],
+          "right_units": 407,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.06694179337392614,
+          "strict_delta_ci95": [
+            -0.09481534294515886,
+            -0.040187501826958294
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9785202863961814,
+        "jointly_valid_units": 410,
+        "matched_units": 419,
+        "method": "Rating_Metrics",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.19764373104180305,
+          "accounting_cost_ratio_ci95": [
+            0.19239416656944183,
+            0.20277819244482706
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 410,
+          "matched_units": 410,
+          "method": "Rating_Metrics",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.034126614987080105,
+          "published_delta_ci95": [
+            -0.06933620507399578,
+            0.0023345489781536046
+          ],
+          "right_units": 410,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.034126614987080105,
+          "strict_delta_ci95": [
+            -0.06933620507399578,
+            0.0023345489781536046
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9832935560859188,
+        "jointly_valid_units": 412,
+        "matched_units": 419,
+        "method": "Rating_Metrics",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.033204715209397787,
+          "accounting_cost_ratio_ci95": [
+            0.031676178741051594,
+            0.03460408130530045
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 412,
+          "matched_units": 412,
+          "method": "Rating_Metrics",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.05302294326986999,
+          "published_delta_ci95": [
+            -0.08641109529384636,
+            -0.020612250418766853
+          ],
+          "right_units": 412,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.05302294326986999,
+          "strict_delta_ci95": [
+            -0.08641109529384636,
+            -0.020612250418766853
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9856801909307876,
+        "jointly_valid_units": 413,
+        "matched_units": 419,
+        "method": "Rating_Metrics",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.48186495082423153,
+          "accounting_cost_ratio_ci95": [
+            0.4721815359576471,
+            0.49102871739880594
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 413,
+          "matched_units": 413,
+          "method": "Rating_Metrics",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": -0.006981594301960435,
+          "published_delta_ci95": [
+            -0.03536312148949449,
+            0.02236486902367909
+          ],
+          "right_units": 413,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.006981594301960435,
+          "strict_delta_ci95": [
+            -0.03536312148949449,
+            0.02236486902367909
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9856801909307876,
+        "jointly_valid_units": 413,
+        "matched_units": 419,
+        "method": "Rating_Metrics",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.030276509908475226,
+          "accounting_cost_ratio_ci95": [
+            0.02924877616727305,
+            0.03131458724961223
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 413,
+          "matched_units": 413,
+          "method": "Rating_Metrics",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.0832823065569061,
+          "published_delta_ci95": [
+            -0.11565991370058876,
+            -0.04952176711541702
+          ],
+          "right_units": 413,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.0832823065569061,
+          "strict_delta_ci95": [
+            -0.11565991370058876,
+            -0.04952176711541702
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9284009546539379,
+        "jointly_valid_units": 389,
+        "matched_units": 419,
+        "method": "Rating_Metrics_Reference",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.27702219947716317,
+          "accounting_cost_ratio_ci95": [
+            0.26488266759462764,
+            0.29081702281708216
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 389,
+          "matched_units": 389,
+          "method": "Rating_Metrics_Reference",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.012896459633200984,
+          "published_delta_ci95": [
+            -0.04957636131593875,
+            0.022441286356904268
+          ],
+          "right_units": 389,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.012896459633200984,
+          "strict_delta_ci95": [
+            -0.04957636131593875,
+            0.022441286356904268
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9522673031026253,
+        "jointly_valid_units": 399,
+        "matched_units": 419,
+        "method": "Rating_Metrics_Reference",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.04235843038238,
+          "accounting_cost_ratio_ci95": [
+            0.04024947097341151,
+            0.04444969274323367
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 399,
+          "matched_units": 399,
+          "method": "Rating_Metrics_Reference",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.023772225462435428,
+          "published_delta_ci95": [
+            -0.05683069034223702,
+            0.008102598097829832
+          ],
+          "right_units": 399,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.023772225462435428,
+          "strict_delta_ci95": [
+            -0.05683069034223702,
+            0.008102598097829832
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9665871121718377,
+        "jointly_valid_units": 405,
+        "matched_units": 419,
+        "method": "Rating_Metrics_Reference",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.5786889844240575,
+          "accounting_cost_ratio_ci95": [
+            0.5680373409084779,
+            0.58895765976384
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 405,
+          "matched_units": 405,
+          "method": "Rating_Metrics_Reference",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": 0.026131361774134183,
+          "published_delta_ci95": [
+            -0.0075851212796046435,
+            0.059421713166687776
+          ],
+          "right_units": 405,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": 0.026131361774134183,
+          "strict_delta_ci95": [
+            -0.0075851212796046435,
+            0.059421713166687776
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9522673031026253,
+        "jointly_valid_units": 399,
+        "matched_units": 419,
+        "method": "Rating_Metrics_Reference",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.03788011053322044,
+          "accounting_cost_ratio_ci95": [
+            0.03603004990007392,
+            0.03982304026859006
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 399,
+          "matched_units": 399,
+          "method": "Rating_Metrics_Reference",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.052121787226114,
+          "published_delta_ci95": [
+            -0.084272006727172,
+            -0.021251940331766327
+          ],
+          "right_units": 399,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.052121787226114,
+          "strict_delta_ci95": [
+            -0.084272006727172,
+            -0.021251940331766327
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9737470167064439,
+        "jointly_valid_units": 408,
+        "matched_units": 419,
+        "method": "Rating_NoRules",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.1072606849444369,
+          "accounting_cost_ratio_ci95": [
+            0.10334542103398368,
+            0.11164484761517969
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 408,
+          "matched_units": 408,
+          "method": "Rating_NoRules",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.04333293690436548,
+          "published_delta_ci95": [
+            -0.077732634429063,
+            -0.007786669679526842
+          ],
+          "right_units": 408,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.04333293690436548,
+          "strict_delta_ci95": [
+            -0.077732634429063,
+            -0.007786669679526842
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9713603818615751,
+        "jointly_valid_units": 407,
+        "matched_units": 419,
+        "method": "Rating_NoRules",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.019220436793636945,
+          "accounting_cost_ratio_ci95": [
+            0.018551542714204235,
+            0.019973165579146763
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 407,
+          "matched_units": 407,
+          "method": "Rating_NoRules",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.08564276435469155,
+          "published_delta_ci95": [
+            -0.12193291717539137,
+            -0.05304410386558316
+          ],
+          "right_units": 407,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.08564276435469155,
+          "strict_delta_ci95": [
+            -0.12193291717539137,
+            -0.05304410386558316
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9809069212410502,
+        "jointly_valid_units": 411,
+        "matched_units": 419,
+        "method": "Rating_NoRules",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.22489863542981192,
+          "accounting_cost_ratio_ci95": [
+            0.21792704784770084,
+            0.23309471054643385
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 411,
+          "matched_units": 411,
+          "method": "Rating_NoRules",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": -0.04976326256170337,
+          "published_delta_ci95": [
+            -0.08280220323482637,
+            -0.01780577932415855
+          ],
+          "right_units": 411,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.04976326256170337,
+          "strict_delta_ci95": [
+            -0.08280220323482637,
+            -0.01780577932415855
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9809069212410502,
+        "jointly_valid_units": 411,
+        "matched_units": 419,
+        "method": "Rating_NoRules",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.018385979076967405,
+          "accounting_cost_ratio_ci95": [
+            0.01749354624294229,
+            0.019290614957836412
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 411,
+          "matched_units": 411,
+          "method": "Rating_NoRules",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.08121799602286389,
+          "published_delta_ci95": [
+            -0.1166156065013202,
+            -0.04674939051412406
+          ],
+          "right_units": 411,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.08121799602286389,
+          "strict_delta_ci95": [
+            -0.1166156065013202,
+            -0.04674939051412406
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.964200477326969,
+        "jointly_valid_units": 404,
+        "matched_units": 419,
+        "method": "Rating_Reference",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.2377604490598382,
+          "accounting_cost_ratio_ci95": [
+            0.2221598150308881,
+            0.2550015525277497
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 404,
+          "matched_units": 404,
+          "method": "Rating_Reference",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.035326076013639206,
+          "published_delta_ci95": [
+            -0.06576218526446029,
+            -0.0047084400264380205
+          ],
+          "right_units": 404,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.035326076013639206,
+          "strict_delta_ci95": [
+            -0.06576218526446029,
+            -0.0047084400264380205
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9761336515513126,
+        "jointly_valid_units": 409,
+        "matched_units": 419,
+        "method": "Rating_Reference",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.04105364276565785,
+          "accounting_cost_ratio_ci95": [
+            0.03846478785724821,
+            0.043797883702602826
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 409,
+          "matched_units": 409,
+          "method": "Rating_Reference",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.05555139193976516,
+          "published_delta_ci95": [
+            -0.08712530942433239,
+            -0.023389750820747412
+          ],
+          "right_units": 409,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.05555139193976516,
+          "strict_delta_ci95": [
+            -0.08712530942433239,
+            -0.023389750820747412
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9832935560859188,
+        "jointly_valid_units": 412,
+        "matched_units": 419,
+        "method": "Rating_Reference",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.49370364061139804,
+          "accounting_cost_ratio_ci95": [
+            0.47816384223060854,
+            0.50858998857707
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 412,
+          "matched_units": 412,
+          "method": "Rating_Reference",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": -0.010702128789085311,
+          "published_delta_ci95": [
+            -0.04066809205287466,
+            0.019843409247757054
+          ],
+          "right_units": 412,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.010702128789085311,
+          "strict_delta_ci95": [
+            -0.04066809205287466,
+            0.019843409247757054
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9737470167064439,
+        "jointly_valid_units": 408,
+        "matched_units": 419,
+        "method": "Rating_Reference",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.03467951584535463,
+          "accounting_cost_ratio_ci95": [
+            0.03250994529109403,
+            0.037052730681761646
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 408,
+          "matched_units": 408,
+          "method": "Rating_Reference",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.07731379731379733,
+          "published_delta_ci95": [
+            -0.10600688993546135,
+            -0.049042647828362124
+          ],
+          "right_units": 408,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.07731379731379733,
+          "strict_delta_ci95": [
+            -0.10600688993546135,
+            -0.049042647828362124
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9570405727923628,
+        "jointly_valid_units": 401,
+        "matched_units": 419,
+        "method": "Reference",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.24401319679396258,
+          "accounting_cost_ratio_ci95": [
+            0.22542160186954416,
+            0.26128901733776744
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 401,
+          "matched_units": 401,
+          "method": "Reference",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.030660155546759944,
+          "published_delta_ci95": [
+            -0.05960272106813542,
+            -0.002652824798221098
+          ],
+          "right_units": 401,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.030660155546759944,
+          "strict_delta_ci95": [
+            -0.05960272106813542,
+            -0.002652824798221098
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9761336515513126,
+        "jointly_valid_units": 409,
+        "matched_units": 419,
+        "method": "Reference",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.03824427792048735,
+          "accounting_cost_ratio_ci95": [
+            0.03540162913552079,
+            0.041373070132757074
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 409,
+          "matched_units": 409,
+          "method": "Reference",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.04454315609592112,
+          "published_delta_ci95": [
+            -0.07437048268713582,
+            -0.017919252157104444
+          ],
+          "right_units": 409,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.04454315609592112,
+          "strict_delta_ci95": [
+            -0.07437048268713582,
+            -0.017919252157104444
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9856801909307876,
+        "jointly_valid_units": 413,
+        "matched_units": 419,
+        "method": "Reference",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.48193720576896576,
+          "accounting_cost_ratio_ci95": [
+            0.4656668094779785,
+            0.49811879201238546
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 413,
+          "matched_units": 413,
+          "method": "Reference",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": -0.00030742204655248226,
+          "published_delta_ci95": [
+            -0.028329807144656122,
+            0.026985021622980655
+          ],
+          "right_units": 413,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.00030742204655248226,
+          "strict_delta_ci95": [
+            -0.028329807144656122,
+            0.026985021622980655
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9665871121718377,
+        "jointly_valid_units": 405,
+        "matched_units": 419,
+        "method": "Reference",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.03518280738893343,
+          "accounting_cost_ratio_ci95": [
+            0.03263009086924158,
+            0.03793720149039896
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 405,
+          "matched_units": 405,
+          "method": "Reference",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.04952720620256315,
+          "published_delta_ci95": [
+            -0.07769000939016425,
+            -0.021133481767917132
+          ],
+          "right_units": 405,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.04952720620256315,
+          "strict_delta_ci95": [
+            -0.07769000939016425,
+            -0.021133481767917132
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.964200477326969,
+        "jointly_valid_units": 404,
+        "matched_units": 419,
+        "method": "Swap",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.1120040428889702,
+          "accounting_cost_ratio_ci95": [
+            0.10564401918392018,
+            0.11866317680956641
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 404,
+          "matched_units": 404,
+          "method": "Swap",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.044199985889299236,
+          "published_delta_ci95": [
+            -0.07637373256610719,
+            -0.010620309305802919
+          ],
+          "right_units": 404,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.044199985889299236,
+          "strict_delta_ci95": [
+            -0.07637373256610719,
+            -0.010620309305802919
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9498806682577565,
+        "jointly_valid_units": 398,
+        "matched_units": 419,
+        "method": "Swap",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.01023246387651335,
+          "accounting_cost_ratio_ci95": [
+            0.009265771498265164,
+            0.011312480716573847
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 398,
+          "matched_units": 398,
+          "method": "Swap",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.05691755552580295,
+          "published_delta_ci95": [
+            -0.08731193841954152,
+            -0.025353931435117005
+          ],
+          "right_units": 398,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.05691755552580295,
+          "strict_delta_ci95": [
+            -0.08731193841954152,
+            -0.025353931435117005
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9785202863961814,
+        "jointly_valid_units": 410,
+        "matched_units": 419,
+        "method": "Swap",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.17863628525201627,
+          "accounting_cost_ratio_ci95": [
+            0.1710866631502843,
+            0.18601122915215834
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 410,
+          "matched_units": 410,
+          "method": "Swap",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": -0.017998943102096,
+          "published_delta_ci95": [
+            -0.05267060463948244,
+            0.016165099776260797
+          ],
+          "right_units": 410,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.017998943102096,
+          "strict_delta_ci95": [
+            -0.05267060463948244,
+            0.016165099776260797
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9761336515513126,
+        "jointly_valid_units": 409,
+        "matched_units": 419,
+        "method": "Swap",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.013016432416455195,
+          "accounting_cost_ratio_ci95": [
+            0.01198565658003093,
+            0.014043981114117596
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 409,
+          "matched_units": 409,
+          "method": "Swap",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.0596378033929543,
+          "published_delta_ci95": [
+            -0.09152704647187125,
+            -0.0297438004196848
+          ],
+          "right_units": 409,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.0596378033929543,
+          "strict_delta_ci95": [
+            -0.09152704647187125,
+            -0.0297438004196848
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9856801909307876,
+        "jointly_valid_units": 413,
+        "matched_units": 419,
+        "method": "Swap_CoT",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.10849051811389886,
+          "accounting_cost_ratio_ci95": [
+            0.1013699089932798,
+            0.11587135461670117
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 413,
+          "matched_units": 413,
+          "method": "Swap_CoT",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.04016375168880977,
+          "published_delta_ci95": [
+            -0.07338416985990004,
+            -0.007148664708820701
+          ],
+          "right_units": 413,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.04016375168880977,
+          "strict_delta_ci95": [
+            -0.07338416985990004,
+            -0.007148664708820701
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9713603818615751,
+        "jointly_valid_units": 407,
+        "matched_units": 419,
+        "method": "Swap_CoT",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.009114294146767715,
+          "accounting_cost_ratio_ci95": [
+            0.007745623472974429,
+            0.010617055031664348
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 407,
+          "matched_units": 407,
+          "method": "Swap_CoT",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.04177058154291979,
+          "published_delta_ci95": [
+            -0.07261690250675189,
+            -0.012683434395305357
+          ],
+          "right_units": 407,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.04177058154291979,
+          "strict_delta_ci95": [
+            -0.07261690250675189,
+            -0.012683434395305357
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9904534606205251,
+        "jointly_valid_units": 415,
+        "matched_units": 419,
+        "method": "Swap_CoT",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.17510190971432044,
+          "accounting_cost_ratio_ci95": [
+            0.16659231115699463,
+            0.1832791043696698
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 415,
+          "matched_units": 415,
+          "method": "Swap_CoT",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": -0.008380007288425423,
+          "published_delta_ci95": [
+            -0.04284531368261711,
+            0.02767193909492707
+          ],
+          "right_units": 415,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.008380007288425423,
+          "strict_delta_ci95": [
+            -0.04284531368261711,
+            0.02767193909492707
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9880668257756563,
+        "jointly_valid_units": 414,
+        "matched_units": 419,
+        "method": "Swap_CoT",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.012790742965233703,
+          "accounting_cost_ratio_ci95": [
+            0.011873736712225032,
+            0.013729992747551432
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 414,
+          "matched_units": 414,
+          "method": "Swap_CoT",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.056381203337725075,
+          "published_delta_ci95": [
+            -0.08562252964426878,
+            -0.028236660079051384
+          ],
+          "right_units": 414,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.056381203337725075,
+          "strict_delta_ci95": [
+            -0.08562252964426878,
+            -0.028236660079051384
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9713603818615751,
+        "jointly_valid_units": 407,
+        "matched_units": 419,
+        "method": "Vanilla",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.12843962420486996,
+          "accounting_cost_ratio_ci95": [
+            0.12296066480018299,
+            0.1344976369550511
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 407,
+          "matched_units": 407,
+          "method": "Vanilla",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.022916298917257924,
+          "published_delta_ci95": [
+            -0.0465535980309416,
+            0.0009528701139825532
+          ],
+          "right_units": 407,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.022916298917257924,
+          "strict_delta_ci95": [
+            -0.0465535980309416,
+            0.0009528701139825532
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9761336515513126,
+        "jointly_valid_units": 409,
+        "matched_units": 419,
+        "method": "Vanilla",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.017765391095093085,
+          "accounting_cost_ratio_ci95": [
+            0.015507329897749975,
+            0.020061216059648536
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 409,
+          "matched_units": 409,
+          "method": "Vanilla",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.04390603507540082,
+          "published_delta_ci95": [
+            -0.06825540473993098,
+            -0.022856995713565698
+          ],
+          "right_units": 409,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.04390603507540082,
+          "strict_delta_ci95": [
+            -0.06825540473993098,
+            -0.022856995713565698
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9832935560859188,
+        "jointly_valid_units": 412,
+        "matched_units": 419,
+        "method": "Vanilla",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.23182102487001394,
+          "accounting_cost_ratio_ci95": [
+            0.2243321443606102,
+            0.2403361709157049
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 412,
+          "matched_units": 412,
+          "method": "Vanilla",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": 0.0029584456161844343,
+          "published_delta_ci95": [
+            -0.02210084193746218,
+            0.03118550544680168
+          ],
+          "right_units": 412,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": 0.0029584456161844343,
+          "strict_delta_ci95": [
+            -0.02210084193746218,
+            0.03118550544680168
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9832935560859188,
+        "jointly_valid_units": 412,
+        "matched_units": 419,
+        "method": "Vanilla",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.016422710038832746,
+          "accounting_cost_ratio_ci95": [
+            0.01456392385218068,
+            0.018188429432218926
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 412,
+          "matched_units": 412,
+          "method": "Vanilla",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.05258477446763537,
+          "published_delta_ci95": [
+            -0.07867185953392174,
+            -0.02882725821825456
+          ],
+          "right_units": 412,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.05258477446763537,
+          "strict_delta_ci95": [
+            -0.07867185953392174,
+            -0.02882725821825456
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9761336515513126,
+        "jointly_valid_units": 409,
+        "matched_units": 419,
+        "method": "Vanilla_1shot",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.15170909795406423,
+          "accounting_cost_ratio_ci95": [
+            0.1456197132069358,
+            0.1578609335864208
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 409,
+          "matched_units": 409,
+          "method": "Vanilla_1shot",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.06902289764208805,
+          "published_delta_ci95": [
+            -0.10116592612784518,
+            -0.03889763186588525
+          ],
+          "right_units": 409,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.06902289764208805,
+          "strict_delta_ci95": [
+            -0.10116592612784518,
+            -0.03889763186588525
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9761336515513126,
+        "jointly_valid_units": 409,
+        "matched_units": 419,
+        "method": "Vanilla_1shot",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.03002575471843751,
+          "accounting_cost_ratio_ci95": [
+            0.028115267605003116,
+            0.03203666500284365
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 409,
+          "matched_units": 409,
+          "method": "Vanilla_1shot",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.09057943772474666,
+          "published_delta_ci95": [
+            -0.12213722039783252,
+            -0.060700580131157957
+          ],
+          "right_units": 409,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.09057943772474666,
+          "strict_delta_ci95": [
+            -0.12213722039783252,
+            -0.060700580131157957
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9832935560859188,
+        "jointly_valid_units": 412,
+        "matched_units": 419,
+        "method": "Vanilla_1shot",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.3072293823867455,
+          "accounting_cost_ratio_ci95": [
+            0.29722150658610486,
+            0.3170409199868197
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 412,
+          "matched_units": 412,
+          "method": "Vanilla_1shot",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": -0.03681453303878934,
+          "published_delta_ci95": [
+            -0.0675336368754561,
+            -0.005927616595837436
+          ],
+          "right_units": 412,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.03681453303878934,
+          "strict_delta_ci95": [
+            -0.0675336368754561,
+            -0.005927616595837436
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9832935560859188,
+        "jointly_valid_units": 412,
+        "matched_units": 419,
+        "method": "Vanilla_1shot",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.01889361038707475,
+          "accounting_cost_ratio_ci95": [
+            0.01799002580578667,
+            0.01972228333864656
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 412,
+          "matched_units": 412,
+          "method": "Vanilla_1shot",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.09350308412665392,
+          "published_delta_ci95": [
+            -0.125657905509822,
+            -0.06321277786858451
+          ],
+          "right_units": 412,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.09350308412665392,
+          "strict_delta_ci95": [
+            -0.125657905509822,
+            -0.06321277786858451
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9880668257756563,
+        "jointly_valid_units": 414,
+        "matched_units": 419,
+        "method": "Vanilla_2shot",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.16447860523531604,
+          "accounting_cost_ratio_ci95": [
+            0.15520684908561733,
+            0.17224417127010366
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 414,
+          "matched_units": 414,
+          "method": "Vanilla_2shot",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.05112225140011999,
+          "published_delta_ci95": [
+            -0.0828599628550593,
+            -0.01944483311719337
+          ],
+          "right_units": 414,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.05112225140011999,
+          "strict_delta_ci95": [
+            -0.0828599628550593,
+            -0.01944483311719337
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9928400954653938,
+        "jointly_valid_units": 416,
+        "matched_units": 419,
+        "method": "Vanilla_2shot",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.03424426803977793,
+          "accounting_cost_ratio_ci95": [
+            0.03194123886185225,
+            0.036619615596765555
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 416,
+          "matched_units": 416,
+          "method": "Vanilla_2shot",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.08372708119625706,
+          "published_delta_ci95": [
+            -0.12028240848487443,
+            -0.04935790829690896
+          ],
+          "right_units": 416,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.08372708119625706,
+          "strict_delta_ci95": [
+            -0.12028240848487443,
+            -0.04935790829690896
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9928400954653938,
+        "jointly_valid_units": 416,
+        "matched_units": 419,
+        "method": "Vanilla_2shot",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.3688146995918558,
+          "accounting_cost_ratio_ci95": [
+            0.35834665862170895,
+            0.37961550533851857
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 416,
+          "matched_units": 416,
+          "method": "Vanilla_2shot",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": -0.04418858528817522,
+          "published_delta_ci95": [
+            -0.0740822062493297,
+            -0.013253910799491175
+          ],
+          "right_units": 416,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.04418858528817522,
+          "strict_delta_ci95": [
+            -0.0740822062493297,
+            -0.013253910799491175
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9952267303102625,
+        "jointly_valid_units": 417,
+        "matched_units": 419,
+        "method": "Vanilla_2shot",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.02027184626509278,
+          "accounting_cost_ratio_ci95": [
+            0.019592022306981042,
+            0.02094073142830241
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 417,
+          "matched_units": 417,
+          "method": "Vanilla_2shot",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.08477602197692773,
+          "published_delta_ci95": [
+            -0.11939153094195412,
+            -0.05259144990476194
+          ],
+          "right_units": 417,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.08477602197692773,
+          "strict_delta_ci95": [
+            -0.11939153094195412,
+            -0.05259144990476194
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9761336515513126,
+        "jointly_valid_units": 409,
+        "matched_units": 419,
+        "method": "Vanilla_NoRules",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.14477203342816655,
+          "accounting_cost_ratio_ci95": [
+            0.1389794490106306,
+            0.1509406298562836
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 409,
+          "matched_units": 409,
+          "method": "Vanilla_NoRules",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.01396121682988559,
+          "published_delta_ci95": [
+            -0.041168634462056694,
+            0.014796349872548858
+          ],
+          "right_units": 409,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.01396121682988559,
+          "strict_delta_ci95": [
+            -0.041168634462056694,
+            0.014796349872548858
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9785202863961814,
+        "jointly_valid_units": 410,
+        "matched_units": 419,
+        "method": "Vanilla_NoRules",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.021127738787221195,
+          "accounting_cost_ratio_ci95": [
+            0.019813307716141242,
+            0.022492776602674347
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 410,
+          "matched_units": 410,
+          "method": "Vanilla_NoRules",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.05489407017405999,
+          "published_delta_ci95": [
+            -0.08151385444193487,
+            -0.028240670872107177
+          ],
+          "right_units": 410,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.05489407017405999,
+          "strict_delta_ci95": [
+            -0.08151385444193487,
+            -0.028240670872107177
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9832935560859188,
+        "jointly_valid_units": 412,
+        "matched_units": 419,
+        "method": "Vanilla_NoRules",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.2370036346515625,
+          "accounting_cost_ratio_ci95": [
+            0.22976375682999436,
+            0.24395895363144704
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 412,
+          "matched_units": 412,
+          "method": "Vanilla_NoRules",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": -0.0054367692200896645,
+          "published_delta_ci95": [
+            -0.03707620194365614,
+            0.025007086797768318
+          ],
+          "right_units": 412,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.0054367692200896645,
+          "strict_delta_ci95": [
+            -0.03707620194365614,
+            0.025007086797768318
+          ]
+        }
+      },
+      {
+        "benchmark": "llmbar",
+        "coverage": 0.9832935560859188,
+        "jointly_valid_units": 412,
+        "matched_units": 419,
+        "method": "Vanilla_NoRules",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.018470506016426684,
+          "accounting_cost_ratio_ci95": [
+            0.016839509837480737,
+            0.019898928552408653
+          ],
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "left_units": 412,
+          "matched_units": 412,
+          "method": "Vanilla_NoRules",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.06460840766234378,
+          "published_delta_ci95": [
+            -0.09435706657059593,
+            -0.036243740400281554
+          ],
+          "right_units": 412,
+          "strata": [
+            "Adversarial/GPTInst",
+            "Adversarial/GPTOut",
+            "Adversarial/Manual",
+            "Adversarial/Neighbor",
+            "Natural"
+          ],
+          "strict_delta": -0.06460840766234378,
+          "strict_delta_ci95": [
+            -0.09435706657059593,
+            -0.036243740400281554
+          ]
+        }
+      },
+      {
+        "benchmark": "rewardbench2",
+        "coverage": 0.9575523704520397,
+        "jointly_valid_units": 1737,
+        "matched_units": 1814,
+        "method": "fourway",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.10492089165558979,
+          "accounting_cost_ratio_ci95": [
+            0.1024817034851479,
+            0.10729527325136895
+          ],
+          "benchmark": "rewardbench2",
+          "bootstrap_replicates": 2000,
+          "left_units": 1737,
+          "matched_units": 1737,
+          "method": "fourway",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.025947681917159498,
+          "published_delta_ci95": [
+            -0.053529878984412145,
+            0.0008754255425900762
+          ],
+          "right_units": 1737,
+          "strata": [
+            "Factuality",
+            "Focus",
+            "Math",
+            "Precise IF",
+            "Safety",
+            "Ties"
+          ],
+          "strict_delta": -0.025947681917159498,
+          "strict_delta_ci95": [
+            -0.053529878984412145,
+            0.0008754255425900762
+          ]
+        }
+      },
+      {
+        "benchmark": "rewardbench2",
+        "coverage": 0.8781697905181919,
+        "jointly_valid_units": 1593,
+        "matched_units": 1814,
+        "method": "fourway",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.008382765137526334,
+          "accounting_cost_ratio_ci95": [
+            0.00815789717966135,
+            0.008625658818960482
+          ],
+          "benchmark": "rewardbench2",
+          "bootstrap_replicates": 2000,
+          "left_units": 1593,
+          "matched_units": 1593,
+          "method": "fourway",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.10350300479294358,
+          "published_delta_ci95": [
+            -0.13551794605249204,
+            -0.0711861207112254
+          ],
+          "right_units": 1593,
+          "strata": [
+            "Factuality",
+            "Focus",
+            "Math",
+            "Precise IF",
+            "Safety",
+            "Ties"
+          ],
+          "strict_delta": -0.10350300479294358,
+          "strict_delta_ci95": [
+            -0.13551794605249204,
+            -0.0711861207112254
+          ]
+        }
+      },
+      {
+        "benchmark": "rewardbench2",
+        "coverage": 0.9790518191841234,
+        "jointly_valid_units": 1776,
+        "matched_units": 1814,
+        "method": "fourway",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.18589843766109163,
+          "accounting_cost_ratio_ci95": [
+            0.18175235078169888,
+            0.1898616128167242
+          ],
+          "benchmark": "rewardbench2",
+          "bootstrap_replicates": 2000,
+          "left_units": 1776,
+          "matched_units": 1776,
+          "method": "fourway",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": -0.07737402389178784,
+          "published_delta_ci95": [
+            -0.10396503914295914,
+            -0.05116295623401965
+          ],
+          "right_units": 1776,
+          "strata": [
+            "Factuality",
+            "Focus",
+            "Math",
+            "Precise IF",
+            "Safety",
+            "Ties"
+          ],
+          "strict_delta": -0.07737402389178784,
+          "strict_delta_ci95": [
+            -0.10396503914295914,
+            -0.05116295623401965
+          ]
+        }
+      },
+      {
+        "benchmark": "rewardbench2",
+        "coverage": 0.9426681367144433,
+        "jointly_valid_units": 1710,
+        "matched_units": 1814,
+        "method": "fourway",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.00902743500741662,
+          "accounting_cost_ratio_ci95": [
+            0.008764631760655395,
+            0.009307063002037999
+          ],
+          "benchmark": "rewardbench2",
+          "bootstrap_replicates": 2000,
+          "left_units": 1710,
+          "matched_units": 1710,
+          "method": "fourway",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.1194194879485384,
+          "published_delta_ci95": [
+            -0.14473169844631728,
+            -0.09325059256183336
+          ],
+          "right_units": 1710,
+          "strata": [
+            "Factuality",
+            "Focus",
+            "Math",
+            "Precise IF",
+            "Safety",
+            "Ties"
+          ],
+          "strict_delta": -0.1194194879485384,
+          "strict_delta_ci95": [
+            -0.14473169844631728,
+            -0.09325059256183336
+          ]
+        }
+      },
+      {
+        "benchmark": "rewardbench2",
+        "coverage": 0.9002205071664829,
+        "jointly_valid_units": 1633,
+        "matched_units": 1814,
+        "method": "ratings",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.11700724042192438,
+          "accounting_cost_ratio_ci95": [
+            0.11391885526027676,
+            0.11999831869541154
+          ],
+          "benchmark": "rewardbench2",
+          "bootstrap_replicates": 2000,
+          "left_units": 1633,
+          "matched_units": 1633,
+          "method": "ratings",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/deepseek-v4-flash-0731",
+          "published_delta": -0.06568127706532921,
+          "published_delta_ci95": [
+            -0.09001376744860229,
+            -0.039461585663477926
+          ],
+          "right_units": 1633,
+          "strata": [
+            "Factuality",
+            "Focus",
+            "Math",
+            "Precise IF",
+            "Safety",
+            "Ties"
+          ],
+          "strict_delta": -0.06568127706532921,
+          "strict_delta_ci95": [
+            -0.09001376744860229,
+            -0.039461585663477926
+          ]
+        }
+      },
+      {
+        "benchmark": "rewardbench2",
+        "coverage": 0.28059536934950385,
+        "jointly_valid_units": 509,
+        "matched_units": 1814,
+        "method": "ratings",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/glm-5p3",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.0058448403607212285,
+          "accounting_cost_ratio_ci95": [
+            0.00564059158181062,
+            0.0060476525759042095
+          ],
+          "benchmark": "rewardbench2",
+          "bootstrap_replicates": 2000,
+          "left_units": 509,
+          "matched_units": 509,
+          "method": "ratings",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/glm-5p3",
+          "published_delta": -0.1554858792543597,
+          "published_delta_ci95": [
+            -0.1988972569731678,
+            -0.11158151125362768
+          ],
+          "right_units": 509,
+          "strata": [
+            "Factuality",
+            "Focus",
+            "Math",
+            "Precise IF",
+            "Safety",
+            "Ties"
+          ],
+          "strict_delta": -0.1554858792543597,
+          "strict_delta_ci95": [
+            -0.1988972569731678,
+            -0.11158151125362768
+          ]
+        }
+      },
+      {
+        "benchmark": "rewardbench2",
+        "coverage": 0.976295479603087,
+        "jointly_valid_units": 1771,
+        "matched_units": 1814,
+        "method": "ratings",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.17791692505119047,
+          "accounting_cost_ratio_ci95": [
+            0.17523975661549374,
+            0.18045515805825113
+          ],
+          "benchmark": "rewardbench2",
+          "bootstrap_replicates": 2000,
+          "left_units": 1771,
+          "matched_units": 1771,
+          "method": "ratings",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/gpt-oss-120b",
+          "published_delta": -0.11350369686540751,
+          "published_delta_ci95": [
+            -0.1387731041395689,
+            -0.08834254476908023
+          ],
+          "right_units": 1771,
+          "strata": [
+            "Factuality",
+            "Focus",
+            "Math",
+            "Precise IF",
+            "Safety",
+            "Ties"
+          ],
+          "strict_delta": -0.11350369686540751,
+          "strict_delta_ci95": [
+            -0.1387731041395689,
+            -0.08834254476908023
+          ]
+        }
+      },
+      {
+        "benchmark": "rewardbench2",
+        "coverage": 0.9658213891951488,
+        "jointly_valid_units": 1752,
+        "matched_units": 1814,
+        "method": "ratings",
+        "model_a": "jev-latest",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "paired": {
+          "accounting_cost_ratio_a_over_b": 0.007904411073815884,
+          "accounting_cost_ratio_ci95": [
+            0.007712212353600675,
+            0.008098975647495567
+          ],
+          "benchmark": "rewardbench2",
+          "bootstrap_replicates": 2000,
+          "left_units": 1752,
+          "matched_units": 1752,
+          "method": "ratings",
+          "model_a": "jev-latest",
+          "model_b": "accounts/fireworks/models/qwen3p8-max",
+          "published_delta": -0.1453242215904475,
+          "published_delta_ci95": [
+            -0.17062983648842633,
+            -0.12081446210282211
+          ],
+          "right_units": 1752,
+          "strata": [
+            "Factuality",
+            "Focus",
+            "Math",
+            "Precise IF",
+            "Safety",
+            "Ties"
+          ],
+          "strict_delta": -0.1453242215904475,
+          "strict_delta_ci95": [
+            -0.17062983648842633,
+            -0.12081446210282211
+          ]
+        }
+      }
+    ]
+  }
+}

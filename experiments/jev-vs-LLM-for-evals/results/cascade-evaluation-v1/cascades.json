@@ -1,0 +1,334 @@
+{
+  "projection": "numeric-and-machine-identifiers-v1",
+  "source_sha256": "50463b69cc35cc163f66522c0e75372ff7c126cec2f93a0b84d48dca25d4204c",
+  "data": [
+    {
+      "acceptance_coverage": 0.631578947368421,
+      "accepted": 324,
+      "comparison": "judgebench/vanilla/accounts/fireworks/models/gpt-oss-120b",
+      "fallback_published_score": 0.7680311890838205,
+      "fallback_strict_score": 0.7641325536062378,
+      "held_out_units": 513,
+      "paired": {
+        "accounting_cost_ratio_a_over_b": 0.5630831707811306,
+        "accounting_cost_ratio_ci95": [
+          0.5064924346024154,
+          0.6194920231926945
+        ],
+        "benchmark": "judgebench",
+        "bootstrap_replicates": 2000,
+        "left_units": 513,
+        "matched_units": 513,
+        "method": "vanilla",
+        "model_a": "jev-first/accounts/fireworks/models/gpt-oss-120b",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "published_delta": 0.03508771929824561,
+        "published_delta_ci95": [
+          0.009746588693957114,
+          0.06237816764132553
+        ],
+        "right_units": 513,
+        "strata": [
+          "claude/livebench-math",
+          "claude/livebench-reasoning",
+          "claude/livecodebench",
+          "claude/mmlu-pro",
+          "gpt/livebench-math",
+          "gpt/livebench-reasoning",
+          "gpt/livecodebench",
+          "gpt/mmlu-pro"
+        ],
+        "strict_delta": 0.037037037037037035,
+        "strict_delta_ci95": [
+          0.011695906432748537,
+          0.06432748538011696
+        ]
+      },
+      "published_score": 0.8031189083820662,
+      "resources": [
+        {
+          "accounting_usd": 0.4335343919999999,
+          "accounting_usd_per_job": 0.0008450962807017542,
+          "benchmark": "judgebench",
+          "cached_input_tokens": 37714,
+          "estimated_total_usd": null,
+          "helper_accounting_usd": 0,
+          "input_tokens": 2294765,
+          "input_tokens_per_job": 4473.2261208577,
+          "jobs": 513,
+          "known_input_usd": 0.1458596280000001,
+          "known_output_usd": 0.2802348,
+          "known_total_usd": 0.4260944279999999,
+          "method": "vanilla",
+          "model": "jev-first/accounts/fireworks/models/gpt-oss-120b",
+          "native_wall_p50_s": 0.335644602,
+          "native_wall_p95_s": 29.874836479,
+          "output_tokens": 505628,
+          "output_tokens_per_job": 985.6296296296297,
+          "request_p50_s": 0.140353513,
+          "request_p95_s": 11.1140463032,
+          "retained_unknown_cost_usd": 0.007439963999999966,
+          "strict_score": 0.8011695906432748,
+          "strict_subsets": {
+            "claude/livebench-math": 0.8333333333333334,
+            "claude/livecodebench": 0.7272727272727273,
+            "claude/mmlu-pro": 0.7709923664122137,
+            "gpt/livebench-math": 0.8913043478260869,
+            "gpt/livecodebench": 0.9142857142857143,
+            "gpt/mmlu-pro": 0.7692307692307693
+          },
+          "units": 513,
+          "unknown_cost_attempts": 24,
+          "valid_jobs": 512,
+          "valid_order_agreement": 0.9473684210526315
+        }
+      ],
+      "strict_score": 0.8011695906432748,
+      "threshold": 0.69
+    },
+    {
+      "acceptance_coverage": 0.4405458089668616,
+      "accepted": 226,
+      "comparison": "judgebench/vanilla/accounts/fireworks/models/qwen3p8-max",
+      "fallback_published_score": 0.9025341130604289,
+      "fallback_strict_score": 0.8771929824561404,
+      "held_out_units": 513,
+      "paired": {
+        "accounting_cost_ratio_a_over_b": 0.6594355988776914,
+        "accounting_cost_ratio_ci95": [
+          0.6028274516161567,
+          0.7131731661023069
+        ],
+        "benchmark": "judgebench",
+        "bootstrap_replicates": 2000,
+        "left_units": 513,
+        "matched_units": 513,
+        "method": "vanilla",
+        "model_a": "jev-first/accounts/fireworks/models/qwen3p8-max",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "published_delta": -0.015594541910331383,
+        "published_delta_ci95": [
+          -0.03508771929824561,
+          0.003898635477582846
+        ],
+        "right_units": 513,
+        "strata": [
+          "claude/livebench-math",
+          "claude/livebench-reasoning",
+          "claude/livecodebench",
+          "claude/mmlu-pro",
+          "gpt/livebench-math",
+          "gpt/livebench-reasoning",
+          "gpt/livecodebench",
+          "gpt/mmlu-pro"
+        ],
+        "strict_delta": -0.007797270955165692,
+        "strict_delta_ci95": [
+          -0.02729044834307992,
+          0.011695906432748537
+        ]
+      },
+      "published_score": 0.8869395711500974,
+      "resources": [
+        {
+          "accounting_usd": 8.504672831999997,
+          "accounting_usd_per_job": 0.016578309614035083,
+          "benchmark": "judgebench",
+          "cached_input_tokens": 2203,
+          "estimated_total_usd": null,
+          "helper_accounting_usd": 0,
+          "input_tokens": 2594637,
+          "input_tokens_per_job": 5057.771929824561,
+          "jobs": 513,
+          "known_input_usd": 1.6816188679999997,
+          "known_output_usd": 6.484986000000003,
+          "known_total_usd": 8.166604867999997,
+          "method": "vanilla",
+          "model": "jev-first/accounts/fireworks/models/qwen3p8-max",
+          "native_wall_p50_s": 14.823049473,
+          "native_wall_p95_s": 191.49072513079986,
+          "output_tokens": 1119401,
+          "output_tokens_per_job": 2182.0682261208576,
+          "request_p50_s": 0.156898208,
+          "request_p95_s": 71.92707388539998,
+          "retained_unknown_cost_usd": 0.3380679640000004,
+          "strict_score": 0.8693957115009747,
+          "strict_subsets": {
+            "claude/livebench-math": 0.9583333333333334,
+            "claude/livecodebench": 0.9090909090909091,
+            "claude/mmlu-pro": 0.8015267175572519,
+            "gpt/livebench-math": 0.8695652173913043,
+            "gpt/livecodebench": 0.9428571428571428,
+            "gpt/mmlu-pro": 0.8615384615384616
+          },
+          "units": 513,
+          "unknown_cost_attempts": 29,
+          "valid_jobs": 491,
+          "valid_order_agreement": 0.9454191033138402
+        }
+      ],
+      "strict_score": 0.8693957115009747,
+      "threshold": 0.83
+    },
+    {
+      "acceptance_coverage": 0.9107692307692308,
+      "accepted": 296,
+      "comparison": "llmbar/Vanilla/accounts/fireworks/models/gpt-oss-120b",
+      "fallback_published_score": 0.8738458698404965,
+      "fallback_strict_score": 0.8738458698404965,
+      "held_out_units": 325,
+      "paired": {
+        "accounting_cost_ratio_a_over_b": 0.3558502786582129,
+        "accounting_cost_ratio_ci95": [
+          0.3118490223806405,
+          0.4084833843181999
+        ],
+        "benchmark": "llmbar",
+        "bootstrap_replicates": 2000,
+        "left_units": 325,
+        "matched_units": 325,
+        "method": "Vanilla",
+        "model_a": "jev-first/accounts/fireworks/models/gpt-oss-120b",
+        "model_b": "accounts/fireworks/models/gpt-oss-120b",
+        "published_delta": 0.01116777052898165,
+        "published_delta_ci95": [
+          -0.01297417578781781,
+          0.038085160759348986
+        ],
+        "right_units": 325,
+        "strata": [
+          "Adversarial/GPTInst",
+          "Adversarial/GPTOut",
+          "Adversarial/Manual",
+          "Adversarial/Neighbor",
+          "Natural"
+        ],
+        "strict_delta": 0.01116777052898165,
+        "strict_delta_ci95": [
+          -0.01297417578781781,
+          0.038085160759348986
+        ]
+      },
+      "published_score": 0.8850136403694782,
+      "resources": [
+        {
+          "accounting_usd": 0.040452911999999945,
+          "accounting_usd_per_job": 0.0001244704984615383,
+          "benchmark": "llmbar",
+          "cached_input_tokens": 9248,
+          "estimated_total_usd": null,
+          "helper_accounting_usd": 0,
+          "input_tokens": 639712,
+          "input_tokens_per_job": 1968.3446153846153,
+          "jobs": 325,
+          "known_input_usd": 0.029071967999999997,
+          "known_output_usd": 0.007271999999999999,
+          "known_total_usd": 0.036343967999999956,
+          "method": "Vanilla",
+          "model": "jev-first/accounts/fireworks/models/gpt-oss-120b",
+          "native_wall_p50_s": 0.264120027,
+          "native_wall_p95_s": 2.965341121600002,
+          "output_tokens": 36364,
+          "output_tokens_per_job": 111.88923076923076,
+          "request_p50_s": 0.124423652,
+          "request_p95_s": 0.9995936366000001,
+          "retained_unknown_cost_usd": 0.004108943999999989,
+          "strict_score": 0.8850136403694782,
+          "strict_subsets": {
+            "Adversarial/GPTInst": 0.9444444444444444,
+            "Adversarial/GPTOut": 0.7941176470588235,
+            "Adversarial/Manual": 0.9024390243902439,
+            "Adversarial/Neighbor": 0.839622641509434,
+            "Natural": 0.9444444444444444
+          },
+          "units": 325,
+          "unknown_cost_attempts": 23,
+          "valid_jobs": 325,
+          "valid_order_agreement": 0.9876923076923076
+        }
+      ],
+      "strict_score": 0.8850136403694782,
+      "threshold": 0.51
+    },
+    {
+      "acceptance_coverage": 0.9107692307692308,
+      "accepted": 296,
+      "comparison": "llmbar/Vanilla/accounts/fireworks/models/qwen3p8-max",
+      "fallback_published_score": 0.928516568462022,
+      "fallback_strict_score": 0.928516568462022,
+      "held_out_units": 325,
+      "paired": {
+        "accounting_cost_ratio_a_over_b": 0.12220953795042644,
+        "accounting_cost_ratio_ci95": [
+          0.08609403633560553,
+          0.16458486008309825
+        ],
+        "benchmark": "llmbar",
+        "bootstrap_replicates": 2000,
+        "left_units": 325,
+        "matched_units": 325,
+        "method": "Vanilla",
+        "model_a": "jev-first/accounts/fireworks/models/qwen3p8-max",
+        "model_b": "accounts/fireworks/models/qwen3p8-max",
+        "published_delta": -0.03522817164908608,
+        "published_delta_ci95": [
+          -0.06186000142118513,
+          -0.010767260443830872
+        ],
+        "right_units": 325,
+        "strata": [
+          "Adversarial/GPTInst",
+          "Adversarial/GPTOut",
+          "Adversarial/Manual",
+          "Adversarial/Neighbor",
+          "Natural"
+        ],
+        "strict_delta": -0.03522817164908608,
+        "strict_delta_ci95": [
+          -0.06186000142118513,
+          -0.010767260443830872
+        ]
+      },
+      "published_score": 0.8932883968129359,
+      "resources": [
+        {
+          "accounting_usd": 0.18107619199999994,
+          "accounting_usd_per_job": 0.0005571575138461536,
+          "benchmark": "llmbar",
+          "cached_input_tokens": 0,
+          "estimated_total_usd": null,
+          "helper_accounting_usd": 0,
+          "input_tokens": 639668,
+          "input_tokens_per_job": 1968.2092307692308,
+          "jobs": 325,
+          "known_input_usd": 0.08937324800000004,
+          "known_output_usd": 0.08759399999999999,
+          "known_total_usd": 0.17696724799999994,
+          "method": "Vanilla",
+          "model": "jev-first/accounts/fireworks/models/qwen3p8-max",
+          "native_wall_p50_s": 0.264120027,
+          "native_wall_p95_s": 9.776246788000005,
+          "output_tokens": 38843,
+          "output_tokens_per_job": 119.51692307692308,
+          "request_p50_s": 0.124423652,
+          "request_p95_s": 3.7902852368,
+          "retained_unknown_cost_usd": 0.004108944000000003,
+          "strict_score": 0.8932883968129359,
+          "strict_subsets": {
+            "Adversarial/GPTInst": 0.9513888888888888,
+            "Adversarial/GPTOut": 0.7794117647058824,
+            "Adversarial/Manual": 0.9024390243902439,
+            "Adversarial/Neighbor": 0.8679245283018868,
+            "Natural": 0.9652777777777778
+          },
+          "units": 325,
+          "unknown_cost_attempts": 23,
+          "valid_jobs": 325,
+          "valid_order_agreement": 0.9846153846153847
+        }
+      ],
+      "strict_score": 0.8932883968129359,
+      "threshold": 0.51
+    }
+  ]
+}
