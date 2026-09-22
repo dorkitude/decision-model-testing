@@ -1,0 +1,162 @@
+{
+  "projection": "numeric-and-machine-identifiers-v1",
+  "source_sha256": "cd35dd3a23ba86c3a7a22ac3a2d27c00c3a2037932f0dc82245815eac75fb8d3",
+  "data": [
+    {
+      "agreement_with_deepseek": {
+        "baseline": 89,
+        "jev_filtered": 89
+      },
+      "baseline_only_correct": 7,
+      "complete": true,
+      "context_maxima": {
+        "proxy_tokens": 2841,
+        "serialized_bytes": 11808
+      },
+      "disagreements": [
+        {
+          "arm": "baseline",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "jev_filtered",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "jev_filtered",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "baseline",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "jev_filtered",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "baseline",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "baseline",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "jev_filtered",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "baseline",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "jev_filtered",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "baseline",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "baseline",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "jev_filtered",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "jev_filtered",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "baseline",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "baseline",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "baseline",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "jev_filtered",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "jev_filtered",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "jev_filtered",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "baseline",
+          "deepseek_correct": true,
+          "jev_correct": false
+        },
+        {
+          "arm": "jev_filtered",
+          "deepseek_correct": true,
+          "jev_correct": false
+        }
+      ],
+      "executions": [
+        {
+          "command_wall_seconds_before_report": 13.014625709,
+          "id": "execution-001",
+          "new_requests": 200,
+          "scoring_wall_seconds": 12.740910125,
+          "started_utc": "2026-09-18T10:02:25.664293Z",
+          "workers": 8
+        }
+      ],
+      "failed_attempts": 0,
+      "filtered_minus_baseline_pp": -1,
+      "filtered_only_correct": 6,
+      "id": "jev-rescore-summary",
+      "judgments": 200,
+      "model": "jev-1.13.0",
+      "paired_cluster_bootstrap_95_percent_pp": [
+        -8,
+        6
+      ],
+      "scores": {
+        "baseline": 85,
+        "jev_filtered": 84
+      },
+      "usage": {
+        "input_tokens": 258062,
+        "output_tokens": 6200,
+        "requests": 200,
+        "requests_without_usage": 0,
+        "summed_api_seconds": 29.43398621099999
+      },
+      "workers": 8
+    }
+  ]
+}

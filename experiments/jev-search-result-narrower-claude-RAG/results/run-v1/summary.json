@@ -1,0 +1,170 @@
+{
+  "projection": "numeric-and-machine-identifiers-v1",
+  "source_sha256": "a44caa6f74849667bc0776b754fb2dbd69be63ed386dbcf8b88f3e6f3d4c34b0",
+  "data": [
+    {
+      "actual_request_totals_by_phase": {
+        "embedding": {
+          "input_tokens": 5599,
+          "output_tokens": 0,
+          "requests": 104,
+          "requests_without_usage": 0,
+          "summed_api_seconds": 19.497167036000004
+        },
+        "filter": {
+          "input_tokens": 1808779,
+          "output_tokens": 36340,
+          "requests": 415,
+          "requests_without_usage": 0,
+          "summed_api_seconds": 78.98601384700005
+        },
+        "judge-deepseek": {
+          "input_tokens": 199435,
+          "output_tokens": 1200,
+          "requests": 200,
+          "requests_without_usage": 0,
+          "summed_api_seconds": 236.02878188299997
+        },
+        "preflight": {
+          "input_tokens": 1789,
+          "output_tokens": 147,
+          "requests": 5,
+          "requests_without_usage": 1,
+          "summed_api_seconds": 3.986773167
+        },
+        "rerank": {
+          "input_tokens": 3555951,
+          "output_tokens": 0,
+          "requests": 103,
+          "requests_without_usage": 0,
+          "summed_api_seconds": 107.396918544
+        },
+        "retrieval": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "requests": 206,
+          "requests_without_usage": 206,
+          "summed_api_seconds": 17.093337629
+        }
+      },
+      "complete": true,
+      "filtering": {
+        "calls": 102,
+        "initial_gold_source_hit_baseline": 97,
+        "initial_gold_source_hit_filtered": 97,
+        "pages": 415,
+        "results_kept": 323,
+        "results_scored": 2040,
+        "retained_fraction": 0.15833333333333333
+      },
+      "id": "summary",
+      "jev_context": {
+        "guard_passed": true,
+        "max_proxy_tokens": 5980,
+        "max_serialized_bytes": 24000
+      },
+      "judge_agreement": {},
+      "judgments": 200,
+      "paired_comparisons": [
+        {
+          "baseline_only_correct": 1,
+          "cluster": "source_document_id",
+          "cluster_bootstrap_95_percent_pp": [
+            -3,
+            0
+          ],
+          "filtered_minus_baseline_pp": -1,
+          "filtered_only_correct": 0,
+          "judge": "deepseek",
+          "resamples": 5000
+        }
+      ],
+      "resources": {
+        "baseline": {
+          "filter": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "requests": 0,
+            "requests_without_usage": 0,
+            "summed_api_seconds": 0
+          },
+          "mean_search_calls": 1.02,
+          "qa": {
+            "input_tokens": 2609669,
+            "output_tokens": 34572,
+            "requests": 102,
+            "requests_without_usage": 0,
+            "summed_api_seconds": 589.9770639150001
+          },
+          "returned_chunks": 2040,
+          "returned_context_proxy_tokens": 1410588,
+          "search": {
+            "input_tokens": 3532587,
+            "output_tokens": 0,
+            "requests": 408,
+            "requests_without_usage": 204,
+            "summed_api_seconds": 142.16935145899993
+          },
+          "search_calls": 102,
+          "total": {
+            "input_tokens": 6142256,
+            "output_tokens": 34572,
+            "requests": 510,
+            "requests_without_usage": 204,
+            "summed_api_seconds": 732.1464153739992
+          }
+        },
+        "jev_filtered": {
+          "filter": {
+            "input_tokens": 1808779,
+            "output_tokens": 36340,
+            "requests": 415,
+            "requests_without_usage": 0,
+            "summed_api_seconds": 78.98601384700005
+          },
+          "mean_search_calls": 1.02,
+          "qa": {
+            "input_tokens": 542162,
+            "output_tokens": 30673,
+            "requests": 102,
+            "requests_without_usage": 0,
+            "summed_api_seconds": 486.2482584590002
+          },
+          "returned_chunks": 323,
+          "returned_context_proxy_tokens": 218424,
+          "search": {
+            "input_tokens": 3528205,
+            "output_tokens": 0,
+            "requests": 408,
+            "requests_without_usage": 204,
+            "summed_api_seconds": 142.48992270899996
+          },
+          "search_calls": 102,
+          "total": {
+            "input_tokens": 5879146,
+            "output_tokens": 67013,
+            "requests": 925,
+            "requests_without_usage": 204,
+            "summed_api_seconds": 707.7241950150005
+          }
+        }
+      },
+      "scores": [
+        {
+          "accuracy": 0.96,
+          "arm": "baseline",
+          "correct": 96,
+          "judge": "deepseek",
+          "n": 100
+        },
+        {
+          "accuracy": 0.95,
+          "arm": "jev_filtered",
+          "correct": 95,
+          "judge": "deepseek",
+          "n": 100
+        }
+      ]
+    }
+  ]
+}

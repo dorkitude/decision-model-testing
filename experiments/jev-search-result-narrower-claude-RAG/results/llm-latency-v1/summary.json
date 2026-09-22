@@ -1,0 +1,33 @@
+{
+  "projection": "numeric-and-machine-identifiers-v1",
+  "source_sha256": "e119780cc43dbcd9bf2d11cea716afaed337de0c3bce5d4999f09a97b0513285",
+  "data": [
+    {
+      "id": "llm-question-to-final-answer-latency",
+      "pipelines": {
+        "baseline": {
+          "n": 100,
+          "mean_s": 5.926866898309999,
+          "median_s": 5.03338125,
+          "p95_s": 10.738680166
+        },
+        "threshold": {
+          "n": 100,
+          "mean_s": 4.8922030346000005,
+          "median_s": 4.231059500000001,
+          "p95_s": 8.848711542
+        },
+        "categorical": {
+          "n": 100,
+          "mean_s": 5.38392019376,
+          "median_s": 4.201299625,
+          "p95_s": 12.477016125
+        }
+      },
+      "source_sha256": {
+        "runs/scored-v1/requests.jsonl": "08e498afef2abb7469e4147d8268b7b3aa5189ab91d7cc14c99d75fb30a96e6e",
+        "runs/categorical-v1/requests.jsonl": "7855bd3cae3412a57ecdaabccbcb32665978d1e48cbb5ec880877f50422f4b6d"
+      }
+    }
+  ]
+}
