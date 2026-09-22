@@ -1,12 +1,19 @@
 # Decision Model Testing
 
-General-purpose decision models are a game changer, like a fuzzy switch and a fuzzy scoring system that can be driven by natural language prompts.
+## Intro
+
+General-purpose decision models (TypeSafe Jev, and the *many* more to follow) are a game changer.  They work like a fuzzy switch or a fuzzy scoring system that can be driven by natural language prompts (hence "fuzzy"), which is a significant part of how we use LLMs today in the knowledge and context engineering world.  LLMs are quite expensive for this kind of stuff!
+
+But my question was, how good is Jev really?  Where is it already useful?  How can we begin empirically proving where it should replace LLMs today, and where future versions should replace LLMs tomorrow?
+
+I've been experimenting daily to answer these questions for myself.  Many of my experiments are on private data, but not all.  This repo is where I'll share the latter set.
+
+
+## Get to it already.
 
 This repo contains exports of my experiments with general-purpose decision models (i.e. TypeSafe Jev).  Mostly I'm comparing them to the performance and cost of LLMs, NLP models, and specialized decision models (rerankers, etc.).
 
 I'm not packing all the data into this public repo due to licensing questions, but my goal is to make reproduction straightforward.  The datasets are all freely available and I've included links to them where possible.
-
-
 
 Each experiment is a self-contained subfolder of `experiments/`:
 
