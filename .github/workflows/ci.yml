@@ -1,0 +1,24 @@
+name: Offline checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        experiment: [jev-vs-LLM-for-evals, jev-search-result-narrower, jev-search-result-narrower-claude-RAG, jev-vs-rerankers]
+    defaults:
+      run:
+        working-directory: experiments/${{ matrix.experiment }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-go@40f1582b2485089dde7abd97c1529aa768e1baff
+        with:
+          go-version: '1.27.1'
+          cache-dependency-path: experiments/${{ matrix.experiment }}/go.sum
+      - run: go test -race ./...
+      - run: go vet ./...
+      - run: go build ./...
