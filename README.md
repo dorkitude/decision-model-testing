@@ -1,13 +1,16 @@
----
-title: Decision Model Revolution
-type: public-release-documentation
----
+# Decision Model Testing
 
-# Decision Model Revolution
+General-purpose decision models are a game changer, like a fuzzy switch and a fuzzy scoring system that can be driven by natural language prompts.
 
-Experiments testing specialized decision models against LLM and retrieval baselines. Each experiment is a self-contained subfolder of `experiments/`:
+This repo contains exports of my experiments with general-purpose decision models (i.e. TypeSafe Jev).  Mostly I'm comparing them to the performance and cost of LLMs, NLP models, and specialized decision models (rerankers, etc.).
 
-- [Jev vs. LLM judges](experiments/jev-vs-LLM-for-evals/README.md): benchmark-label agreement, failures, resources, and selective routing.
+I'm not packing all the data into this public repo due to licensing questions, but my goal is to make reproduction straightforward.  The datasets are all freely available and I've included links to them where possible.
+
+
+
+Each experiment is a self-contained subfolder of `experiments/`:
+
+- [Jev vs. LLM judges for evals](experiments/jev-vs-LLM-for-evals/README.md):  a sort of eval-of-evals, weighing Jev against a variety of open models for typical eval usecases.
 - [Kimi RAG filtering](experiments/jev-search-result-narrower/README.md): can Jev reduce answering costs?
 - [Claude RAG filtering](experiments/jev-search-result-narrower-claude-RAG/README.md): probability and categorical filtering before Claude.
 - [Jev vs. rerankers](experiments/jev-vs-rerankers/README.md): passage ordering against human relevance judgments.
