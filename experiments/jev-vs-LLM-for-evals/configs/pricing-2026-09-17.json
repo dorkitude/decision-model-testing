@@ -1,0 +1,12 @@
+{
+  "currency": "USD",
+  "checked_utc": "2026-09-17",
+  "basis": "Published Standard online list prices; estimates, not reconciled invoices. Account credits, negotiated rates and taxes excluded. Reasoning tokens are included in completion tokens, not added twice.",
+  "models": {
+    "jev-latest": {"input_per_million": 0.042, "cached_input_per_million": 0.042, "output_per_million": 0, "source": "https://typesafe.ai/blog/introducing-system-one-models-and-jev", "note": "TypeSafe advertises free output; output usage is still recorded."},
+    "accounts/fireworks/models/gpt-oss-120b": {"input_per_million": 0.15, "cached_input_per_million": 0.015, "output_per_million": 0.60, "source": "https://docs.fireworks.ai/serverless/pricing"},
+    "accounts/fireworks/models/deepseek-v4-flash-0731": {"input_per_million": 0.22, "cached_input_per_million": 0.007, "output_per_million": 0.66, "source": "https://docs.fireworks.ai/serverless/pricing"},
+    "accounts/fireworks/models/qwen3p8-max": {"input_per_million": 2, "cached_input_per_million": 0.25, "output_per_million": 6, "source": "https://docs.fireworks.ai/serverless/pricing"},
+    "accounts/fireworks/models/glm-5p3": {"input_per_million": 1.40, "cached_input_per_million": 0.26, "output_per_million": 4.40, "source": "https://docs.fireworks.ai/serverless/pricing"}
+  }
+}

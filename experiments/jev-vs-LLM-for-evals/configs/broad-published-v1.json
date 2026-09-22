@@ -1,0 +1,46 @@
+{
+  "seed": 20260917,
+  "models": [
+    "jev-latest",
+    "accounts/fireworks/models/gpt-oss-120b",
+    "accounts/fireworks/models/deepseek-v4-flash-0731",
+    "accounts/fireworks/models/qwen3p8-max",
+    "accounts/fireworks/models/glm-5p3"
+  ],
+  "helper_model": "accounts/fireworks/models/gpt-oss-120b",
+  "concurrency": 32,
+  "max_requests": 200000,
+  "timeout_s": 180,
+  "max_tokens_floor": 8192,
+  "jev_rating_mode": "modal",
+  "per_subset": null,
+  "benchmarks": {
+    "llmbar": [
+      "CoT",
+      "Metrics",
+      "Metrics_Reference",
+      "Rating",
+      "Rating_Metrics",
+      "Rating_Metrics_Reference",
+      "Rating_NoRules",
+      "Rating_Reference",
+      "Reference",
+      "Swap",
+      "Swap_CoT",
+      "Vanilla",
+      "Vanilla_1shot",
+      "Vanilla_2shot",
+      "Vanilla_NoRules"
+    ],
+    "judgebench": [
+      "vanilla",
+      "arena_hard"
+    ],
+    "rewardbench2": [
+      "fourway",
+      "ratings"
+    ]
+  },
+  "max_estimated_usd": 500,
+  "shard_jobs": 500
+}

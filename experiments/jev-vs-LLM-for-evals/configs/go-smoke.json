@@ -1,0 +1,27 @@
+{
+  "seed": 20260917,
+  "models": [
+    "jev-latest",
+    "accounts/fireworks/models/gpt-oss-120b"
+  ],
+  "helper_model": "accounts/fireworks/models/gpt-oss-120b",
+  "concurrency": 2,
+  "max_requests": 40,
+  "timeout_s": 90,
+  "max_tokens_floor": 8192,
+  "jev_rating_mode": "modal",
+  "per_subset": 1,
+  "benchmarks": {
+    "llmbar": [
+      "Vanilla",
+      "Metrics",
+      "Rating"
+    ],
+    "judgebench": [
+      "vanilla"
+    ],
+    "rewardbench2": [
+      "fourway"
+    ]
+  }
+}
