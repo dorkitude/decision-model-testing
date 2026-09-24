@@ -21,6 +21,8 @@ Each experiment is a self-contained subfolder of `experiments/`:
 - [Kimi RAG filtering](experiments/jev-search-result-narrower/README.md): can Jev reduce answering costs?
 - [Claude RAG filtering](experiments/jev-search-result-narrower-claude-RAG/README.md): probability and categorical filtering before Claude.
 - [Jev vs. rerankers](experiments/jev-vs-rerankers/README.md): passage ordering against human relevance judgments.
+- [Jev to narrow web search results](https://github.com/dorkitude/webctl): have Jev trim search results based on the goal of the original query;  and have it trim the content too.  This one got out of hand, and I realized it was immediately useful to others anyway, so I made it into a reusable CLI (MIT-licensed)
+- 
 
 This distribution contains code, original prompts, synthetic tests and aggregate measurements. Datasets, source-bearing answers/receipts, and archives are excluded.
 
