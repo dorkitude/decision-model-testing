@@ -5,6 +5,21 @@ type: agent-instructions
 
 # Repository instructions
 
+## Private workspace, public release
+
+This research uses two repositories:
+
+- [`dorkitude/decision-model-testing-private`](https://github.com/dorkitude/decision-model-testing-private) (private) is the working archive. Do all experiment design, code, live runs, iterative commits, raw receipts, datasets, and source-bearing evidence here. Start new experiments here.
+- [`dorkitude/decision-model-testing`](https://github.com/dorkitude/decision-model-testing) (public) is the curated release. It receives only reviewed exports of completed experiments, committed with clean, fresh history.
+
+Rules:
+
+- Never push, merge, or rebase private history into the public repository, add one as a remote of the other, or change either repository's visibility.
+- Publish an experiment only when it is complete: add its files to [`publication/allowlist.json`](publication/allowlist.json), add reviewed overlays for anything that needs rewriting, run the exporter and audit described in [`PUBLIC_EXPORT.md`](PUBLIC_EXPORT.md), review the candidate, and commit it to the public repository as a clean commit.
+- Exclude underlying data unless redistribution rights are confirmed in writing: datasets, source text, source-derived answers or chunks, full request/response receipts, and third-party templates or provider outputs with unclear terms. Publish code, original prompts, synthetic tests, aggregate measurements, and acquisition instructions so readers can reproduce the work from upstream sources.
+- Record redistribution questions in this repository's issues before export.
+- If the public repository is edited directly, bring those edits back into the private source or its overlay before the next export so they are not overwritten.
+
 ## Structure and navigation
 
 - Put every experiment in its own descriptive folder under `experiments/`.
