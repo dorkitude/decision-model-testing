@@ -1,0 +1,278 @@
+{
+  "data": {
+    "cost_estimates": [
+      {
+        "baseline_usd_run_v1": "5.0632299",
+        "break_even_decisions_usd_per_mtok_vs_jev": "0.076978",
+        "decisions_filter_usd": "0.1848303",
+        "decisions_filtered_usd": "1.6934179",
+        "decisions_filtered_usd_per_question": "0.016934179",
+        "decisions_usd_per_mtok_input": "0.1",
+        "id": "primary",
+        "jev_filtered_usd_run_v1": "1.650866726"
+      },
+      {
+        "baseline_usd_run_v1": "5.0632299",
+        "break_even_decisions_usd_per_mtok_vs_jev": "0.092894",
+        "decisions_filter_usd": "0.1848303",
+        "decisions_filtered_usd": "1.6946977",
+        "decisions_filtered_usd_per_question": "0.016946977",
+        "decisions_usd_per_mtok_input": "0.1",
+        "id": "no_cache",
+        "jev_filtered_usd_run_v1": "1.681563026"
+      },
+      {
+        "baseline_usd_run_v1": "5.0178888",
+        "break_even_decisions_usd_per_mtok_vs_jev": "0.076982",
+        "decisions_filter_usd": "0.1848303",
+        "decisions_filtered_usd": "1.6477054",
+        "decisions_filtered_usd_per_question": "0.016477054",
+        "decisions_usd_per_mtok_input": "0.1",
+        "id": "qwen_default_cache",
+        "jev_filtered_usd_run_v1": "1.605160726"
+      }
+    ],
+    "decisions_arm_model_costs": [
+      {
+        "arm": "decisions_filtered",
+        "cached_input_tokens": 474,
+        "id": "decisions_filtered/answer",
+        "input_tokens": 216627,
+        "model": "kimi-k3",
+        "no_cache_usd": "0.808881",
+        "output_tokens": 10600,
+        "phase": "answer",
+        "primary_usd": "0.8076012",
+        "qwen_default_cache_usd": "0.8076012",
+        "reasoning_tokens": 2091,
+        "requests": 101,
+        "reused_from_run_v1_requests": 0,
+        "unpriced_failed_attempts": 0
+      },
+      {
+        "arm": "decisions_filtered",
+        "cached_input_tokens": 0,
+        "id": "decisions_filtered/filter",
+        "input_tokens": 1848303,
+        "model": "openai-decisions/gpt-6-luna",
+        "no_cache_usd": "0.1848303",
+        "output_tokens": 0,
+        "phase": "filter",
+        "primary_usd": "0.1848303",
+        "qwen_default_cache_usd": "0.1848303",
+        "reasoning_tokens": 0,
+        "requests": 407,
+        "reused_from_run_v1_requests": 0,
+        "unpriced_failed_attempts": 0
+      },
+      {
+        "arm": "decisions_filtered",
+        "cached_input_tokens": 456472,
+        "id": "decisions_filtered/rerank",
+        "input_tokens": 3502328,
+        "model": "qwen3-reranker-8b",
+        "no_cache_usd": "0.7004656",
+        "output_tokens": 0,
+        "phase": "rerank",
+        "primary_usd": "0.7004656",
+        "qwen_default_cache_usd": "0.6548184",
+        "reasoning_tokens": 0,
+        "requests": 101,
+        "reused_from_run_v1_requests": 100,
+        "unpriced_failed_attempts": 0
+      },
+      {
+        "arm": "decisions_filtered",
+        "cached_input_tokens": 1306,
+        "id": "decisions_filtered/embedding",
+        "input_tokens": 5208,
+        "model": "qwen3-embedding-8b",
+        "no_cache_usd": "0.0005208",
+        "output_tokens": 0,
+        "phase": "embedding",
+        "primary_usd": "0.0005208",
+        "qwen_default_cache_usd": "0.0004555",
+        "reasoning_tokens": 0,
+        "requests": 101,
+        "reused_from_run_v1_requests": 100,
+        "unpriced_failed_attempts": 0
+      }
+    ],
+    "filter_vs_frozen_jev_on_identical_inputs": {
+      "cohens_kappa": 0.818131,
+      "decisions_kept": 262,
+      "decisions_only": 22,
+      "decisions_refused": 0,
+      "decisions_refused_jev_kept": 0,
+      "filter_sets": 101,
+      "jev_kept": 307,
+      "jev_only": 67,
+      "keep_agreement": 0.955941,
+      "kept_by_both": 240,
+      "kept_by_neither": 1691,
+      "mean_abs_probability_difference": 0.08149,
+      "pages": 407,
+      "results_scored": 2020
+    },
+    "filtering": {
+      "calls": 102,
+      "initial_gold_source_hit_after_filter": 95,
+      "initial_gold_source_hit_before_filter": 100,
+      "pages": 411,
+      "results_kept": 263,
+      "results_scored": 2040,
+      "retained_fraction": 0.128922
+    },
+    "frozen_judge_reference": [
+      {
+        "arm": "baseline",
+        "correct": 98,
+        "judge": "deepseek-v4-flash-0731",
+        "n": 100
+      },
+      {
+        "arm": "jev_filtered",
+        "correct": 98,
+        "judge": "deepseek-v4-flash-0731",
+        "n": 100
+      }
+    ],
+    "frozen_vs_rejudged_agreement": [
+      {
+        "agree": 99,
+        "arm": "baseline",
+        "cohens_kappa": 0.795082,
+        "n": 100
+      },
+      {
+        "agree": 98,
+        "arm": "jev_filtered",
+        "cohens_kappa": 0.657534,
+        "n": 100
+      },
+      {
+        "agree": 197,
+        "arm": "all_overlapping",
+        "cohens_kappa": 0.720149,
+        "n": 200
+      }
+    ],
+    "jev_judge_scores": [
+      {
+        "arm": "baseline",
+        "correct": 90,
+        "n": 100
+      },
+      {
+        "arm": "jev_filtered",
+        "correct": 94,
+        "n": 100
+      },
+      {
+        "arm": "decisions_filtered",
+        "correct": 89,
+        "n": 100
+      }
+    ],
+    "latency": {
+      "decisions_failed_attempts": 0,
+      "decisions_filter_page_round_trip_s": {
+        "mean_s": 0.140073,
+        "median_s": 0.131275,
+        "n": 411,
+        "p95_s": 0.19994
+      },
+      "kimi_question_to_final_answer_s": {
+        "failed_attempts": 0,
+        "kimi_attempts": 101,
+        "mean_s": 3.936462,
+        "median_s": 3.646989,
+        "n": 100,
+        "p95_s": 6.631063
+      }
+    },
+    "model": "openai-decisions/gpt-6-luna",
+    "questions": 100,
+    "refusals": {
+      "arm_decisions": 2020,
+      "arm_refused": 0,
+      "decisions": 2040,
+      "refused": 0,
+      "refused_jev_kept": 0
+    },
+    "rejudge_usage": {
+      "input_tokens": 273836,
+      "output_tokens": 1800,
+      "requests": 300,
+      "requests_without_usage": 0,
+      "summed_api_seconds": 463.43434036699983
+    },
+    "same_judge_paired": [
+      {
+        "ci95_pp": [
+          -5,
+          0
+        ],
+        "comparison": "decisions_filtered_minus_jev_filtered",
+        "difference_pp": -2
+      },
+      {
+        "ci95_pp": [
+          -8,
+          1
+        ],
+        "comparison": "decisions_filtered_minus_baseline",
+        "difference_pp": -3
+      },
+      {
+        "ci95_pp": [
+          -5,
+          2
+        ],
+        "comparison": "jev_filtered_minus_baseline",
+        "difference_pp": -1
+      }
+    ],
+    "same_judge_scores": [
+      {
+        "arm": "baseline",
+        "correct": 97,
+        "judge": "deepseek-v4p1-flash",
+        "n": 100
+      },
+      {
+        "arm": "jev_filtered",
+        "correct": 96,
+        "judge": "deepseek-v4p1-flash",
+        "n": 100
+      },
+      {
+        "arm": "decisions_filtered",
+        "correct": 94,
+        "judge": "deepseek-v4p1-flash",
+        "n": 100
+      }
+    ]
+  },
+  "generated_by": "publication/decisions-aggregates.py",
+  "note": "100 EnronQA questions; baseline and Jev arms are the frozen run. All three arms judged by DeepSeek deepseek-v4p1-flash with the frozen judge prompt because the frozen judge model was retired. Intervals are paired cluster bootstrap by source document, descriptive. Costs are list-price estimates.",
+  "projection": "openai-decisions-aggregates-v1",
+  "sources": [
+    {
+      "path": "experiments/rag-filtering-kimi/results/cost-estimate-openai-decisions-v1/model_costs.jsonl",
+      "sha256": "34c1d6320190c0c16b6428e7cc34c6f8776226dbef918df9008fedd32d41e062"
+    },
+    {
+      "path": "experiments/rag-filtering-kimi/results/cost-estimate-openai-decisions-v1/summary.jsonl",
+      "sha256": "df3cf8808662fc9ef7b46ae1d7a8d91df3b333eab1ef1f3551ac54277d766310"
+    },
+    {
+      "path": "experiments/rag-filtering-kimi/results/rejudge-deepseek-v4p1-decisions-v1/rejudge-comparison.jsonl",
+      "sha256": "4a6621cf1d8b71a9d4ea5775303ce2dbcd4c1841835102cedc519b5c13164ce1"
+    },
+    {
+      "path": "experiments/rag-filtering-kimi/results/run-openai-decisions-v1/summary.jsonl",
+      "sha256": "c651623b8d7c0ff6fe52f635e51b9ae0a5149e17fde24d5ee324a5360e33fd38"
+    }
+  ]
+}

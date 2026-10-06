@@ -13,4 +13,7 @@ The MIT license covers this project's original code, not datasets, model outputs
 - JudgeBench: ScalerLab. The source lock records the upstream revision and download hashes; no JudgeBench runner or dataset is bundled. Limited permission for static rendered template evidence does not grant a general code or dataset license.
 - TREC DL: NIST relevance judgments and Castorini RankLLM candidates are downloaded locally; `data.go` records URLs, revisions and hashes. NIST trec_eval is acquired separately.
 
+- TREC DL / MS MARCO passages used by the request-shaping studies are the same pinned RankLLM candidates and NIST qrels as the reranker study, downloaded locally by `prepare`; no passage text is bundled.
+- OpenAI Decisions: results from OpenAI's Decisions API (`gpt-6-luna`) appear only as aggregate measurements. Raw provider responses and receipts are not redistributed. The adapter is original code written against OpenAI's public guide; it does not include OpenAI code.
+
 Third-party prompt/config files retain their original extensions and bytes; they are runtime source artifacts, not maintained prose documentation. No upstream project or author endorses this study.

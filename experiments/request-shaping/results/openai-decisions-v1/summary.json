@@ -1,0 +1,3520 @@
+{
+  "data": {
+    "model": "openai-decisions/gpt-6-luna",
+    "pending_studies": [],
+    "studies": {
+      "question-fanout": {
+        "report_tables": {
+          "Does co-asking change the target answer?": [
+            {
+              "": "—",
+              "AUC": "0.8726",
+              "Arm": "solo-useful",
+              "Crosses 0.5": "0.8990",
+              "ECE": "0.2904",
+              "Holm p": "—",
+              "Jev Δ vs Jev solo (frozen)": "—",
+              "Mean \\": "—",
+              "Mean Δp": "—",
+              "Questions": "1",
+              "nDCG@10": "0.7184",
+              "Δ AUC": "—",
+              "Δ vs solo": "—",
+              "Δp\\": "—"
+            },
+            {
+              "": "0.00%",
+              "AUC": "0.8726",
+              "Arm": "ordinal-joint",
+              "Crosses 0.5": "0.8977",
+              "ECE": "0.2904",
+              "Holm p": "—",
+              "Jev Δ vs Jev solo (frozen)": "0.0099",
+              "Mean \\": "0.0000",
+              "Mean Δp": "+0.0000 [-0.0159, +0.0136]",
+              "Questions": "3",
+              "nDCG@10": "0.7184",
+              "Δ AUC": "+0.0000 [+0.0000, +0.0000]",
+              "Δ vs solo": "+0.0000 [+0.0000, +0.0000]",
+              "Δp\\": "+0.0000"
+            },
+            {
+              "": "0.00%",
+              "AUC": "0.8726",
+              "Arm": "fan-3-rel-first",
+              "Crosses 0.5": "0.8974",
+              "ECE": "0.2904",
+              "Holm p": "1.0000",
+              "Jev Δ vs Jev solo (frozen)": "0.0097",
+              "Mean \\": "0.0000",
+              "Mean Δp": "-0.0028 [-0.0115, +0.0053]",
+              "Questions": "3",
+              "nDCG@10": "0.7184",
+              "Δ AUC": "+0.0000 [+0.0000, +0.0000]",
+              "Δ vs solo": "+0.0000 [+0.0000, +0.0000]",
+              "Δp\\": "+0.0000"
+            },
+            {
+              "": "0.00%",
+              "AUC": "0.8726",
+              "Arm": "fan-3-unrel-first",
+              "Crosses 0.5": "0.8982",
+              "ECE": "0.2904",
+              "Holm p": "1.0000",
+              "Jev Δ vs Jev solo (frozen)": "0.0097",
+              "Mean \\": "0.0000",
+              "Mean Δp": "+0.0069 [-0.0023, +0.0164]",
+              "Questions": "3",
+              "nDCG@10": "0.7184",
+              "Δ AUC": "+0.0000 [+0.0000, +0.0000]",
+              "Δ vs solo": "+0.0000 [+0.0000, +0.0000]",
+              "Δp\\": "+0.0000"
+            },
+            {
+              "": "0.00%",
+              "AUC": "0.8726",
+              "Arm": "fan-8-rel-first",
+              "Crosses 0.5": "0.8980",
+              "ECE": "0.2904",
+              "Holm p": "1.0000",
+              "Jev Δ vs Jev solo (frozen)": "0.0093",
+              "Mean \\": "0.0000",
+              "Mean Δp": "+0.0021 [-0.0064, +0.0107]",
+              "Questions": "8",
+              "nDCG@10": "0.7184",
+              "Δ AUC": "+0.0000 [+0.0000, +0.0000]",
+              "Δ vs solo": "+0.0000 [+0.0000, +0.0000]",
+              "Δp\\": "+0.0000"
+            },
+            {
+              "": "0.00%",
+              "AUC": "0.8726",
+              "Arm": "fan-8-unrel-first",
+              "Crosses 0.5": "0.8979",
+              "ECE": "0.2904",
+              "Holm p": "1.0000",
+              "Jev Δ vs Jev solo (frozen)": "0.0098",
+              "Mean \\": "0.0000",
+              "Mean Δp": "-0.0004 [-0.0095, +0.0084]",
+              "Questions": "8",
+              "nDCG@10": "0.7184",
+              "Δ AUC": "+0.0000 [+0.0000, +0.0000]",
+              "Δ vs solo": "+0.0000 [+0.0000, +0.0000]",
+              "Δp\\": "+0.0000"
+            },
+            {
+              "": "0.00%",
+              "AUC": "0.8726",
+              "Arm": "fan-16-rel-first",
+              "Crosses 0.5": "0.8982",
+              "ECE": "0.2904",
+              "Holm p": "1.0000",
+              "Jev Δ vs Jev solo (frozen)": "0.0093",
+              "Mean \\": "0.0000",
+              "Mean Δp": "-0.0028 [-0.0231, +0.0118]",
+              "Questions": "16",
+              "nDCG@10": "0.7184",
+              "Δ AUC": "+0.0000 [+0.0000, +0.0000]",
+              "Δ vs solo": "+0.0000 [+0.0000, +0.0000]",
+              "Δp\\": "+0.0000"
+            },
+            {
+              "": "0.00%",
+              "AUC": "0.8726",
+              "Arm": "fan-16-unrel-first",
+              "Crosses 0.5": "0.8984",
+              "ECE": "0.2904",
+              "Holm p": "1.0000",
+              "Jev Δ vs Jev solo (frozen)": "0.0093",
+              "Mean \\": "0.0000",
+              "Mean Δp": "+0.0013 [-0.0085, +0.0115]",
+              "Questions": "16",
+              "nDCG@10": "0.7184",
+              "Δ AUC": "+0.0000 [+0.0000, +0.0000]",
+              "Δ vs solo": "+0.0000 [+0.0000, +0.0000]",
+              "Δp\\": "+0.0000"
+            },
+            {
+              "": "0.00%",
+              "AUC": "0.8726",
+              "Arm": "fan-16-rel-last",
+              "Crosses 0.5": "0.8981",
+              "ECE": "0.2904",
+              "Holm p": "1.0000",
+              "Jev Δ vs Jev solo (frozen)": "0.0095",
+              "Mean \\": "0.0000",
+              "Mean Δp": "+0.0086 [+0.0023, +0.0158]",
+              "Questions": "16",
+              "nDCG@10": "0.7184",
+              "Δ AUC": "+0.0000 [+0.0000, +0.0000]",
+              "Δ vs solo": "+0.0000 [+0.0000, +0.0000]",
+              "Δp\\": "+0.0000"
+            },
+            {
+              "": "0.00%",
+              "AUC": "0.8726",
+              "Arm": "fan-16-unrel-last",
+              "Crosses 0.5": "0.8968",
+              "ECE": "0.2904",
+              "Holm p": "1.0000",
+              "Jev Δ vs Jev solo (frozen)": "0.0098",
+              "Mean \\": "0.0000",
+              "Mean Δp": "-0.0089 [-0.0214, +0.0007]",
+              "Questions": "16",
+              "nDCG@10": "0.7184",
+              "Δ AUC": "+0.0000 [+0.0000, +0.0000]",
+              "Δ vs solo": "+0.0000 [+0.0000, +0.0000]",
+              "Δp\\": "+0.0000"
+            }
+          ],
+          "Logical consistency": [
+            {
+              "Arm": "solo",
+              "Items": "2000",
+              "by > 0.1": "2.50%",
+              "direct > useful": "6.15%",
+              "useful > related": "20.35%"
+            },
+            {
+              "Arm": "ordinal-joint",
+              "Items": "2000",
+              "by > 0.1": "2.50%",
+              "direct > useful": "6.15%",
+              "useful > related": "20.35%"
+            },
+            {
+              "Arm": "fan-3-rel-first",
+              "Items": "2000",
+              "by > 0.1": "2.50%",
+              "direct > useful": "6.15%",
+              "useful > related": "20.35%"
+            },
+            {
+              "Arm": "fan-8-rel-first",
+              "Items": "2000",
+              "by > 0.1": "2.50%",
+              "direct > useful": "6.15%",
+              "useful > related": "20.35%"
+            },
+            {
+              "Arm": "fan-16-rel-first",
+              "Items": "2000",
+              "by > 0.1": "2.50%",
+              "direct > useful": "6.15%",
+              "useful > related": "20.35%"
+            },
+            {
+              "Arm": "fan-16-rel-last",
+              "Items": "2000",
+              "by > 0.1": "2.50%",
+              "direct > useful": "6.15%",
+              "useful > related": "20.35%"
+            },
+            {
+              "Arm": "Jev (frozen) `solo",
+              "Items": "2000",
+              "by > 0.1": "0.35%",
+              "direct > useful": "2.65%",
+              "useful > related": "2.75%"
+            },
+            {
+              "Arm": "Jev (frozen) `ordinal-joint",
+              "Items": "2000",
+              "by > 0.1": "0.20%",
+              "direct > useful": "3.40%",
+              "useful > related": "2.55%"
+            },
+            {
+              "Arm": "Jev (frozen) `fan-3-rel-first",
+              "Items": "2000",
+              "by > 0.1": "0.25%",
+              "direct > useful": "2.85%",
+              "useful > related": "2.65%"
+            },
+            {
+              "Arm": "Jev (frozen) `fan-8-rel-first",
+              "Items": "2000",
+              "by > 0.1": "0.30%",
+              "direct > useful": "2.65%",
+              "useful > related": "2.50%"
+            },
+            {
+              "Arm": "Jev (frozen) `fan-16-rel-first",
+              "Items": "2000",
+              "by > 0.1": "0.15%",
+              "direct > useful": "2.50%",
+              "useful > related": "2.50%"
+            },
+            {
+              "Arm": "Jev (frozen) `fan-16-rel-last",
+              "Items": "2000",
+              "by > 0.1": "0.40%",
+              "direct > useful": "2.40%",
+              "useful > related": "2.50%"
+            }
+          ],
+          "Noise floor and drift": [
+            {
+              "": "0.00%",
+              "Comparison": "Retest vs. solo (`useful`)",
+              "Decisions": "2000",
+              "Mean \\": "0.0000",
+              "Δp\\": "+0.0000"
+            },
+            {
+              "": "1.20%",
+              "Comparison": "Frozen Jev retest vs. frozen Jev solo (`useful`)",
+              "Decisions": "2000",
+              "Mean \\": "0.0094",
+              "Δp\\": "-0.0003"
+            },
+            {
+              "": "11.20%",
+              "Comparison": "Decisions solo vs. frozen Jev solo (cross-model, not drift)",
+              "Decisions": "2000",
+              "Mean \\": "0.1018",
+              "Δp\\": "+0.0549"
+            },
+            {
+              "": "11.05%",
+              "Comparison": "Decisions solo vs. frozen 2026-09-18 `jev-noul` (cross-model)",
+              "Decisions": "2000",
+              "Mean \\": "0.1017",
+              "Δp\\": "+0.0549"
+            },
+            {
+              "": "11.15%",
+              "Comparison": "Decisions joint vs. frozen `jev-ordinal` (`related`) (cross-model)",
+              "Decisions": "2000",
+              "Mean \\": "0.0854",
+              "Δp\\": "+0.0093"
+            },
+            {
+              "": "11.30%",
+              "Comparison": "Decisions joint vs. frozen `jev-ordinal` (`useful`) (cross-model)",
+              "Decisions": "2000",
+              "Mean \\": "0.1018",
+              "Δp\\": "+0.0549"
+            },
+            {
+              "": "6.80%",
+              "Comparison": "Decisions joint vs. frozen `jev-ordinal` (`direct`) (cross-model)",
+              "Decisions": "2000",
+              "Mean \\": "0.0839",
+              "Δp\\": "-0.0462"
+            }
+          ],
+          "OpenAI Decisions versus frozen Jev, same requests": [
+            {
+              "": "9.63%",
+              "Arm": "fan-16-rel-first",
+              "Crosses 0.5": "0.8407",
+              "Mean \\": "0.0903",
+              "Mean p, Decisions": "0.4381",
+              "Mean p, Jev": "0.4318",
+              "Mean Δp": "0.931",
+              "Pairs": "6000",
+              "Pearson r": "0.8837",
+              "Δp\\": "+0.0063"
+            },
+            {
+              "": "9.53%",
+              "Arm": "fan-16-rel-last",
+              "Crosses 0.5": "0.8407",
+              "Mean \\": "0.0904",
+              "Mean p, Decisions": "0.4381",
+              "Mean p, Jev": "0.4320",
+              "Mean Δp": "0.931",
+              "Pairs": "6000",
+              "Pearson r": "0.8835",
+              "Δp\\": "+0.0061"
+            },
+            {
+              "": "11.35%",
+              "Arm": "fan-16-unrel-first",
+              "Crosses 0.5": "0.8726",
+              "Mean \\": "0.1021",
+              "Mean p, Decisions": "0.4738",
+              "Mean p, Jev": "0.4185",
+              "Mean Δp": "0.923",
+              "Pairs": "2000",
+              "Pearson r": "0.8984",
+              "Δp\\": "+0.0553"
+            },
+            {
+              "": "11.00%",
+              "Arm": "fan-16-unrel-last",
+              "Crosses 0.5": "0.8726",
+              "Mean \\": "0.1017",
+              "Mean p, Decisions": "0.4738",
+              "Mean p, Jev": "0.4188",
+              "Mean Δp": "0.923",
+              "Pairs": "2000",
+              "Pearson r": "0.8968",
+              "Δp\\": "+0.0550"
+            },
+            {
+              "": "9.80%",
+              "Arm": "fan-3-rel-first",
+              "Crosses 0.5": "0.8407",
+              "Mean \\": "0.0902",
+              "Mean p, Decisions": "0.4381",
+              "Mean p, Jev": "0.4318",
+              "Mean Δp": "0.931",
+              "Pairs": "6000",
+              "Pearson r": "0.8831",
+              "Δp\\": "+0.0063"
+            },
+            {
+              "": "11.45%",
+              "Arm": "fan-3-unrel-first",
+              "Crosses 0.5": "0.8726",
+              "Mean \\": "0.1018",
+              "Mean p, Decisions": "0.4738",
+              "Mean p, Jev": "0.4190",
+              "Mean Δp": "0.923",
+              "Pairs": "2000",
+              "Pearson r": "0.8982",
+              "Δp\\": "+0.0548"
+            },
+            {
+              "": "9.85%",
+              "Arm": "fan-8-rel-first",
+              "Crosses 0.5": "0.8407",
+              "Mean \\": "0.0904",
+              "Mean p, Decisions": "0.4381",
+              "Mean p, Jev": "0.4318",
+              "Mean Δp": "0.930",
+              "Pairs": "6000",
+              "Pearson r": "0.8832",
+              "Δp\\": "+0.0063"
+            },
+            {
+              "": "11.20%",
+              "Arm": "fan-8-unrel-first",
+              "Crosses 0.5": "0.8726",
+              "Mean \\": "0.1019",
+              "Mean p, Decisions": "0.4738",
+              "Mean p, Jev": "0.4186",
+              "Mean Δp": "0.924",
+              "Pairs": "2000",
+              "Pearson r": "0.8979",
+              "Δp\\": "+0.0552"
+            },
+            {
+              "": "9.73%",
+              "Arm": "ordinal-joint",
+              "Crosses 0.5": "0.8407",
+              "Mean \\": "0.0902",
+              "Mean p, Decisions": "0.4381",
+              "Mean p, Jev": "0.4318",
+              "Mean Δp": "0.931",
+              "Pairs": "6000",
+              "Pearson r": "0.8835",
+              "Δp\\": "+0.0063"
+            },
+            {
+              "": "11.30%",
+              "Arm": "retest-useful",
+              "Crosses 0.5": "0.8726",
+              "Mean \\": "0.1018",
+              "Mean p, Decisions": "0.4738",
+              "Mean p, Jev": "0.4187",
+              "Mean Δp": "0.924",
+              "Pairs": "2000",
+              "Pearson r": "0.8973",
+              "Δp\\": "+0.0551"
+            },
+            {
+              "": "6.80%",
+              "Arm": "solo-direct",
+              "Crosses 0.5": "0.8752",
+              "Mean \\": "0.0839",
+              "Mean p, Decisions": "0.2749",
+              "Mean p, Jev": "0.3212",
+              "Mean Δp": "0.937",
+              "Pairs": "2000",
+              "Pearson r": "0.8957",
+              "Δp\\": "-0.0464"
+            },
+            {
+              "": "11.15%",
+              "Arm": "solo-related",
+              "Crosses 0.5": "0.8786",
+              "Mean \\": "0.0850",
+              "Mean p, Decisions": "0.5656",
+              "Mean p, Jev": "0.5557",
+              "Mean Δp": "0.937",
+              "Pairs": "2000",
+              "Pearson r": "0.8992",
+              "Δp\\": "+0.0099"
+            },
+            {
+              "": "11.20%",
+              "Arm": "solo-useful",
+              "Crosses 0.5": "0.8726",
+              "Mean \\": "0.1018",
+              "Mean p, Decisions": "0.4738",
+              "Mean p, Jev": "0.4190",
+              "Mean Δp": "0.924",
+              "Pairs": "2000",
+              "Pearson r": "0.8990",
+              "Δp\\": "+0.0549"
+            }
+          ],
+          "Other ordinal questions": [
+            {
+              "AUC": "0.8786",
+              "Arm": "ordinal-joint",
+              "Mean \\": "0.0000",
+              "Question": "related",
+              "Δp\\": "+0.0000"
+            },
+            {
+              "AUC": "0.8786",
+              "Arm": "fan-3-rel-first",
+              "Mean \\": "0.0000",
+              "Question": "related",
+              "Δp\\": "+0.0000"
+            },
+            {
+              "AUC": "0.8786",
+              "Arm": "fan-8-rel-first",
+              "Mean \\": "0.0000",
+              "Question": "related",
+              "Δp\\": "+0.0000"
+            },
+            {
+              "AUC": "0.8786",
+              "Arm": "fan-16-rel-first",
+              "Mean \\": "0.0000",
+              "Question": "related",
+              "Δp\\": "+0.0000"
+            },
+            {
+              "AUC": "0.8786",
+              "Arm": "fan-16-rel-last",
+              "Mean \\": "0.0000",
+              "Question": "related",
+              "Δp\\": "+0.0000"
+            },
+            {
+              "AUC": "0.8786",
+              "Arm": "solo-related",
+              "Mean \\": "—",
+              "Question": "related",
+              "Δp\\": "—"
+            },
+            {
+              "AUC": "0.8752",
+              "Arm": "ordinal-joint",
+              "Mean \\": "0.0000",
+              "Question": "direct",
+              "Δp\\": "+0.0000"
+            },
+            {
+              "AUC": "0.8752",
+              "Arm": "fan-3-rel-first",
+              "Mean \\": "0.0000",
+              "Question": "direct",
+              "Δp\\": "+0.0000"
+            },
+            {
+              "AUC": "0.8752",
+              "Arm": "fan-8-rel-first",
+              "Mean \\": "0.0000",
+              "Question": "direct",
+              "Δp\\": "+0.0000"
+            },
+            {
+              "AUC": "0.8752",
+              "Arm": "fan-16-rel-first",
+              "Mean \\": "0.0000",
+              "Question": "direct",
+              "Δp\\": "+0.0000"
+            },
+            {
+              "AUC": "0.8752",
+              "Arm": "fan-16-rel-last",
+              "Mean \\": "0.0000",
+              "Question": "direct",
+              "Δp\\": "+0.0000"
+            },
+            {
+              "AUC": "0.8752",
+              "Arm": "solo-direct",
+              "Mean \\": "—",
+              "Question": "direct",
+              "Δp\\": "—"
+            }
+          ],
+          "Resources": [
+            {
+              "Arm": "solo-useful",
+              "Decisions": "2000",
+              "Input tokens / decision": "312",
+              "List USD": "$0.0625",
+              "Refused questions": "0",
+              "Request p50 ms": "117",
+              "Request p95 ms": "380",
+              "Requests": "2000",
+              "Retried": "1",
+              "p50 request ms / decision": "117.0"
+            },
+            {
+              "Arm": "retest-useful",
+              "Decisions": "2000",
+              "Input tokens / decision": "312",
+              "List USD": "$0.0625",
+              "Refused questions": "0",
+              "Request p50 ms": "117",
+              "Request p95 ms": "404",
+              "Requests": "2000",
+              "Retried": "0",
+              "p50 request ms / decision": "116.6"
+            },
+            {
+              "Arm": "solo-related",
+              "Decisions": "2000",
+              "Input tokens / decision": "289",
+              "List USD": "$0.0579",
+              "Refused questions": "0",
+              "Request p50 ms": "114",
+              "Request p95 ms": "417",
+              "Requests": "2000",
+              "Retried": "1",
+              "p50 request ms / decision": "114.1"
+            },
+            {
+              "Arm": "solo-direct",
+              "Decisions": "2000",
+              "Input tokens / decision": "288",
+              "List USD": "$0.0577",
+              "Refused questions": "0",
+              "Request p50 ms": "114",
+              "Request p95 ms": "360",
+              "Requests": "2000",
+              "Retried": "1",
+              "p50 request ms / decision": "114.4"
+            },
+            {
+              "Arm": "ordinal-joint",
+              "Decisions": "6000",
+              "Input tokens / decision": "225",
+              "List USD": "$0.1351",
+              "Refused questions": "0",
+              "Request p50 ms": "118",
+              "Request p95 ms": "353",
+              "Requests": "2000",
+              "Retried": "3",
+              "p50 request ms / decision": "39.3"
+            },
+            {
+              "Arm": "fan-3-rel-first",
+              "Decisions": "6000",
+              "Input tokens / decision": "225",
+              "List USD": "$0.1351",
+              "Refused questions": "0",
+              "Request p50 ms": "117",
+              "Request p95 ms": "374",
+              "Requests": "2000",
+              "Retried": "6",
+              "p50 request ms / decision": "39.2"
+            },
+            {
+              "Arm": "fan-3-unrel-first",
+              "Decisions": "2000",
+              "Input tokens / decision": "636",
+              "List USD": "$0.1273",
+              "Refused questions": "0",
+              "Request p50 ms": "118",
+              "Request p95 ms": "377",
+              "Requests": "2000",
+              "Retried": "1",
+              "p50 request ms / decision": "118.1"
+            },
+            {
+              "Arm": "fan-8-rel-first",
+              "Decisions": "6000",
+              "Input tokens / decision": "508",
+              "List USD": "$0.3047",
+              "Refused questions": "13",
+              "Request p50 ms": "139",
+              "Request p95 ms": "395",
+              "Requests": "2000",
+              "Retried": "2",
+              "p50 request ms / decision": "46.3"
+            },
+            {
+              "Arm": "fan-8-unrel-first",
+              "Decisions": "2000",
+              "Input tokens / decision": "1453",
+              "List USD": "$0.2907",
+              "Refused questions": "0",
+              "Request p50 ms": "139",
+              "Request p95 ms": "378",
+              "Requests": "2000",
+              "Retried": "2",
+              "p50 request ms / decision": "138.7"
+            },
+            {
+              "Arm": "fan-16-rel-first",
+              "Decisions": "6000",
+              "Input tokens / decision": "955",
+              "List USD": "$0.5729",
+              "Refused questions": "16",
+              "Request p50 ms": "146",
+              "Request p95 ms": "403",
+              "Requests": "2000",
+              "Retried": "1",
+              "p50 request ms / decision": "48.7"
+            },
+            {
+              "Arm": "fan-16-unrel-first",
+              "Decisions": "2000",
+              "Input tokens / decision": "2747",
+              "List USD": "$0.5495",
+              "Refused questions": "0",
+              "Request p50 ms": "146",
+              "Request p95 ms": "404",
+              "Requests": "2000",
+              "Retried": "1",
+              "p50 request ms / decision": "145.6"
+            },
+            {
+              "Arm": "fan-16-rel-last",
+              "Decisions": "6000",
+              "Input tokens / decision": "955",
+              "List USD": "$0.5729",
+              "Refused questions": "16",
+              "Request p50 ms": "147",
+              "Request p95 ms": "396",
+              "Requests": "2000",
+              "Retried": "3",
+              "p50 request ms / decision": "49.1"
+            },
+            {
+              "Arm": "fan-16-unrel-last",
+              "Decisions": "2000",
+              "Input tokens / decision": "2747",
+              "List USD": "$0.5495",
+              "Refused questions": "0",
+              "Request p50 ms": "147",
+              "Request p95 ms": "440",
+              "Requests": "2000",
+              "Retried": "1",
+              "p50 request ms / decision": "146.8"
+            }
+          ],
+          "Score granularity": [
+            {
+              "Decisions": "46000",
+              "Distinct values": "101",
+              "Exactly 0 or 1": "7.91%",
+              "Multiples of 0.01": "100.00%",
+              "Provider": "OpenAI Decisions",
+              "Tied within query": "75.83%"
+            },
+            {
+              "Decisions": "46000",
+              "Distinct values": "100",
+              "Exactly 0 or 1": "0.07%",
+              "Multiples of 0.01": "100.00%",
+              "Provider": "Jev (frozen)",
+              "Tied within query": "76.18%"
+            }
+          ]
+        },
+        "resources": {
+          "fan-16-rel-first": {
+            "decisions": 6000,
+            "input_tokens": 5728682,
+            "input_tokens_per_decision": 954.780333,
+            "list_price_usd": 0.572868,
+            "refused_questions": 16,
+            "request_latency_p50_s": 0.145966,
+            "request_latency_p95_s": 0.403153,
+            "request_ms_per_decision_p50": 48.655244,
+            "requests": 2000,
+            "retried_requests": 1
+          },
+          "fan-16-rel-last": {
+            "decisions": 6000,
+            "input_tokens": 5728682,
+            "input_tokens_per_decision": 954.780333,
+            "list_price_usd": 0.572868,
+            "refused_questions": 16,
+            "request_latency_p50_s": 0.147347,
+            "request_latency_p95_s": 0.396188,
+            "request_ms_per_decision_p50": 49.11576,
+            "requests": 2000,
+            "retried_requests": 3
+          },
+          "fan-16-unrel-first": {
+            "decisions": 2000,
+            "input_tokens": 5494682,
+            "input_tokens_per_decision": 2747.341,
+            "list_price_usd": 0.549468,
+            "request_latency_p50_s": 0.145623,
+            "request_latency_p95_s": 0.403843,
+            "request_ms_per_decision_p50": 145.622846,
+            "requests": 2000,
+            "retried_requests": 1
+          },
+          "fan-16-unrel-last": {
+            "decisions": 2000,
+            "input_tokens": 5494682,
+            "input_tokens_per_decision": 2747.341,
+            "list_price_usd": 0.549468,
+            "request_latency_p50_s": 0.146797,
+            "request_latency_p95_s": 0.440304,
+            "request_ms_per_decision_p50": 146.796537,
+            "requests": 2000,
+            "retried_requests": 1
+          },
+          "fan-3-rel-first": {
+            "decisions": 6000,
+            "input_tokens": 1350682,
+            "input_tokens_per_decision": 225.113667,
+            "list_price_usd": 0.135068,
+            "request_latency_p50_s": 0.117473,
+            "request_latency_p95_s": 0.373595,
+            "request_ms_per_decision_p50": 39.157569,
+            "requests": 2000,
+            "retried_requests": 6
+          },
+          "fan-3-unrel-first": {
+            "decisions": 2000,
+            "input_tokens": 1272682,
+            "input_tokens_per_decision": 636.341,
+            "list_price_usd": 0.127268,
+            "request_latency_p50_s": 0.118105,
+            "request_latency_p95_s": 0.377017,
+            "request_ms_per_decision_p50": 118.104529,
+            "requests": 2000,
+            "retried_requests": 1
+          },
+          "fan-8-rel-first": {
+            "decisions": 6000,
+            "input_tokens": 3046682,
+            "input_tokens_per_decision": 507.780333,
+            "list_price_usd": 0.304668,
+            "refused_questions": 13,
+            "request_latency_p50_s": 0.138894,
+            "request_latency_p95_s": 0.395312,
+            "request_ms_per_decision_p50": 46.297954,
+            "requests": 2000,
+            "retried_requests": 2
+          },
+          "fan-8-unrel-first": {
+            "decisions": 2000,
+            "input_tokens": 2906682,
+            "input_tokens_per_decision": 1453.341,
+            "list_price_usd": 0.290668,
+            "request_latency_p50_s": 0.138655,
+            "request_latency_p95_s": 0.378495,
+            "request_ms_per_decision_p50": 138.654628,
+            "requests": 2000,
+            "retried_requests": 2
+          },
+          "ordinal-joint": {
+            "decisions": 6000,
+            "input_tokens": 1350682,
+            "input_tokens_per_decision": 225.113667,
+            "list_price_usd": 0.135068,
+            "request_latency_p50_s": 0.117846,
+            "request_latency_p95_s": 0.352996,
+            "request_ms_per_decision_p50": 39.281853,
+            "requests": 2000,
+            "retried_requests": 3
+          },
+          "retest-useful": {
+            "decisions": 2000,
+            "input_tokens": 624682,
+            "input_tokens_per_decision": 312.341,
+            "list_price_usd": 0.062468,
+            "request_latency_p50_s": 0.11664,
+            "request_latency_p95_s": 0.403905,
+            "request_ms_per_decision_p50": 116.639612,
+            "requests": 2000,
+            "retried_requests": 0
+          },
+          "solo-direct": {
+            "decisions": 2000,
+            "input_tokens": 576682,
+            "input_tokens_per_decision": 288.341,
+            "list_price_usd": 0.057668,
+            "request_latency_p50_s": 0.114443,
+            "request_latency_p95_s": 0.359604,
+            "request_ms_per_decision_p50": 114.442761,
+            "requests": 2000,
+            "retried_requests": 1
+          },
+          "solo-related": {
+            "decisions": 2000,
+            "input_tokens": 578682,
+            "input_tokens_per_decision": 289.341,
+            "list_price_usd": 0.057868,
+            "request_latency_p50_s": 0.114114,
+            "request_latency_p95_s": 0.416741,
+            "request_ms_per_decision_p50": 114.11391,
+            "requests": 2000,
+            "retried_requests": 1
+          },
+          "solo-useful": {
+            "decisions": 2000,
+            "input_tokens": 624682,
+            "input_tokens_per_decision": 312.341,
+            "list_price_usd": 0.062468,
+            "request_latency_p50_s": 0.116988,
+            "request_latency_p95_s": 0.380284,
+            "request_ms_per_decision_p50": 116.987941,
+            "requests": 2000,
+            "retried_requests": 1
+          }
+        },
+        "totals": {
+          "input_tokens": 34778866,
+          "list_price_usd": 3.477887,
+          "refused_questions": 45,
+          "requests": 26000,
+          "retried_requests": 23
+        }
+      },
+      "state-packing": {
+        "report_tables": {
+          "Distraction versus question fan-out": [
+            {
+              "AUC": "0.8726",
+              "Arm": "atomic (subset)",
+              "ECE": "0.2904",
+              "Mean \\": "—",
+              "vs atomic": "0.8971",
+              "Δp\\": "—"
+            },
+            {
+              "AUC": "0.8806",
+              "Arm": "pack-10-p1 (subset)",
+              "ECE": "0.0918",
+              "Mean \\": "0.1994",
+              "vs atomic": "0.9017",
+              "Δp\\": "-0.1640"
+            },
+            {
+              "AUC": "0.8806",
+              "Arm": "single-10",
+              "ECE": "0.0918",
+              "Mean \\": "0.1994",
+              "vs atomic": "0.9029",
+              "Δp\\": "-0.1640"
+            },
+            {
+              "AUC": "0.8544",
+              "Arm": "pack-50-p1 (subset)",
+              "ECE": "0.0507",
+              "Mean \\": "0.2458",
+              "vs atomic": "0.9004",
+              "Δp\\": "-0.2231"
+            },
+            {
+              "AUC": "0.8544",
+              "Arm": "single-50",
+              "ECE": "0.0507",
+              "Mean \\": "0.2458",
+              "vs atomic": "0.8988",
+              "Δp\\": "-0.2231"
+            }
+          ],
+          "Neighbor relevance": [
+            {
+              "Difference": "-0.0410 [-0.0626, -0.0182]",
+              "Mean p, non-relevant neighbors": "0.7312",
+              "Mean p, relevant neighbors": "0.6902",
+              "Pairs": "616",
+              "Targets": "relevant targets"
+            },
+            {
+              "Difference": "-0.0453 [-0.0609, -0.0301]",
+              "Mean p, non-relevant neighbors": "0.2249",
+              "Mean p, relevant neighbors": "0.1796",
+              "Pairs": "712",
+              "Targets": "non-relevant targets"
+            },
+            {
+              "Difference": "-0.0433 [-0.0574, -0.0293]",
+              "Mean p, non-relevant neighbors": "0.4597",
+              "Mean p, relevant neighbors": "0.4164",
+              "Pairs": "1328",
+              "Targets": "all targets"
+            }
+          ],
+          "Noise floor": [
+            {
+              "": "0.00%",
+              "Comparison": "Fresh retest vs. fresh atomic (20-query subset)",
+              "Decisions": "2000",
+              "Mean \\": "0.0000",
+              "Mean Δp": "0.00%",
+              "Δp\\": "+0.0000"
+            },
+            {
+              "": "2.80%",
+              "Comparison": "Frozen Jev retest vs. frozen Jev atomic (same subset, 2026-09-25)",
+              "Decisions": "2000",
+              "Mean \\": "0.0094",
+              "Mean Δp": "1.05%",
+              "Δp\\": "+0.0002"
+            },
+            {
+              "": "41.91%",
+              "Comparison": "Decisions atomic vs. frozen Jev atomic (cross-model, not drift)",
+              "Decisions": "9700",
+              "Mean \\": "0.0889",
+              "Mean Δp": "8.91%",
+              "Δp\\": "+0.0314"
+            },
+            {
+              "": "41.69%",
+              "Comparison": "Decisions atomic vs. frozen Jev 2026-09-18 `trec-v1` run (cross-model, not drift)",
+              "Decisions": "9700",
+              "Mean \\": "0.0885",
+              "Mean Δp": "8.81%",
+              "Δp\\": "+0.0313"
+            }
+          ],
+          "OpenAI Decisions versus frozen Jev, same requests": [
+            {
+              "": "8.91%",
+              "Arm": "atomic",
+              "Crosses 0.5": "0.8748",
+              "Mean \\": "0.0889",
+              "Mean p, Decisions": "0.3460",
+              "Mean p, Jev": "0.3146",
+              "Mean Δp": "0.926",
+              "Pairs": "9700",
+              "Pearson r": "0.8931",
+              "Δp\\": "+0.0314"
+            },
+            {
+              "": "10.67%",
+              "Arm": "cross-20",
+              "Crosses 0.5": "0.8733",
+              "Mean \\": "0.1008",
+              "Mean p, Decisions": "0.3551",
+              "Mean p, Jev": "0.3580",
+              "Mean Δp": "0.902",
+              "Pairs": "9700",
+              "Pearson r": "0.8889",
+              "Δp\\": "-0.0029"
+            },
+            {
+              "": "9.08%",
+              "Arm": "cross-4",
+              "Crosses 0.5": "0.8779",
+              "Mean \\": "0.0942",
+              "Mean p, Decisions": "0.3424",
+              "Mean p, Jev": "0.3382",
+              "Mean Δp": "0.909",
+              "Pairs": "9700",
+              "Pearson r": "0.8900",
+              "Δp\\": "+0.0043"
+            },
+            {
+              "": "11.37%",
+              "Arm": "neighbor-non",
+              "Crosses 0.5": "0.8969",
+              "Mean \\": "0.1208",
+              "Mean p, Decisions": "0.4597",
+              "Mean p, Jev": "0.5018",
+              "Mean Δp": "0.890",
+              "Pairs": "1328",
+              "Pearson r": "0.9105",
+              "Δp\\": "-0.0421"
+            },
+            {
+              "": "14.16%",
+              "Arm": "neighbor-rel",
+              "Crosses 0.5": "0.9068",
+              "Mean \\": "0.1263",
+              "Mean p, Decisions": "0.4164",
+              "Mean p, Jev": "0.4754",
+              "Mean Δp": "0.883",
+              "Pairs": "1328",
+              "Pearson r": "0.9150",
+              "Δp\\": "-0.0590"
+            },
+            {
+              "": "10.96%",
+              "Arm": "pack-10-p1",
+              "Crosses 0.5": "0.8700",
+              "Mean \\": "0.1098",
+              "Mean p, Decisions": "0.2453",
+              "Mean p, Jev": "0.3089",
+              "Mean Δp": "0.878",
+              "Pairs": "9700",
+              "Pearson r": "0.9001",
+              "Δp\\": "-0.0637"
+            },
+            {
+              "": "10.73%",
+              "Arm": "pack-10-p2",
+              "Crosses 0.5": "0.8720",
+              "Mean \\": "0.1103",
+              "Mean p, Decisions": "0.2440",
+              "Mean p, Jev": "0.3072",
+              "Mean Δp": "0.875",
+              "Pairs": "9700",
+              "Pearson r": "0.8982",
+              "Δp\\": "-0.0632"
+            },
+            {
+              "": "13.48%",
+              "Arm": "pack-100-p1",
+              "Crosses 0.5": "0.8637",
+              "Mean \\": "0.1502",
+              "Mean p, Decisions": "0.1909",
+              "Mean p, Jev": "0.3243",
+              "Mean Δp": "0.840",
+              "Pairs": "9700",
+              "Pearson r": "0.8988",
+              "Δp\\": "-0.1334"
+            },
+            {
+              "": "13.85%",
+              "Arm": "pack-100-p2",
+              "Crosses 0.5": "0.8677",
+              "Mean \\": "0.1525",
+              "Mean p, Decisions": "0.1847",
+              "Mean p, Jev": "0.3222",
+              "Mean Δp": "0.833",
+              "Pairs": "9700",
+              "Pearson r": "0.8988",
+              "Δp\\": "-0.1374"
+            },
+            {
+              "": "8.92%",
+              "Arm": "pack-2-p1",
+              "Crosses 0.5": "0.8702",
+              "Mean \\": "0.0918",
+              "Mean p, Decisions": "0.3146",
+              "Mean p, Jev": "0.3162",
+              "Mean Δp": "0.909",
+              "Pairs": "9700",
+              "Pearson r": "0.8930",
+              "Δp\\": "-0.0016"
+            },
+            {
+              "": "8.74%",
+              "Arm": "pack-2-p2",
+              "Crosses 0.5": "0.8721",
+              "Mean \\": "0.0925",
+              "Mean p, Decisions": "0.3156",
+              "Mean p, Jev": "0.3175",
+              "Mean Δp": "0.910",
+              "Pairs": "9700",
+              "Pearson r": "0.8921",
+              "Δp\\": "-0.0019"
+            },
+            {
+              "": "12.00%",
+              "Arm": "pack-20-p1",
+              "Crosses 0.5": "0.8779",
+              "Mean \\": "0.1223",
+              "Mean p, Decisions": "0.2194",
+              "Mean p, Jev": "0.3131",
+              "Mean Δp": "0.867",
+              "Pairs": "9700",
+              "Pearson r": "0.9004",
+              "Δp\\": "-0.0938"
+            },
+            {
+              "": "11.89%",
+              "Arm": "pack-20-p2",
+              "Crosses 0.5": "0.8747",
+              "Mean \\": "0.1209",
+              "Mean p, Decisions": "0.2207",
+              "Mean p, Jev": "0.3107",
+              "Mean Δp": "0.866",
+              "Pairs": "9700",
+              "Pearson r": "0.8991",
+              "Δp\\": "-0.0900"
+            },
+            {
+              "": "10.26%",
+              "Arm": "pack-4-p1",
+              "Crosses 0.5": "0.8695",
+              "Mean \\": "0.1012",
+              "Mean p, Decisions": "0.2818",
+              "Mean p, Jev": "0.3098",
+              "Mean Δp": "0.887",
+              "Pairs": "9700",
+              "Pearson r": "0.8941",
+              "Δp\\": "-0.0280"
+            },
+            {
+              "": "9.72%",
+              "Arm": "pack-4-p2",
+              "Crosses 0.5": "0.8720",
+              "Mean \\": "0.0998",
+              "Mean p, Decisions": "0.2819",
+              "Mean p, Jev": "0.3111",
+              "Mean Δp": "0.891",
+              "Pairs": "9700",
+              "Pearson r": "0.8956",
+              "Δp\\": "-0.0292"
+            },
+            {
+              "": "13.28%",
+              "Arm": "pack-50-p1",
+              "Crosses 0.5": "0.8682",
+              "Mean \\": "0.1386",
+              "Mean p, Decisions": "0.2013",
+              "Mean p, Jev": "0.3191",
+              "Mean Δp": "0.851",
+              "Pairs": "9700",
+              "Pearson r": "0.8976",
+              "Δp\\": "-0.1179"
+            },
+            {
+              "": "13.25%",
+              "Arm": "pack-50-p2",
+              "Crosses 0.5": "0.8752",
+              "Mean \\": "0.1410",
+              "Mean p, Decisions": "0.1952",
+              "Mean p, Jev": "0.3181",
+              "Mean Δp": "0.849",
+              "Pairs": "9700",
+              "Pearson r": "0.9013",
+              "Δp\\": "-0.1229"
+            },
+            {
+              "": "10.07%",
+              "Arm": "ref-id-10",
+              "Crosses 0.5": "0.8706",
+              "Mean \\": "0.1038",
+              "Mean p, Decisions": "0.2633",
+              "Mean p, Jev": "0.3125",
+              "Mean Δp": "0.893",
+              "Pairs": "9700",
+              "Pearson r": "0.9020",
+              "Δp\\": "-0.0492"
+            },
+            {
+              "": "12.62%",
+              "Arm": "ref-index-10` [1 refused, excluded]",
+              "Crosses 0.5": "0.8543",
+              "Mean \\": "0.1264",
+              "Mean p, Decisions": "0.2682",
+              "Mean p, Jev": "0.3281",
+              "Mean Δp": "0.835",
+              "Pairs": "9699",
+              "Pearson r": "0.8960",
+              "Δp\\": "-0.0599"
+            },
+            {
+              "": "11.40%",
+              "Arm": "retest",
+              "Crosses 0.5": "0.8726",
+              "Mean \\": "0.1023",
+              "Mean p, Decisions": "0.4738",
+              "Mean p, Jev": "0.4185",
+              "Mean Δp": "0.923",
+              "Pairs": "2000",
+              "Pearson r": "0.8980",
+              "Δp\\": "+0.0553"
+            },
+            {
+              "": "15.35%",
+              "Arm": "single-10",
+              "Crosses 0.5": "0.8806",
+              "Mean \\": "0.1330",
+              "Mean p, Decisions": "0.3098",
+              "Mean p, Jev": "0.3974",
+              "Mean Δp": "0.861",
+              "Pairs": "2000",
+              "Pearson r": "0.9029",
+              "Δp\\": "-0.0876"
+            },
+            {
+              "": "19.80%",
+              "Arm": "single-50",
+              "Crosses 0.5": "0.8544",
+              "Mean \\": "0.1814",
+              "Mean p, Decisions": "0.2507",
+              "Mean p, Jev": "0.4098",
+              "Mean Δp": "0.816",
+              "Pairs": "2000",
+              "Pearson r": "0.8988",
+              "Δp\\": "-0.1591"
+            },
+            {
+              "": "10.48%",
+              "Arm": "swap-10",
+              "Crosses 0.5": "0.8691",
+              "Mean \\": "0.1120",
+              "Mean p, Decisions": "0.2444",
+              "Mean p, Jev": "0.3093",
+              "Mean Δp": "0.876",
+              "Pairs": "9700",
+              "Pearson r": "0.8984",
+              "Δp\\": "-0.0649"
+            }
+          ],
+          "Pack shape, reference style, and order": [
+            {
+              "": "15.46%",
+              "AUC": "0.8700",
+              "Arm": "pack-10-p1",
+              "Crosses 0.5": "+0.0287 [+0.0114, +0.0455]",
+              "ECE": "0.0931",
+              "Jev nDCG@10 (frozen)": "0.9001",
+              "Jev Δ vs Jev atomic": "0.1694",
+              "Mean \\": "0.1467",
+              "Mean Δp": "0.7068",
+              "nDCG@10": "0.6898",
+              "Δ AUC": "-0.0048 [-0.0189, +0.0093]",
+              "Δ vs atomic": "+0.0086 [-0.0163, +0.0337]",
+              "Δp\\": "-0.1007"
+            },
+            {
+              "": "16.41%",
+              "AUC": "0.8543",
+              "Arm": "ref-index-10` [1 refused, excluded]",
+              "Crosses 0.5": "+0.0253 [+0.0095, +0.0420]",
+              "ECE": "0.1024",
+              "Jev nDCG@10 (frozen)": "0.8960",
+              "Jev Δ vs Jev atomic": "0.1882",
+              "Mean \\": "0.1637",
+              "Mean Δp": "0.7034",
+              "nDCG@10": "0.6676",
+              "Δ AUC": "-0.0205 [-0.0337, -0.0073]",
+              "Δ vs atomic": "-0.0131 [-0.0355, +0.0099]",
+              "Δp\\": "-0.0778"
+            },
+            {
+              "": "14.92%",
+              "AUC": "0.8706",
+              "Arm": "ref-id-10",
+              "Crosses 0.5": "+0.0295 [+0.0123, +0.0471]",
+              "ECE": "0.1053",
+              "Jev nDCG@10 (frozen)": "0.9020",
+              "Jev Δ vs Jev atomic": "0.1744",
+              "Mean \\": "0.1477",
+              "Mean Δp": "0.7076",
+              "nDCG@10": "0.6936",
+              "Δ AUC": "-0.0042 [-0.0175, +0.0105]",
+              "Δ vs atomic": "+0.0125 [-0.0113, +0.0359]",
+              "Δp\\": "-0.0827"
+            },
+            {
+              "": "14.96%",
+              "AUC": "0.8691",
+              "Arm": "swap-10",
+              "Crosses 0.5": "+0.0260 [+0.0079, +0.0443]",
+              "ECE": "0.0921",
+              "Jev nDCG@10 (frozen)": "0.8984",
+              "Jev Δ vs Jev atomic": "0.1691",
+              "Mean \\": "0.1464",
+              "Mean Δp": "0.7042",
+              "nDCG@10": "0.6950",
+              "Δ AUC": "-0.0057 [-0.0202, +0.0097]",
+              "Δ vs atomic": "+0.0138 [-0.0088, +0.0374]",
+              "Δp\\": "-0.1016"
+            },
+            {
+              "": "9.21%",
+              "AUC": "0.8779",
+              "Arm": "cross-4",
+              "Crosses 0.5": "+0.0166 [+0.0046, +0.0293]",
+              "ECE": "0.2081",
+              "Jev nDCG@10 (frozen)": "0.8900",
+              "Jev Δ vs Jev atomic": "0.2051",
+              "Mean \\": "0.1033",
+              "Mean Δp": "0.6948",
+              "nDCG@10": "0.6714",
+              "Δ AUC": "+0.0032 [-0.0083, +0.0144]",
+              "Δ vs atomic": "-0.0097 [-0.0296, +0.0105]",
+              "Δp\\": "-0.0036"
+            },
+            {
+              "": "10.55%",
+              "AUC": "0.8733",
+              "Arm": "cross-20",
+              "Crosses 0.5": "+0.0201 [+0.0096, +0.0309]",
+              "ECE": "0.2311",
+              "Jev nDCG@10 (frozen)": "0.8889",
+              "Jev Δ vs Jev atomic": "0.2287",
+              "Mean \\": "0.1124",
+              "Mean Δp": "0.6982",
+              "nDCG@10": "0.6741",
+              "Δ AUC": "-0.0015 [-0.0150, +0.0127]",
+              "Δ vs atomic": "-0.0070 [-0.0268, +0.0127]",
+              "Δp\\": "+0.0091"
+            }
+          ],
+          "Pack size": [
+            {
+              "": "0.6782",
+              "AUC (grade≥2)": "0.8748",
+              "Arm": "atomic",
+              "Brier": "0.2099",
+              "ECE": "0.2312",
+              "Holm p": "—",
+              "K": "1",
+              "Mean \\": "—",
+              "Mean Δp": "—",
+              "nDCG@10": "0.6812",
+              "Δ AUC": "—",
+              "Δ vs atomic": "—",
+              "Δp\\": "—"
+            },
+            {
+              "": "0.6889",
+              "AUC (grade≥2)": "0.8712",
+              "Arm": "pack-2",
+              "Brier": "0.1762",
+              "ECE": "0.1838",
+              "Holm p": "1.0000",
+              "K": "2",
+              "Mean \\": "0.1020",
+              "Mean Δp": "+0.0108 [-0.0021, +0.0241]",
+              "nDCG@10": "0.6854",
+              "Δ AUC": "-0.0036 [-0.0127, +0.0071]",
+              "Δ vs atomic": "+0.0043 [-0.0139, +0.0225]",
+              "Δp\\": "-0.0309"
+            },
+            {
+              "": "0.6970",
+              "AUC (grade≥2)": "0.8707",
+              "Arm": "pack-4",
+              "Brier": "0.1574",
+              "ECE": "0.1414",
+              "Holm p": "1.0000",
+              "K": "4",
+              "Mean \\": "0.1284",
+              "Mean Δp": "+0.0189 [+0.0046, +0.0338]",
+              "nDCG@10": "0.6907",
+              "Δ AUC": "-0.0040 [-0.0163, +0.0093]",
+              "Δ vs atomic": "+0.0095 [-0.0115, +0.0306]",
+              "Δp\\": "-0.0641"
+            },
+            {
+              "": "0.7052",
+              "AUC (grade≥2)": "0.8710",
+              "Arm": "pack-10",
+              "Brier": "0.1419",
+              "ECE": "0.0925",
+              "Holm p": "1.0000",
+              "K": "10",
+              "Mean \\": "0.1469",
+              "Mean Δp": "+0.0270 [+0.0112, +0.0429]",
+              "nDCG@10": "0.6933",
+              "Δ AUC": "-0.0037 [-0.0174, +0.0109]",
+              "Δ vs atomic": "+0.0121 [-0.0101, +0.0345]",
+              "Δp\\": "-0.1014"
+            },
+            {
+              "": "0.7074",
+              "AUC (grade≥2)": "0.8762",
+              "Arm": "pack-20",
+              "Brier": "0.1316",
+              "ECE": "0.0611",
+              "Holm p": "0.6960",
+              "K": "20",
+              "Mean \\": "0.1595",
+              "Mean Δp": "+0.0292 [+0.0141, +0.0447]",
+              "nDCG@10": "0.6984",
+              "Δ AUC": "+0.0015 [-0.0138, +0.0184]",
+              "Δ vs atomic": "+0.0172 [-0.0045, +0.0394]",
+              "Δp\\": "-0.1259"
+            },
+            {
+              "": "0.7124",
+              "AUC (grade≥2)": "0.8717",
+              "Arm": "pack-50",
+              "Brier": "0.1299",
+              "ECE": "0.0463",
+              "Holm p": "1.0000",
+              "K": "50",
+              "Mean \\": "0.1740",
+              "Mean Δp": "+0.0342 [+0.0157, +0.0530]",
+              "nDCG@10": "0.6951",
+              "Δ AUC": "-0.0031 [-0.0248, +0.0163]",
+              "Δ vs atomic": "+0.0139 [-0.0091, +0.0368]",
+              "Δp\\": "-0.1478"
+            },
+            {
+              "": "0.7143",
+              "AUC (grade≥2)": "0.8656",
+              "Arm": "pack-100",
+              "Brier": "0.1313",
+              "ECE": "0.0453",
+              "Holm p": "1.0000",
+              "K": "100",
+              "Mean \\": "0.1825",
+              "Mean Δp": "+0.0362 [+0.0173, +0.0546]",
+              "nDCG@10": "0.6963",
+              "Δ AUC": "-0.0091 [-0.0305, +0.0110]",
+              "Δ vs atomic": "+0.0151 [-0.0077, +0.0386]",
+              "Δp\\": "-0.1582"
+            },
+            {
+              "Arm": "atomic",
+              "nDCG@10, random ties": "0.6720",
+              "Δ vs atomic": "—"
+            },
+            {
+              "Arm": "pack-2",
+              "nDCG@10, random ties": "0.6787",
+              "Δ vs atomic": "+0.0067 [-0.0111, +0.0237]"
+            },
+            {
+              "Arm": "pack-4",
+              "nDCG@10, random ties": "0.6863",
+              "Δ vs atomic": "+0.0143 [-0.0054, +0.0349]"
+            },
+            {
+              "Arm": "pack-10",
+              "nDCG@10, random ties": "0.6886",
+              "Δ vs atomic": "+0.0167 [-0.0052, +0.0391]"
+            },
+            {
+              "Arm": "pack-20",
+              "nDCG@10, random ties": "0.6966",
+              "Δ vs atomic": "+0.0246 [+0.0028, +0.0463]"
+            },
+            {
+              "Arm": "pack-50",
+              "nDCG@10, random ties": "0.6912",
+              "Δ vs atomic": "+0.0192 [-0.0038, +0.0421]"
+            },
+            {
+              "Arm": "pack-100",
+              "nDCG@10, random ties": "0.6934",
+              "Δ vs atomic": "+0.0215 [-0.0014, +0.0444]"
+            }
+          ],
+          "Position within the pack": [
+            {
+              "Arm": "pack-10",
+              "First fifth": "-0.100 / 0.147 / AUC 0.874",
+              "Fourth": "-0.100 / 0.146 / AUC 0.869",
+              "Last fifth": "-0.084 / 0.134 / AUC 0.865",
+              "Middle": "-0.108 / 0.154 / AUC 0.869",
+              "Second": "-0.114 / 0.154 / AUC 0.879"
+            },
+            {
+              "Arm": "pack-20",
+              "First fifth": "-0.127 / 0.161 / AUC 0.881",
+              "Fourth": "-0.132 / 0.163 / AUC 0.886",
+              "Last fifth": "-0.125 / 0.159 / AUC 0.875",
+              "Middle": "-0.118 / 0.155 / AUC 0.865",
+              "Second": "-0.126 / 0.160 / AUC 0.873"
+            },
+            {
+              "Arm": "pack-50",
+              "First fifth": "-0.145 / 0.173 / AUC 0.853",
+              "Fourth": "-0.149 / 0.176 / AUC 0.872",
+              "Last fifth": "-0.144 / 0.170 / AUC 0.879",
+              "Middle": "-0.148 / 0.173 / AUC 0.882",
+              "Second": "-0.153 / 0.177 / AUC 0.872"
+            },
+            {
+              "Arm": "pack-100",
+              "First fifth": "-0.156 / 0.179 / AUC 0.865",
+              "Fourth": "-0.161 / 0.186 / AUC 0.867",
+              "Last fifth": "-0.162 / 0.185 / AUC 0.871",
+              "Middle": "-0.155 / 0.182 / AUC 0.847",
+              "Second": "-0.157 / 0.181 / AUC 0.877"
+            }
+          ],
+          "Resources": [
+            {
+              "Arm": "atomic",
+              "Decisions": "9700",
+              "Input tokens / decision": "316",
+              "List USD": "$0.3064",
+              "Refused questions": "0",
+              "Request p50 ms": "108",
+              "Request p95 ms": "207",
+              "Requests": "9700",
+              "Retried": "5",
+              "p50 request ms / decision": "108.1"
+            },
+            {
+              "Arm": "retest",
+              "Decisions": "2000",
+              "Input tokens / decision": "312",
+              "List USD": "$0.0625",
+              "Refused questions": "0",
+              "Request p50 ms": "108",
+              "Request p95 ms": "203",
+              "Requests": "2000",
+              "Retried": "1",
+              "p50 request ms / decision": "108.1"
+            },
+            {
+              "Arm": "pack-2-p1",
+              "Decisions": "9700",
+              "Input tokens / decision": "326",
+              "List USD": "$0.3162",
+              "Refused questions": "0",
+              "Request p50 ms": "110",
+              "Request p95 ms": "208",
+              "Requests": "4850",
+              "Retried": "2",
+              "p50 request ms / decision": "54.8"
+            },
+            {
+              "Arm": "pack-2-p2",
+              "Decisions": "9700",
+              "Input tokens / decision": "326",
+              "List USD": "$0.3162",
+              "Refused questions": "0",
+              "Request p50 ms": "110",
+              "Request p95 ms": "204",
+              "Requests": "4850",
+              "Retried": "1",
+              "p50 request ms / decision": "55.1"
+            },
+            {
+              "Arm": "pack-4-p1",
+              "Decisions": "9700",
+              "Input tokens / decision": "319",
+              "List USD": "$0.3094",
+              "Refused questions": "0",
+              "Request p50 ms": "114",
+              "Request p95 ms": "215",
+              "Requests": "2425",
+              "Retried": "1",
+              "p50 request ms / decision": "28.5"
+            },
+            {
+              "Arm": "pack-4-p2",
+              "Decisions": "9700",
+              "Input tokens / decision": "319",
+              "List USD": "$0.3094",
+              "Refused questions": "0",
+              "Request p50 ms": "114",
+              "Request p95 ms": "212",
+              "Requests": "2425",
+              "Retried": "2",
+              "p50 request ms / decision": "28.5"
+            },
+            {
+              "Arm": "pack-10-p1",
+              "Decisions": "9700",
+              "Input tokens / decision": "315",
+              "List USD": "$0.3054",
+              "Refused questions": "0",
+              "Request p50 ms": "137",
+              "Request p95 ms": "249",
+              "Requests": "970",
+              "Retried": "1",
+              "p50 request ms / decision": "13.7"
+            },
+            {
+              "Arm": "pack-10-p2",
+              "Decisions": "9700",
+              "Input tokens / decision": "315",
+              "List USD": "$0.3054",
+              "Refused questions": "0",
+              "Request p50 ms": "136",
+              "Request p95 ms": "261",
+              "Requests": "970",
+              "Retried": "3",
+              "p50 request ms / decision": "13.6"
+            },
+            {
+              "Arm": "pack-20-p1",
+              "Decisions": "9700",
+              "Input tokens / decision": "313",
+              "List USD": "$0.3041",
+              "Refused questions": "0",
+              "Request p50 ms": "154",
+              "Request p95 ms": "303",
+              "Requests": "485",
+              "Retried": "0",
+              "p50 request ms / decision": "7.7"
+            },
+            {
+              "Arm": "pack-20-p2",
+              "Decisions": "9700",
+              "Input tokens / decision": "313",
+              "List USD": "$0.3041",
+              "Refused questions": "0",
+              "Request p50 ms": "153",
+              "Request p95 ms": "250",
+              "Requests": "485",
+              "Retried": "0",
+              "p50 request ms / decision": "7.7"
+            },
+            {
+              "Arm": "pack-50-p1",
+              "Decisions": "9700",
+              "Input tokens / decision": "313",
+              "List USD": "$0.3032",
+              "Refused questions": "0",
+              "Request p50 ms": "221",
+              "Request p95 ms": "338",
+              "Requests": "194",
+              "Retried": "0",
+              "p50 request ms / decision": "4.4"
+            },
+            {
+              "Arm": "pack-50-p2",
+              "Decisions": "9700",
+              "Input tokens / decision": "313",
+              "List USD": "$0.3032",
+              "Refused questions": "0",
+              "Request p50 ms": "221",
+              "Request p95 ms": "338",
+              "Requests": "194",
+              "Retried": "0",
+              "p50 request ms / decision": "4.4"
+            },
+            {
+              "Arm": "pack-100-p1",
+              "Decisions": "9700",
+              "Input tokens / decision": "312",
+              "List USD": "$0.3030",
+              "Refused questions": "0",
+              "Request p50 ms": "290",
+              "Request p95 ms": "512",
+              "Requests": "97",
+              "Retried": "1",
+              "p50 request ms / decision": "2.9"
+            },
+            {
+              "Arm": "pack-100-p2",
+              "Decisions": "9700",
+              "Input tokens / decision": "312",
+              "List USD": "$0.3030",
+              "Refused questions": "0",
+              "Request p50 ms": "288",
+              "Request p95 ms": "685",
+              "Requests": "97",
+              "Retried": "0",
+              "p50 request ms / decision": "2.9"
+            },
+            {
+              "Arm": "swap-10",
+              "Decisions": "9700",
+              "Input tokens / decision": "315",
+              "List USD": "$0.3054",
+              "Refused questions": "0",
+              "Request p50 ms": "136",
+              "Request p95 ms": "284",
+              "Requests": "970",
+              "Retried": "2",
+              "p50 request ms / decision": "13.6"
+            },
+            {
+              "Arm": "ref-index-10",
+              "Decisions": "9700",
+              "Input tokens / decision": "312",
+              "List USD": "$0.3025",
+              "Refused questions": "1",
+              "Request p50 ms": "135",
+              "Request p95 ms": "259",
+              "Requests": "970",
+              "Retried": "0",
+              "p50 request ms / decision": "13.5"
+            },
+            {
+              "Arm": "ref-id-10",
+              "Decisions": "9700",
+              "Input tokens / decision": "330",
+              "List USD": "$0.3197",
+              "Refused questions": "0",
+              "Request p50 ms": "136",
+              "Request p95 ms": "316",
+              "Requests": "970",
+              "Retried": "1",
+              "p50 request ms / decision": "13.6"
+            },
+            {
+              "Arm": "cross-4",
+              "Decisions": "9700",
+              "Input tokens / decision": "340",
+              "List USD": "$0.3301",
+              "Refused questions": "0",
+              "Request p50 ms": "114",
+              "Request p95 ms": "209",
+              "Requests": "2425",
+              "Retried": "0",
+              "p50 request ms / decision": "28.5"
+            },
+            {
+              "Arm": "cross-20",
+              "Decisions": "9700",
+              "Input tokens / decision": "338",
+              "List USD": "$0.3274",
+              "Refused questions": "0",
+              "Request p50 ms": "154",
+              "Request p95 ms": "257",
+              "Requests": "485",
+              "Retried": "0",
+              "p50 request ms / decision": "7.7"
+            },
+            {
+              "Arm": "single-10",
+              "Decisions": "2000",
+              "Input tokens / decision": "1135",
+              "List USD": "$0.2271",
+              "Refused questions": "0",
+              "Request p50 ms": "110",
+              "Request p95 ms": "210",
+              "Requests": "2000",
+              "Retried": "1",
+              "p50 request ms / decision": "109.5"
+            },
+            {
+              "Arm": "single-50",
+              "Decisions": "2000",
+              "Input tokens / decision": "4687",
+              "List USD": "$0.9374",
+              "Refused questions": "0",
+              "Request p50 ms": "115",
+              "Request p95 ms": "235",
+              "Requests": "2000",
+              "Retried": "0",
+              "p50 request ms / decision": "114.9"
+            },
+            {
+              "Arm": "neighbor-rel",
+              "Decisions": "1328",
+              "Input tokens / decision": "693",
+              "List USD": "$0.0920",
+              "Refused questions": "0",
+              "Request p50 ms": "109",
+              "Request p95 ms": "213",
+              "Requests": "1328",
+              "Retried": "0",
+              "p50 request ms / decision": "109.2"
+            },
+            {
+              "Arm": "neighbor-non",
+              "Decisions": "1328",
+              "Input tokens / decision": "675",
+              "List USD": "$0.0896",
+              "Refused questions": "0",
+              "Request p50 ms": "109",
+              "Request p95 ms": "198",
+              "Requests": "1328",
+              "Retried": "0",
+              "p50 request ms / decision": "108.9"
+            }
+          ],
+          "Score granularity": [
+            {
+              "Decisions": "183255",
+              "Distinct values": "101",
+              "Exactly 0 or 1": "6.01%",
+              "Multiples of 0.01": "100.00%",
+              "Provider": "OpenAI Decisions [1 refused, excluded]",
+              "Tied within query": "76.42%"
+            },
+            {
+              "Decisions": "183256",
+              "Distinct values": "100",
+              "Exactly 0 or 1": "0.01%",
+              "Multiples of 0.01": "100.00%",
+              "Provider": "Jev (frozen)",
+              "Tied within query": "77.48%"
+            }
+          ]
+        },
+        "resources": {
+          "atomic": {
+            "decisions": 9700,
+            "input_tokens": 3063742,
+            "input_tokens_per_decision": 315.849691,
+            "list_price_usd": 0.306374,
+            "request_latency_p50_s": 0.108077,
+            "request_latency_p95_s": 0.206646,
+            "request_ms_per_decision_p50": 108.076684,
+            "requests": 9700,
+            "retried_requests": 5
+          },
+          "cross-20": {
+            "decisions": 9700,
+            "input_tokens": 3274232,
+            "input_tokens_per_decision": 337.549691,
+            "list_price_usd": 0.327423,
+            "request_latency_p50_s": 0.1536,
+            "request_latency_p95_s": 0.256872,
+            "request_ms_per_decision_p50": 7.680012,
+            "requests": 485,
+            "retried_requests": 0
+          },
+          "cross-4": {
+            "decisions": 9700,
+            "input_tokens": 3301392,
+            "input_tokens_per_decision": 340.349691,
+            "list_price_usd": 0.330139,
+            "request_latency_p50_s": 0.11384,
+            "request_latency_p95_s": 0.208915,
+            "request_ms_per_decision_p50": 28.460084,
+            "requests": 2425,
+            "retried_requests": 0
+          },
+          "neighbor-non": {
+            "decisions": 1328,
+            "input_tokens": 896062,
+            "input_tokens_per_decision": 674.745482,
+            "list_price_usd": 0.089606,
+            "request_latency_p50_s": 0.108871,
+            "request_latency_p95_s": 0.198334,
+            "request_ms_per_decision_p50": 108.871262,
+            "requests": 1328,
+            "retried_requests": 0
+          },
+          "neighbor-rel": {
+            "decisions": 1328,
+            "input_tokens": 919702,
+            "input_tokens_per_decision": 692.546687,
+            "list_price_usd": 0.09197,
+            "request_latency_p50_s": 0.109161,
+            "request_latency_p95_s": 0.212904,
+            "request_ms_per_decision_p50": 109.161409,
+            "requests": 1328,
+            "retried_requests": 0
+          },
+          "pack-10-p1": {
+            "decisions": 9700,
+            "input_tokens": 3053979,
+            "input_tokens_per_decision": 314.843196,
+            "list_price_usd": 0.305398,
+            "request_latency_p50_s": 0.136625,
+            "request_latency_p95_s": 0.249272,
+            "request_ms_per_decision_p50": 13.662491,
+            "requests": 970,
+            "retried_requests": 1
+          },
+          "pack-10-p2": {
+            "decisions": 9700,
+            "input_tokens": 3053977,
+            "input_tokens_per_decision": 314.84299,
+            "list_price_usd": 0.305398,
+            "request_latency_p50_s": 0.136312,
+            "request_latency_p95_s": 0.261352,
+            "request_ms_per_decision_p50": 13.631151,
+            "requests": 970,
+            "retried_requests": 3
+          },
+          "pack-100-p1": {
+            "decisions": 9700,
+            "input_tokens": 3029736,
+            "input_tokens_per_decision": 312.343918,
+            "list_price_usd": 0.302974,
+            "request_latency_p50_s": 0.289599,
+            "request_latency_p95_s": 0.511502,
+            "request_ms_per_decision_p50": 2.895987,
+            "requests": 97,
+            "retried_requests": 1
+          },
+          "pack-100-p2": {
+            "decisions": 9700,
+            "input_tokens": 3029735,
+            "input_tokens_per_decision": 312.343814,
+            "list_price_usd": 0.302974,
+            "request_latency_p50_s": 0.287889,
+            "request_latency_p95_s": 0.685403,
+            "request_ms_per_decision_p50": 2.878894,
+            "requests": 97,
+            "retried_requests": 0
+          },
+          "pack-2-p1": {
+            "decisions": 9700,
+            "input_tokens": 3161737,
+            "input_tokens_per_decision": 325.952268,
+            "list_price_usd": 0.316174,
+            "request_latency_p50_s": 0.109581,
+            "request_latency_p95_s": 0.207765,
+            "request_ms_per_decision_p50": 54.790533,
+            "requests": 4850,
+            "retried_requests": 2
+          },
+          "pack-2-p2": {
+            "decisions": 9700,
+            "input_tokens": 3161735,
+            "input_tokens_per_decision": 325.952062,
+            "list_price_usd": 0.316173,
+            "request_latency_p50_s": 0.110118,
+            "request_latency_p95_s": 0.203569,
+            "request_ms_per_decision_p50": 55.059236,
+            "requests": 4850,
+            "retried_requests": 1
+          },
+          "pack-20-p1": {
+            "decisions": 9700,
+            "input_tokens": 3040509,
+            "input_tokens_per_decision": 313.454536,
+            "list_price_usd": 0.304051,
+            "request_latency_p50_s": 0.153717,
+            "request_latency_p95_s": 0.302572,
+            "request_ms_per_decision_p50": 7.685835,
+            "requests": 485,
+            "retried_requests": 0
+          },
+          "pack-20-p2": {
+            "decisions": 9700,
+            "input_tokens": 3040508,
+            "input_tokens_per_decision": 313.454433,
+            "list_price_usd": 0.304051,
+            "request_latency_p50_s": 0.153239,
+            "request_latency_p95_s": 0.24964,
+            "request_ms_per_decision_p50": 7.661962,
+            "requests": 485,
+            "retried_requests": 0
+          },
+          "pack-4-p1": {
+            "decisions": 9700,
+            "input_tokens": 3094388,
+            "input_tokens_per_decision": 319.009072,
+            "list_price_usd": 0.309439,
+            "request_latency_p50_s": 0.113982,
+            "request_latency_p95_s": 0.214803,
+            "request_ms_per_decision_p50": 28.495524,
+            "requests": 2425,
+            "retried_requests": 1
+          },
+          "pack-4-p2": {
+            "decisions": 9700,
+            "input_tokens": 3094392,
+            "input_tokens_per_decision": 319.009485,
+            "list_price_usd": 0.309439,
+            "request_latency_p50_s": 0.114047,
+            "request_latency_p95_s": 0.212255,
+            "request_ms_per_decision_p50": 28.511709,
+            "requests": 2425,
+            "retried_requests": 2
+          },
+          "pack-50-p1": {
+            "decisions": 9700,
+            "input_tokens": 3032430,
+            "input_tokens_per_decision": 312.621649,
+            "list_price_usd": 0.303243,
+            "request_latency_p50_s": 0.220719,
+            "request_latency_p95_s": 0.33796,
+            "request_ms_per_decision_p50": 4.414375,
+            "requests": 194,
+            "retried_requests": 0
+          },
+          "pack-50-p2": {
+            "decisions": 9700,
+            "input_tokens": 3032429,
+            "input_tokens_per_decision": 312.621546,
+            "list_price_usd": 0.303243,
+            "request_latency_p50_s": 0.221449,
+            "request_latency_p95_s": 0.33842,
+            "request_ms_per_decision_p50": 4.428976,
+            "requests": 194,
+            "retried_requests": 0
+          },
+          "ref-id-10": {
+            "decisions": 9700,
+            "input_tokens": 3197247,
+            "input_tokens_per_decision": 329.613093,
+            "list_price_usd": 0.319725,
+            "request_latency_p50_s": 0.135767,
+            "request_latency_p95_s": 0.315863,
+            "request_ms_per_decision_p50": 13.576687,
+            "requests": 970,
+            "retried_requests": 1
+          },
+          "ref-index-10": {
+            "decisions": 9700,
+            "input_tokens": 3024879,
+            "input_tokens_per_decision": 311.843196,
+            "list_price_usd": 0.302488,
+            "refused_questions": 1,
+            "request_latency_p50_s": 0.135296,
+            "request_latency_p95_s": 0.259103,
+            "request_ms_per_decision_p50": 13.529586,
+            "requests": 970,
+            "retried_requests": 0
+          },
+          "retest": {
+            "decisions": 2000,
+            "input_tokens": 624682,
+            "input_tokens_per_decision": 312.341,
+            "list_price_usd": 0.062468,
+            "request_latency_p50_s": 0.108076,
+            "request_latency_p95_s": 0.202953,
+            "request_ms_per_decision_p50": 108.076389,
+            "requests": 2000,
+            "retried_requests": 1
+          },
+          "single-10": {
+            "decisions": 2000,
+            "input_tokens": 2270910,
+            "input_tokens_per_decision": 1135.455,
+            "list_price_usd": 0.227091,
+            "request_latency_p50_s": 0.109513,
+            "request_latency_p95_s": 0.210287,
+            "request_ms_per_decision_p50": 109.512909,
+            "requests": 2000,
+            "retried_requests": 1
+          },
+          "single-50": {
+            "decisions": 2000,
+            "input_tokens": 9374200,
+            "input_tokens_per_decision": 4687.1,
+            "list_price_usd": 0.93742,
+            "request_latency_p50_s": 0.114866,
+            "request_latency_p95_s": 0.235357,
+            "request_ms_per_decision_p50": 114.865512,
+            "requests": 2000,
+            "retried_requests": 0
+          },
+          "swap-10": {
+            "decisions": 9700,
+            "input_tokens": 3053978,
+            "input_tokens_per_decision": 314.843093,
+            "list_price_usd": 0.305398,
+            "request_latency_p50_s": 0.136408,
+            "request_latency_p95_s": 0.283604,
+            "request_ms_per_decision_p50": 13.640843,
+            "requests": 970,
+            "retried_requests": 2
+          }
+        },
+        "totals": {
+          "input_tokens": 69826581,
+          "list_price_usd": 6.982658,
+          "refused_questions": 1,
+          "requests": 42218,
+          "retried_requests": 21
+        }
+      },
+      "state-position": {
+        "report_tables": {
+          "Needle question": [
+            {
+              "AUC": "0.8452",
+              "ECE": "0.4016",
+              "Jev AUC (frozen)": "0.2654",
+              "Mean p, non-relevant": "0.6372",
+              "Mean p, relevant": "0.9449",
+              "Mean Δp / mean \\": "—",
+              "Passages": "10",
+              "Target position": "start",
+              "vs single": "+0.0008 [-0.0069, +0.0079]",
+              "Δ AUC vs middle": "+0.0177 [-0.0107, +0.0461]",
+              "Δp\\": "0.8997"
+            },
+            {
+              "AUC": "0.8328",
+              "ECE": "0.4001",
+              "Jev AUC (frozen)": "0.2863",
+              "Mean p, non-relevant": "0.6375",
+              "Mean p, relevant": "0.9399",
+              "Mean Δp / mean \\": "—",
+              "Passages": "10",
+              "Target position": "25%",
+              "vs single": "+0.0004 [-0.0027, +0.0032]",
+              "Δ AUC vs middle": "+0.0053 [-0.0043, +0.0144]",
+              "Δp\\": "0.8992"
+            },
+            {
+              "AUC": "0.8276",
+              "ECE": "0.3959",
+              "Jev AUC (frozen)": "0.2910",
+              "Mean p, non-relevant": "0.6348",
+              "Mean p, relevant": "0.9327",
+              "Mean Δp / mean \\": "—",
+              "Passages": "10",
+              "Target position": "middle",
+              "vs single": "—",
+              "Δ AUC vs middle": "—",
+              "Δp\\": "0.8988"
+            },
+            {
+              "AUC": "0.8239",
+              "ECE": "0.3870",
+              "Jev AUC (frozen)": "0.2911",
+              "Mean p, non-relevant": "0.6259",
+              "Mean p, relevant": "0.9237",
+              "Mean Δp / mean \\": "—",
+              "Passages": "10",
+              "Target position": "75%",
+              "vs single": "-0.0030 [-0.0077, +0.0011]",
+              "Δ AUC vs middle": "-0.0037 [-0.0165, +0.0072]",
+              "Δp\\": "0.8959"
+            },
+            {
+              "AUC": "0.8224",
+              "ECE": "0.3970",
+              "Jev AUC (frozen)": "0.2820",
+              "Mean p, non-relevant": "0.6400",
+              "Mean p, relevant": "0.9258",
+              "Mean Δp / mean \\": "—",
+              "Passages": "10",
+              "Target position": "end",
+              "vs single": "-0.0011 [-0.0055, +0.0029]",
+              "Δ AUC vs middle": "-0.0051 [-0.0313, +0.0183]",
+              "Δp\\": "0.8977"
+            },
+            {
+              "AUC": "0.8317",
+              "ECE": "0.3937",
+              "Jev AUC (frozen)": "0.2561",
+              "Mean p, non-relevant": "0.6314",
+              "Mean p, relevant": "0.9330",
+              "Mean Δp / mean \\": "—",
+              "Passages": "40",
+              "Target position": "start",
+              "vs single": "+0.0019 [-0.0039, +0.0075]",
+              "Δ AUC vs middle": "+0.0038 [-0.0289, +0.0425]",
+              "Δp\\": "0.9000"
+            },
+            {
+              "AUC": "0.8243",
+              "ECE": "0.3861",
+              "Jev AUC (frozen)": "0.2769",
+              "Mean p, non-relevant": "0.6291",
+              "Mean p, relevant": "0.9151",
+              "Mean Δp / mean \\": "—",
+              "Passages": "40",
+              "Target position": "25%",
+              "vs single": "+0.0015 [-0.0015, +0.0041]",
+              "Δ AUC vs middle": "-0.0036 [-0.0157, +0.0096]",
+              "Δp\\": "0.8995"
+            },
+            {
+              "AUC": "0.8280",
+              "ECE": "0.3727",
+              "Jev AUC (frozen)": "0.2775",
+              "Mean p, non-relevant": "0.6136",
+              "Mean p, relevant": "0.9056",
+              "Mean Δp / mean \\": "—",
+              "Passages": "40",
+              "Target position": "middle",
+              "vs single": "—",
+              "Δ AUC vs middle": "—",
+              "Δp\\": "0.8981"
+            },
+            {
+              "AUC": "0.8248",
+              "ECE": "0.3670",
+              "Jev AUC (frozen)": "0.2767",
+              "Mean p, non-relevant": "0.6078",
+              "Mean p, relevant": "0.9000",
+              "Mean Δp / mean \\": "—",
+              "Passages": "40",
+              "Target position": "75%",
+              "vs single": "-0.0024 [-0.0052, +0.0013]",
+              "Δ AUC vs middle": "-0.0031 [-0.0143, +0.0061]",
+              "Δp\\": "0.8957"
+            },
+            {
+              "AUC": "0.8327",
+              "ECE": "0.3857",
+              "Jev AUC (frozen)": "0.2679",
+              "Mean p, non-relevant": "0.6305",
+              "Mean p, relevant": "0.9111",
+              "Mean Δp / mean \\": "—",
+              "Passages": "40",
+              "Target position": "end",
+              "vs single": "-0.0090 [-0.0171, -0.0019]",
+              "Δ AUC vs middle": "+0.0047 [-0.0175, +0.0290]",
+              "Δp\\": "0.8890"
+            }
+          ],
+          "OpenAI Decisions versus frozen Jev, same requests": [
+            {
+              "": "19.05%",
+              "Arm": "needle-10-25%",
+              "Crosses 0.5": "0.8328",
+              "Mean \\": "0.1627",
+              "Mean p, Decisions": "0.7404",
+              "Mean p, Jev": "0.6266",
+              "Mean Δp": "0.783",
+              "Pairs": "1202",
+              "Pearson r": "0.8992",
+              "Δp\\": "+0.1138"
+            },
+            {
+              "": "19.97%",
+              "Arm": "needle-10-75%",
+              "Crosses 0.5": "0.8239",
+              "Mean \\": "0.1634",
+              "Mean p, Decisions": "0.7272",
+              "Mean p, Jev": "0.6313",
+              "Mean Δp": "0.759",
+              "Pairs": "1202",
+              "Pearson r": "0.8959",
+              "Δp\\": "+0.0959"
+            },
+            {
+              "": "19.30%",
+              "Arm": "needle-10-end",
+              "Crosses 0.5": "0.8224",
+              "Mean \\": "0.1635",
+              "Mean p, Decisions": "0.7372",
+              "Mean p, Jev": "0.6223",
+              "Mean Δp": "0.785",
+              "Pairs": "1202",
+              "Pearson r": "0.8977",
+              "Δp\\": "+0.1149"
+            },
+            {
+              "": "18.97%",
+              "Arm": "needle-10-middle",
+              "Crosses 0.5": "0.8276",
+              "Mean \\": "0.1611",
+              "Mean p, Decisions": "0.7361",
+              "Mean p, Jev": "0.6313",
+              "Mean Δp": "0.775",
+              "Pairs": "1202",
+              "Pearson r": "0.8988",
+              "Δp\\": "+0.1048"
+            },
+            {
+              "": "21.38%",
+              "Arm": "needle-10-start",
+              "Crosses 0.5": "0.8452",
+              "Mean \\": "0.1645",
+              "Mean p, Decisions": "0.7419",
+              "Mean p, Jev": "0.6056",
+              "Mean Δp": "0.808",
+              "Pairs": "1202",
+              "Pearson r": "0.8997",
+              "Δp\\": "+0.1362"
+            },
+            {
+              "": "22.38%",
+              "Arm": "needle-40-25%",
+              "Crosses 0.5": "0.8243",
+              "Mean \\": "0.1719",
+              "Mean p, Decisions": "0.7264",
+              "Mean p, Jev": "0.6171",
+              "Mean Δp": "0.741",
+              "Pairs": "1202",
+              "Pearson r": "0.8995",
+              "Δp\\": "+0.1093"
+            },
+            {
+              "": "22.30%",
+              "Arm": "needle-40-75%",
+              "Crosses 0.5": "0.8248",
+              "Mean \\": "0.1712",
+              "Mean p, Decisions": "0.7072",
+              "Mean p, Jev": "0.6170",
+              "Mean Δp": "0.735",
+              "Pairs": "1202",
+              "Pearson r": "0.8957",
+              "Δp\\": "+0.0903"
+            },
+            {
+              "": "23.46%",
+              "Arm": "needle-40-end",
+              "Crosses 0.5": "0.8327",
+              "Mean \\": "0.1731",
+              "Mean p, Decisions": "0.7260",
+              "Mean p, Jev": "0.6082",
+              "Mean Δp": "0.755",
+              "Pairs": "1202",
+              "Pearson r": "0.8890",
+              "Δp\\": "+0.1178"
+            },
+            {
+              "": "21.55%",
+              "Arm": "needle-40-middle",
+              "Crosses 0.5": "0.8280",
+              "Mean \\": "0.1721",
+              "Mean p, Decisions": "0.7130",
+              "Mean p, Jev": "0.6178",
+              "Mean Δp": "0.734",
+              "Pairs": "1202",
+              "Pearson r": "0.8981",
+              "Δp\\": "+0.0952"
+            },
+            {
+              "": "21.63%",
+              "Arm": "needle-40-start",
+              "Crosses 0.5": "0.8317",
+              "Mean \\": "0.1697",
+              "Mean p, Decisions": "0.7340",
+              "Mean p, Jev": "0.5964",
+              "Mean Δp": "0.793",
+              "Pairs": "1202",
+              "Pearson r": "0.9000",
+              "Δp\\": "+0.1376"
+            },
+            {
+              "": "16.81%",
+              "Arm": "pointed-10-25%",
+              "Crosses 0.5": "0.8670",
+              "Mean \\": "0.1269",
+              "Mean p, Decisions": "0.6283",
+              "Mean p, Jev": "0.5869",
+              "Mean Δp": "0.872",
+              "Pairs": "1202",
+              "Pearson r": "0.8939",
+              "Δp\\": "+0.0414"
+            },
+            {
+              "": "16.06%",
+              "Arm": "pointed-10-75%",
+              "Crosses 0.5": "0.8623",
+              "Mean \\": "0.1302",
+              "Mean p, Decisions": "0.6132",
+              "Mean p, Jev": "0.5974",
+              "Mean Δp": "0.866",
+              "Pairs": "1202",
+              "Pearson r": "0.8933",
+              "Δp\\": "+0.0158"
+            },
+            {
+              "": "15.64%",
+              "Arm": "pointed-10-end",
+              "Crosses 0.5": "0.8581",
+              "Mean \\": "0.1283",
+              "Mean p, Decisions": "0.5979",
+              "Mean p, Jev": "0.5935",
+              "Mean Δp": "0.861",
+              "Pairs": "1202",
+              "Pearson r": "0.8947",
+              "Δp\\": "+0.0044"
+            },
+            {
+              "": "15.81%",
+              "Arm": "pointed-10-middle",
+              "Crosses 0.5": "0.8660",
+              "Mean \\": "0.1282",
+              "Mean p, Decisions": "0.6152",
+              "Mean p, Jev": "0.5949",
+              "Mean Δp": "0.865",
+              "Pairs": "1202",
+              "Pearson r": "0.8947",
+              "Δp\\": "+0.0202"
+            },
+            {
+              "": "17.47%",
+              "Arm": "pointed-10-start",
+              "Crosses 0.5": "0.8633",
+              "Mean \\": "0.1229",
+              "Mean p, Decisions": "0.6231",
+              "Mean p, Jev": "0.5833",
+              "Mean Δp": "0.883",
+              "Pairs": "1202",
+              "Pearson r": "0.8966",
+              "Δp\\": "+0.0398"
+            },
+            {
+              "": "18.64%",
+              "Arm": "pointed-40-25%",
+              "Crosses 0.5": "0.8529",
+              "Mean \\": "0.1423",
+              "Mean p, Decisions": "0.6045",
+              "Mean p, Jev": "0.5853",
+              "Mean Δp": "0.830",
+              "Pairs": "1202",
+              "Pearson r": "0.8945",
+              "Δp\\": "+0.0191"
+            },
+            {
+              "": "17.47%",
+              "Arm": "pointed-40-75%",
+              "Crosses 0.5": "0.8617",
+              "Mean \\": "0.1455",
+              "Mean p, Decisions": "0.5901",
+              "Mean p, Jev": "0.5836",
+              "Mean Δp": "0.826",
+              "Pairs": "1202",
+              "Pearson r": "0.8976",
+              "Δp\\": "+0.0065"
+            },
+            {
+              "": "16.14%",
+              "Arm": "pointed-40-end",
+              "Crosses 0.5": "0.8562",
+              "Mean \\": "0.1416",
+              "Mean p, Decisions": "0.5535",
+              "Mean p, Jev": "0.5808",
+              "Mean Δp": "0.848",
+              "Pairs": "1202",
+              "Pearson r": "0.8897",
+              "Δp\\": "-0.0273"
+            },
+            {
+              "": "17.97%",
+              "Arm": "pointed-40-middle",
+              "Crosses 0.5": "0.8501",
+              "Mean \\": "0.1458",
+              "Mean p, Decisions": "0.5986",
+              "Mean p, Jev": "0.5859",
+              "Mean Δp": "0.823",
+              "Pairs": "1202",
+              "Pearson r": "0.8974",
+              "Δp\\": "+0.0127"
+            },
+            {
+              "": "17.39%",
+              "Arm": "pointed-40-start",
+              "Crosses 0.5": "0.8569",
+              "Mean \\": "0.1280",
+              "Mean p, Decisions": "0.6062",
+              "Mean p, Jev": "0.5719",
+              "Mean Δp": "0.868",
+              "Pairs": "1202",
+              "Pearson r": "0.8968",
+              "Δp\\": "+0.0343"
+            },
+            {
+              "": "17.64%",
+              "Arm": "pointed-qfirst-40-25%",
+              "Crosses 0.5": "0.9003",
+              "Mean \\": "0.1465",
+              "Mean p, Decisions": "0.5079",
+              "Mean p, Jev": "0.6213",
+              "Mean Δp": "0.875",
+              "Pairs": "1202",
+              "Pearson r": "0.9040",
+              "Δp\\": "-0.1134"
+            },
+            {
+              "": "19.05%",
+              "Arm": "pointed-qfirst-40-75%",
+              "Crosses 0.5": "0.8948",
+              "Mean \\": "0.1536",
+              "Mean p, Decisions": "0.5060",
+              "Mean p, Jev": "0.6258",
+              "Mean Δp": "0.871",
+              "Pairs": "1202",
+              "Pearson r": "0.9038",
+              "Δp\\": "-0.1199"
+            },
+            {
+              "": "18.30%",
+              "Arm": "pointed-qfirst-40-end",
+              "Crosses 0.5": "0.8916",
+              "Mean \\": "0.1612",
+              "Mean p, Decisions": "0.5044",
+              "Mean p, Jev": "0.6240",
+              "Mean Δp": "0.863",
+              "Pairs": "1202",
+              "Pearson r": "0.9036",
+              "Δp\\": "-0.1196"
+            },
+            {
+              "": "20.55%",
+              "Arm": "pointed-qfirst-40-middle",
+              "Crosses 0.5": "0.8991",
+              "Mean \\": "0.1599",
+              "Mean p, Decisions": "0.4965",
+              "Mean p, Jev": "0.6270",
+              "Mean Δp": "0.862",
+              "Pairs": "1202",
+              "Pearson r": "0.9054",
+              "Δp\\": "-0.1305"
+            },
+            {
+              "": "13.89%",
+              "Arm": "pointed-qfirst-40-start",
+              "Crosses 0.5": "0.8897",
+              "Mean \\": "0.1233",
+              "Mean p, Decisions": "0.5389",
+              "Mean p, Jev": "0.5868",
+              "Mean Δp": "0.891",
+              "Pairs": "1202",
+              "Pearson r": "0.9063",
+              "Δp\\": "-0.0480"
+            },
+            {
+              "": "11.98%",
+              "Arm": "single-passage-first",
+              "Crosses 0.5": "0.8726",
+              "Mean \\": "0.1114",
+              "Mean p, Decisions": "0.6306",
+              "Mean p, Jev": "0.5653",
+              "Mean Δp": "0.904",
+              "Pairs": "1202",
+              "Pearson r": "0.8970",
+              "Δp\\": "+0.0654"
+            },
+            {
+              "": "13.06%",
+              "Arm": "single-question-first",
+              "Crosses 0.5": "0.8622",
+              "Mean \\": "0.1191",
+              "Mean p, Decisions": "0.6269",
+              "Mean p, Jev": "0.5607",
+              "Mean Δp": "0.897",
+              "Pairs": "1202",
+              "Pearson r": "0.9032",
+              "Δp\\": "+0.0662"
+            }
+          ],
+          "Paired position shift for relevant targets": [
+            {
+              "25%": "+0.015 [+0.008, +0.023]",
+              "75%": "-0.004 [-0.014, +0.005]",
+              "Family": "pointed-10",
+              "end": "-0.006 [-0.029, +0.014]",
+              "middle": "0",
+              "start": "+0.013 [-0.002, +0.027]"
+            },
+            {
+              "25%": "+0.005 [-0.001, +0.012]",
+              "75%": "-0.001 [-0.008, +0.007]",
+              "Family": "pointed-40",
+              "end": "-0.027 [-0.050, -0.004]",
+              "middle": "0",
+              "start": "+0.022 [+0.008, +0.042]"
+            },
+            {
+              "25%": "+0.014 [+0.008, +0.021]",
+              "75%": "+0.004 [-0.000, +0.009]",
+              "Family": "pointed-qfirst-40",
+              "end": "-0.005 [-0.022, +0.015]",
+              "middle": "0",
+              "start": "+0.040 [+0.025, +0.057]"
+            },
+            {
+              "25%": "+0.007 [-0.001, +0.018]",
+              "75%": "-0.009 [-0.017, -0.002]",
+              "Family": "needle-10",
+              "end": "-0.007 [-0.021, +0.006]",
+              "middle": "0",
+              "start": "+0.012 [-0.007, +0.035]"
+            },
+            {
+              "25%": "+0.009 [+0.003, +0.017]",
+              "75%": "-0.006 [-0.013, +0.001]",
+              "Family": "needle-40",
+              "end": "+0.006 [-0.012, +0.023]",
+              "middle": "0",
+              "start": "+0.027 [+0.002, +0.057]"
+            }
+          ],
+          "Pointed question": [
+            {
+              "AUC": "0.8633",
+              "ECE": "0.2828",
+              "Jev AUC (frozen)": "0.2430",
+              "Mean p, non-relevant": "0.5072",
+              "Mean p, relevant": "0.8478",
+              "Mean Δp / mean \\": "-0.0075 / 0.1253",
+              "Passages": "10",
+              "Target position": "start",
+              "vs single": "+0.0019 [-0.0062, +0.0077]",
+              "Δ AUC vs middle": "-0.0027 [-0.0171, +0.0116]",
+              "Δp\\": "0.8966"
+            },
+            {
+              "AUC": "0.8670",
+              "ECE": "0.2881",
+              "Jev AUC (frozen)": "0.2466",
+              "Mean p, non-relevant": "0.5136",
+              "Mean p, relevant": "0.8507",
+              "Mean Δp / mean \\": "-0.0023 / 0.1408",
+              "Passages": "10",
+              "Target position": "25%",
+              "vs single": "-0.0009 [-0.0053, +0.0032]",
+              "Δ AUC vs middle": "+0.0010 [-0.0059, +0.0082]",
+              "Δp\\": "0.8939"
+            },
+            {
+              "AUC": "0.8660",
+              "ECE": "0.2749",
+              "Jev AUC (frozen)": "0.2547",
+              "Mean p, non-relevant": "0.5017",
+              "Mean p, relevant": "0.8353",
+              "Mean Δp / mean \\": "-0.0155 / 0.1502",
+              "Passages": "10",
+              "Target position": "middle",
+              "vs single": "—",
+              "Δ AUC vs middle": "—",
+              "Δp\\": "0.8947"
+            },
+            {
+              "AUC": "0.8623",
+              "ECE": "0.2730",
+              "Jev AUC (frozen)": "0.2572",
+              "Mean p, non-relevant": "0.5006",
+              "Mean p, relevant": "0.8315",
+              "Mean Δp / mean \\": "-0.0174 / 0.1483",
+              "Passages": "10",
+              "Target position": "75%",
+              "vs single": "-0.0014 [-0.0046, +0.0014]",
+              "Δ AUC vs middle": "-0.0037 [-0.0156, +0.0076]",
+              "Δp\\": "0.8933"
+            },
+            {
+              "AUC": "0.8581",
+              "ECE": "0.2576",
+              "Jev AUC (frozen)": "0.2532",
+              "Mean p, non-relevant": "0.4787",
+              "Mean p, relevant": "0.8289",
+              "Mean Δp / mean \\": "-0.0328 / 0.1368",
+              "Passages": "10",
+              "Target position": "end",
+              "vs single": "-0.0001 [-0.0061, +0.0061]",
+              "Δ AUC vs middle": "-0.0078 [-0.0297, +0.0097]",
+              "Δp\\": "0.8947"
+            },
+            {
+              "AUC": "0.8569",
+              "ECE": "0.2659",
+              "Jev AUC (frozen)": "0.2317",
+              "Mean p, non-relevant": "0.4922",
+              "Mean p, relevant": "0.8273",
+              "Mean Δp / mean \\": "-0.0244 / 0.1369",
+              "Passages": "40",
+              "Target position": "start",
+              "vs single": "-0.0006 [-0.0072, +0.0066]",
+              "Δ AUC vs middle": "+0.0068 [-0.0098, +0.0224]",
+              "Δp\\": "0.8968"
+            },
+            {
+              "AUC": "0.8529",
+              "ECE": "0.2642",
+              "Jev AUC (frozen)": "0.2451",
+              "Mean p, non-relevant": "0.4983",
+              "Mean p, relevant": "0.8103",
+              "Mean Δp / mean \\": "-0.0262 / 0.1711",
+              "Passages": "40",
+              "Target position": "25%",
+              "vs single": "-0.0029 [-0.0069, +0.0007]",
+              "Δ AUC vs middle": "+0.0028 [-0.0050, +0.0101]",
+              "Δp\\": "0.8945"
+            },
+            {
+              "AUC": "0.8501",
+              "ECE": "0.2583",
+              "Jev AUC (frozen)": "0.2456",
+              "Mean p, non-relevant": "0.4922",
+              "Mean p, relevant": "0.8049",
+              "Mean Δp / mean \\": "-0.0320 / 0.1770",
+              "Passages": "40",
+              "Target position": "middle",
+              "vs single": "—",
+              "Δ AUC vs middle": "—",
+              "Δp\\": "0.8974"
+            },
+            {
+              "AUC": "0.8617",
+              "ECE": "0.2498",
+              "Jev AUC (frozen)": "0.2434",
+              "Mean p, non-relevant": "0.4796",
+              "Mean p, relevant": "0.8043",
+              "Mean Δp / mean \\": "-0.0405 / 0.1747",
+              "Passages": "40",
+              "Target position": "75%",
+              "vs single": "+0.0002 [-0.0029, +0.0042]",
+              "Δ AUC vs middle": "+0.0116 [+0.0020, +0.0195]",
+              "Δp\\": "0.8976"
+            },
+            {
+              "AUC": "0.8562",
+              "ECE": "0.2132",
+              "Jev AUC (frozen)": "0.2405",
+              "Mean p, non-relevant": "0.4378",
+              "Mean p, relevant": "0.7776",
+              "Mean Δp / mean \\": "-0.0772 / 0.1724",
+              "Passages": "40",
+              "Target position": "end",
+              "vs single": "-0.0077 [-0.0137, -0.0026]",
+              "Δ AUC vs middle": "+0.0061 [-0.0142, +0.0240]",
+              "Δp\\": "0.8897"
+            }
+          ],
+          "Pointed question, question field first": [
+            {
+              "AUC": "0.8897",
+              "ECE": "0.1986",
+              "Jev AUC (frozen)": "0.2466",
+              "Mean p, non-relevant": "0.4045",
+              "Mean p, relevant": "0.7993",
+              "Mean Δp / mean \\": "-0.0918 / 0.1605",
+              "Passages": "40",
+              "Target position": "start",
+              "vs single": "+0.0009 [-0.0072, +0.0091]",
+              "Δ AUC vs middle": "-0.0094 [-0.0238, +0.0036]",
+              "Δp\\": "0.9063"
+            },
+            {
+              "AUC": "0.9003",
+              "ECE": "0.1676",
+              "Jev AUC (frozen)": "0.2810",
+              "Mean p, non-relevant": "0.3709",
+              "Mean p, relevant": "0.7734",
+              "Mean Δp / mean \\": "-0.1228 / 0.1851",
+              "Passages": "40",
+              "Target position": "25%",
+              "vs single": "-0.0015 [-0.0053, +0.0017]",
+              "Δ AUC vs middle": "+0.0012 [-0.0048, +0.0078]",
+              "Δp\\": "0.9040"
+            },
+            {
+              "AUC": "0.8991",
+              "ECE": "0.1589",
+              "Jev AUC (frozen)": "0.2868",
+              "Mean p, non-relevant": "0.3609",
+              "Mean p, relevant": "0.7594",
+              "Mean Δp / mean \\": "-0.1341 / 0.1977",
+              "Passages": "40",
+              "Target position": "middle",
+              "vs single": "—",
+              "Δ AUC vs middle": "—",
+              "Δp\\": "0.9054"
+            },
+            {
+              "AUC": "0.8948",
+              "ECE": "0.1657",
+              "Jev AUC (frozen)": "0.2856",
+              "Mean p, non-relevant": "0.3734",
+              "Mean p, relevant": "0.7631",
+              "Mean Δp / mean \\": "-0.1246 / 0.1917",
+              "Passages": "40",
+              "Target position": "75%",
+              "vs single": "-0.0017 [-0.0064, +0.0014]",
+              "Δ AUC vs middle": "-0.0044 [-0.0104, +0.0023]",
+              "Δp\\": "0.9038"
+            },
+            {
+              "AUC": "0.8916",
+              "ECE": "0.1641",
+              "Jev AUC (frozen)": "0.2838",
+              "Mean p, non-relevant": "0.3755",
+              "Mean p, relevant": "0.7543",
+              "Mean Δp / mean \\": "-0.1262 / 0.1989",
+              "Passages": "40",
+              "Target position": "end",
+              "vs single": "-0.0018 [-0.0070, +0.0030]",
+              "Δ AUC vs middle": "-0.0075 [-0.0243, +0.0110]",
+              "Δp\\": "0.9036"
+            }
+          ],
+          "Resources": [
+            {
+              "Arm": "single-passage-first",
+              "Decisions": "1202",
+              "Input tokens / decision": "308",
+              "List USD": "$0.0370",
+              "Refused questions": "0",
+              "Request p50 ms": "107",
+              "Request p95 ms": "192",
+              "Requests": "1202",
+              "Retried": "1",
+              "p50 request ms / decision": "107.0"
+            },
+            {
+              "Arm": "single-question-first",
+              "Decisions": "1202",
+              "Input tokens / decision": "308",
+              "List USD": "$0.0370",
+              "Refused questions": "0",
+              "Request p50 ms": "106",
+              "Request p95 ms": "183",
+              "Requests": "1202",
+              "Retried": "0",
+              "p50 request ms / decision": "106.3"
+            },
+            {
+              "Arm": "pointed-10-start",
+              "Decisions": "1202",
+              "Input tokens / decision": "1281",
+              "List USD": "$0.1540",
+              "Refused questions": "0",
+              "Request p50 ms": "110",
+              "Request p95 ms": "191",
+              "Requests": "1202",
+              "Retried": "1",
+              "p50 request ms / decision": "109.7"
+            },
+            {
+              "Arm": "needle-10-start",
+              "Decisions": "1202",
+              "Input tokens / decision": "1266",
+              "List USD": "$0.1521",
+              "Refused questions": "0",
+              "Request p50 ms": "109",
+              "Request p95 ms": "188",
+              "Requests": "1202",
+              "Retried": "0",
+              "p50 request ms / decision": "109.0"
+            },
+            {
+              "Arm": "pointed-10-25%",
+              "Decisions": "1202",
+              "Input tokens / decision": "1281",
+              "List USD": "$0.1540",
+              "Refused questions": "0",
+              "Request p50 ms": "109",
+              "Request p95 ms": "187",
+              "Requests": "1202",
+              "Retried": "0",
+              "p50 request ms / decision": "108.9"
+            },
+            {
+              "Arm": "needle-10-25%",
+              "Decisions": "1202",
+              "Input tokens / decision": "1266",
+              "List USD": "$0.1521",
+              "Refused questions": "0",
+              "Request p50 ms": "109",
+              "Request p95 ms": "195",
+              "Requests": "1202",
+              "Retried": "0",
+              "p50 request ms / decision": "109.2"
+            },
+            {
+              "Arm": "pointed-10-middle",
+              "Decisions": "1202",
+              "Input tokens / decision": "1281",
+              "List USD": "$0.1540",
+              "Refused questions": "0",
+              "Request p50 ms": "110",
+              "Request p95 ms": "196",
+              "Requests": "1202",
+              "Retried": "0",
+              "p50 request ms / decision": "109.5"
+            },
+            {
+              "Arm": "needle-10-middle",
+              "Decisions": "1202",
+              "Input tokens / decision": "1266",
+              "List USD": "$0.1521",
+              "Refused questions": "0",
+              "Request p50 ms": "110",
+              "Request p95 ms": "205",
+              "Requests": "1202",
+              "Retried": "1",
+              "p50 request ms / decision": "110.3"
+            },
+            {
+              "Arm": "pointed-10-75%",
+              "Decisions": "1202",
+              "Input tokens / decision": "1281",
+              "List USD": "$0.1540",
+              "Refused questions": "0",
+              "Request p50 ms": "109",
+              "Request p95 ms": "199",
+              "Requests": "1202",
+              "Retried": "0",
+              "p50 request ms / decision": "109.1"
+            },
+            {
+              "Arm": "needle-10-75%",
+              "Decisions": "1202",
+              "Input tokens / decision": "1266",
+              "List USD": "$0.1521",
+              "Refused questions": "0",
+              "Request p50 ms": "108",
+              "Request p95 ms": "197",
+              "Requests": "1202",
+              "Retried": "1",
+              "p50 request ms / decision": "108.3"
+            },
+            {
+              "Arm": "pointed-10-end",
+              "Decisions": "1202",
+              "Input tokens / decision": "1281",
+              "List USD": "$0.1540",
+              "Refused questions": "0",
+              "Request p50 ms": "108",
+              "Request p95 ms": "194",
+              "Requests": "1202",
+              "Retried": "1",
+              "p50 request ms / decision": "108.4"
+            },
+            {
+              "Arm": "needle-10-end",
+              "Decisions": "1202",
+              "Input tokens / decision": "1266",
+              "List USD": "$0.1521",
+              "Refused questions": "0",
+              "Request p50 ms": "108",
+              "Request p95 ms": "194",
+              "Requests": "1202",
+              "Retried": "0",
+              "p50 request ms / decision": "107.9"
+            },
+            {
+              "Arm": "pointed-40-start",
+              "Decisions": "1202",
+              "Input tokens / decision": "4394",
+              "List USD": "$0.5281",
+              "Refused questions": "0",
+              "Request p50 ms": "113",
+              "Request p95 ms": "196",
+              "Requests": "1202",
+              "Retried": "0",
+              "p50 request ms / decision": "113.5"
+            },
+            {
+              "Arm": "needle-40-start",
+              "Decisions": "1202",
+              "Input tokens / decision": "4378",
+              "List USD": "$0.5263",
+              "Refused questions": "0",
+              "Request p50 ms": "113",
+              "Request p95 ms": "193",
+              "Requests": "1202",
+              "Retried": "1",
+              "p50 request ms / decision": "113.3"
+            },
+            {
+              "Arm": "pointed-qfirst-40-start",
+              "Decisions": "1202",
+              "Input tokens / decision": "4394",
+              "List USD": "$0.5281",
+              "Refused questions": "0",
+              "Request p50 ms": "113",
+              "Request p95 ms": "207",
+              "Requests": "1202",
+              "Retried": "0",
+              "p50 request ms / decision": "113.5"
+            },
+            {
+              "Arm": "pointed-40-25%",
+              "Decisions": "1202",
+              "Input tokens / decision": "4394",
+              "List USD": "$0.5281",
+              "Refused questions": "0",
+              "Request p50 ms": "114",
+              "Request p95 ms": "212",
+              "Requests": "1202",
+              "Retried": "1",
+              "p50 request ms / decision": "114.4"
+            },
+            {
+              "Arm": "needle-40-25%",
+              "Decisions": "1202",
+              "Input tokens / decision": "4378",
+              "List USD": "$0.5263",
+              "Refused questions": "0",
+              "Request p50 ms": "114",
+              "Request p95 ms": "199",
+              "Requests": "1202",
+              "Retried": "1",
+              "p50 request ms / decision": "114.3"
+            },
+            {
+              "Arm": "pointed-qfirst-40-25%",
+              "Decisions": "1202",
+              "Input tokens / decision": "4394",
+              "List USD": "$0.5281",
+              "Refused questions": "0",
+              "Request p50 ms": "113",
+              "Request p95 ms": "196",
+              "Requests": "1202",
+              "Retried": "0",
+              "p50 request ms / decision": "113.2"
+            },
+            {
+              "Arm": "pointed-40-middle",
+              "Decisions": "1202",
+              "Input tokens / decision": "4394",
+              "List USD": "$0.5281",
+              "Refused questions": "0",
+              "Request p50 ms": "113",
+              "Request p95 ms": "216",
+              "Requests": "1202",
+              "Retried": "0",
+              "p50 request ms / decision": "113.2"
+            },
+            {
+              "Arm": "needle-40-middle",
+              "Decisions": "1202",
+              "Input tokens / decision": "4378",
+              "List USD": "$0.5263",
+              "Refused questions": "0",
+              "Request p50 ms": "114",
+              "Request p95 ms": "189",
+              "Requests": "1202",
+              "Retried": "0",
+              "p50 request ms / decision": "113.8"
+            },
+            {
+              "Arm": "pointed-qfirst-40-middle",
+              "Decisions": "1202",
+              "Input tokens / decision": "4394",
+              "List USD": "$0.5281",
+              "Refused questions": "0",
+              "Request p50 ms": "114",
+              "Request p95 ms": "198",
+              "Requests": "1202",
+              "Retried": "2",
+              "p50 request ms / decision": "114.0"
+            },
+            {
+              "Arm": "pointed-40-75%",
+              "Decisions": "1202",
+              "Input tokens / decision": "4394",
+              "List USD": "$0.5281",
+              "Refused questions": "0",
+              "Request p50 ms": "113",
+              "Request p95 ms": "190",
+              "Requests": "1202",
+              "Retried": "2",
+              "p50 request ms / decision": "112.9"
+            },
+            {
+              "Arm": "needle-40-75%",
+              "Decisions": "1202",
+              "Input tokens / decision": "4378",
+              "List USD": "$0.5263",
+              "Refused questions": "0",
+              "Request p50 ms": "112",
+              "Request p95 ms": "195",
+              "Requests": "1202",
+              "Retried": "2",
+              "p50 request ms / decision": "112.5"
+            },
+            {
+              "Arm": "pointed-qfirst-40-75%",
+              "Decisions": "1202",
+              "Input tokens / decision": "4394",
+              "List USD": "$0.5281",
+              "Refused questions": "0",
+              "Request p50 ms": "114",
+              "Request p95 ms": "196",
+              "Requests": "1202",
+              "Retried": "0",
+              "p50 request ms / decision": "113.5"
+            },
+            {
+              "Arm": "pointed-40-end",
+              "Decisions": "1202",
+              "Input tokens / decision": "4394",
+              "List USD": "$0.5281",
+              "Refused questions": "0",
+              "Request p50 ms": "113",
+              "Request p95 ms": "201",
+              "Requests": "1202",
+              "Retried": "1",
+              "p50 request ms / decision": "113.2"
+            },
+            {
+              "Arm": "needle-40-end",
+              "Decisions": "1202",
+              "Input tokens / decision": "4378",
+              "List USD": "$0.5263",
+              "Refused questions": "0",
+              "Request p50 ms": "113",
+              "Request p95 ms": "199",
+              "Requests": "1202",
+              "Retried": "1",
+              "p50 request ms / decision": "112.5"
+            },
+            {
+              "Arm": "pointed-qfirst-40-end",
+              "Decisions": "1202",
+              "Input tokens / decision": "4394",
+              "List USD": "$0.5281",
+              "Refused questions": "0",
+              "Request p50 ms": "113",
+              "Request p95 ms": "197",
+              "Requests": "1202",
+              "Retried": "1",
+              "p50 request ms / decision": "113.3"
+            }
+          ],
+          "Score granularity": [
+            {
+              "Decisions": "32454",
+              "Distinct values": "101",
+              "Exactly 0 or 1": "0.68%",
+              "Multiples of 0.01": "100.00%",
+              "Provider": "OpenAI Decisions",
+              "Tied within query": "61.84%"
+            },
+            {
+              "Decisions": "32454",
+              "Distinct values": "99",
+              "Exactly 0 or 1": "0.00%",
+              "Multiples of 0.01": "100.00%",
+              "Provider": "Jev (frozen)",
+              "Tied within query": "63.69%"
+            }
+          ],
+          "Single-passage field order": [
+            {
+              "AUC": "0.8726",
+              "Brier": "0.2520",
+              "ECE": "0.2904",
+              "State order": "passage, then question (frozen)",
+              "Targets": "1202"
+            },
+            {
+              "AUC": "0.8622",
+              "Brier": "0.2547",
+              "ECE": "0.2866",
+              "State order": "question, then passage",
+              "Targets": "1202"
+            },
+            {
+              "AUC": "0.8970",
+              "Brier": "0.1895",
+              "ECE": "0.2250",
+              "State order": "Jev (frozen): passage, then question",
+              "Targets": "1202"
+            },
+            {
+              "AUC": "0.9032",
+              "Brier": "0.1891",
+              "ECE": "0.2204",
+              "State order": "Jev (frozen): question, then passage",
+              "Targets": "1202"
+            }
+          ]
+        },
+        "resources": {
+          "needle-10-25%": {
+            "decisions": 1202,
+            "input_tokens": 1521263,
+            "input_tokens_per_decision": 1265.609817,
+            "list_price_usd": 0.152126,
+            "request_latency_p50_s": 0.109235,
+            "request_latency_p95_s": 0.195198,
+            "request_ms_per_decision_p50": 109.235377,
+            "requests": 1202,
+            "retried_requests": 0
+          },
+          "needle-10-75%": {
+            "decisions": 1202,
+            "input_tokens": 1521263,
+            "input_tokens_per_decision": 1265.609817,
+            "list_price_usd": 0.152126,
+            "request_latency_p50_s": 0.108323,
+            "request_latency_p95_s": 0.196911,
+            "request_ms_per_decision_p50": 108.323208,
+            "requests": 1202,
+            "retried_requests": 1
+          },
+          "needle-10-end": {
+            "decisions": 1202,
+            "input_tokens": 1521263,
+            "input_tokens_per_decision": 1265.609817,
+            "list_price_usd": 0.152126,
+            "request_latency_p50_s": 0.107913,
+            "request_latency_p95_s": 0.194434,
+            "request_ms_per_decision_p50": 107.912632,
+            "requests": 1202,
+            "retried_requests": 0
+          },
+          "needle-10-middle": {
+            "decisions": 1202,
+            "input_tokens": 1521263,
+            "input_tokens_per_decision": 1265.609817,
+            "list_price_usd": 0.152126,
+            "request_latency_p50_s": 0.11027,
+            "request_latency_p95_s": 0.205175,
+            "request_ms_per_decision_p50": 110.269969,
+            "requests": 1202,
+            "retried_requests": 1
+          },
+          "needle-10-start": {
+            "decisions": 1202,
+            "input_tokens": 1521263,
+            "input_tokens_per_decision": 1265.609817,
+            "list_price_usd": 0.152126,
+            "request_latency_p50_s": 0.108977,
+            "request_latency_p95_s": 0.188005,
+            "request_ms_per_decision_p50": 108.976875,
+            "requests": 1202,
+            "retried_requests": 0
+          },
+          "needle-40-25%": {
+            "decisions": 1202,
+            "input_tokens": 5262508,
+            "input_tokens_per_decision": 4378.126456,
+            "list_price_usd": 0.526251,
+            "request_latency_p50_s": 0.114329,
+            "request_latency_p95_s": 0.19934,
+            "request_ms_per_decision_p50": 114.329071,
+            "requests": 1202,
+            "retried_requests": 1
+          },
+          "needle-40-75%": {
+            "decisions": 1202,
+            "input_tokens": 5262508,
+            "input_tokens_per_decision": 4378.126456,
+            "list_price_usd": 0.526251,
+            "request_latency_p50_s": 0.11245,
+            "request_latency_p95_s": 0.195476,
+            "request_ms_per_decision_p50": 112.450215,
+            "requests": 1202,
+            "retried_requests": 2
+          },
+          "needle-40-end": {
+            "decisions": 1202,
+            "input_tokens": 5262508,
+            "input_tokens_per_decision": 4378.126456,
+            "list_price_usd": 0.526251,
+            "request_latency_p50_s": 0.112514,
+            "request_latency_p95_s": 0.198967,
+            "request_ms_per_decision_p50": 112.513906,
+            "requests": 1202,
+            "retried_requests": 1
+          },
+          "needle-40-middle": {
+            "decisions": 1202,
+            "input_tokens": 5262508,
+            "input_tokens_per_decision": 4378.126456,
+            "list_price_usd": 0.526251,
+            "request_latency_p50_s": 0.113832,
+            "request_latency_p95_s": 0.189035,
+            "request_ms_per_decision_p50": 113.832131,
+            "requests": 1202,
+            "retried_requests": 0
+          },
+          "needle-40-start": {
+            "decisions": 1202,
+            "input_tokens": 5262508,
+            "input_tokens_per_decision": 4378.126456,
+            "list_price_usd": 0.526251,
+            "request_latency_p50_s": 0.113288,
+            "request_latency_p95_s": 0.192909,
+            "request_ms_per_decision_p50": 113.28844,
+            "requests": 1202,
+            "retried_requests": 1
+          },
+          "pointed-10-25%": {
+            "decisions": 1202,
+            "input_tokens": 1540116,
+            "input_tokens_per_decision": 1281.294509,
+            "list_price_usd": 0.154012,
+            "request_latency_p50_s": 0.108907,
+            "request_latency_p95_s": 0.187277,
+            "request_ms_per_decision_p50": 108.907485,
+            "requests": 1202,
+            "retried_requests": 0
+          },
+          "pointed-10-75%": {
+            "decisions": 1202,
+            "input_tokens": 1540116,
+            "input_tokens_per_decision": 1281.294509,
+            "list_price_usd": 0.154012,
+            "request_latency_p50_s": 0.1091,
+            "request_latency_p95_s": 0.199371,
+            "request_ms_per_decision_p50": 109.099561,
+            "requests": 1202,
+            "retried_requests": 0
+          },
+          "pointed-10-end": {
+            "decisions": 1202,
+            "input_tokens": 1540116,
+            "input_tokens_per_decision": 1281.294509,
+            "list_price_usd": 0.154012,
+            "request_latency_p50_s": 0.10841,
+            "request_latency_p95_s": 0.194136,
+            "request_ms_per_decision_p50": 108.410339,
+            "requests": 1202,
+            "retried_requests": 1
+          },
+          "pointed-10-middle": {
+            "decisions": 1202,
+            "input_tokens": 1540116,
+            "input_tokens_per_decision": 1281.294509,
+            "list_price_usd": 0.154012,
+            "request_latency_p50_s": 0.109537,
+            "request_latency_p95_s": 0.196341,
+            "request_ms_per_decision_p50": 109.537164,
+            "requests": 1202,
+            "retried_requests": 0
+          },
+          "pointed-10-start": {
+            "decisions": 1202,
+            "input_tokens": 1540116,
+            "input_tokens_per_decision": 1281.294509,
+            "list_price_usd": 0.154012,
+            "request_latency_p50_s": 0.109692,
+            "request_latency_p95_s": 0.190813,
+            "request_ms_per_decision_p50": 109.692065,
+            "requests": 1202,
+            "retried_requests": 1
+          },
+          "pointed-40-25%": {
+            "decisions": 1202,
+            "input_tokens": 5281361,
+            "input_tokens_per_decision": 4393.811148,
+            "list_price_usd": 0.528136,
+            "request_latency_p50_s": 0.114425,
+            "request_latency_p95_s": 0.211568,
+            "request_ms_per_decision_p50": 114.424643,
+            "requests": 1202,
+            "retried_requests": 1
+          },
+          "pointed-40-75%": {
+            "decisions": 1202,
+            "input_tokens": 5281361,
+            "input_tokens_per_decision": 4393.811148,
+            "list_price_usd": 0.528136,
+            "request_latency_p50_s": 0.112932,
+            "request_latency_p95_s": 0.190241,
+            "request_ms_per_decision_p50": 112.931747,
+            "requests": 1202,
+            "retried_requests": 2
+          },
+          "pointed-40-end": {
+            "decisions": 1202,
+            "input_tokens": 5281361,
+            "input_tokens_per_decision": 4393.811148,
+            "list_price_usd": 0.528136,
+            "request_latency_p50_s": 0.113198,
+            "request_latency_p95_s": 0.200705,
+            "request_ms_per_decision_p50": 113.198491,
+            "requests": 1202,
+            "retried_requests": 1
+          },
+          "pointed-40-middle": {
+            "decisions": 1202,
+            "input_tokens": 5281361,
+            "input_tokens_per_decision": 4393.811148,
+            "list_price_usd": 0.528136,
+            "request_latency_p50_s": 0.113175,
+            "request_latency_p95_s": 0.216356,
+            "request_ms_per_decision_p50": 113.175173,
+            "requests": 1202,
+            "retried_requests": 0
+          },
+          "pointed-40-start": {
+            "decisions": 1202,
+            "input_tokens": 5281361,
+            "input_tokens_per_decision": 4393.811148,
+            "list_price_usd": 0.528136,
+            "request_latency_p50_s": 0.11346,
+            "request_latency_p95_s": 0.195888,
+            "request_ms_per_decision_p50": 113.460393,
+            "requests": 1202,
+            "retried_requests": 0
+          },
+          "pointed-qfirst-40-25%": {
+            "decisions": 1202,
+            "input_tokens": 5281361,
+            "input_tokens_per_decision": 4393.811148,
+            "list_price_usd": 0.528136,
+            "request_latency_p50_s": 0.11317,
+            "request_latency_p95_s": 0.195696,
+            "request_ms_per_decision_p50": 113.169537,
+            "requests": 1202,
+            "retried_requests": 0
+          },
+          "pointed-qfirst-40-75%": {
+            "decisions": 1202,
+            "input_tokens": 5281361,
+            "input_tokens_per_decision": 4393.811148,
+            "list_price_usd": 0.528136,
+            "request_latency_p50_s": 0.113504,
+            "request_latency_p95_s": 0.195654,
+            "request_ms_per_decision_p50": 113.504346,
+            "requests": 1202,
+            "retried_requests": 0
+          },
+          "pointed-qfirst-40-end": {
+            "decisions": 1202,
+            "input_tokens": 5281361,
+            "input_tokens_per_decision": 4393.811148,
+            "list_price_usd": 0.528136,
+            "request_latency_p50_s": 0.113345,
+            "request_latency_p95_s": 0.197346,
+            "request_ms_per_decision_p50": 113.345296,
+            "requests": 1202,
+            "retried_requests": 1
+          },
+          "pointed-qfirst-40-middle": {
+            "decisions": 1202,
+            "input_tokens": 5281361,
+            "input_tokens_per_decision": 4393.811148,
+            "list_price_usd": 0.528136,
+            "request_latency_p50_s": 0.114023,
+            "request_latency_p95_s": 0.198227,
+            "request_ms_per_decision_p50": 114.023058,
+            "requests": 1202,
+            "retried_requests": 2
+          },
+          "pointed-qfirst-40-start": {
+            "decisions": 1202,
+            "input_tokens": 5281361,
+            "input_tokens_per_decision": 4393.811148,
+            "list_price_usd": 0.528136,
+            "request_latency_p50_s": 0.11348,
+            "request_latency_p95_s": 0.207094,
+            "request_ms_per_decision_p50": 113.479742,
+            "requests": 1202,
+            "retried_requests": 0
+          },
+          "single-passage-first": {
+            "decisions": 1202,
+            "input_tokens": 370372,
+            "input_tokens_per_decision": 308.129784,
+            "list_price_usd": 0.037037,
+            "request_latency_p50_s": 0.10702,
+            "request_latency_p95_s": 0.191508,
+            "request_ms_per_decision_p50": 107.020076,
+            "requests": 1202,
+            "retried_requests": 1
+          },
+          "single-question-first": {
+            "decisions": 1202,
+            "input_tokens": 370360,
+            "input_tokens_per_decision": 308.1198,
+            "list_price_usd": 0.037036,
+            "request_latency_p50_s": 0.106254,
+            "request_latency_p95_s": 0.183033,
+            "request_ms_per_decision_p50": 106.253515,
+            "requests": 1202,
+            "retried_requests": 0
+          }
+        },
+        "totals": {
+          "input_tokens": 95173777,
+          "list_price_usd": 9.517378,
+          "refused_questions": 0,
+          "requests": 32454,
+          "retried_requests": 17
+        }
+      }
+    },
+    "usd_per_mtok_input": 0.1,
+    "wire_version": "guide-2026-10-06"
+  },
+  "generated_by": "publication/decisions-aggregates.py",
+  "note": "Every arm of the three frozen request-shaping studies re-run on Decisions with the frozen Jev request bodies. Tables are parsed from the generated reports, which also carry the frozen Jev columns.",
+  "projection": "openai-decisions-aggregates-v1",
+  "sources": [
+    {
+      "path": "experiments/request-shaping/results/question-fanout-openai-decisions-v1/REPORT.md",
+      "sha256": "643c5c87b8b5ebf4cc329c2821f3493e399ddff866cad73f49ad611da39448a1"
+    },
+    {
+      "path": "experiments/request-shaping/results/question-fanout-openai-decisions-v1/manifest.json",
+      "sha256": "5bedb4bf2ecdaeb04e76a1f10356d42fc39d76927354a3a5311fdea96e5ec814"
+    },
+    {
+      "path": "experiments/request-shaping/results/question-fanout-openai-decisions-v1/resources.json",
+      "sha256": "6f6d39187b6e8e52f8f19867df9623e001dcf6dda556268f1d04d41004e8eeab"
+    },
+    {
+      "path": "experiments/request-shaping/results/state-packing-openai-decisions-v1/REPORT.md",
+      "sha256": "797f85c5cb29f2244f89b71e635252c2df45441478b7a7b54acd788fb8d6be7d"
+    },
+    {
+      "path": "experiments/request-shaping/results/state-packing-openai-decisions-v1/manifest.json",
+      "sha256": "a76e5ffbe693f472927a0f21f46d20794e974fe303dcd40c5f3a6a6f313024d5"
+    },
+    {
+      "path": "experiments/request-shaping/results/state-packing-openai-decisions-v1/resources.json",
+      "sha256": "bdb11e50605c3aeab083bd615423da35256e5252cfd299801fcc47d95663fa8a"
+    },
+    {
+      "path": "experiments/request-shaping/results/state-position-openai-decisions-v1/REPORT.md",
+      "sha256": "64d11639f6ed73f2ae3aa03b090830941eebdbbe8723bb29e55e2f571a74f88c"
+    },
+    {
+      "path": "experiments/request-shaping/results/state-position-openai-decisions-v1/manifest.json",
+      "sha256": "33afbcd2da4563667db12be75f90a640d86ff8a36923d890751b34b92344dbc7"
+    },
+    {
+      "path": "experiments/request-shaping/results/state-position-openai-decisions-v1/resources.json",
+      "sha256": "cf7e2c4aa94fec57e60fe461142118fb2bcb0c5b84ce170cf80da8b4e02d0e13"
+    }
+  ]
+}

@@ -1,21 +1,21 @@
 {
   "version": 1,
-  "source_commit": "90f43a6f03c9549e5659d6f644fc67abaa9df9e9",
+  "source_commit": "c158e5396f540a8064886088409b577f4932ac1b",
   "files": [
     {
       "source": "publication/overlays/.github/workflows/ci.yml",
       "destination": ".github/workflows/ci.yml",
-      "sha256": "9601f9aef713e1f26862e71e91ae4156aa8de84c9f06cf60245f4f58f98422bb"
+      "sha256": "cce9a9d5ba28938dc6b7e7b560c1d531075a639d69a9dba46b5fac51035175b0"
     },
     {
       "source": "publication/overlays/.gitignore",
       "destination": ".gitignore",
-      "sha256": "cd90f38ef7145caa2832e08b109f31d8a5b29f8e955df132155f6b509b2f7e7a"
+      "sha256": "5a8991daecce98fc5779f00f33f3e9ca781973fd627d4a12c417b2bc87c6b3b7"
     },
     {
-      "source": "AGENTS.md",
+      "source": "publication/overlays/AGENTS.md",
       "destination": "AGENTS.md",
-      "sha256": "2cd608be53c5f1bed57c6413199d018059f339c6e8432bdad54785e2b4c39220"
+      "sha256": "13e5e6a9e7c2743044adf850a785da2ba5f493580ee67fe25ab9192504ef9256"
     },
     {
       "source": "LICENSE",
@@ -25,50 +25,50 @@
     {
       "source": "publication/overlays/README.md",
       "destination": "README.md",
-      "sha256": "0bae25dee9a6091a443deeb369dfefd165ee2217be5f7022bb58d04bb958a806"
+      "sha256": "d3f64d5d0ea3ea778a657b01d451dbd23ef1f54a209d65ec4eacde5c2c60bf03"
     },
     {
       "source": "publication/overlays/REPRODUCTION.md",
       "destination": "REPRODUCTION.md",
-      "sha256": "f25c1db559eedf0f8519e4d3525eac04cc71fda62cfee05776c84d29af3e8df0"
+      "sha256": "56a1750338b82a4663bbec8aebeb903c072ccf32a289ab3e11a22528ddd558a1"
     },
     {
       "source": "publication/overlays/THIRD_PARTY_NOTICES.md",
       "destination": "THIRD_PARTY_NOTICES.md",
-      "sha256": "7f6ef20fc973c00f37aaeb26b2462ae39cec6586e849ad43b227ef8b099d693f"
+      "sha256": "a0caba4c99fecac3608ca68d79c5433e8d9f7cead7b825c06a44d2056c60a7ce"
     },
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower-claude-RAG/README.md",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/README.md",
-      "sha256": "75dc9043957ad8b4697d5dc492afd50ae7f1d83989fcb5e6a1420a305ca2449f"
+      "sha256": "e28991aef78f3fae847750cd28c9f26c69c9b4d1d382407944b0dacc732b5a5a"
     },
     {
-      "source": "experiments/jev-search-result-narrower-claude-RAG/analysis.go",
+      "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower-claude-RAG/analysis.go",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/analysis.go",
       "sha256": "c5924a3d9f9192bcdcc3e56fe29505ef6a45e5afef9098bc866bce0cded808f8"
     },
     {
-      "source": "experiments/jev-search-result-narrower-claude-RAG/audit.go",
+      "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower-claude-RAG/audit.go",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/audit.go",
       "sha256": "9c401327efcb141cf3991b3d514dde4e8a14c5a23ac0c9c04e5f92558190056a"
     },
     {
-      "source": "experiments/jev-search-result-narrower-claude-RAG/categorical.go",
+      "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower-claude-RAG/categorical.go",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/categorical.go",
       "sha256": "2b2d764986d22d77aaede8f13b200188261a545e673ca9a78994b6704c256049"
     },
     {
-      "source": "experiments/jev-search-result-narrower-claude-RAG/categorical_test.go",
+      "source": "experiments/rag-filtering-claude/categorical_test.go",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/categorical_test.go",
       "sha256": "75e59e1413b1fd1fc4ffa12a854b2822e76a1cb4878379ece2d46999172e2386"
     },
     {
-      "source": "experiments/jev-search-result-narrower-claude-RAG/claude.go",
+      "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower-claude-RAG/claude.go",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/claude.go",
       "sha256": "0285f3539e23d4e5a30b319a37272c286496e6ac99427973a551b6b72ccb4459"
     },
     {
-      "source": "experiments/jev-search-result-narrower-claude-RAG/claude_test.go",
+      "source": "experiments/rag-filtering-claude/claude_test.go",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/claude_test.go",
       "sha256": "c97b6e7838f8a9a7b6420c2359ba17c5db29899d09689348c97097bcca632a2a"
     },
@@ -83,47 +83,47 @@
       "sha256": "8289f609f42559ec77a37ceee3c7099594c65bf9eb8fd34644b627267d0575cb"
     },
     {
-      "source": "experiments/jev-search-result-narrower-claude-RAG/go.mod",
+      "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower-claude-RAG/go.mod",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/go.mod",
       "sha256": "9ec3e68518d2b26fe963a0d68c968453654753e16fb8d9aec733d418b6f98b27"
     },
     {
-      "source": "experiments/jev-search-result-narrower-claude-RAG/go.sum",
+      "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower-claude-RAG/go.sum",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/go.sum",
       "sha256": "3820a6a87854b392f09c0ee439a6b8410389d4ee6176b1aff3a7f486a773b9f0"
     },
     {
-      "source": "experiments/jev-search-result-narrower-claude-RAG/main.go",
+      "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower-claude-RAG/main.go",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/main.go",
       "sha256": "4299693505420daf71379779f9f8c88a80e7350acfa629dcfdc06287f314f808"
     },
     {
-      "source": "experiments/jev-search-result-narrower-claude-RAG/pipeline.go",
+      "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower-claude-RAG/pipeline.go",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/pipeline.go",
       "sha256": "c224784c1b8ea42357b0dd73f229cfe1f818934d144b8aad2327e47ccfdb5154"
     },
     {
-      "source": "experiments/jev-search-result-narrower-claude-RAG/pipeline_test.go",
+      "source": "experiments/rag-filtering-claude/pipeline_test.go",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/pipeline_test.go",
       "sha256": "a9a98a0f14aa37837e06fbf10beac83f397a199d0bd9f66705990034231b2cdf"
     },
     {
-      "source": "experiments/jev-search-result-narrower-claude-RAG/prepare.go",
+      "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower-claude-RAG/prepare.go",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/prepare.go",
       "sha256": "252ae4e3e2e1dec5286e5fa4f55859c796e7eb9eff2e2a5e8fc87cc1228b7c87"
     },
     {
-      "source": "experiments/jev-search-result-narrower-claude-RAG/report.go",
+      "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower-claude-RAG/report.go",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/report.go",
       "sha256": "74bac3d969a1fd319643f1df1437cf337e002edef94084449f6927e7ecf92888"
     },
     {
-      "source": "experiments/jev-search-result-narrower-claude-RAG/rescore.go",
+      "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower-claude-RAG/rescore.go",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/rescore.go",
       "sha256": "cb7c392170f591438954c759735f2f8d3e7ec15b0aea15cee61b6e209873c3d1"
     },
     {
-      "source": "experiments/jev-search-result-narrower-claude-RAG/rescore_test.go",
+      "source": "experiments/rag-filtering-claude/rescore_test.go",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/rescore_test.go",
       "sha256": "6d2712c064c38c26c44727e05e02f94507268f9c9bb833e711c8c4f6bc665f8d"
     },
@@ -158,17 +158,17 @@
       "sha256": "6e8f1eae0f9ac3a0f548d7a92f709c0255c9d31c396648b554f0e6751074e349"
     },
     {
-      "source": "experiments/jev-search-result-narrower-claude-RAG/sample.go",
+      "source": "experiments/rag-filtering-claude/sample.go",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/sample.go",
       "sha256": "85bafc9e42bb0bec92b94585237d0d8de827de75feda3c9332e2dc164d13af73"
     },
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower/README.md",
       "destination": "experiments/jev-search-result-narrower/README.md",
-      "sha256": "7c536f4023be2f26ee508e7638d4fded453792fd43ee046aaa97b677e7afaea2"
+      "sha256": "60ae773630320ba5df2e9a8c983993daaab060a59b4f2938600417c6d311a9a5"
     },
     {
-      "source": "experiments/jev-search-result-narrower/audit.go",
+      "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower/audit.go",
       "destination": "experiments/jev-search-result-narrower/audit.go",
       "sha256": "2cd1af4a8a3df3956add121428a81392eb33954e738eb5dfea5505f35f3bf806"
     },
@@ -178,52 +178,52 @@
       "sha256": "6662e90d8953fb6a989c06f175c867e3e4f0619aad4ec2ef49db1f3811a378b9"
     },
     {
-      "source": "experiments/jev-search-result-narrower/cost.go",
+      "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower/cost.go",
       "destination": "experiments/jev-search-result-narrower/cost.go",
       "sha256": "6a7a98f2c0a1255e71ca4b063200bf411a8da3e7929059b6ce4cfcac4fd8a195"
     },
     {
-      "source": "experiments/jev-search-result-narrower/go.mod",
+      "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower/go.mod",
       "destination": "experiments/jev-search-result-narrower/go.mod",
       "sha256": "2f3b307a99e3b294a4b7c8f4e0e4e2cfd2de813ec9c50ea11e2b4fbe51c43a1d"
     },
     {
-      "source": "experiments/jev-search-result-narrower/go.sum",
+      "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower/go.sum",
       "destination": "experiments/jev-search-result-narrower/go.sum",
       "sha256": "3820a6a87854b392f09c0ee439a6b8410389d4ee6176b1aff3a7f486a773b9f0"
     },
     {
-      "source": "experiments/jev-search-result-narrower/main.go",
+      "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower/main.go",
       "destination": "experiments/jev-search-result-narrower/main.go",
       "sha256": "446b9a72604d7d156ccb41043b3ed19cb6caf9fdd7c17dd9a62c292d73f9811b"
     },
     {
-      "source": "experiments/jev-search-result-narrower/offline.go",
+      "source": "experiments/rag-filtering-kimi/offline.go",
       "destination": "experiments/jev-search-result-narrower/offline.go",
       "sha256": "75c7670e31069b1bcb303a491f6ac96769e34e1613b6c447ead33fe32cef21b9"
     },
     {
-      "source": "experiments/jev-search-result-narrower/offline_test.go",
+      "source": "experiments/rag-filtering-kimi/offline_test.go",
       "destination": "experiments/jev-search-result-narrower/offline_test.go",
       "sha256": "e2a1c38f1ec52e75a39de4cb39b041f3a6a14cccede9f684d34f0f87815c0439"
     },
     {
-      "source": "experiments/jev-search-result-narrower/pipeline.go",
+      "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower/pipeline.go",
       "destination": "experiments/jev-search-result-narrower/pipeline.go",
       "sha256": "04d6c5c622f8b335b7d1e0a5c1d54446235a15595479b3321e1c204e9c8aaf2e"
     },
     {
-      "source": "experiments/jev-search-result-narrower/pipeline_test.go",
+      "source": "experiments/rag-filtering-kimi/pipeline_test.go",
       "destination": "experiments/jev-search-result-narrower/pipeline_test.go",
       "sha256": "a9a98a0f14aa37837e06fbf10beac83f397a199d0bd9f66705990034231b2cdf"
     },
     {
-      "source": "experiments/jev-search-result-narrower/prepare.go",
+      "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower/prepare.go",
       "destination": "experiments/jev-search-result-narrower/prepare.go",
       "sha256": "4e9bd874093a07ae948e2bf909d7b3bdf56a9724a5d431de926a86fd895f1daf"
     },
     {
-      "source": "experiments/jev-search-result-narrower/report.go",
+      "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower/report.go",
       "destination": "experiments/jev-search-result-narrower/report.go",
       "sha256": "b25a7c80e30a1e75e6e85d6762e2df6da1188d8a16f524633beb49561dfb6dcc"
     },
@@ -250,100 +250,100 @@
     {
       "source": "publication/overlays/experiments/jev-vs-LLM-for-evals/README.md",
       "destination": "experiments/jev-vs-LLM-for-evals/README.md",
-      "sha256": "d81746c2d9a10e961970c30ad6ca69dfdc27e96ca3db2b00c59bf3e3db1de331"
+      "sha256": "3ac0c43492a4b7438d0bfabf14024bc8972e76c82e3bb3cfe22004fcc003bc7b"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/cmd/evalevaluation/main.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/cmd/evalevaluation/main.go",
       "destination": "experiments/jev-vs-LLM-for-evals/cmd/evalevaluation/main.go",
       "sha256": "26270fbe6eef1b41e9bdd2f26a1e451bc91ad542543e9597f04f6323dcf1bcf7"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/cmd/finalizerecovery/main.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/cmd/finalizerecovery/main.go",
       "destination": "experiments/jev-vs-LLM-for-evals/cmd/finalizerecovery/main.go",
       "sha256": "1ae896adcd7603e6c0a94e9a8254c61265ce93123a555ad8945452ffba63ccd3"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/cmd/labelaudit/main.go",
+      "source": "experiments/eval-judging/cmd/labelaudit/main.go",
       "destination": "experiments/jev-vs-LLM-for-evals/cmd/labelaudit/main.go",
       "sha256": "559b1085716befea7077fc7a2d040e7bbd7f5a3717a229b6004c547b74685fe7"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/cmd/studyreport/main.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/cmd/studyreport/main.go",
       "destination": "experiments/jev-vs-LLM-for-evals/cmd/studyreport/main.go",
       "sha256": "09f722f4b42779216ca0520d5210cc1bb4a1f3d00e80d026130aba4a6f87ba9e"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/configs/broad-published-v1.json",
+      "source": "experiments/eval-judging/configs/broad-published-v1.json",
       "destination": "experiments/jev-vs-LLM-for-evals/configs/broad-published-v1.json",
       "sha256": "d6a265cfd84854cdffe87370c6fe8167db936c08d10a26885b47fa68f72b0f88"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/configs/go-smoke.json",
+      "source": "experiments/eval-judging/configs/go-smoke.json",
       "destination": "experiments/jev-vs-LLM-for-evals/configs/go-smoke.json",
       "sha256": "c6f1a7f2a8316208ca010820479b0ddc14c8606237aace3ac1a68efdd160bc37"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/configs/native-interface-smoke.json",
+      "source": "experiments/eval-judging/configs/native-interface-smoke.json",
       "destination": "experiments/jev-vs-LLM-for-evals/configs/native-interface-smoke.json",
       "sha256": "ae1e49e0c99003d527799375c346c972cf2f75389eb526ac4ccb04ff8435e4c1"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/configs/native-interface-v1.json",
+      "source": "experiments/eval-judging/configs/native-interface-v1.json",
       "destination": "experiments/jev-vs-LLM-for-evals/configs/native-interface-v1.json",
       "sha256": "21eeb112ad671e679d41bd9a945243bc9a7142cb6bef4d47ad46e481712d4231"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/configs/pricing-2026-09-17.json",
+      "source": "experiments/eval-judging/configs/pricing-2026-09-17.json",
       "destination": "experiments/jev-vs-LLM-for-evals/configs/pricing-2026-09-17.json",
       "sha256": "d4a18d55992ab01aa05b66cda7a9ec68c8cc7cbb3e50240fac9a00793fd87667"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/configs/robust-preflight-v1.json",
+      "source": "experiments/eval-judging/configs/robust-preflight-v1.json",
       "destination": "experiments/jev-vs-LLM-for-evals/configs/robust-preflight-v1.json",
       "sha256": "ae4686cbc7e5d5074c483847f3eb59cb87f0d984caa482bdf0e1aaa101b5c6cc"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/go.mod",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/go.mod",
       "destination": "experiments/jev-vs-LLM-for-evals/go.mod",
       "sha256": "2ed55165000761ca1d81e439639a91de98f814c41e4959feb459d49104c93c87"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/go.sum",
+      "source": "experiments/eval-judging/go.sum",
       "destination": "experiments/jev-vs-LLM-for-evals/go.sum",
       "sha256": "5715eab4eeb92cc19ec9d74a16e458875cb429e244c842481ce0e28bc1052f47"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/eval/budget.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/eval/budget.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/eval/budget.go",
       "sha256": "31ca353639ed6796e4e1bdd0e43c206e2efd40a29cc4e642a78c78bb16ed758b"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/eval/campaign.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/eval/campaign.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/eval/campaign.go",
       "sha256": "87035299d14c831876698c9ed2064182e115d2e12f40539322bd54bea85ae912"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/eval/client.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/eval/client.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/eval/client.go",
       "sha256": "dc7348074dd300d63876ffed65b5f6fa34fc3c5ffc8d965c4d4b940c20f0474d"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/eval/common.go",
+      "source": "experiments/eval-judging/internal/eval/common.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/eval/common.go",
       "sha256": "d6b76ff5ee966618af361b47622bee24693f2088cd4f20f36b409de40933505f"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/eval/data.go",
+      "source": "experiments/eval-judging/internal/eval/data.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/eval/data.go",
       "sha256": "6cf8e8c4eb3e21dd9d475abbda1e53b28d9c4c281bce1d25188f9e078c2a467a"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/eval/economics.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/eval/economics.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/eval/economics.go",
       "sha256": "62b4e2ef33424f3519598f053ed34a7c7cd48484f613276e5231a099548bdfff"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/eval/engine.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/eval/engine.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/eval/engine.go",
       "sha256": "5c4514cbb1f7cfc40508122c3fe211a5531fba6c9aef4d93161490097070e5b0"
     },
@@ -353,47 +353,47 @@
       "sha256": "89dc84bf9c3240f967246fa55915cc659c5f0bd740056cb067fcbfd28e3f1dc7"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/eval/metrics.go",
+      "source": "experiments/eval-judging/internal/eval/metrics.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/eval/metrics.go",
       "sha256": "73bab28fd245b0f5608a35efbe4f06513c2756aba57b23655da4fc8b6a430588"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/eval/native.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/eval/native.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/eval/native.go",
       "sha256": "8ae5b5f3d58aaa367cb2941d34f4bb0aff7cecac861b39217dc4f00ee6bded0e"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/eval/native_test.go",
+      "source": "experiments/eval-judging/internal/eval/native_test.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/eval/native_test.go",
       "sha256": "697560bea87fb3953672dbb03241385b494bfa788f2c20332e486af6a0b6dd32"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/eval/protocols.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/eval/protocols.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/eval/protocols.go",
       "sha256": "51f6b785dd6ad1f903161f12f76d82d39dd67fd02c85bdea3967a24759cd6d3f"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/eval/robustness_test.go",
+      "source": "experiments/eval-judging/internal/eval/robustness_test.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/eval/robustness_test.go",
       "sha256": "4cbd7ea56c8b027d08adeb51459d83496fd03dacc85cb8f812b2d02db9ca9a15"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/eval/storage.go",
+      "source": "experiments/eval-judging/internal/eval/storage.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/eval/storage.go",
       "sha256": "2fdb6c424f48583bb7d934b0ff4f25646742dfe9d9bdbbad91a804456d8a42b4"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/archive.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/study/archive.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/archive.go",
       "sha256": "19e1453ca5c3aea0eb57c3e63fb59e6bf0bed8621492af429940a4b6f87a9d50"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/archive_test.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/study/archive_test.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/archive_test.go",
       "sha256": "aefc6b45de278660e8ade2f2a691ee5dd3bed7ec672c7aeab4cd7c8bf3901fdc"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/atomic.go",
+      "source": "experiments/eval-judging/internal/study/atomic.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/atomic.go",
       "sha256": "640ac8e948d35ae3295f3bcb670af273ebebeb6f4f12fb125a56cf43a356adf4"
     },
@@ -403,37 +403,37 @@
       "sha256": "bb69ce614672189c997792af6dea71fa5827c3f0070f38f364053f75174f7174"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/calibration.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/study/calibration.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/calibration.go",
       "sha256": "219632f396337e7dea5a7a577c4e53a698abcf3ef99be3541aecdc061d3a88bf"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/calibration_test.go",
+      "source": "experiments/eval-judging/internal/study/calibration_test.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/calibration_test.go",
       "sha256": "99181fcb43dd3007cf4e93c274b325e8d93395e322fd73577372c98f68d464fc"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/cascade.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/study/cascade.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/cascade.go",
       "sha256": "9da9c046e761090226e3563c645ff8d3621ddee095f19d4ac3fc57be8395dea4"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/cascade_test.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/study/cascade_test.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/cascade_test.go",
       "sha256": "134846618476458de0d0865f616770d3804465aeb16fd832c29c40d428c7198b"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/disagreements.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/study/disagreements.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/disagreements.go",
       "sha256": "a337a50c095a6b990ecbcca1148aabbaed8ba9bca77973a2bdf05349de8afe5c"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/disagreements_test.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/study/disagreements_test.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/disagreements_test.go",
       "sha256": "57c7a184b067d719f59442e198eeb8184abaf99ba91436c59fdd27224bf88792"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/load.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/study/load.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/load.go",
       "sha256": "4719f82da0cdcc95703a8d03e6aa62364a97f9b51a251f28fed3f51370f80fbb"
     },
@@ -443,27 +443,27 @@
       "sha256": "4c352b404a4646b867603bce144c38a352ed8c797a147f0a4039436f77ae0a87"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/methods.go",
+      "source": "experiments/eval-judging/internal/study/methods.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/methods.go",
       "sha256": "bb7b8c0f352501b3b1187c733dcae36ed2b8710251b9443dac4d021d0550adb8"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/methods_test.go",
+      "source": "experiments/eval-judging/internal/study/methods_test.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/methods_test.go",
       "sha256": "4a1e2183cef3829b6753beacc7fe682e0f2e4195dbb7295f1e558ed853385bcc"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/questions.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/study/questions.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/questions.go",
       "sha256": "3f619d1d86bcb29a9da8154e1d453ad8d280f6add384a3a76e72403796398e3b"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/questions_test.go",
+      "source": "experiments/eval-judging/internal/study/questions_test.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/questions_test.go",
       "sha256": "9acbccfcf4b89d11664c330da45a1e7b0b7357f07a06827b7b97bcd04b3229d9"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/recovery.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/study/recovery.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/recovery.go",
       "sha256": "a376dd1082f93f43a872c31e43bdacf7840ce913caccc2f0047e12b645d7052b"
     },
@@ -473,257 +473,257 @@
       "sha256": "86b7c2d8271fa1288e5d0827334004cc293dfdcb11bafdad073f18a57321232d"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/reliability.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/study/reliability.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/reliability.go",
       "sha256": "b790e0751c27e99eb36cc64b3424ec8dfa09a9f7f73cf84300468f0e3e710db3"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/reliability_test.go",
+      "source": "experiments/eval-judging/internal/study/reliability_test.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/reliability_test.go",
       "sha256": "5362e691ffbdc1da9aa2ea2ee25ad4561a752f834237b19c2fc002ea7712c624"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/report.go",
+      "source": "experiments/eval-judging/internal/study/report.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/report.go",
       "sha256": "c4b4ebfeb6811894f47562c754b3c9094983ee81743556fe085f2665815f9ac7"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/retry.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/study/retry.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/retry.go",
       "sha256": "d980350413eaa9e6ccd5e8b8bb6061d76032effdc689dbfb3a033ce57a6aaf47"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/retry_test.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/study/retry_test.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/retry_test.go",
       "sha256": "2d5be6183d8e3311afb1cc7579db7c52e9888538e956fc4ee8621076ce1fa941"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/sensitivity.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/study/sensitivity.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/sensitivity.go",
       "sha256": "02ed19cc066e22af915c7192113b18841ca724e59fbeeaafa621c43a7b62a576"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/sensitivity_test.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/study/sensitivity_test.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/sensitivity_test.go",
       "sha256": "74e846cce0aece8d9f827333198d5e0a67af90b6a3c0c98070eea3482e0b04bb"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/statistics.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/study/statistics.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/statistics.go",
       "sha256": "7ce85fff03fdaccdf7a07c6ea96c888aa92722d8fbc74581a4a53b014acd115b"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/internal/study/statistics_test.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/study/statistics_test.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/statistics_test.go",
       "sha256": "27bc7a9eeaf918224ecbebb39834f33223455330269250b357067772344e6466"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/configs/full.json",
+      "source": "experiments/eval-judging/methodology/configs/full.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/configs/full.json",
       "sha256": "f30de048c4570e87bb769d2cd99778ce9451df7327885e6d8616969d252898ac"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/configs/native-score-validation.json",
+      "source": "experiments/eval-judging/methodology/configs/native-score-validation.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/configs/native-score-validation.json",
       "sha256": "5e8aa994965400134d6a5bf125bbd6d44b9a9c093dde585eda1319944abd712c"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/configs/original-token-budgets.json",
+      "source": "experiments/eval-judging/methodology/configs/original-token-budgets.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/configs/original-token-budgets.json",
       "sha256": "ad249ea2e4f4b420b8e1a6eb498774fe5f7627f853d882315bb5b54c307648db"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/configs/validation.json",
+      "source": "experiments/eval-judging/methodology/configs/validation.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/configs/validation.json",
       "sha256": "a2205768094da2934025cd1960a51e3be4842a0547477d56f35f0b9b54ff288e"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/sources.lock.json",
+      "source": "experiments/eval-judging/methodology/sources.lock.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/sources.lock.json",
       "sha256": "f4e1d3ef0f1617606264f3bf16a552ca39f61ebbdcf059e93f7f19a5e838fae0"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/LICENSE",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/LICENSE",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/LICENSE",
       "sha256": "8872dbf8660b00890b5e07ce1ea1f7a44fa7ae4e1857da56caba172b51dab3cb"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/CoT.json",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/configs/CoT.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/CoT.json",
       "sha256": "0873670d6714a4eafa61101d9cf8b05bf856433a94cebb427aca9ea4f28778a0"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Metrics.json",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/configs/Metrics.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Metrics.json",
       "sha256": "f73d7f7affcaef406ac589ad9cf26adfbe2246d46b65fdefc503066fc2bae714"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Metrics_Reference.json",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/configs/Metrics_Reference.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Metrics_Reference.json",
       "sha256": "1a1db436a9bcbaebbdb508be1fe3bcefdaf9952dd9da8333fb59acadc1bb58fd"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Rating.json",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/configs/Rating.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Rating.json",
       "sha256": "dd3856da12cb4e253ce6b7f7145cacd498b3c8d9e167d162629071ea361f4477"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Rating_Metrics.json",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/configs/Rating_Metrics.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Rating_Metrics.json",
       "sha256": "89ca6172fda15609c81855c5a14781e19f4315a40405dfc481f1ae6a92b59309"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Rating_Metrics_Reference.json",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/configs/Rating_Metrics_Reference.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Rating_Metrics_Reference.json",
       "sha256": "bd81cb8a835444f0596007997c078613ab84303375d55010dcb808a81447ad60"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Rating_NoRules.json",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/configs/Rating_NoRules.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Rating_NoRules.json",
       "sha256": "f0c3d791bf1cdb972df6eb6bd1655c78d770f73696323d830ed3d323afe16c13"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Rating_Reference.json",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/configs/Rating_Reference.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Rating_Reference.json",
       "sha256": "fa9226c089dd6414e8c4dc51e3c2df2976835d9365e66add62b7b46e761c4c57"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Reference.json",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/configs/Reference.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Reference.json",
       "sha256": "7eedda881af048f3917c6a44d76d082e7922ea14a19a563e4cec0f8dd85b0eb1"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Swap.json",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/configs/Swap.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Swap.json",
       "sha256": "a4c614ee3d20864e423318cfac28083de1b8e5d2cd3ba0cb27e5214255c02a14"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Swap_CoT.json",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/configs/Swap_CoT.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Swap_CoT.json",
       "sha256": "2bd3ee544021659de7899f5bd741950589987c28457ca595164b52e900b7277a"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Vanilla.json",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/configs/Vanilla.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Vanilla.json",
       "sha256": "2f03c7d7f06b9901b48f77b39ed338e057bea30ea2605b7d41a588cf767e8087"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Vanilla_1shot.json",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/configs/Vanilla_1shot.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Vanilla_1shot.json",
       "sha256": "afdd3001047db81a442452f0f513e8df9ae52ebd30e4e5e3e3e04404aa815d51"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Vanilla_2shot.json",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/configs/Vanilla_2shot.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Vanilla_2shot.json",
       "sha256": "30eac7b2537f03385b37b1d8134624f146227fdb5d782c4f39af064fe259cb5d"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Vanilla_NoRules.json",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/configs/Vanilla_NoRules.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/configs/Vanilla_NoRules.json",
       "sha256": "64ed1ac706a1bd1e0cce4d1e1d179387b109ecfa6cbe2ad8d30746cb9e6ba45a"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/auxiliary/Metrics.txt",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/prompts/auxiliary/Metrics.txt",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/auxiliary/Metrics.txt",
       "sha256": "582d0cdf593c47fd583228cd45e695febc09d35955981fdef90a824d77e0c8e6"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/auxiliary/Reference.txt",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/prompts/auxiliary/Reference.txt",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/auxiliary/Reference.txt",
       "sha256": "8403681024047a9113ae5b054864f789c7530d630e5d381b14141f2742fbb140"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/comparison/CoT.txt",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/prompts/comparison/CoT.txt",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/comparison/CoT.txt",
       "sha256": "fe8768534e491481426c55b6f17fb5df2f0e4b3621300487be3b8e4c4a01bed8"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/comparison/Metrics.txt",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/prompts/comparison/Metrics.txt",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/comparison/Metrics.txt",
       "sha256": "75b5fd4c8b24bbb187d958d4f18602a8abbcee51a9fd67f9a1ab9db5d609284a"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/comparison/Metrics_Reference.txt",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/prompts/comparison/Metrics_Reference.txt",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/comparison/Metrics_Reference.txt",
       "sha256": "a75730d4a3e76bab45e573e25eb670f65f53d13448b52e4b948bc0e928b5758e"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/comparison/Reference.txt",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/prompts/comparison/Reference.txt",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/comparison/Reference.txt",
       "sha256": "5e0f2645cd41c94acd56850d4c1b94909bd3e5a1acc91cf5f439e7df0d2ada16"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/comparison/Vanilla.txt",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/prompts/comparison/Vanilla.txt",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/comparison/Vanilla.txt",
       "sha256": "77a3a8f354472bc3b39a78847246c93b824bd1c59c57070bf91e06da927aa7da"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/comparison/Vanilla_1shot.txt",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/prompts/comparison/Vanilla_1shot.txt",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/comparison/Vanilla_1shot.txt",
       "sha256": "bdc127c0ca413b1fda86eeb5536cc4b9c567b339b72ae82a8b1101572af44998"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/comparison/Vanilla_2shot.txt",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/prompts/comparison/Vanilla_2shot.txt",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/comparison/Vanilla_2shot.txt",
       "sha256": "e29be9c04236a7974821b567e0e67d5567c3d423d680f53f93064e63d0fc1cc1"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/comparison/Vanilla_NoRules.txt",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/prompts/comparison/Vanilla_NoRules.txt",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/comparison/Vanilla_NoRules.txt",
       "sha256": "c5759aaedc9df7d9e856fda7a8d88b3fdda224ae797542fe97e00b0a8700e3ff"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/rating/Rating.txt",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/prompts/rating/Rating.txt",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/rating/Rating.txt",
       "sha256": "4c1fbf0c857ea70666eda4ad7f4e0cf8d940e6d21c8ad0ecc5a76b53fbd3cda3"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/rating/Rating_Metrics.txt",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/prompts/rating/Rating_Metrics.txt",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/rating/Rating_Metrics.txt",
       "sha256": "8b6133dac7908fca302704a92463c28ac2cdadff05f6666e6f11a8ad1b588e23"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/rating/Rating_Metrics_Reference.txt",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/prompts/rating/Rating_Metrics_Reference.txt",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/rating/Rating_Metrics_Reference.txt",
       "sha256": "90630ec0ef0a79920c2db92d6332ac78e4f270544741642b7611b22354fcb315"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/rating/Rating_NoRules.txt",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/prompts/rating/Rating_NoRules.txt",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/rating/Rating_NoRules.txt",
       "sha256": "4ee7762365503ced2220bde2cdf31a5fb109824ba2fe804eac4eda05bdc9e778"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/rating/Rating_Reference.txt",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/prompts/rating/Rating_Reference.txt",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/rating/Rating_Reference.txt",
       "sha256": "ba2029222833f32b85572556d5444ee7d2927a31266f456e57e687d4ea5e5c79"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/swap_and_synthesize/Swap.txt",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/prompts/swap_and_synthesize/Swap.txt",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/swap_and_synthesize/Swap.txt",
       "sha256": "cefbd81e8adfd6f527b35197f43a3edd41c8a34053ae74df89aa97fbfa3abb99"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/swap_and_synthesize/Swap_CoT.txt",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/prompts/swap_and_synthesize/Swap_CoT.txt",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/prompts/swap_and_synthesize/Swap_CoT.txt",
       "sha256": "4f74f144f3dcc670a47b45793c7056265a79ca2b4241a6713bf998fc5df585e3"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/upstream_evaluate.py",
+      "source": "experiments/eval-judging/methodology/vendor/llmbar/upstream_evaluate.py",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/llmbar/upstream_evaluate.py",
       "sha256": "8f9a645239d91d5ad0ffcf977425714e285663a853eefcd21b11bf43a525229a"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/rewardbench/LICENSE",
+      "source": "experiments/eval-judging/methodology/vendor/rewardbench/LICENSE",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/rewardbench/LICENSE",
       "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/rewardbench/prompts.json",
+      "source": "experiments/eval-judging/methodology/vendor/rewardbench/prompts.json",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/rewardbench/prompts.json",
       "sha256": "859fcc2a4f8d2d2fb5ae2cca858301c5e491ba38e182f12d16ceed282efa678a"
     },
     {
-      "source": "experiments/jev-vs-LLM-for-evals/methodology/vendor/rewardbench/reference_scoring.py",
+      "source": "experiments/eval-judging/methodology/vendor/rewardbench/reference_scoring.py",
       "destination": "experiments/jev-vs-LLM-for-evals/methodology/vendor/rewardbench/reference_scoring.py",
       "sha256": "db24432011e55413d6f8ac0d85e8a642c69db3ed22e035e3d59d257c3d857893"
     },
@@ -770,10 +770,10 @@
     {
       "source": "publication/overlays/experiments/jev-vs-rerankers/README.md",
       "destination": "experiments/jev-vs-rerankers/README.md",
-      "sha256": "426244e7dd4b417ea0c68c03cffb1dc5d510df7ff074620e03ee39fade1154aa"
+      "sha256": "328a9f2e226398f6dd20fb7f82734d880e040a03120398e621f9e9b5c6cafb30"
     },
     {
-      "source": "experiments/jev-vs-rerankers/analysis.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-rerankers/analysis.go",
       "destination": "experiments/jev-vs-rerankers/analysis.go",
       "sha256": "50c093aa39160527eef02c02ec0db5a485b9314c32a6664e708d420e803fe86f"
     },
@@ -783,47 +783,47 @@
       "sha256": "1e1c3b47b3d96251b3712ae2dca81f62ddaa3ed87227be48fe3708aa0bbd4062"
     },
     {
-      "source": "experiments/jev-vs-rerankers/client.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-rerankers/client.go",
       "destination": "experiments/jev-vs-rerankers/client.go",
       "sha256": "e520b3e6c24b5d76df4148266b8d32d9b0871f3bc503d3c05d3f4c17987d97f8"
     },
     {
-      "source": "experiments/jev-vs-rerankers/data.go",
+      "source": "experiments/passage-reranking/data.go",
       "destination": "experiments/jev-vs-rerankers/data.go",
       "sha256": "2f901ae679159ac77258f7017a6f51f3be11ccece8d6c7978c36e18148495a7d"
     },
     {
-      "source": "experiments/jev-vs-rerankers/go.mod",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-rerankers/go.mod",
       "destination": "experiments/jev-vs-rerankers/go.mod",
       "sha256": "47fd88799a014d9d012b6ad92dfc73a8844220633bc229ae7324aabfe016608f"
     },
     {
-      "source": "experiments/jev-vs-rerankers/go.sum",
+      "source": "experiments/passage-reranking/go.sum",
       "destination": "experiments/jev-vs-rerankers/go.sum",
       "sha256": "8443a862d2e8b05ac34298d963911aa22b0e54978185655078ae2e83346cfa51"
     },
     {
-      "source": "experiments/jev-vs-rerankers/main.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-rerankers/main.go",
       "destination": "experiments/jev-vs-rerankers/main.go",
       "sha256": "6e2e63cd95f6318769b1fa027b1ebb69e48ac8b212713e007d817cee1dfe23c0"
     },
     {
-      "source": "experiments/jev-vs-rerankers/prompt_study.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-rerankers/prompt_study.go",
       "destination": "experiments/jev-vs-rerankers/prompt_study.go",
       "sha256": "60bd1afa11626021d0e18960e66aaeba6d10cb95079755dd06613d0c9ac07d28"
     },
     {
-      "source": "experiments/jev-vs-rerankers/prompt_study_test.go",
+      "source": "experiments/passage-reranking/prompt_study_test.go",
       "destination": "experiments/jev-vs-rerankers/prompt_study_test.go",
       "sha256": "dc1e0d337f2b265a051cd903642ddbe96de14aada4c85c8af483571c757079fa"
     },
     {
-      "source": "experiments/jev-vs-rerankers/prompts.json",
+      "source": "experiments/passage-reranking/prompts.json",
       "destination": "experiments/jev-vs-rerankers/prompts.json",
       "sha256": "9d11d85dde679f8d785d75959e9c5920ac7c6d18b1e5a84163513f1c9afde847"
     },
     {
-      "source": "experiments/jev-vs-rerankers/replay.go",
+      "source": "experiments/passage-reranking/replay.go",
       "destination": "experiments/jev-vs-rerankers/replay.go",
       "sha256": "f5d3e15c3bcc0394eb73e4fcc07f72e52b7dcbf6947e5ecad703e6be4aff5fa2"
     },
@@ -838,7 +838,7 @@
       "sha256": "f02f8923316bbe5647e1a325025c51ab5c16fe213a5fd2d18d4a02ddf2fc0ad4"
     },
     {
-      "source": "experiments/jev-vs-rerankers/run.go",
+      "source": "publication/overlays/public-v1/experiments/jev-vs-rerankers/run.go",
       "destination": "experiments/jev-vs-rerankers/run.go",
       "sha256": "b6dc62fcf0d85e967a2b6c12d6392112242e32efc041a4fc92877aaabe1615a2"
     },
@@ -846,6 +846,231 @@
       "source": "publication/overlays/scripts/bootstrap-dependencies.sh",
       "destination": "scripts/bootstrap-dependencies.sh",
       "sha256": "e7a43c0c421289fa36235f18426e5f5b376985292220dc33b7fee40d2f96f6cd"
+    },
+    {
+      "source": "publication/overlays/experiments/openai-decisions-adapter/README.md",
+      "destination": "experiments/openai-decisions-adapter/README.md",
+      "sha256": "d17a94412e4d2018e901e8db7f2323d9cd47e6e1bd6da8415bec20ede036b934"
+    },
+    {
+      "source": "publication/overlays/experiments/openai-decisions-adapter/go.mod",
+      "destination": "experiments/openai-decisions-adapter/go.mod",
+      "sha256": "e17683ac1c0192ba78eb9dc6251427369fecee71bf3d570faad1aebaa5ebeeb5"
+    },
+    {
+      "source": "publication/overlays/experiments/openai-decisions-adapter/decisions/adapter.go",
+      "destination": "experiments/openai-decisions-adapter/decisions/adapter.go",
+      "sha256": "30f014b3c6061735e1e74af90ad68713337b3ece88e931e9fb26e532e907d1ab"
+    },
+    {
+      "source": "publication/overlays/experiments/openai-decisions-adapter/decisions/adapter_test.go",
+      "destination": "experiments/openai-decisions-adapter/decisions/adapter_test.go",
+      "sha256": "487fa5668f502a6aa6fa9ca02efc2510ab3dfd50263f09d0b15c0ee5a9478ecc"
+    },
+    {
+      "source": "publication/overlays/experiments/openai-decisions-adapter/decisions/endpoint_test.go",
+      "destination": "experiments/openai-decisions-adapter/decisions/endpoint_test.go",
+      "sha256": "c98ba67afec4f315be1806d1d245dd86e35ce78e357bbfe45e7d907f180ce1f6"
+    },
+    {
+      "source": "publication/overlays/experiments/openai-decisions-adapter/decisions/probe.go",
+      "destination": "experiments/openai-decisions-adapter/decisions/probe.go",
+      "sha256": "e1504c87276d81814922d34ad0b191b0c3e646f49f2cf0f823d42d470458000b"
+    },
+    {
+      "source": "publication/overlays/experiments/openai-decisions-adapter/decisions/wire.go",
+      "destination": "experiments/openai-decisions-adapter/decisions/wire.go",
+      "sha256": "803bbbfe27f1f63f52c35c340572c88bc76e91d9bdc5618e94f287d21d0212cc"
+    },
+    {
+      "source": "publication/overlays/experiments/openai-decisions-adapter/cmd/decisions-probe/main.go",
+      "destination": "experiments/openai-decisions-adapter/cmd/decisions-probe/main.go",
+      "sha256": "61e5589450868d66c0d17a6bb0fb95805551a5c6a736cb82f2c2f650f4422211"
+    },
+    {
+      "source": "publication/overlays/experiments/openai-decisions-adapter/cmd/decisions-fake/main.go",
+      "destination": "experiments/openai-decisions-adapter/cmd/decisions-fake/main.go",
+      "sha256": "d965043b493432ed7aa399f6c9cbe823a1dce20e31447b247ad65c1346ed2a50"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/README.md",
+      "destination": "experiments/request-shaping/README.md",
+      "sha256": "87d8072c29e04b1c100a235f0f17284010793741e66f5e84f7dd13e67ab67f5f"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/go.mod",
+      "destination": "experiments/request-shaping/go.mod",
+      "sha256": "41a425c4c9468bdf5dfc3b76570624001ed422e01d96c2a4d8111e68ebbf08c7"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/go.sum",
+      "destination": "experiments/request-shaping/go.sum",
+      "sha256": "8443a862d2e8b05ac34298d963911aa22b0e54978185655078ae2e83346cfa51"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/SPEC.md",
+      "destination": "experiments/request-shaping/SPEC.md",
+      "sha256": "de3423857fbb65ebd2ee73e7713289de3a5665de256b6b3fd361aeacdf7a931a"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/cmd/question-fanout/main.go",
+      "destination": "experiments/request-shaping/cmd/question-fanout/main.go",
+      "sha256": "c715d2471c5f2c34f2b09c3e298819d567e54107bd6024626fd445d1ed88c3fe"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/cmd/question-fanout/main_test.go",
+      "destination": "experiments/request-shaping/cmd/question-fanout/main_test.go",
+      "sha256": "af04a35a9002fce5dacaf502f2e1e90db71cedc8be786b4c833e1e7cfd394fd3"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/cmd/question-fanout/report_test.go",
+      "destination": "experiments/request-shaping/cmd/question-fanout/report_test.go",
+      "sha256": "fc7a0615114f3bcf8eb0c5fba20cb94f69cf399524d8383df1c7a29161c71fb3"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/cmd/state-packing/main.go",
+      "destination": "experiments/request-shaping/cmd/state-packing/main.go",
+      "sha256": "14570a4b5e10a5ab3dd75fb615f9452c7120820f21e2ce043f2ad72afbfc311a"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/cmd/state-packing/main_test.go",
+      "destination": "experiments/request-shaping/cmd/state-packing/main_test.go",
+      "sha256": "85f66639f8c2d2d523c82aebf2af42178b3ec155fccad0a123fd507b4bb5c818"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/cmd/state-packing/report_test.go",
+      "destination": "experiments/request-shaping/cmd/state-packing/report_test.go",
+      "sha256": "fc7a0615114f3bcf8eb0c5fba20cb94f69cf399524d8383df1c7a29161c71fb3"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/cmd/state-position/main.go",
+      "destination": "experiments/request-shaping/cmd/state-position/main.go",
+      "sha256": "eb2059065f3941be4bcc5f2cdb64c20a7410bf2e455ef44c6f8ba3a34d47a450"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/cmd/state-position/report_test.go",
+      "destination": "experiments/request-shaping/cmd/state-position/report_test.go",
+      "sha256": "fc7a0615114f3bcf8eb0c5fba20cb94f69cf399524d8383df1c7a29161c71fb3"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/internal/bench/analysis.go",
+      "destination": "experiments/request-shaping/internal/bench/analysis.go",
+      "sha256": "9929eb7d2cbad2d25da35b1aebd069f1d8802899b5e96494e26737dc46227e93"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/internal/bench/bench_test.go",
+      "destination": "experiments/request-shaping/internal/bench/bench_test.go",
+      "sha256": "582f3f961b4578d1e7584b4fcfa3839edc63e44c6732aca811ab827c6da3eabd"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/internal/bench/cli.go",
+      "destination": "experiments/request-shaping/internal/bench/cli.go",
+      "sha256": "416569c12a17f6f296506bf6b6f9212fc6e0c232c15e94b7fa8ce83516a13f0b"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/internal/bench/client.go",
+      "destination": "experiments/request-shaping/internal/bench/client.go",
+      "sha256": "390e9dc23a8003cf3ff168c2da04552fe95d09515b55f234b19ec60a26025513"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/internal/bench/data.go",
+      "destination": "experiments/request-shaping/internal/bench/data.go",
+      "sha256": "96a13c0c34faa837856a0a91c7a05c4cb260a2b8460f25c31cff7e162230c626"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/internal/bench/frozen.go",
+      "destination": "experiments/request-shaping/internal/bench/frozen.go",
+      "sha256": "5249f98867445483dfad014783f3f7fe40007b9bcc86d8c23765ee0529afc272"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/internal/bench/jev.go",
+      "destination": "experiments/request-shaping/internal/bench/jev.go",
+      "sha256": "7502584bf466d36f8ca49c2c78110eb018b26c7214bd561e4c787aa0cb672d33"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/internal/bench/metrics.go",
+      "destination": "experiments/request-shaping/internal/bench/metrics.go",
+      "sha256": "3f723ff838b39b7080b1b901c607d50ee0d97f1eadb98e52eac9c597e801e05e"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/results/question-fanout-v1/REPORT.md",
+      "destination": "experiments/request-shaping/results/question-fanout-v1/REPORT.md",
+      "sha256": "00899d0584468a7f2fe54042a70932c534cb5c0bda8cf1fc33dbe43def354dd0"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/results/state-packing-v1/REPORT.md",
+      "destination": "experiments/request-shaping/results/state-packing-v1/REPORT.md",
+      "sha256": "4167158e7e423e6ada5879bbd9c9154390a03c0c8066036165a61e35474b2b41"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/results/state-position-v1/REPORT.md",
+      "destination": "experiments/request-shaping/results/state-position-v1/REPORT.md",
+      "sha256": "d18f570c735919eab0e5b58ff954b623ca015efafad9567ac4fcfcd7ed502007"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/results/openai-decisions-v1/README.md",
+      "destination": "experiments/request-shaping/results/openai-decisions-v1/README.md",
+      "sha256": "5815262d70b23c4831222ac46ec44a675679e2addf55c7ea411a1e2c6313c672"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/results/openai-decisions-v1/summary.json",
+      "destination": "experiments/request-shaping/results/openai-decisions-v1/summary.json",
+      "sha256": "80f151296b2ae741f7b858174b4f42a1bd9d81be5f95932aaa1b55d5f5c81903"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/results/state-packing-openai-decisions-v1/REPORT.md",
+      "destination": "experiments/request-shaping/results/state-packing-openai-decisions-v1/REPORT.md",
+      "sha256": "84dfd54aad1e7c18592f313aab2e602b3b61658c286669b90849a98ab00522a8"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/results/question-fanout-openai-decisions-v1/REPORT.md",
+      "destination": "experiments/request-shaping/results/question-fanout-openai-decisions-v1/REPORT.md",
+      "sha256": "c3a225d864bb100c0e90f4739f0103ca47fef48229d0b3eb79da9741a86b1917"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/results/state-position-openai-decisions-v1/REPORT.md",
+      "destination": "experiments/request-shaping/results/state-position-openai-decisions-v1/REPORT.md",
+      "sha256": "cd53b56f05a73686fd3aee30fe45e12b086d478be0d7cd79e7b9732f56515d52"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-vs-rerankers/results/openai-decisions-v1/README.md",
+      "destination": "experiments/jev-vs-rerankers/results/openai-decisions-v1/README.md",
+      "sha256": "5f5bc5065c60bb6714e6cbb4b6ccedd301c079f3f49e0e793be5cfee55df5f1e"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-vs-rerankers/results/openai-decisions-v1/summary.json",
+      "destination": "experiments/jev-vs-rerankers/results/openai-decisions-v1/summary.json",
+      "sha256": "75b81bd54e0169d5c3352711870391a78fbaee5991cfdf16c7749d8072ef49bc"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-vs-LLM-for-evals/results/openai-decisions-v1/README.md",
+      "destination": "experiments/jev-vs-LLM-for-evals/results/openai-decisions-v1/README.md",
+      "sha256": "5ba26c8a68bac09fd6d5a4a0c3882b60bc353724e1ffdba289f44beb77e8cef9"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-vs-LLM-for-evals/results/openai-decisions-v1/summary.json",
+      "destination": "experiments/jev-vs-LLM-for-evals/results/openai-decisions-v1/summary.json",
+      "sha256": "c41b872db188759b095c8dfd941f1c59002d6653b81b7842eaf2a75aed7d2b56"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-search-result-narrower/results/openai-decisions-v1/README.md",
+      "destination": "experiments/jev-search-result-narrower/results/openai-decisions-v1/README.md",
+      "sha256": "8f18f0472aa648a0789464fa0f7b3b3fca6e99a16060ebc1c6539ee86cce107b"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-search-result-narrower/results/openai-decisions-v1/summary.json",
+      "destination": "experiments/jev-search-result-narrower/results/openai-decisions-v1/summary.json",
+      "sha256": "dff7f7366e8020f5694aaafca09feb77e05a322ab6f93bfb447340349d55e609"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-search-result-narrower-claude-RAG/results/openai-decisions-v1/README.md",
+      "destination": "experiments/jev-search-result-narrower-claude-RAG/results/openai-decisions-v1/README.md",
+      "sha256": "a7d36eeb97963c5831d1f39dda0ff8dd9d818ce8445f00aa4ddfb8e1b5df18af"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-search-result-narrower-claude-RAG/results/openai-decisions-v1/summary.json",
+      "destination": "experiments/jev-search-result-narrower-claude-RAG/results/openai-decisions-v1/summary.json",
+      "sha256": "3f6cdea485898d3ea898bf299eacf073cc7afdd20e2a709822b80ccd0dab5fdb"
     }
   ]
 }

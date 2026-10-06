@@ -1,0 +1,2172 @@
+{
+  "data": {
+    "cascades_decisions_first": [
+      {
+        "acceptance_coverage": 0.278752,
+        "accepted": 143,
+        "accounting_cost_ratio": 0.994017,
+        "accounting_cost_ratio_ci95": [
+          0.948028,
+          1.036905
+        ],
+        "benchmark": "judgebench",
+        "fallback": "gpt-oss-120b",
+        "fallback_strict_score": 0.764133,
+        "first_stage": "openai-decisions/gpt-6-luna",
+        "held_out_units": 513,
+        "method": "vanilla",
+        "strict_delta": -0.003899,
+        "strict_delta_ci95": [
+          -0.023392,
+          0.015595
+        ],
+        "strict_score": 0.760234
+      },
+      {
+        "acceptance_coverage": 0.194932,
+        "accepted": 100,
+        "accounting_cost_ratio": 0.887961,
+        "accounting_cost_ratio_ci95": [
+          0.851712,
+          0.92019
+        ],
+        "benchmark": "judgebench",
+        "fallback": "qwen3p8-max",
+        "fallback_strict_score": 0.877193,
+        "first_stage": "openai-decisions/gpt-6-luna",
+        "held_out_units": 513,
+        "method": "vanilla",
+        "strict_delta": -0.02729,
+        "strict_delta_ci95": [
+          -0.042885,
+          -0.011696
+        ],
+        "strict_score": 0.849903
+      },
+      {
+        "acceptance_coverage": 0.741538,
+        "accepted": 241,
+        "accounting_cost_ratio": 0.720607,
+        "accounting_cost_ratio_ci95": [
+          0.670022,
+          0.77251
+        ],
+        "benchmark": "llmbar",
+        "fallback": "gpt-oss-120b",
+        "fallback_strict_score": 0.873846,
+        "first_stage": "openai-decisions/gpt-6-luna",
+        "held_out_units": 325,
+        "method": "Vanilla",
+        "strict_delta": -0.010679,
+        "strict_delta_ci95": [
+          -0.033646,
+          0.01021
+        ],
+        "strict_score": 0.863167
+      },
+      {
+        "acceptance_coverage": 0.4,
+        "accepted": 130,
+        "accounting_cost_ratio": 0.698518,
+        "accounting_cost_ratio_ci95": [
+          0.646313,
+          0.75135
+        ],
+        "benchmark": "llmbar",
+        "fallback": "qwen3p8-max",
+        "fallback_strict_score": 0.928517,
+        "first_stage": "openai-decisions/gpt-6-luna",
+        "held_out_units": 325,
+        "method": "Vanilla",
+        "strict_delta": -0.007708,
+        "strict_delta_ci95": [
+          -0.019351,
+          0
+        ],
+        "strict_score": 0.920808
+      }
+    ],
+    "model": "openai-decisions/gpt-6-luna",
+    "native": {
+      "decisions_minus_jev": [
+        {
+          "accounting_cost_ratio": 4.009335,
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "matched_units": 419,
+          "method": "Atomic",
+          "strict_delta": -0.047488,
+          "strict_delta_ci95": [
+            -0.075974,
+            -0.018472
+          ]
+        },
+        {
+          "accounting_cost_ratio": 1.571873,
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "matched_units": 419,
+          "method": "Compact",
+          "strict_delta": -0.095643,
+          "strict_delta_ci95": [
+            -0.127208,
+            -0.064725
+          ]
+        }
+      ],
+      "reliability": [
+        {
+          "attempts": 838,
+          "benchmark": "llmbar",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 0,
+          "jobs": 419,
+          "method": "Atomic",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 838,
+          "benchmark": "llmbar",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 0,
+          "jobs": 419,
+          "method": "Atomic",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 0
+        },
+        {
+          "attempts": 838,
+          "benchmark": "llmbar",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 0,
+          "jobs": 419,
+          "method": "Compact",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 838,
+          "benchmark": "llmbar",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 0,
+          "jobs": 419,
+          "method": "Compact",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 0
+        }
+      ],
+      "scores": [
+        {
+          "accounting_usd": 0.027836,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 662758,
+          "job_p50_s": 0.23581,
+          "jobs": 419,
+          "known_input_usd": 0.027836,
+          "known_output_usd": 0,
+          "method": "Atomic",
+          "model": "jev-latest",
+          "output_tokens": 98884,
+          "request_p50_s": 0.112476,
+          "request_p95_s": 0.18838,
+          "strict_score": 0.814677,
+          "units": 419,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 419,
+          "valid_order_agreement": 0.861575
+        },
+        {
+          "accounting_usd": 0.111603,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 1116032,
+          "job_p50_s": 3.204563,
+          "jobs": 419,
+          "known_input_usd": 0.111603,
+          "known_output_usd": 0,
+          "method": "Atomic",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 0,
+          "request_p50_s": 0.131521,
+          "request_p95_s": 0.223508,
+          "strict_score": 0.767189,
+          "units": 419,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 419,
+          "valid_order_agreement": 0.801909
+        },
+        {
+          "accounting_usd": 0.022486,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 535382,
+          "job_p50_s": 0.232169,
+          "jobs": 419,
+          "known_input_usd": 0.022486,
+          "known_output_usd": 0,
+          "method": "Compact",
+          "model": "jev-latest",
+          "output_tokens": 25978,
+          "request_p50_s": 0.108673,
+          "request_p95_s": 0.185191,
+          "strict_score": 0.874271,
+          "units": 419,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 419,
+          "valid_order_agreement": 0.947494
+        },
+        {
+          "accounting_usd": 0.035345,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 353452,
+          "job_p50_s": 3.182741,
+          "jobs": 419,
+          "known_input_usd": 0.035345,
+          "known_output_usd": 0,
+          "method": "Compact",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 0,
+          "request_p50_s": 0.112302,
+          "request_p95_s": 0.203662,
+          "strict_score": 0.778629,
+          "units": 419,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 419,
+          "valid_order_agreement": 0.782816
+        }
+      ]
+    },
+    "position_bias": [
+      {
+        "benchmark": "judgebench",
+        "first_shown_both_orders": 16,
+        "first_shown_share": 0.025806,
+        "incomplete": 32,
+        "method": "arena_hard",
+        "model": "deepseek-v4-flash-0731",
+        "order_consistent": 554,
+        "other_mixed": 9,
+        "pairs": 620,
+        "second_shown_both_orders": 9
+      },
+      {
+        "benchmark": "judgebench",
+        "first_shown_both_orders": 0,
+        "first_shown_share": 0.0,
+        "incomplete": 201,
+        "method": "arena_hard",
+        "model": "glm-5p3",
+        "order_consistent": 415,
+        "other_mixed": 1,
+        "pairs": 620,
+        "second_shown_both_orders": 3
+      },
+      {
+        "benchmark": "judgebench",
+        "first_shown_both_orders": 29,
+        "first_shown_share": 0.046774,
+        "incomplete": 7,
+        "method": "arena_hard",
+        "model": "gpt-oss-120b",
+        "order_consistent": 543,
+        "other_mixed": 12,
+        "pairs": 620,
+        "second_shown_both_orders": 29
+      },
+      {
+        "benchmark": "judgebench",
+        "first_shown_both_orders": 4,
+        "first_shown_share": 0.006452,
+        "incomplete": 74,
+        "method": "arena_hard",
+        "model": "qwen3p8-max",
+        "order_consistent": 537,
+        "other_mixed": 2,
+        "pairs": 620,
+        "second_shown_both_orders": 3
+      },
+      {
+        "benchmark": "judgebench",
+        "first_shown_both_orders": 33,
+        "first_shown_share": 0.053226,
+        "incomplete": 13,
+        "method": "arena_hard",
+        "model": "jev-latest",
+        "order_consistent": 506,
+        "other_mixed": 32,
+        "pairs": 620,
+        "second_shown_both_orders": 36
+      },
+      {
+        "benchmark": "judgebench",
+        "first_shown_both_orders": 206,
+        "first_shown_share": 0.332258,
+        "incomplete": 0,
+        "method": "arena_hard",
+        "model": "openai-decisions/gpt-6-luna",
+        "order_consistent": 317,
+        "other_mixed": 72,
+        "pairs": 620,
+        "second_shown_both_orders": 25
+      },
+      {
+        "benchmark": "judgebench",
+        "first_shown_both_orders": 22,
+        "first_shown_share": 0.035484,
+        "incomplete": 50,
+        "method": "vanilla",
+        "model": "deepseek-v4-flash-0731",
+        "order_consistent": 524,
+        "other_mixed": 0,
+        "pairs": 620,
+        "second_shown_both_orders": 24
+      },
+      {
+        "benchmark": "judgebench",
+        "first_shown_both_orders": 5,
+        "first_shown_share": 0.008065,
+        "incomplete": 129,
+        "method": "vanilla",
+        "model": "glm-5p3",
+        "order_consistent": 484,
+        "other_mixed": 0,
+        "pairs": 620,
+        "second_shown_both_orders": 2
+      },
+      {
+        "benchmark": "judgebench",
+        "first_shown_both_orders": 29,
+        "first_shown_share": 0.046774,
+        "incomplete": 2,
+        "method": "vanilla",
+        "model": "gpt-oss-120b",
+        "order_consistent": 554,
+        "other_mixed": 0,
+        "pairs": 620,
+        "second_shown_both_orders": 35
+      },
+      {
+        "benchmark": "judgebench",
+        "first_shown_both_orders": 6,
+        "first_shown_share": 0.009677,
+        "incomplete": 40,
+        "method": "vanilla",
+        "model": "qwen3p8-max",
+        "order_consistent": 571,
+        "other_mixed": 0,
+        "pairs": 620,
+        "second_shown_both_orders": 3
+      },
+      {
+        "benchmark": "judgebench",
+        "first_shown_both_orders": 40,
+        "first_shown_share": 0.064516,
+        "incomplete": 9,
+        "method": "vanilla",
+        "model": "jev-latest",
+        "order_consistent": 536,
+        "other_mixed": 0,
+        "pairs": 620,
+        "second_shown_both_orders": 35
+      },
+      {
+        "benchmark": "judgebench",
+        "first_shown_both_orders": 441,
+        "first_shown_share": 0.71129,
+        "incomplete": 0,
+        "method": "vanilla",
+        "model": "openai-decisions/gpt-6-luna",
+        "order_consistent": 179,
+        "other_mixed": 0,
+        "pairs": 620,
+        "second_shown_both_orders": 0
+      },
+      {
+        "benchmark": "llmbar",
+        "first_shown_both_orders": 27,
+        "first_shown_share": 0.064439,
+        "incomplete": 5,
+        "method": "Vanilla",
+        "model": "deepseek-v4-flash-0731",
+        "order_consistent": 387,
+        "other_mixed": 0,
+        "pairs": 419,
+        "second_shown_both_orders": 0
+      },
+      {
+        "benchmark": "llmbar",
+        "first_shown_both_orders": 16,
+        "first_shown_share": 0.038186,
+        "incomplete": 3,
+        "method": "Vanilla",
+        "model": "glm-5p3",
+        "order_consistent": 399,
+        "other_mixed": 0,
+        "pairs": 419,
+        "second_shown_both_orders": 1
+      },
+      {
+        "benchmark": "llmbar",
+        "first_shown_both_orders": 20,
+        "first_shown_share": 0.047733,
+        "incomplete": 0,
+        "method": "Vanilla",
+        "model": "gpt-oss-120b",
+        "order_consistent": 391,
+        "other_mixed": 0,
+        "pairs": 419,
+        "second_shown_both_orders": 8
+      },
+      {
+        "benchmark": "llmbar",
+        "first_shown_both_orders": 10,
+        "first_shown_share": 0.023866,
+        "incomplete": 0,
+        "method": "Vanilla",
+        "model": "qwen3p8-max",
+        "order_consistent": 406,
+        "other_mixed": 0,
+        "pairs": 419,
+        "second_shown_both_orders": 3
+      },
+      {
+        "benchmark": "llmbar",
+        "first_shown_both_orders": 27,
+        "first_shown_share": 0.064439,
+        "incomplete": 7,
+        "method": "Vanilla",
+        "model": "jev-latest",
+        "order_consistent": 378,
+        "other_mixed": 0,
+        "pairs": 419,
+        "second_shown_both_orders": 7
+      },
+      {
+        "benchmark": "llmbar",
+        "first_shown_both_orders": 102,
+        "first_shown_share": 0.243437,
+        "incomplete": 0,
+        "method": "Vanilla",
+        "model": "openai-decisions/gpt-6-luna",
+        "order_consistent": 317,
+        "other_mixed": 0,
+        "pairs": 419,
+        "second_shown_both_orders": 0
+      }
+    ],
+    "primary": {
+      "calibration": [
+        {
+          "benchmark": "judgebench",
+          "binary_brier": 0.281915,
+          "equal_width_ece": 0.256903,
+          "jobs": 620,
+          "method": "vanilla",
+          "model": "openai-decisions/gpt-6-luna"
+        },
+        {
+          "benchmark": "llmbar",
+          "binary_brier": 0.156502,
+          "equal_width_ece": 0.152649,
+          "jobs": 419,
+          "method": "Vanilla",
+          "model": "openai-decisions/gpt-6-luna"
+        }
+      ],
+      "decisions_minus_jev": [
+        {
+          "accounting_cost_ratio": 1.846396,
+          "benchmark": "judgebench",
+          "bootstrap_replicates": 2000,
+          "matched_units": 620,
+          "method": "arena_hard",
+          "strict_delta": -0.251613,
+          "strict_delta_ci95": [
+            -0.293548,
+            -0.212903
+          ]
+        },
+        {
+          "accounting_cost_ratio": 1.920361,
+          "benchmark": "judgebench",
+          "bootstrap_replicates": 2000,
+          "matched_units": 620,
+          "method": "vanilla",
+          "strict_delta": -0.43871,
+          "strict_delta_ci95": [
+            -0.479032,
+            -0.396774
+          ]
+        },
+        {
+          "accounting_cost_ratio": 1.624117,
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "matched_units": 419,
+          "method": "CoT",
+          "strict_delta": -0.112348,
+          "strict_delta_ci95": [
+            -0.143312,
+            -0.079916
+          ]
+        },
+        {
+          "accounting_cost_ratio": 1.196802,
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "matched_units": 419,
+          "method": "Metrics",
+          "strict_delta": -0.042902,
+          "strict_delta_ci95": [
+            -0.074876,
+            -0.012899
+          ]
+        },
+        {
+          "accounting_cost_ratio": 1.212734,
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "matched_units": 419,
+          "method": "Metrics_Reference",
+          "strict_delta": -0.049923,
+          "strict_delta_ci95": [
+            -0.079587,
+            -0.020374
+          ]
+        },
+        {
+          "accounting_cost_ratio": 1.305037,
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "matched_units": 419,
+          "method": "Rating",
+          "strict_delta": 0.012241,
+          "strict_delta_ci95": [
+            -0.021354,
+            0.046529
+          ]
+        },
+        {
+          "accounting_cost_ratio": 1.21048,
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "matched_units": 419,
+          "method": "Rating_Metrics",
+          "strict_delta": 0.03166,
+          "strict_delta_ci95": [
+            -9.8e-05,
+            0.063674
+          ]
+        },
+        {
+          "accounting_cost_ratio": 1.124962,
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "matched_units": 419,
+          "method": "Rating_Metrics_Reference",
+          "strict_delta": 0.050545,
+          "strict_delta_ci95": [
+            0.022802,
+            0.080343
+          ]
+        },
+        {
+          "accounting_cost_ratio": 1.390641,
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "matched_units": 419,
+          "method": "Rating_NoRules",
+          "strict_delta": 0.043615,
+          "strict_delta_ci95": [
+            0.006463,
+            0.07903
+          ]
+        },
+        {
+          "accounting_cost_ratio": 1.24034,
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "matched_units": 419,
+          "method": "Rating_Reference",
+          "strict_delta": 0.045553,
+          "strict_delta_ci95": [
+            0.014156,
+            0.078377
+          ]
+        },
+        {
+          "accounting_cost_ratio": 1.263171,
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "matched_units": 419,
+          "method": "Reference",
+          "strict_delta": -0.049814,
+          "strict_delta_ci95": [
+            -0.076276,
+            -0.021014
+          ]
+        },
+        {
+          "accounting_cost_ratio": 1.933622,
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "matched_units": 419,
+          "method": "Swap",
+          "strict_delta": -0.056236,
+          "strict_delta_ci95": [
+            -0.091346,
+            -0.02182
+          ]
+        },
+        {
+          "accounting_cost_ratio": 2.247258,
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "matched_units": 419,
+          "method": "Swap_CoT",
+          "strict_delta": -0.091284,
+          "strict_delta_ci95": [
+            -0.123585,
+            -0.058547
+          ]
+        },
+        {
+          "accounting_cost_ratio": 1.603559,
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "matched_units": 419,
+          "method": "Vanilla",
+          "strict_delta": -0.067124,
+          "strict_delta_ci95": [
+            -0.097567,
+            -0.038674
+          ]
+        },
+        {
+          "accounting_cost_ratio": 1.605817,
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "matched_units": 419,
+          "method": "Vanilla_1shot",
+          "strict_delta": -0.140144,
+          "strict_delta_ci95": [
+            -0.178433,
+            -0.102686
+          ]
+        },
+        {
+          "accounting_cost_ratio": 1.867529,
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "matched_units": 419,
+          "method": "Vanilla_2shot",
+          "strict_delta": -0.0828,
+          "strict_delta_ci95": [
+            -0.120452,
+            -0.048758
+          ]
+        },
+        {
+          "accounting_cost_ratio": 1.478868,
+          "benchmark": "llmbar",
+          "bootstrap_replicates": 2000,
+          "matched_units": 419,
+          "method": "Vanilla_NoRules",
+          "strict_delta": -0.057906,
+          "strict_delta_ci95": [
+            -0.091244,
+            -0.023734
+          ]
+        },
+        {
+          "accounting_cost_ratio": 1.807231,
+          "benchmark": "rewardbench2",
+          "bootstrap_replicates": 2000,
+          "matched_units": 1814,
+          "method": "fourway",
+          "strict_delta": -0.063829,
+          "strict_delta_ci95": [
+            -0.09703,
+            -0.032294
+          ]
+        },
+        {
+          "accounting_cost_ratio": 1.637861,
+          "benchmark": "rewardbench2",
+          "bootstrap_replicates": 2000,
+          "matched_units": 1814,
+          "method": "ratings",
+          "strict_delta": -0.053779,
+          "strict_delta_ci95": [
+            -0.080244,
+            -0.027489
+          ]
+        }
+      ],
+      "reliability": [
+        {
+          "attempts": 1272,
+          "benchmark": "judgebench",
+          "error_attempts": 55,
+          "error_attempts_by_kind": {
+            "HTTP 503": 38,
+            "HTTP 529": 9,
+            "timeout": 8
+          },
+          "invalid_jobs": 13,
+          "jobs": 620,
+          "method": "arena_hard",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 1240,
+          "benchmark": "judgebench",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 0,
+          "jobs": 620,
+          "method": "arena_hard",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 0
+        },
+        {
+          "attempts": 1263,
+          "benchmark": "judgebench",
+          "error_attempts": 38,
+          "error_attempts_by_kind": {
+            "HTTP 503": 29,
+            "HTTP 529": 4,
+            "timeout": 5
+          },
+          "invalid_jobs": 9,
+          "jobs": 620,
+          "method": "vanilla",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 1240,
+          "benchmark": "judgebench",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 0,
+          "jobs": 620,
+          "method": "vanilla",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 0
+        },
+        {
+          "attempts": 856,
+          "benchmark": "llmbar",
+          "error_attempts": 31,
+          "error_attempts_by_kind": {
+            "HTTP 503": 24,
+            "HTTP 529": 2,
+            "timeout": 5
+          },
+          "invalid_jobs": 7,
+          "jobs": 419,
+          "method": "CoT",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 838,
+          "benchmark": "llmbar",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 0,
+          "jobs": 419,
+          "method": "CoT",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 0
+        },
+        {
+          "attempts": 1281,
+          "benchmark": "llmbar",
+          "error_attempts": 45,
+          "error_attempts_by_kind": {
+            "HTTP 503": 30,
+            "HTTP 529": 4,
+            "timeout": 11
+          },
+          "invalid_jobs": 11,
+          "jobs": 419,
+          "method": "Metrics",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 1257,
+          "benchmark": "llmbar",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 0,
+          "jobs": 419,
+          "method": "Metrics",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 0
+        },
+        {
+          "attempts": 1684,
+          "benchmark": "llmbar",
+          "error_attempts": 15,
+          "error_attempts_by_kind": {
+            "HTTP 503": 12,
+            "timeout": 3
+          },
+          "invalid_jobs": 4,
+          "jobs": 419,
+          "method": "Metrics_Reference",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 1676,
+          "benchmark": "llmbar",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 0,
+          "jobs": 419,
+          "method": "Metrics_Reference",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 0
+        },
+        {
+          "attempts": 870,
+          "benchmark": "llmbar",
+          "error_attempts": 56,
+          "error_attempts_by_kind": {
+            "HTTP 503": 42,
+            "HTTP 529": 4,
+            "timeout": 10
+          },
+          "invalid_jobs": 12,
+          "jobs": 419,
+          "method": "Rating",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 838,
+          "benchmark": "llmbar",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 0,
+          "jobs": 419,
+          "method": "Rating",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 0
+        },
+        {
+          "attempts": 1269,
+          "benchmark": "llmbar",
+          "error_attempts": 23,
+          "error_attempts_by_kind": {
+            "HTTP 503": 12,
+            "HTTP 529": 5,
+            "timeout": 6
+          },
+          "invalid_jobs": 6,
+          "jobs": 419,
+          "method": "Rating_Metrics",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 1257,
+          "benchmark": "llmbar",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 0,
+          "jobs": 419,
+          "method": "Rating_Metrics",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 0
+        },
+        {
+          "attempts": 1710,
+          "benchmark": "llmbar",
+          "error_attempts": 61,
+          "error_attempts_by_kind": {
+            "HTTP 503": 48,
+            "HTTP 529": 2,
+            "timeout": 11
+          },
+          "invalid_jobs": 14,
+          "jobs": 419,
+          "method": "Rating_Metrics_Reference",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 1676,
+          "benchmark": "llmbar",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 0,
+          "jobs": 419,
+          "method": "Rating_Metrics_Reference",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 0
+        },
+        {
+          "attempts": 856,
+          "benchmark": "llmbar",
+          "error_attempts": 34,
+          "error_attempts_by_kind": {
+            "HTTP 503": 24,
+            "HTTP 529": 2,
+            "timeout": 8
+          },
+          "invalid_jobs": 8,
+          "jobs": 419,
+          "method": "Rating_NoRules",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 838,
+          "benchmark": "llmbar",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 0,
+          "jobs": 419,
+          "method": "Rating_NoRules",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 0
+        },
+        {
+          "attempts": 1270,
+          "benchmark": "llmbar",
+          "error_attempts": 25,
+          "error_attempts_by_kind": {
+            "HTTP 503": 18,
+            "HTTP 529": 1,
+            "timeout": 6
+          },
+          "invalid_jobs": 7,
+          "jobs": 419,
+          "method": "Rating_Reference",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 1257,
+          "benchmark": "llmbar",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 0,
+          "jobs": 419,
+          "method": "Rating_Reference",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 0
+        },
+        {
+          "attempts": 1270,
+          "benchmark": "llmbar",
+          "error_attempts": 24,
+          "error_attempts_by_kind": {
+            "HTTP 503": 18,
+            "HTTP 529": 1,
+            "timeout": 5
+          },
+          "invalid_jobs": 6,
+          "jobs": 419,
+          "method": "Reference",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 1257,
+          "benchmark": "llmbar",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 0,
+          "jobs": 419,
+          "method": "Reference",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 0
+        },
+        {
+          "attempts": 925,
+          "benchmark": "llmbar",
+          "error_attempts": 38,
+          "error_attempts_by_kind": {
+            "HTTP 503": 26,
+            "HTTP 529": 5,
+            "timeout": 7
+          },
+          "invalid_jobs": 9,
+          "jobs": 419,
+          "method": "Swap",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 1098,
+          "benchmark": "llmbar",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 0,
+          "jobs": 419,
+          "method": "Swap",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 0
+        },
+        {
+          "attempts": 912,
+          "benchmark": "llmbar",
+          "error_attempts": 14,
+          "error_attempts_by_kind": {
+            "HTTP 503": 6,
+            "HTTP 529": 2,
+            "timeout": 6
+          },
+          "invalid_jobs": 4,
+          "jobs": 419,
+          "method": "Swap_CoT",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 1099,
+          "benchmark": "llmbar",
+          "error_attempts": 1,
+          "error_attempts_by_kind": {
+            "HTTP 503": 1
+          },
+          "invalid_jobs": 0,
+          "jobs": 419,
+          "method": "Swap_CoT",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 0
+        },
+        {
+          "attempts": 853,
+          "benchmark": "llmbar",
+          "error_attempts": 28,
+          "error_attempts_by_kind": {
+            "HTTP 503": 19,
+            "HTTP 529": 1,
+            "timeout": 8
+          },
+          "invalid_jobs": 7,
+          "jobs": 419,
+          "method": "Vanilla",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 838,
+          "benchmark": "llmbar",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 0,
+          "jobs": 419,
+          "method": "Vanilla",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 0
+        },
+        {
+          "attempts": 857,
+          "benchmark": "llmbar",
+          "error_attempts": 33,
+          "error_attempts_by_kind": {
+            "HTTP 503": 24,
+            "HTTP 529": 3,
+            "timeout": 6
+          },
+          "invalid_jobs": 7,
+          "jobs": 419,
+          "method": "Vanilla_1shot",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 838,
+          "benchmark": "llmbar",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 0,
+          "jobs": 419,
+          "method": "Vanilla_1shot",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 0
+        },
+        {
+          "attempts": 844,
+          "benchmark": "llmbar",
+          "error_attempts": 10,
+          "error_attempts_by_kind": {
+            "HTTP 503": 6,
+            "HTTP 529": 2,
+            "timeout": 2
+          },
+          "invalid_jobs": 2,
+          "jobs": 419,
+          "method": "Vanilla_2shot",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 838,
+          "benchmark": "llmbar",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 0,
+          "jobs": 419,
+          "method": "Vanilla_2shot",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 0
+        },
+        {
+          "attempts": 854,
+          "benchmark": "llmbar",
+          "error_attempts": 29,
+          "error_attempts_by_kind": {
+            "HTTP 503": 18,
+            "HTTP 529": 6,
+            "timeout": 5
+          },
+          "invalid_jobs": 7,
+          "jobs": 419,
+          "method": "Vanilla_NoRules",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 838,
+          "benchmark": "llmbar",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 0,
+          "jobs": 419,
+          "method": "Vanilla_NoRules",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 0
+        },
+        {
+          "attempts": 3724,
+          "benchmark": "rewardbench2",
+          "error_attempts": 75,
+          "error_attempts_by_kind": {
+            "HTTP 503": 43,
+            "HTTP 529": 8,
+            "timeout": 24
+          },
+          "invalid_jobs": 34,
+          "jobs": 1865,
+          "method": "fourway",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 3688,
+          "benchmark": "rewardbench2",
+          "error_attempts": 0,
+          "error_attempts_by_kind": {},
+          "invalid_jobs": 23,
+          "jobs": 1865,
+          "method": "fourway",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 23
+        },
+        {
+          "attempts": 9097,
+          "benchmark": "rewardbench2",
+          "error_attempts": 255,
+          "error_attempts_by_kind": {
+            "HTTP 503": 130,
+            "HTTP 529": 38,
+            "timeout": 87
+          },
+          "invalid_jobs": 40,
+          "jobs": 1865,
+          "method": "ratings",
+          "model": "jev-latest",
+          "refused_requests": null
+        },
+        {
+          "attempts": 8981,
+          "benchmark": "rewardbench2",
+          "error_attempts": 4,
+          "error_attempts_by_kind": {
+            "HTTP 503": 3,
+            "HTTP 504": 1
+          },
+          "invalid_jobs": 70,
+          "jobs": 1865,
+          "method": "ratings",
+          "model": "openai-decisions/gpt-6-luna",
+          "refused_requests": 136
+        }
+      ],
+      "scores": [
+        {
+          "accounting_usd": 0.125309,
+          "benchmark": "judgebench",
+          "helper_accounting_usd": 0,
+          "input_tokens": 2523865,
+          "job_p50_s": 0.270569,
+          "jobs": 620,
+          "known_input_usd": 0.106002,
+          "known_output_usd": 0,
+          "method": "arena_hard",
+          "model": "jev-latest",
+          "output_tokens": 73839,
+          "request_p50_s": 0.124458,
+          "request_p95_s": 0.314693,
+          "strict_score": 0.659677,
+          "units": 620,
+          "unknown_cost_attempts": 55,
+          "valid_jobs": 607,
+          "valid_order_agreement": 0.816129
+        },
+        {
+          "accounting_usd": 0.231371,
+          "benchmark": "judgebench",
+          "helper_accounting_usd": 0,
+          "input_tokens": 2313706,
+          "job_p50_s": 3.19395,
+          "jobs": 620,
+          "known_input_usd": 0.231371,
+          "known_output_usd": 0,
+          "method": "arena_hard",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 0,
+          "request_p50_s": 0.117177,
+          "request_p95_s": 0.314423,
+          "strict_score": 0.408065,
+          "units": 620,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 620,
+          "valid_order_agreement": 0.51129
+        },
+        {
+          "accounting_usd": 0.102145,
+          "benchmark": "judgebench",
+          "helper_accounting_usd": 0,
+          "input_tokens": 2162613,
+          "job_p50_s": 0.266012,
+          "jobs": 620,
+          "known_input_usd": 0.09083,
+          "known_output_usd": 0,
+          "method": "vanilla",
+          "model": "jev-latest",
+          "output_tokens": 46550,
+          "request_p50_s": 0.121778,
+          "request_p95_s": 0.256923,
+          "strict_score": 0.677419,
+          "units": 620,
+          "unknown_cost_attempts": 38,
+          "valid_jobs": 611,
+          "valid_order_agreement": 0.864516
+        },
+        {
+          "accounting_usd": 0.196155,
+          "benchmark": "judgebench",
+          "helper_accounting_usd": 0,
+          "input_tokens": 1961546,
+          "job_p50_s": 3.194348,
+          "jobs": 620,
+          "known_input_usd": 0.196155,
+          "known_output_usd": 0,
+          "method": "vanilla",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 0,
+          "request_p50_s": 0.11635,
+          "request_p95_s": 0.366753,
+          "strict_score": 0.23871,
+          "units": 620,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 620,
+          "valid_order_agreement": 0.28871
+        },
+        {
+          "accounting_usd": 0.043653,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 866050,
+          "job_p50_s": 0.262431,
+          "jobs": 419,
+          "known_input_usd": 0.036374,
+          "known_output_usd": 0,
+          "method": "CoT",
+          "model": "jev-latest",
+          "output_tokens": 31350,
+          "request_p50_s": 0.120488,
+          "request_p95_s": 0.278509,
+          "strict_score": 0.855769,
+          "units": 419,
+          "unknown_cost_attempts": 31,
+          "valid_jobs": 412,
+          "valid_order_agreement": 0.904535
+        },
+        {
+          "accounting_usd": 0.070897,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 708968,
+          "job_p50_s": 3.185414,
+          "jobs": 419,
+          "known_input_usd": 0.070897,
+          "known_output_usd": 0,
+          "method": "CoT",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 0,
+          "request_p50_s": 0.114339,
+          "request_p95_s": 0.388072,
+          "strict_score": 0.743421,
+          "units": 419,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 419,
+          "valid_order_agreement": 0.689737
+        },
+        {
+          "accounting_usd": 0.118058,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0.07078,
+          "input_tokens": 966236,
+          "job_p50_s": 1.693701,
+          "jobs": 419,
+          "known_input_usd": 0.042812,
+          "known_output_usd": 0.063533,
+          "method": "Metrics",
+          "model": "jev-latest",
+          "output_tokens": 136934,
+          "request_p50_s": 0.145204,
+          "request_p95_s": 2.53722,
+          "strict_score": 0.837797,
+          "units": 419,
+          "unknown_cost_attempts": 45,
+          "valid_jobs": 408,
+          "valid_order_agreement": 0.911695
+        },
+        {
+          "accounting_usd": 0.141293,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0.07078,
+          "input_tokens": 824576,
+          "job_p50_s": 3.185292,
+          "jobs": 419,
+          "known_input_usd": 0.07776,
+          "known_output_usd": 0.063533,
+          "method": "Metrics",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 105888,
+          "request_p50_s": 0.143327,
+          "request_p95_s": 2.327092,
+          "strict_score": 0.794895,
+          "units": 419,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 419,
+          "valid_order_agreement": 0.818616
+        },
+        {
+          "accounting_usd": 0.207223,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0.157163,
+          "input_tokens": 1267550,
+          "job_p50_s": 3.245938,
+          "jobs": 419,
+          "known_input_usd": 0.055941,
+          "known_output_usd": 0.147298,
+          "method": "Metrics_Reference",
+          "model": "jev-latest",
+          "output_tokens": 277074,
+          "request_p50_s": 0.35125,
+          "request_p95_s": 3.871646,
+          "strict_score": 0.86914,
+          "units": 419,
+          "unknown_cost_attempts": 15,
+          "valid_jobs": 415,
+          "valid_order_agreement": 0.945107
+        },
+        {
+          "accounting_usd": 0.251306,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0.157163,
+          "input_tokens": 1111939,
+          "job_p50_s": 3.188944,
+          "jobs": 419,
+          "known_input_usd": 0.104008,
+          "known_output_usd": 0.147298,
+          "method": "Metrics_Reference",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 245496,
+          "request_p50_s": 0.381102,
+          "request_p95_s": 3.775483,
+          "strict_score": 0.819217,
+          "units": 419,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 419,
+          "valid_order_agreement": 0.778043
+        },
+        {
+          "accounting_usd": 0.038224,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 647335,
+          "job_p50_s": 0.256524,
+          "jobs": 419,
+          "known_input_usd": 0.027188,
+          "known_output_usd": 0,
+          "method": "Rating",
+          "model": "jev-latest",
+          "output_tokens": 13838,
+          "request_p50_s": 0.116862,
+          "request_p95_s": 0.276525,
+          "strict_score": 0.821528,
+          "units": 419,
+          "unknown_cost_attempts": 56,
+          "valid_jobs": 407,
+          "valid_order_agreement": 0.816229
+        },
+        {
+          "accounting_usd": 0.049883,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 498834,
+          "job_p50_s": 3.193211,
+          "jobs": 419,
+          "known_input_usd": 0.049883,
+          "known_output_usd": 0,
+          "method": "Rating",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 0,
+          "request_p50_s": 0.115086,
+          "request_p95_s": 0.386746,
+          "strict_score": 0.83377,
+          "units": 419,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 419,
+          "valid_order_agreement": 0.863962
+        },
+        {
+          "accounting_usd": 0.106372,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0.070646,
+          "input_tokens": 854403,
+          "job_p50_s": 1.663438,
+          "jobs": 419,
+          "known_input_usd": 0.038468,
+          "known_output_usd": 0.063046,
+          "method": "Rating_Metrics",
+          "model": "jev-latest",
+          "output_tokens": 119136,
+          "request_p50_s": 0.146702,
+          "request_p95_s": 2.427896,
+          "strict_score": 0.808521,
+          "units": 419,
+          "unknown_cost_attempts": 23,
+          "valid_jobs": 413,
+          "valid_order_agreement": 0.866348
+        },
+        {
+          "accounting_usd": 0.128761,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0.070646,
+          "input_tokens": 700602,
+          "job_p50_s": 3.190797,
+          "jobs": 419,
+          "known_input_usd": 0.065714,
+          "known_output_usd": 0.063046,
+          "method": "Rating_Metrics",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 105077,
+          "request_p50_s": 0.147389,
+          "request_p95_s": 2.31489,
+          "strict_score": 0.840181,
+          "units": 419,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 419,
+          "valid_order_agreement": 0.904535
+        },
+        {
+          "accounting_usd": 0.211416,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0.156342,
+          "input_tokens": 1117453,
+          "job_p50_s": 3.21098,
+          "jobs": 419,
+          "known_input_usd": 0.049306,
+          "known_output_usd": 0.146807,
+          "method": "Rating_Metrics_Reference",
+          "model": "jev-latest",
+          "output_tokens": 258466,
+          "request_p50_s": 0.334568,
+          "request_p95_s": 3.921656,
+          "strict_score": 0.824045,
+          "units": 419,
+          "unknown_cost_attempts": 61,
+          "valid_jobs": 405,
+          "valid_order_agreement": 0.854415
+        },
+        {
+          "accounting_usd": 0.237835,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0.156342,
+          "input_tokens": 985437,
+          "job_p50_s": 3.190403,
+          "jobs": 419,
+          "known_input_usd": 0.091027,
+          "known_output_usd": 0.146807,
+          "method": "Rating_Metrics_Reference",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 244679,
+          "request_p50_s": 0.369985,
+          "request_p95_s": 3.556409,
+          "strict_score": 0.87459,
+          "units": 419,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 419,
+          "valid_order_agreement": 0.894988
+        },
+        {
+          "accounting_usd": 0.029965,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 573835,
+          "job_p50_s": 0.259045,
+          "jobs": 419,
+          "known_input_usd": 0.024101,
+          "known_output_usd": 0,
+          "method": "Rating_NoRules",
+          "model": "jev-latest",
+          "output_tokens": 13974,
+          "request_p50_s": 0.118371,
+          "request_p95_s": 0.32853,
+          "strict_score": 0.767149,
+          "units": 419,
+          "unknown_cost_attempts": 34,
+          "valid_jobs": 411,
+          "valid_order_agreement": 0.813842
+        },
+        {
+          "accounting_usd": 0.041671,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 416710,
+          "job_p50_s": 3.191453,
+          "jobs": 419,
+          "known_input_usd": 0.041671,
+          "known_output_usd": 0,
+          "method": "Rating_NoRules",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 0,
+          "request_p50_s": 0.116024,
+          "request_p95_s": 0.325426,
+          "strict_score": 0.810764,
+          "units": 419,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 419,
+          "valid_order_agreement": 0.849642
+        },
+        {
+          "accounting_usd": 0.130642,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0.088139,
+          "input_tokens": 944971,
+          "job_p50_s": 1.59558,
+          "jobs": 419,
+          "known_input_usd": 0.039832,
+          "known_output_usd": 0.085852,
+          "method": "Rating_Reference",
+          "model": "jev-latest",
+          "output_tokens": 157128,
+          "request_p50_s": 0.149247,
+          "request_p95_s": 4.291191,
+          "strict_score": 0.817938,
+          "units": 419,
+          "unknown_cost_attempts": 25,
+          "valid_jobs": 412,
+          "valid_order_agreement": 0.830549
+        },
+        {
+          "accounting_usd": 0.16204,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0.088139,
+          "input_tokens": 790061,
+          "job_p50_s": 3.195033,
+          "jobs": 419,
+          "known_input_usd": 0.076189,
+          "known_output_usd": 0.085852,
+          "method": "Rating_Reference",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 143086,
+          "request_p50_s": 0.16722,
+          "request_p95_s": 4.061393,
+          "strict_score": 0.863491,
+          "units": 419,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 419,
+          "valid_order_agreement": 0.909308
+        },
+        {
+          "accounting_usd": 0.136602,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0.086559,
+          "input_tokens": 1063273,
+          "job_p50_s": 1.464068,
+          "jobs": 419,
+          "known_input_usd": 0.044628,
+          "known_output_usd": 0.084444,
+          "method": "Reference",
+          "model": "jev-latest",
+          "output_tokens": 172166,
+          "request_p50_s": 0.152587,
+          "request_p95_s": 4.208399,
+          "strict_score": 0.859674,
+          "units": 419,
+          "unknown_cost_attempts": 24,
+          "valid_jobs": 413,
+          "valid_order_agreement": 0.930788
+        },
+        {
+          "accounting_usd": 0.172552,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0.086559,
+          "input_tokens": 910985,
+          "job_p50_s": 3.190911,
+          "jobs": 419,
+          "known_input_usd": 0.088108,
+          "known_output_usd": 0.084444,
+          "method": "Reference",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 140740,
+          "request_p50_s": 0.147181,
+          "request_p95_s": 3.845166,
+          "strict_score": 0.80986,
+          "units": 419,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 419,
+          "valid_order_agreement": 0.763723
+        },
+        {
+          "accounting_usd": 0.048441,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 935454,
+          "job_p50_s": 0.277877,
+          "jobs": 419,
+          "known_input_usd": 0.039289,
+          "known_output_usd": 0,
+          "method": "Swap",
+          "model": "jev-latest",
+          "output_tokens": 33706,
+          "request_p50_s": 0.122515,
+          "request_p95_s": 0.326245,
+          "strict_score": 0.847106,
+          "units": 419,
+          "unknown_cost_attempts": 38,
+          "valid_jobs": 410,
+          "valid_order_agreement": 0.916468
+        },
+        {
+          "accounting_usd": 0.093666,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 936660,
+          "job_p50_s": 3.216096,
+          "jobs": 419,
+          "known_input_usd": 0.093666,
+          "known_output_usd": 0,
+          "method": "Swap",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 0,
+          "request_p50_s": 0.114928,
+          "request_p95_s": 0.357581,
+          "strict_score": 0.790871,
+          "units": 419,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 419,
+          "valid_order_agreement": 0.816229
+        },
+        {
+          "accounting_usd": 0.04303,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 953004,
+          "job_p50_s": 0.266312,
+          "jobs": 419,
+          "known_input_usd": 0.040026,
+          "known_output_usd": 0,
+          "method": "Swap_CoT",
+          "model": "jev-latest",
+          "output_tokens": 34124,
+          "request_p50_s": 0.120503,
+          "request_p95_s": 0.256334,
+          "strict_score": 0.857143,
+          "units": 419,
+          "unknown_cost_attempts": 14,
+          "valid_jobs": 415,
+          "valid_order_agreement": 0.942721
+        },
+        {
+          "accounting_usd": 0.0967,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 962140,
+          "job_p50_s": 3.210358,
+          "jobs": 419,
+          "known_input_usd": 0.096214,
+          "known_output_usd": 0,
+          "method": "Swap_CoT",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 0,
+          "request_p50_s": 0.116158,
+          "request_p95_s": 0.299418,
+          "strict_score": 0.765859,
+          "units": 419,
+          "unknown_cost_attempts": 1,
+          "valid_jobs": 419,
+          "valid_order_agreement": 0.789976
+        },
+        {
+          "accounting_usd": 0.03883,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 781330,
+          "job_p50_s": 0.25554,
+          "jobs": 419,
+          "known_input_usd": 0.032816,
+          "known_output_usd": 0,
+          "method": "Vanilla",
+          "model": "jev-latest",
+          "output_tokens": 31350,
+          "request_p50_s": 0.118843,
+          "request_p95_s": 0.286851,
+          "strict_score": 0.85877,
+          "units": 419,
+          "unknown_cost_attempts": 28,
+          "valid_jobs": 412,
+          "valid_order_agreement": 0.902148
+        },
+        {
+          "accounting_usd": 0.062265,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 622654,
+          "job_p50_s": 3.189277,
+          "jobs": 419,
+          "known_input_usd": 0.062265,
+          "known_output_usd": 0,
+          "method": "Vanilla",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 0,
+          "request_p50_s": 0.115745,
+          "request_p95_s": 0.390357,
+          "strict_score": 0.791646,
+          "units": 419,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 419,
+          "valid_order_agreement": 0.756563
+        },
+        {
+          "accounting_usd": 0.046394,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 911758,
+          "job_p50_s": 0.254203,
+          "jobs": 419,
+          "known_input_usd": 0.038294,
+          "known_output_usd": 0,
+          "method": "Vanilla_1shot",
+          "model": "jev-latest",
+          "output_tokens": 31312,
+          "request_p50_s": 0.118154,
+          "request_p95_s": 0.252759,
+          "strict_score": 0.817338,
+          "units": 419,
+          "unknown_cost_attempts": 33,
+          "valid_jobs": 412,
+          "valid_order_agreement": 0.871122
+        },
+        {
+          "accounting_usd": 0.0745,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 745002,
+          "job_p50_s": 3.191128,
+          "jobs": 419,
+          "known_input_usd": 0.0745,
+          "known_output_usd": 0,
+          "method": "Vanilla_1shot",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 0,
+          "request_p50_s": 0.115055,
+          "request_p95_s": 0.343876,
+          "strict_score": 0.677194,
+          "units": 419,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 419,
+          "valid_order_agreement": 0.431981
+        },
+        {
+          "accounting_usd": 0.05138,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 1143908,
+          "job_p50_s": 0.270353,
+          "jobs": 419,
+          "known_input_usd": 0.048044,
+          "known_output_usd": 0,
+          "method": "Vanilla_2shot",
+          "model": "jev-latest",
+          "output_tokens": 31692,
+          "request_p50_s": 0.123106,
+          "request_p95_s": 0.282995,
+          "strict_score": 0.834585,
+          "units": 419,
+          "unknown_cost_attempts": 10,
+          "valid_jobs": 417,
+          "valid_order_agreement": 0.880668
+        },
+        {
+          "accounting_usd": 0.095953,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 959530,
+          "job_p50_s": 3.192437,
+          "jobs": 419,
+          "known_input_usd": 0.095953,
+          "known_output_usd": 0,
+          "method": "Vanilla_2shot",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 0,
+          "request_p50_s": 0.117194,
+          "request_p95_s": 0.357142,
+          "strict_score": 0.751785,
+          "units": 419,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 419,
+          "valid_order_agreement": 0.713604
+        },
+        {
+          "accounting_usd": 0.034397,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 668147,
+          "job_p50_s": 0.254352,
+          "jobs": 419,
+          "known_input_usd": 0.028062,
+          "known_output_usd": 0,
+          "method": "Vanilla_NoRules",
+          "model": "jev-latest",
+          "output_tokens": 31350,
+          "request_p50_s": 0.117646,
+          "request_p95_s": 0.311023,
+          "strict_score": 0.825487,
+          "units": 419,
+          "unknown_cost_attempts": 29,
+          "valid_jobs": 412,
+          "valid_order_agreement": 0.921241
+        },
+        {
+          "accounting_usd": 0.050869,
+          "benchmark": "llmbar",
+          "helper_accounting_usd": 0,
+          "input_tokens": 508686,
+          "job_p50_s": 3.191284,
+          "jobs": 419,
+          "known_input_usd": 0.050869,
+          "known_output_usd": 0,
+          "method": "Vanilla_NoRules",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 0,
+          "request_p50_s": 0.117124,
+          "request_p95_s": 0.373812,
+          "strict_score": 0.767581,
+          "units": 419,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 419,
+          "valid_order_agreement": 0.770883
+        },
+        {
+          "accounting_usd": 0.252421,
+          "benchmark": "rewardbench2",
+          "helper_accounting_usd": 0,
+          "input_tokens": 5303488,
+          "job_p50_s": 0.136869,
+          "jobs": 1865,
+          "known_input_usd": 0.222746,
+          "known_output_usd": 0,
+          "method": "fourway",
+          "model": "jev-latest",
+          "output_tokens": 110501,
+          "request_p50_s": 0.120848,
+          "request_p95_s": 0.26464,
+          "strict_score": 0.734276,
+          "units": 1814,
+          "unknown_cost_attempts": 75,
+          "valid_jobs": 1831,
+          "valid_order_agreement": null
+        },
+        {
+          "accounting_usd": 0.456183,
+          "benchmark": "rewardbench2",
+          "helper_accounting_usd": 0,
+          "input_tokens": 4561833,
+          "job_p50_s": 1.596842,
+          "jobs": 1865,
+          "known_input_usd": 0.456183,
+          "known_output_usd": 0,
+          "method": "fourway",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 0,
+          "request_p50_s": 0.117153,
+          "request_p95_s": 0.376301,
+          "strict_score": 0.670448,
+          "units": 1814,
+          "unknown_cost_attempts": 0,
+          "valid_jobs": 1842,
+          "valid_order_agreement": null
+        },
+        {
+          "accounting_usd": 0.394399,
+          "benchmark": "rewardbench2",
+          "helper_accounting_usd": 0,
+          "input_tokens": 8095412,
+          "job_p50_s": 0.530024,
+          "jobs": 1865,
+          "known_input_usd": 0.340007,
+          "known_output_usd": 0,
+          "method": "ratings",
+          "model": "jev-latest",
+          "output_tokens": 150314,
+          "request_p50_s": 0.117546,
+          "request_p95_s": 0.28687,
+          "strict_score": 0.666935,
+          "units": 1814,
+          "unknown_cost_attempts": 255,
+          "valid_jobs": 1825,
+          "valid_order_agreement": null
+        },
+        {
+          "accounting_usd": 0.64597,
+          "benchmark": "rewardbench2",
+          "helper_accounting_usd": 0,
+          "input_tokens": 6443894,
+          "job_p50_s": 6.394629,
+          "jobs": 1865,
+          "known_input_usd": 0.644389,
+          "known_output_usd": 0,
+          "method": "ratings",
+          "model": "openai-decisions/gpt-6-luna",
+          "output_tokens": 0,
+          "request_p50_s": 0.116556,
+          "request_p95_s": 0.371281,
+          "strict_score": 0.613156,
+          "units": 1814,
+          "unknown_cost_attempts": 4,
+          "valid_jobs": 1795,
+          "valid_order_agreement": null
+        }
+      ]
+    },
+    "service_retry_policy_headline": [
+      {
+        "benchmark": "judgebench",
+        "jobs": 620,
+        "method": "vanilla",
+        "model": "deepseek-v4-flash-0731",
+        "strict_score": 0.758065,
+        "valid_jobs": 570
+      },
+      {
+        "benchmark": "judgebench",
+        "jobs": 620,
+        "method": "vanilla",
+        "model": "glm-5p3",
+        "strict_score": 0.741935,
+        "valid_jobs": 493
+      },
+      {
+        "benchmark": "judgebench",
+        "jobs": 620,
+        "method": "vanilla",
+        "model": "gpt-oss-120b",
+        "strict_score": 0.770968,
+        "valid_jobs": 618
+      },
+      {
+        "benchmark": "judgebench",
+        "jobs": 620,
+        "method": "vanilla",
+        "model": "qwen3p8-max",
+        "strict_score": 0.883871,
+        "valid_jobs": 581
+      },
+      {
+        "benchmark": "judgebench",
+        "jobs": 620,
+        "method": "vanilla",
+        "model": "jev-latest",
+        "strict_score": 0.690323,
+        "valid_jobs": 620
+      },
+      {
+        "benchmark": "judgebench",
+        "jobs": 620,
+        "method": "vanilla",
+        "model": "openai-decisions/gpt-6-luna",
+        "strict_score": 0.23871,
+        "valid_jobs": 620
+      },
+      {
+        "benchmark": "llmbar",
+        "jobs": 419,
+        "method": "Vanilla",
+        "model": "deepseek-v4-flash-0731",
+        "strict_score": 0.887267,
+        "valid_jobs": 414
+      },
+      {
+        "benchmark": "llmbar",
+        "jobs": 419,
+        "method": "Vanilla",
+        "model": "glm-5p3",
+        "strict_score": 0.911771,
+        "valid_jobs": 417
+      },
+      {
+        "benchmark": "llmbar",
+        "jobs": 419,
+        "method": "Vanilla",
+        "model": "gpt-oss-120b",
+        "strict_score": 0.870499,
+        "valid_jobs": 419
+      },
+      {
+        "benchmark": "llmbar",
+        "jobs": 419,
+        "method": "Vanilla",
+        "model": "qwen3p8-max",
+        "strict_score": 0.925263,
+        "valid_jobs": 419
+      },
+      {
+        "benchmark": "llmbar",
+        "jobs": 419,
+        "method": "Vanilla",
+        "model": "jev-latest",
+        "strict_score": 0.873596,
+        "valid_jobs": 419
+      },
+      {
+        "benchmark": "llmbar",
+        "jobs": 419,
+        "method": "Vanilla",
+        "model": "openai-decisions/gpt-6-luna",
+        "strict_score": 0.791646,
+        "valid_jobs": 419
+      },
+      {
+        "benchmark": "rewardbench2",
+        "jobs": 1865,
+        "method": "ratings",
+        "model": "deepseek-v4-flash-0731",
+        "strict_score": 0.659922,
+        "valid_jobs": 1721
+      },
+      {
+        "benchmark": "rewardbench2",
+        "jobs": 1865,
+        "method": "ratings",
+        "model": "glm-5p3",
+        "strict_score": 0.275875,
+        "valid_jobs": 577
+      },
+      {
+        "benchmark": "rewardbench2",
+        "jobs": 1865,
+        "method": "ratings",
+        "model": "gpt-oss-120b",
+        "strict_score": 0.7956,
+        "valid_jobs": 1862
+      },
+      {
+        "benchmark": "rewardbench2",
+        "jobs": 1865,
+        "method": "ratings",
+        "model": "qwen3p8-max",
+        "strict_score": 0.815735,
+        "valid_jobs": 1843
+      },
+      {
+        "benchmark": "rewardbench2",
+        "jobs": 1865,
+        "method": "ratings",
+        "model": "jev-latest",
+        "strict_score": 0.681206,
+        "valid_jobs": 1865
+      },
+      {
+        "benchmark": "rewardbench2",
+        "jobs": 1865,
+        "method": "ratings",
+        "model": "openai-decisions/gpt-6-luna",
+        "strict_score": 0.613156,
+        "valid_jobs": 1795
+      }
+    ],
+    "totals": {
+      "accounting_usd_including_reused_helpers": 3.406818,
+      "decisions_input_tokens": 28433247,
+      "decisions_list_price_usd": 2.843325,
+      "error_attempts": 5,
+      "native_jobs": 838,
+      "primary_jobs": 11255,
+      "refused_requests": 159,
+      "service_retry_jobs": 0
+    },
+    "usd_per_mtok_input": 0.1,
+    "wire_version": "guide-2026-10-06"
+  },
+  "generated_by": "publication/decisions-aggregates.py",
+  "note": "Decisions sent the frozen Jev arm's typed questions; Jev and the four LLM judges are frozen. Strict score counts any required-stage failure (including a refused required stage) as wrong. Accounting USD for Decisions includes reused frozen GPT-OSS helper calls on six LLMBar methods.",
+  "projection": "openai-decisions-aggregates-v1",
+  "sources": [
+    {
+      "path": "experiments/eval-judging/studies/openai-decisions-v1/cascade-evaluation/cascades.json",
+      "sha256": "8fc9161e8cb74489d747fb488c585e8da62ee4a2bd0d8086bdd7a027648a884c"
+    },
+    {
+      "path": "experiments/eval-judging/studies/openai-decisions-v1/native-original/quality.json",
+      "sha256": "340559c09abd23e98b015872a7ec1518080d0c8fc33f3fcf51122c2ba2d0d19d"
+    },
+    {
+      "path": "experiments/eval-judging/studies/openai-decisions-v1/native-original/reliability.json",
+      "sha256": "df847b201fab42a5259b879b5049d1d1665baafcb4c29823d1c36bc3162027ae"
+    },
+    {
+      "path": "experiments/eval-judging/studies/openai-decisions-v1/primary-original/judgments.csv",
+      "sha256": "80b4fc2091d6572a404b5040f1017a0c5c609fbf64a415e3b581f545cf7be195"
+    },
+    {
+      "path": "experiments/eval-judging/studies/openai-decisions-v1/primary-original/quality.json",
+      "sha256": "50ca1f773d9d41571f216a72e208a873f24b52780f5623e4344112ecfcb39826"
+    },
+    {
+      "path": "experiments/eval-judging/studies/openai-decisions-v1/primary-original/reliability.json",
+      "sha256": "f86bcc0712c69a2947d08d68b0e8b4e8a62b217a97543acba5e4a3ac00f30f30"
+    },
+    {
+      "path": "experiments/eval-judging/studies/openai-decisions-v1/primary-recovered/service-recovery.json",
+      "sha256": "51d67b4540e4b0ee94c44d5e3dfe764fc88e673aef7eacf220d3aba7d991e013"
+    },
+    {
+      "path": "experiments/eval-judging/studies/openai-decisions-v1/service-retry-plan/retry-plan.json",
+      "sha256": "fd626a070b0cd2e91a55e01cea53de76de2b4c5d89e3d5fcdbd71f30dd0177a9"
+    }
+  ]
+}

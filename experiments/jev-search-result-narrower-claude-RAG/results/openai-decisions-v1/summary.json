@@ -1,0 +1,320 @@
+{
+  "data": {
+    "claude_route_note": "Decisions arms answered through Claude Code on a Team subscription; frozen arms used Claude Code Max. Same model and prompts.",
+    "model": "openai-decisions/gpt-6-luna",
+    "modes": {
+      "categorical": {
+        "answer_stage_latency_s": {
+          "decisions_filtered": {
+            "mean_s": 4.009978,
+            "median_s": 3.308993,
+            "n": 100,
+            "p95_s": 7.154712,
+            "sum_s": 400.99777
+          },
+          "jev_filtered_frozen": {
+            "mean_s": 6.19548,
+            "median_s": 5.160805,
+            "n": 100,
+            "p95_s": 13.141687,
+            "sum_s": 619.547985
+          }
+        },
+        "chunks": {
+          "decisions_kept": 313,
+          "decisions_returned": 313,
+          "jev_frozen_kept": 421,
+          "pages": 424,
+          "scored": 2040
+        },
+        "estimated_api_equivalent_usd": {
+          "baseline": 26.911082,
+          "claude_list_cost_decisions_arm": 5.071896,
+          "decisions_filter_only": 0.201412,
+          "decisions_filtered": 5.978611
+        },
+        "filter_stage": {
+          "attempts": 424,
+          "cost_usd": 0.201412,
+          "http_status_counts": {
+            "200": 424
+          },
+          "input_tokens": 2014122,
+          "input_tokens_per_successful_request": 4750.287736,
+          "output_tokens": 0,
+          "refused_answers": 0,
+          "requests_with_refusals": 0,
+          "successful": 424,
+          "successful_without_usage": 0,
+          "usd_per_mtok_input": 0.1
+        },
+        "per_result_on_identical_inputs": {
+          "both_drop": 1557,
+          "both_keep": 288,
+          "category_confusion_jev_rows_decisions_columns": {
+            "direct_evidence": {
+              "direct_evidence": 217,
+              "irrelevant": 20,
+              "supporting_evidence": 14
+            },
+            "irrelevant": {
+              "direct_evidence": 11,
+              "irrelevant": 1557,
+              "supporting_evidence": 12
+            },
+            "supporting_evidence": {
+              "direct_evidence": 31,
+              "irrelevant": 112,
+              "supporting_evidence": 26
+            }
+          },
+          "cohen_kappa_keep": 0.74183,
+          "decisions_only_keep": 23,
+          "decisions_refused": 0,
+          "filter_sets": 100,
+          "jev_only_keep": 132,
+          "keep_agreement": 0.9225,
+          "kept_decisions": 311,
+          "kept_jev": 420,
+          "results": 2000
+        },
+        "refused_results": 0,
+        "returned_context_proxy_tokens": {
+          "decisions_filtered": 205468,
+          "jev_filtered_frozen": 286385
+        },
+        "same_judge": "deepseek-v4p1-flash",
+        "same_judge_correct": {
+          "baseline": 93,
+          "decisions_filtered": 94,
+          "jev_filtered": 94
+        },
+        "same_judge_discordant": {
+          "decisions_vs_baseline": {
+            "only_baseline": 1,
+            "only_decisions_filtered": 2
+          },
+          "decisions_vs_jev": {
+            "only_decisions_filtered": 1,
+            "only_jev_filtered": 1
+          }
+        },
+        "same_judge_paired_intervals": {
+          "openai_decisions_filtered_minus_baseline": {
+            "ci95_pp": [
+              -2,
+              5
+            ],
+            "difference_pp": 1
+          },
+          "openai_decisions_filtered_minus_jev_filtered": {
+            "ci95_pp": [
+              -3,
+              3
+            ],
+            "difference_pp": 0
+          }
+        },
+        "source_coverage": {
+          "after": 96,
+          "before": 97
+        }
+      },
+      "threshold": {
+        "answer_stage_latency_s": {
+          "decisions_filtered": {
+            "mean_s": 3.717973,
+            "median_s": 3.141539,
+            "n": 100,
+            "p95_s": 6.558255,
+            "sum_s": 371.797325
+          },
+          "jev_filtered_frozen": {
+            "mean_s": 5.814561,
+            "median_s": 5.066146,
+            "n": 100,
+            "p95_s": 9.754486,
+            "sum_s": 581.456149
+          }
+        },
+        "chunks": {
+          "decisions_kept": 249,
+          "decisions_returned": 249,
+          "jev_frozen_kept": 323,
+          "pages": 415,
+          "scored": 2040
+        },
+        "estimated_api_equivalent_usd": {
+          "baseline": 26.911082,
+          "claude_list_cost_decisions_arm": 4.253069,
+          "decisions_filter_only": 0.190158,
+          "decisions_filtered": 5.148736
+        },
+        "filter_stage": {
+          "attempts": 415,
+          "cost_usd": 0.190158,
+          "http_status_counts": {
+            "200": 415
+          },
+          "input_tokens": 1901580,
+          "input_tokens_per_successful_request": 4582.120482,
+          "output_tokens": 0,
+          "refused_answers": 0,
+          "requests_with_refusals": 0,
+          "successful": 415,
+          "successful_without_usage": 0,
+          "usd_per_mtok_input": 0.1
+        },
+        "per_result_on_identical_inputs": {
+          "both_drop": 1661,
+          "both_keep": 232,
+          "cohen_kappa_keep": 0.781998,
+          "decisions_only_keep": 17,
+          "decisions_refused": 0,
+          "filter_sets": 100,
+          "jev_only_keep": 90,
+          "keep_agreement": 0.9465,
+          "kept_decisions": 249,
+          "kept_jev": 322,
+          "probability_mean_abs_diff": 0.08481,
+          "probability_pairs": 2000,
+          "probability_pearson": 0.909145,
+          "results": 2000
+        },
+        "refused_results": 0,
+        "returned_context_proxy_tokens": {
+          "decisions_filtered": 163875,
+          "jev_filtered_frozen": 218424
+        },
+        "same_judge": "deepseek-v4p1-flash",
+        "same_judge_correct": {
+          "baseline": 94,
+          "decisions_filtered": 94,
+          "jev_filtered": 95
+        },
+        "same_judge_discordant": {
+          "decisions_vs_baseline": {
+            "only_baseline": 0,
+            "only_decisions_filtered": 0
+          },
+          "decisions_vs_jev": {
+            "only_decisions_filtered": 0,
+            "only_jev_filtered": 1
+          }
+        },
+        "same_judge_paired_intervals": {
+          "openai_decisions_filtered_minus_baseline": {
+            "ci95_pp": [
+              0,
+              0
+            ],
+            "difference_pp": 0
+          },
+          "openai_decisions_filtered_minus_jev_filtered": {
+            "ci95_pp": [
+              -3,
+              0
+            ],
+            "difference_pp": -1
+          }
+        },
+        "source_coverage": {
+          "after": 96,
+          "before": 97
+        }
+      }
+    },
+    "rescore_judge": {
+      "cost_usd": 0.02088,
+      "decisions_correct": {
+        "baseline": 89,
+        "jev_filtered": 86
+      },
+      "input_tokens": 208796,
+      "refused_answers": 0,
+      "request_latency_s": {
+        "mean_s": 0.139427,
+        "median_s": 0.118184,
+        "n": 200,
+        "p95_s": 0.262286,
+        "sum_s": 27.885489
+      },
+      "requests": 200,
+      "vs_deepseek_frozen": {
+        "agreement": 0.92,
+        "agreement_by_arm": {
+          "baseline": 93,
+          "jev_filtered": 91
+        },
+        "both_correct": 175,
+        "both_incorrect": 9,
+        "cohen_kappa": 0.496063,
+        "decisions_only_correct": 0,
+        "other_only_correct": 16,
+        "paired_judgments": 200
+      },
+      "vs_jev_rescore_frozen": {
+        "agreement": 0.88,
+        "agreement_by_arm": {
+          "baseline": 86,
+          "jev_filtered": 90
+        },
+        "both_correct": 160,
+        "both_incorrect": 16,
+        "cohen_kappa": 0.502591,
+        "decisions_only_correct": 15,
+        "other_only_correct": 9,
+        "paired_judgments": 200
+      }
+    }
+  },
+  "generated_by": "publication/decisions-aggregates.py",
+  "note": "100 EnronQA questions, disjoint from the Kimi sample. Same-judge scores use deepseek-v4p1-flash for all three arms (frozen judge model retired). Claude costs are API-equivalent estimates, not subscription charges.",
+  "projection": "openai-decisions-aggregates-v1",
+  "sources": [
+    {
+      "path": "experiments/rag-filtering-claude/results/categorical-openai-decisions-v1/comparison-vs-jev.jsonl",
+      "sha256": "5547e8c235bdd58017536cf39243b58a45c71b0287c68d51c2280c8e20856962"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/categorical-openai-decisions-v1/cost-estimate.jsonl",
+      "sha256": "6928405b76f17fbb759970a6c98c14d8f34c45947b2aa242a052f233bd4c4760"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/categorical-openai-decisions-v1/judgments.jsonl",
+      "sha256": "ed27d03641f5455b08defc4d025facda396c69f40343e1146c62b48ef0427a94"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/categorical-openai-decisions-v1/summary.jsonl",
+      "sha256": "7a072b70ac296449894552c1725b256db3624f43adbaf8805552ae75aeef1175"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/rejudge-categorical-deepseek-v4p1-v1/judgments.jsonl",
+      "sha256": "087e627058edafb016752f2818400f82b4c78906a59e03d4bfda075bd5713c0b"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/rejudge-deepseek-v4p1-v1/judgments.jsonl",
+      "sha256": "f6f4d1150e3818774e241db5a5eb5e69f5eba14e8ec43462d6f5ee8f3ea9d5a7"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/rescore-openai-decisions-v1/comparison-vs-jev.jsonl",
+      "sha256": "7dada14420e4cf6eca9282cf25dccfac34bd5703bef1227fc035982101626b5c"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/run-openai-decisions-v1/comparison-vs-jev.jsonl",
+      "sha256": "fdedcb5aee1f2b1de0c54899f33b44575621282a1d89448e6a49f62a7c904ae5"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/run-openai-decisions-v1/cost-estimate.jsonl",
+      "sha256": "8aeb6912505e0eae825123af7fa6f1c0bb5a63f2b6724ea071c7b14222ea48fb"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/run-openai-decisions-v1/judgments.jsonl",
+      "sha256": "2582fddf66cd1f3c00fd157898bcadc49d6b53ce1c8664fe98a6f96d31879746"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/run-openai-decisions-v1/summary.jsonl",
+      "sha256": "7effa137b02a900f108325c88f073631394b9046e48ed1af0f5001b7f3fded42"
+    }
+  ]
+}

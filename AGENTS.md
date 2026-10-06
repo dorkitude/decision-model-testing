@@ -15,7 +15,7 @@ This research uses two repositories:
 Rules:
 
 - Never push, merge, or rebase private history into the public repository, add one as a remote of the other, or change either repository's visibility.
-- Publish an experiment only when it is complete: add its files to [`publication/allowlist.json`](publication/allowlist.json), add reviewed overlays for anything that needs rewriting, run the exporter and audit described in [`PUBLIC_EXPORT.md`](PUBLIC_EXPORT.md), review the candidate, and commit it to the public repository as a clean commit.
+- Publish an experiment only when it is complete: add its files to [`publication/allowlist.json`](https://github.com/dorkitude/decision-model-testing-private/blob/main/publication/allowlist.json), add reviewed overlays for anything that needs rewriting, run the exporter and audit described in [`PUBLIC_EXPORT.md`](https://github.com/dorkitude/decision-model-testing-private/blob/main/PUBLIC_EXPORT.md), review the candidate, and commit it to the public repository as a clean commit.
 - Exclude underlying data unless redistribution rights are confirmed in writing: datasets, source text, source-derived answers or chunks, full request/response receipts, and third-party templates or provider outputs with unclear terms. Publish code, original prompts, synthetic tests, aggregate measurements, and acquisition instructions so readers can reproduce the work from upstream sources.
 - Record redistribution questions in this repository's issues before export.
 - If the public repository is edited directly, bring those edits back into the private source or its overlay before the next export so they are not overwritten.
@@ -23,7 +23,8 @@ Rules:
 ## Structure and navigation
 
 - Put every experiment in its own descriptive folder under `experiments/`.
-- Keep the root `README.md` short. Link every experiment from it, with a one-line research question. Update the index whenever an experiment is added, renamed, or removed.
+- The root `README.md` indexes every experiment. Give each one a descriptive name that says what it studies, rather than a uniform "Jev vs. …" label, plus a one-line research question, its status, and a link.
+- **Always keep a synopsis of every experiment in the root `README.md`:** a short paragraph covering what it tests, how, and its headline results with numbers, or its status if there are no results yet. Update the synopses whenever an experiment is added, renamed, re-run, or produces new results. Do this in the same change as the results, not as a later cleanup.
 - Each experiment owns its README, code, configuration, tests, analysis, and results. Run its commands from that experiment directory unless its documentation says otherwise.
 - Keep repository-wide instructions, licensing, contribution guidance, and CI at the root. Do not introduce cross-experiment dependencies without documenting them.
 
