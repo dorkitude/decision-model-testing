@@ -103,4 +103,17 @@ Picking the same position in both orders means the two verdicts contradict each 
 
 **Cost and latency.** The Decisions arm billed 28.4M input tokens, **$2.84** at $0.10 per million (output is not billed); the accounting total of $3.41 adds the reused GPT-OSS helper calls ($0.63) at their frozen prices. The comparable frozen Jev accounting was $2.21 including the same helpers. Median request time was 0.12 s for both Decisions and Jev; Decisions' median job time (3.2 s vs. Jev's 0.27 s) reflects client-side pacing of the re-run, not model latency.
 
+**Verification (2026-10-08).** Because the JudgeBench score is so low, the pipeline was checked against the live API on a seeded sample of 100 JudgeBench vanilla pairs in both orders (about $0.15 of requests):
+
+| Check | Result |
+|---|---|
+| Replay of the frozen requests | 200/200 identical answers: the run recorded what the API returns, and Decisions is deterministic |
+| Truncation | Ruled out: no request exceeds about 4k tokens, and first-shown picks are most frequent on the shortest inputs (73% under 1k tokens) |
+| 20 blatantly easy pairs in the same template and format, both orders | 40/40 correct, no first-shown picks, confidence ≈ 1.0, so both outputs are read and the A/B mapping is right |
+| Input as a readable transcript instead of the frozen JSON state | first-shown in both orders 70% → 64%; strict agreement 27% → 29% |
+| Input as native Decisions messages | 62%; 32% |
+| Readable input plus a self-contained question (protocol deviation, diagnostic only) | 52%; 38% |
+
+The bias is the model's behavior on hard pairs, not a harness error. The frozen Jev-style framing costs Decisions a few points, far short of Jev's 69.03%. Of the 93 invalid RewardBench 2 jobs, 92 are in the Safety subset (refused harmful prompts), none in Math, Factuality or Precise IF.
+
 **Caveats.** Agreement with benchmark labels is not verified correctness. Prompts and protocols were designed for Jev and frozen; Decisions was not given a position-debiased or tuned prompt. The two arms ran on different days through different services. [Source-free aggregates](results/openai-decisions-v1/README.md) include per-method scores, deltas, reliability, position-bias counts and cascades.
