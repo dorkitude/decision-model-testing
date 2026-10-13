@@ -9,6 +9,10 @@ author: Kyle Wild
 
 How do decision models and a generative LLM control behave as objectively labeled intent menus grow, and how stable are their labels when the same options move?
 
+## TL;DR
+
+The three decision models were more accurate and substantially more label-stable than Haiku 5.5 on these held-out intent-routing samples. On CLINC's 30-intent plus out-of-scope task, Jev, Decisions, and SubQ each scored 192/200, versus 112/200 for Haiku. At all 77 BANKING intents, Decisions led with 110/120, while Jev and SubQ scored 108/120 and Haiku scored 90/120. Candidate shuffling changed 116/298 Haiku labels, compared with 8/299 for Jev, 5/299 for Decisions, and 3/300 for SubQ; byte-identical repeats changed 51/270 Haiku labels but none for Decisions or SubQ. SubQ's labels were the most stable, yet its gold-option probabilities still moved by mean absolute 0.025–0.049 when candidates were reordered. The samples contain only 30 independent examples per menu width, so small provider differences are descriptive, and the non-monotonic results do not support a universal menu-size cutoff.
+
 The study uses held-out examples from CLINC150 (CC BY 3.0) and BANKING77 (CC BY 4.0). Candidate descriptions and examples come only from each training split. For each dataset, the same 30 test utterances are classified against nested candidate menus, each in a seeded order and its exact reverse with two byte-identical calls per order. CLINC also has a separate 50-case in-scope/out-of-scope stage with a `NONE` option. Strict accuracy counts refusals and invalid labels as wrong. The generative control is Claude Haiku 5.5 with thinking disabled; the decision models are Jev, OpenAI Decisions, and SubQ Snap.
 
 ## CLINC150

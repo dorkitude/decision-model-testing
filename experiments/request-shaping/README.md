@@ -12,6 +12,10 @@ updated: 2026-10-13
 
 **Question:** how should you shape a decision-model request? Pack many items into one state or send one at a time, ask many questions per request or one, and does it matter where the evidence sits in the state?
 
+## TL;DR
+
+Request shape changed model behavior, but the useful pattern depended on the provider. Packing 100 passages raised Jev nDCG@10 by +0.036 and cut input tokens per decision from 438 to 189; Decisions gained only +0.015 with no token saving, while SubQ gained +0.015 at 10 passages but could not run larger packed-question arms because of a 16-question service limit. Co-asked questions were effectively independent when the target came first: mean probability changes matched Jev's 0.009 retest noise and were zero for Decisions and about 0.0001 for SubQ. SubQ's target moved about 0.013 when placed last among 16 questions. Long states showed no general “lost in the middle” effect, but SubQ favored the start of a 40-passage state by +0.0196 AUC over the middle; putting the question before the state helped Decisions most. Practical guidance is therefore provider-specific: use named references, freeze layout and ordering, validate packing empirically, and do not treat multi-question independence as position independence.
+
 Three controlled studies on TREC DL passage relevance, with human labels, compare TypeSafe Jev (`jev-1.13.0`), OpenAI Decisions (`gpt-6-luna`), and SubQ Snap (`subq-snap-preview`) under the same plan. Every study uses the fixed relevance prompt from [`jev-vs-rerankers`](../jev-vs-rerankers/README.md):
 
 1. **State packing** ([Jev report](results/state-packing-v1/REPORT.md), [Decisions report](results/state-packing-openai-decisions-v1/REPORT.md), [SubQ report](results/state-packing-subq-v1/REPORT.md)): one passage per state compared with several passages sharing a state.

@@ -9,6 +9,10 @@ author: Kyle Wild
 
 Can decision models reliably solve simple, objectively scored tasks when candidate display order, API option order, question order, or record position changes?
 
+## TL;DR
+
+Jev and OpenAI Decisions were perfectly accurate across all 880 exact-choice, lookup, and arithmetic requests, while SubQ was perfect on the 560 exact-choice and lookup requests but scored 312/320 on arithmetic. SubQ's eight misses were not random: two arithmetic cases failed reproducibly only when the correct response appeared second and the API choice options were reversed. All three models returned identical labels on every byte-identical repeat, so the main distinction is ordering robustness rather than ordinary run-to-run instability. SubQ used the fewest reported input tokens but had higher observed round-trip latency; differing provider routes and loads make that latency comparison descriptive only. These deliberately easy synthetic controls do not establish general task accuracy, but they show that crossing display order with API option order can reveal systematic failures that aggregate accuracy or simple repetition would miss.
+
 The study uses 60 synthetic base cases with two byte-identical repetitions across every ordering condition. Twenty exact-code cases and twenty 12-record lookups produce 560 requests per provider. Twenty one-digit arithmetic answer pairs produce another 320. There is no external dataset, LLM judge, or outcome-guided prompt tuning. Repetitions and ordering variants are correlated observations, not independent cases.
 
 ## Results
