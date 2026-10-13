@@ -95,6 +95,8 @@ flowchart LR
 | Claude RAG filter, categorical | accepted /100, same judge | 93 | 94 | 94 | — |
 | Request shaping | retest mean \|Δp\| | n/a | 0.0094 | 0.0000 | 0.0001–0.0002 |
 
+The SubQ RAG cells are unmeasured: the available organization is not configured for [zero data retention](https://docs.subq.ai/using-the-api/data-retention/), the Decisions endpoint has no per-request storage opt-out, and no Enron content was sent to SubQ.
+
 In short: performance depends strongly on the task and request shape. SubQ produced the strongest relevance-ranking scores in this suite's TREC experiment and outscored Jev on most eval-judging methods, while the open LLM judges remained strongest on several headline judging benchmarks. Decisions was a reasonable relevance scorer and RAG filter but a poor pairwise judge under these prompts because of a strong first-position bias. Each experiment's README reports intervals, failures, costs, latency and caveats beside the other provider results.
 
 This distribution contains code, original prompts, synthetic tests and aggregate measurements. Datasets, source-bearing answers/receipts, archives, private correspondence and prior Git history are excluded.

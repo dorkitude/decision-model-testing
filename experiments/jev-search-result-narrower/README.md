@@ -75,7 +75,7 @@ Paired differences under the same judge (cluster bootstrap by source document, 9
 
 **Cost and latency.** The Decisions filter billed 1.85M input tokens, $0.185 at $0.10 per million, so the whole Decisions-filtered answering pipeline came to $1.69 for 100 questions against $1.65 with Jev filtering and $5.06 unfiltered (list-price estimates covering answering, filtering, embedding and reranking). Decisions would match Jev's pipeline cost at about $0.077 per million input tokens. A filter page took 0.13 s at the median (p95 0.20 s). Kimi's question-to-final-answer time averaged 3.94 s for the Decisions arm, measured under different service conditions from the Jev and unfiltered arms' 4.82 s and 5.50 s, so it is not a controlled latency comparison.
 
-**Caveats.** 100 questions, one sample; DeepSeek and Jev judgments are model assessments, not human truth; the two judge versions disagree slightly, which is why only same-judge numbers are compared; the filter prompt was written for Jev. [Source-free aggregates](results/openai-decisions-v1/README.md).
+**Caveats.** 100 questions, one sample; DeepSeek and Jev judgments are model assessments, not human truth; the two judge versions disagree slightly, which is why only same-judge numbers are compared; the filter prompt was written for Jev. SubQ is not evaluated in this study because the available organization is not configured for [zero data retention](https://docs.subq.ai/using-the-api/data-retention/) and the Decisions endpoint has no per-request storage opt-out; no Enron content was sent to SubQ. [Source-free aggregates](results/openai-decisions-v1/README.md).
 
 ## Reproduce
 

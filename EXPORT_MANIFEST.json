@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "source_commit": "311f1d83d10070eb07077c86191268c5894d0602",
+  "source_commit": "ad77f7eaefe30c23fac665ab6ebbfe91c3286083",
   "files": [
     {
       "source": "publication/overlays/.github/workflows/ci.yml",
@@ -25,7 +25,7 @@
     {
       "source": "publication/overlays/README.md",
       "destination": "README.md",
-      "sha256": "57ed0bdc70f5e4072edbe0b97a4a4505bacd7ca418f157d7c8ef8a7008ea1c7e"
+      "sha256": "00937b6b1070f42913aa55b153b90aeb84b2d6dc499d60ecbdbe08e46e35cfc9"
     },
     {
       "source": "publication/overlays/REPRODUCTION.md",
@@ -40,7 +40,7 @@
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower-claude-RAG/README.md",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/README.md",
-      "sha256": "bea7ab70261e87ebaf4ef330a352f27a70f32450f5b447af5aaef36e9af6fb88"
+      "sha256": "c138624512960c9a4519a4cc26d2f0f10b01e9ca7d66abc2f08663b0f2b603e9"
     },
     {
       "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower-claude-RAG/analysis.go",
@@ -165,7 +165,7 @@
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower/README.md",
       "destination": "experiments/jev-search-result-narrower/README.md",
-      "sha256": "9509de29a4057581dc7099797f4eb05a31697ec5d2a483b70066c41104241578"
+      "sha256": "35e887b9f22c2ceff20d4357b6b5f024c3c48d5323241fc8416361c1d630e123"
     },
     {
       "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower/audit.go",

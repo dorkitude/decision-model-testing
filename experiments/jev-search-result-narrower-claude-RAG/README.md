@@ -82,7 +82,7 @@ Paired differences under the same judge (cluster bootstrap by source document, 9
 
 **Cost and latency.** The Decisions filter cost $0.19 (threshold, 415 pages) and $0.20 (categorical, 424 pages) at $0.10 per million input tokens. Because it returned fewer chunks, Claude read less: the whole Decisions-filtered pipeline came to $5.15 and $5.98 against $6.21 and $7.44 with the Jev filters and $26.91 unfiltered. Claude costs are API-equivalent list estimates, not subscription charges. The answer stage (filtering, Claude and follow-up searches) took a median 3.1 s and 3.3 s against 5.1 s and 5.2 s for the Jev arms, but on a different Claude route and under different service conditions, so that difference is not attributable to the filter.
 
-**Caveats.** 100 questions per mode; DeepSeek verdicts are model assessments, not human truth; the filter prompts were written for Jev; the Claude route changed. [Source-free aggregates](results/openai-decisions-v1/README.md).
+**Caveats.** 100 questions per mode; DeepSeek verdicts are model assessments, not human truth; the filter prompts were written for Jev; the Claude route changed. SubQ is not evaluated in this study because the available organization is not configured for [zero data retention](https://docs.subq.ai/using-the-api/data-retention/) and the Decisions endpoint has no per-request storage opt-out; no Enron content was sent to SubQ. [Source-free aggregates](results/openai-decisions-v1/README.md).
 
 ## Reproduce
 
