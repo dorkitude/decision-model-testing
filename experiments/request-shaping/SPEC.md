@@ -1,23 +1,21 @@
 ---
-title: Jev best practices specification
+title: Request shaping specification
 type: research-specification
-experiment: jev-best-practices
+experiment: request-shaping
 created: 2026-09-25
 author: Kyle Wild
 status: protocol-v1-run
 ---
 
-# Jev best practices
+# Request shaping
 
-How should Jev requests be shaped? This experiment measures request-shaping choices that practitioners make every day but that no one has benchmarked. It has three studies:
+How should decision-model requests be shaped? This experiment measures three common request-shaping choices:
 
 1. **State packing:** one item per state compared with several items sharing one state.
 2. **Question fan-out:** one question per request compared with several questions about the same state in one request.
 3. **Position in state:** whether content near the beginning, middle, or end of the `state` value gets more or less weight.
 
-> Origin: Kyle Wild proposed this study on 2026-09-25 to find the best ways to shape Jev requests (one item per state versus several), and added a third study on ordering the same day.
-
-Implementation and live runs began on 2026-09-25. The parameters actually run are frozen in [Protocol v1 as run](#protocol-v1-as-run); the sections above them record the design intent.
+The executed parameters are frozen in [Protocol v1 as run](#protocol-v1-as-run). Provider arms use the same cases and scoring wherever their interfaces permit a direct comparison.
 
 ## Why it matters
 
@@ -27,7 +25,7 @@ TypeSafe's documentation points both ways:
 - The same page warns that accuracy falls when the state carries irrelevant detail (failure mode 5) and when questions need indirection (failure mode 4). Every neighbor in a packed state is irrelevant to the other items' questions.
 - The [State page](https://docs.typesafe.ai/concepts/state) says questions sharing a state "are evaluated independently". That makes Study 2 a direct test of a documented claim.
 
-Our own experiments already use both shapes. [`jev-vs-rerankers`](../jev-vs-rerankers/) sends one passage per state. [`jev-search-result-narrower`](../jev-search-result-narrower/) packs up to six chunks per page and lists page-local context effects as a limitation. The [reranker protocol](../jev-vs-rerankers/PROTOCOL-v1.md) set shared-state scoring aside as a separate method to evaluate later.
+The suite uses both shapes. [`jev-vs-rerankers`](../jev-vs-rerankers/) sends one passage per state, while [`jev-search-result-narrower`](../jev-search-result-narrower/) packs up to six chunks per page and lists page-local context effects as a limitation.
 
 ## Shared benchmark
 
@@ -234,14 +232,9 @@ These are predictions, not results.
 - **H7:** Pointed questions are insensitive to position within the noise floor.
 - **H8:** Needle questions lose sensitivity toward the middle of the long (40-passage) state, a "lost in the middle" pattern.
 
-## Remaining decisions
-
-1. Whether to add a second task, such as LLMBar pairwise judging from `jev-vs-LLM-for-evals`, to test whether the findings generalize.
-2. Whether Kyle wants to review or replace Study 2's question pools (drafted by Claude from the documentation) for a v2 run.
-
 ## Limitations
 
-- One model version and one task family at first.
+- One task family; conclusions may not generalize to pairwise judging or other request types.
 - TREC DL passages are short, so the results say little about long-chunk states like the EnronQA ones.
 - Hosted-model drift, rounded probabilities, possible training contamination, and small query sets.
 - Treating unjudged items as zero gain affects the ranking metrics.

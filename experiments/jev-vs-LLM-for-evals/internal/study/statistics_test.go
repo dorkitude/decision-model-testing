@@ -11,7 +11,7 @@ func TestTieUnitsPreserveWholeCohortScore(t *testing.T) {
 	rows := []M{}
 	for i, pair := range [][][]any{{{8., 2.}, {8., 7., 2.}}, {{3., 5.}, {4., 4., 5.}}, {{9., 1.}, {9., 9., 1.}}} {
 		for j, kind := range []string{"ref", "tied"} {
-			rows = append(rows, M{"benchmark": "rewardbench2", "method": "ratings", "model": "jev-latest", "subset": "Ties", "case_id": kind + ":" + string(rune('a'+i)), "scores": pair[j], "num_correct": j + 1, "valid": i != 1, "accounting_usd": .01})
+			rows = append(rows, M{"benchmark": "rewardbench2", "method": "ratings", "model": "jev-latest", "subset": "Ties", "case_id": kind + ":" + string(byte('a'+i)), "scores": pair[j], "num_correct": j + 1, "valid": i != 1, "accounting_usd": .01})
 		}
 	}
 	units := Units(rows)
@@ -39,8 +39,8 @@ func TestPairedBootstrapPreservesPairingAndWeights(t *testing.T) {
 			subset = "small"
 			score = 0
 		}
-		left = append(left, Unit{Benchmark: "llmbar", Method: "Vanilla", Model: "jev-latest", Subset: subset, ID: string(rune('a' + i)), Score: score, Strict: score, Cost: 1})
-		right = append(right, Unit{Benchmark: "llmbar", Method: "Vanilla", Model: "fallback", Subset: subset, ID: string(rune('a' + i)), Cost: 2})
+		left = append(left, Unit{Benchmark: "llmbar", Method: "Vanilla", Model: "jev-latest", Subset: subset, ID: string(byte('a' + i)), Score: score, Strict: score, Cost: 1})
+		right = append(right, Unit{Benchmark: "llmbar", Method: "Vanilla", Model: "fallback", Subset: subset, ID: string(byte('a' + i)), Cost: 2})
 	}
 	r := PairComparison(left, right, 100)
 	if n(r["published_delta"]) != .5 || n(r["accounting_cost_ratio_a_over_b"]) != .5 {

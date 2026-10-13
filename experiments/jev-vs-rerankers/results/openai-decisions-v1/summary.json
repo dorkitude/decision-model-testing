@@ -2207,7 +2207,7 @@
     "wire_version": "guide-2026-10-06"
   },
   "generated_by": "publication/decisions-aggregates.py",
-  "note": "TREC DL19+DL20 rerank@100. Decisions arms send the frozen Jev bodies; Jev and Qwen rows are frozen. Costs are list-price estimates from reported usage; Jev/Qwen costs and timings are historical.",
+  "note": "TREC DL19+DL20 rerank@100 under shared request content and a fixed analysis. Costs are list-price estimates from reported usage; cross-provider timings are descriptive.",
   "projection": "openai-decisions-aggregates-v1",
   "sources": [
     {

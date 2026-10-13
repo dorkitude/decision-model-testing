@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "source_commit": "c158e5396f540a8064886088409b577f4932ac1b",
+  "source_commit": "311f1d83d10070eb07077c86191268c5894d0602",
   "files": [
     {
       "source": "publication/overlays/.github/workflows/ci.yml",
@@ -15,7 +15,7 @@
     {
       "source": "publication/overlays/AGENTS.md",
       "destination": "AGENTS.md",
-      "sha256": "13e5e6a9e7c2743044adf850a785da2ba5f493580ee67fe25ab9192504ef9256"
+      "sha256": "b1ed6fc352fce94532adb139a6f58980abd998acd574cc4a97d7ea36725768eb"
     },
     {
       "source": "LICENSE",
@@ -25,22 +25,22 @@
     {
       "source": "publication/overlays/README.md",
       "destination": "README.md",
-      "sha256": "d3f64d5d0ea3ea778a657b01d451dbd23ef1f54a209d65ec4eacde5c2c60bf03"
+      "sha256": "57ed0bdc70f5e4072edbe0b97a4a4505bacd7ca418f157d7c8ef8a7008ea1c7e"
     },
     {
       "source": "publication/overlays/REPRODUCTION.md",
       "destination": "REPRODUCTION.md",
-      "sha256": "56a1750338b82a4663bbec8aebeb903c072ccf32a289ab3e11a22528ddd558a1"
+      "sha256": "dcaa61c244208385c0790654cfb65a586682dfc92567d09a883a8df3dcd69746"
     },
     {
       "source": "publication/overlays/THIRD_PARTY_NOTICES.md",
       "destination": "THIRD_PARTY_NOTICES.md",
-      "sha256": "a0caba4c99fecac3608ca68d79c5433e8d9f7cead7b825c06a44d2056c60a7ce"
+      "sha256": "d11b93061b59ea79aab9a2374d4bb2b18563e3d5fc780f05b782c83de89ab611"
     },
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower-claude-RAG/README.md",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/README.md",
-      "sha256": "e28991aef78f3fae847750cd28c9f26c69c9b4d1d382407944b0dacc732b5a5a"
+      "sha256": "bea7ab70261e87ebaf4ef330a352f27a70f32450f5b447af5aaef36e9af6fb88"
     },
     {
       "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower-claude-RAG/analysis.go",
@@ -165,7 +165,7 @@
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower/README.md",
       "destination": "experiments/jev-search-result-narrower/README.md",
-      "sha256": "60ae773630320ba5df2e9a8c983993daaab060a59b4f2938600417c6d311a9a5"
+      "sha256": "9509de29a4057581dc7099797f4eb05a31697ec5d2a483b70066c41104241578"
     },
     {
       "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower/audit.go",
@@ -250,7 +250,7 @@
     {
       "source": "publication/overlays/experiments/jev-vs-LLM-for-evals/README.md",
       "destination": "experiments/jev-vs-LLM-for-evals/README.md",
-      "sha256": "f430c59481f1b903d1a6e097f39f2193ccd2f86bcf75ce63adcb35c811d61ffd"
+      "sha256": "1a2113ef67917b78ff70127ed5064d8ebb952f2a24633565be563d797ed9e90c"
     },
     {
       "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/cmd/evalevaluation/main.go",
@@ -515,7 +515,7 @@
     {
       "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/internal/study/statistics_test.go",
       "destination": "experiments/jev-vs-LLM-for-evals/internal/study/statistics_test.go",
-      "sha256": "27bc7a9eeaf918224ecbebb39834f33223455330269250b357067772344e6466"
+      "sha256": "7bfe42aaac05bff24bc1dd0dd76a98cc639b92423f45db4b0bb5ce4f72f1c5f2"
     },
     {
       "source": "experiments/eval-judging/methodology/configs/full.json",
@@ -770,7 +770,7 @@
     {
       "source": "publication/overlays/experiments/jev-vs-rerankers/README.md",
       "destination": "experiments/jev-vs-rerankers/README.md",
-      "sha256": "328a9f2e226398f6dd20fb7f82734d880e040a03120398e621f9e9b5c6cafb30"
+      "sha256": "a6489e57849005ef52c450942a08d08e1b69895e2aca12c674bcd49a3020cf7a"
     },
     {
       "source": "publication/overlays/public-v1/experiments/jev-vs-rerankers/analysis.go",
@@ -850,7 +850,7 @@
     {
       "source": "publication/overlays/experiments/openai-decisions-adapter/README.md",
       "destination": "experiments/openai-decisions-adapter/README.md",
-      "sha256": "d17a94412e4d2018e901e8db7f2323d9cd47e6e1bd6da8415bec20ede036b934"
+      "sha256": "5e14606b119473bae6a0d9e90257c0e99185cd046f59d40e158805920bffa2a3"
     },
     {
       "source": "publication/overlays/experiments/openai-decisions-adapter/go.mod",
@@ -895,7 +895,7 @@
     {
       "source": "publication/overlays/experiments/request-shaping/README.md",
       "destination": "experiments/request-shaping/README.md",
-      "sha256": "87d8072c29e04b1c100a235f0f17284010793741e66f5e84f7dd13e67ab67f5f"
+      "sha256": "95c575ae1e24a199391b29de9c5832f1b7fc730d766c40f73145e926a4e038d5"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/go.mod",
@@ -910,7 +910,7 @@
     {
       "source": "publication/overlays/experiments/request-shaping/SPEC.md",
       "destination": "experiments/request-shaping/SPEC.md",
-      "sha256": "de3423857fbb65ebd2ee73e7713289de3a5665de256b6b3fd361aeacdf7a931a"
+      "sha256": "04abeb0b57b7048d9ac7ae98195827306266d8bcbe8eac16ee2548c35a7d786c"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/cmd/question-fanout/main.go",
@@ -1000,7 +1000,7 @@
     {
       "source": "publication/overlays/experiments/request-shaping/results/state-packing-v1/REPORT.md",
       "destination": "experiments/request-shaping/results/state-packing-v1/REPORT.md",
-      "sha256": "4167158e7e423e6ada5879bbd9c9154390a03c0c8066036165a61e35474b2b41"
+      "sha256": "2d6d648718d036e1c93dfe5b77c636df7ad5fb1e6591cbc606c2fa832791a03d"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/results/state-position-v1/REPORT.md",
@@ -1010,67 +1010,222 @@
     {
       "source": "publication/overlays/experiments/request-shaping/results/openai-decisions-v1/README.md",
       "destination": "experiments/request-shaping/results/openai-decisions-v1/README.md",
-      "sha256": "5815262d70b23c4831222ac46ec44a675679e2addf55c7ea411a1e2c6313c672"
+      "sha256": "46510c67e960331e5a80963de7d25ca9dda1f93c3cac23920eee2983f9056db4"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/results/openai-decisions-v1/summary.json",
       "destination": "experiments/request-shaping/results/openai-decisions-v1/summary.json",
-      "sha256": "80f151296b2ae741f7b858174b4f42a1bd9d81be5f95932aaa1b55d5f5c81903"
+      "sha256": "c13eaaeaf5c41aa3bc5c826b7197ed6da818a0e56af348ec01e9eea55661927a"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/results/state-packing-openai-decisions-v1/REPORT.md",
       "destination": "experiments/request-shaping/results/state-packing-openai-decisions-v1/REPORT.md",
-      "sha256": "84dfd54aad1e7c18592f313aab2e602b3b61658c286669b90849a98ab00522a8"
+      "sha256": "61d537978e36b188d94e80aaae5124a4fc0572c4a3ad0d2b08b8bf20b7e5d921"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/results/question-fanout-openai-decisions-v1/REPORT.md",
       "destination": "experiments/request-shaping/results/question-fanout-openai-decisions-v1/REPORT.md",
-      "sha256": "c3a225d864bb100c0e90f4739f0103ca47fef48229d0b3eb79da9741a86b1917"
+      "sha256": "9365004a1e7482579ce4e108236c25a1e3e1996c749aef7b5f4d54fd4f5c6b65"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/results/state-position-openai-decisions-v1/REPORT.md",
       "destination": "experiments/request-shaping/results/state-position-openai-decisions-v1/REPORT.md",
-      "sha256": "cd53b56f05a73686fd3aee30fe45e12b086d478be0d7cd79e7b9732f56515d52"
+      "sha256": "63220a983dcb7cec888c233c854320bf91abfbfec426d883bf662b169bc5d080"
     },
     {
       "source": "publication/overlays/experiments/jev-vs-rerankers/results/openai-decisions-v1/README.md",
       "destination": "experiments/jev-vs-rerankers/results/openai-decisions-v1/README.md",
-      "sha256": "5f5bc5065c60bb6714e6cbb4b6ccedd301c079f3f49e0e793be5cfee55df5f1e"
+      "sha256": "3c33c65818befb97f748613787093bf482405e2be7cabab74ed2de7af4593cb4"
     },
     {
       "source": "publication/overlays/experiments/jev-vs-rerankers/results/openai-decisions-v1/summary.json",
       "destination": "experiments/jev-vs-rerankers/results/openai-decisions-v1/summary.json",
-      "sha256": "75b81bd54e0169d5c3352711870391a78fbaee5991cfdf16c7749d8072ef49bc"
+      "sha256": "98ba47db669105fb55fb26857fa3053103066ca448ccf56e5ae9a23f910f0fdf"
     },
     {
       "source": "publication/overlays/experiments/jev-vs-LLM-for-evals/results/openai-decisions-v1/README.md",
       "destination": "experiments/jev-vs-LLM-for-evals/results/openai-decisions-v1/README.md",
-      "sha256": "5ba26c8a68bac09fd6d5a4a0c3882b60bc353724e1ffdba289f44beb77e8cef9"
+      "sha256": "2b04c872bb59fe48c3ba472007666c1e759409332d877f8e3d59c3ebb14d04da"
     },
     {
       "source": "publication/overlays/experiments/jev-vs-LLM-for-evals/results/openai-decisions-v1/summary.json",
       "destination": "experiments/jev-vs-LLM-for-evals/results/openai-decisions-v1/summary.json",
-      "sha256": "c41b872db188759b095c8dfd941f1c59002d6653b81b7842eaf2a75aed7d2b56"
+      "sha256": "c4613d0f7e3b8e0628873b170526c1d69a98e9f72f2be6147172172aaf99cda6"
     },
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower/results/openai-decisions-v1/README.md",
       "destination": "experiments/jev-search-result-narrower/results/openai-decisions-v1/README.md",
-      "sha256": "8f18f0472aa648a0789464fa0f7b3b3fca6e99a16060ebc1c6539ee86cce107b"
+      "sha256": "80da8c3bfee6e3652540d0d5635c7d034269a518b2ceabda2d8ca9be90641cf6"
     },
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower/results/openai-decisions-v1/summary.json",
       "destination": "experiments/jev-search-result-narrower/results/openai-decisions-v1/summary.json",
-      "sha256": "dff7f7366e8020f5694aaafca09feb77e05a322ab6f93bfb447340349d55e609"
+      "sha256": "202111684f8b864897cc4f73fbc965d1c9cb4df9ff4f650939471b7eec610588"
     },
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower-claude-RAG/results/openai-decisions-v1/README.md",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/results/openai-decisions-v1/README.md",
-      "sha256": "a7d36eeb97963c5831d1f39dda0ff8dd9d818ce8445f00aa4ddfb8e1b5df18af"
+      "sha256": "c799889b85d13c5cde036f3c1d7474c68e622c7cc5bfa33e312a33716a9b02d2"
     },
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower-claude-RAG/results/openai-decisions-v1/summary.json",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/results/openai-decisions-v1/summary.json",
-      "sha256": "3f6cdea485898d3ea898bf299eacf073cc7afdd20e2a709822b80ccd0dab5fdb"
+      "sha256": "ee25f3952e52be912ce408c93565cc98072bcce06e2eb1477da436e4f0ee75d9"
+    },
+    {
+      "source": "publication/overlays/experiments/easy-decisions/README.md",
+      "destination": "experiments/easy-decisions/README.md",
+      "sha256": "e1c14e5d971abe1e7e25a54ed3cc3496a40bb5c80e422ad6f5424901a76fcdef"
+    },
+    {
+      "source": "publication/overlays/experiments/easy-decisions/results/jev/summary.json",
+      "destination": "experiments/easy-decisions/results/jev/summary.json",
+      "sha256": "bbb029aba81b4d049620a68f54f8e5ac6bf0f59ba32192b87ec94cca8b9317bd"
+    },
+    {
+      "source": "publication/overlays/experiments/easy-decisions/results/subq/summary.json",
+      "destination": "experiments/easy-decisions/results/subq/summary.json",
+      "sha256": "d11990193954353d533dc8250fb843507ff3d99cbbdabeac4abe3baae04d058e"
+    },
+    {
+      "source": "publication/overlays/experiments/easy-decisions/results/arithmetic/jev/summary.json",
+      "destination": "experiments/easy-decisions/results/arithmetic/jev/summary.json",
+      "sha256": "1b786204f1f6cee7167df7cb4a6ec76b8a9f8eba0b66a62c3c9e70cf7dd05157"
+    },
+    {
+      "source": "publication/overlays/experiments/easy-decisions/results/arithmetic/subq/summary.json",
+      "destination": "experiments/easy-decisions/results/arithmetic/subq/summary.json",
+      "sha256": "6cedb7c9b1af6c34a383c84940cdbf6becbb301c2565196792dfe0ef5dbc8511"
+    },
+    {
+      "source": "publication/overlays/experiments/easy-decisions/results/arithmetic/openai-decisions/summary.json",
+      "destination": "experiments/easy-decisions/results/arithmetic/openai-decisions/summary.json",
+      "sha256": "3a5a705714b312359724ddcc8a7761312100d07eff5a640286b4b5d1e9b9fc12"
+    },
+    {
+      "source": "publication/overlays/experiments/easy-decisions/results/openai-decisions/summary.json",
+      "destination": "experiments/easy-decisions/results/openai-decisions/summary.json",
+      "sha256": "94e568116d8048f6bd1ba3f9540e1c1b1b97de5b9202e22996109a80100307df"
+    },
+    {
+      "source": "publication/overlays/experiments/intent-difficulty-ladder/README.md",
+      "destination": "experiments/intent-difficulty-ladder/README.md",
+      "sha256": "31572eb5540745511fc4eeeb98b9d082e1cf7e54aaa9eec7db46bfff2a04b5e2"
+    },
+    {
+      "source": "publication/overlays/experiments/intent-difficulty-ladder/results/banking.json",
+      "destination": "experiments/intent-difficulty-ladder/results/banking.json",
+      "sha256": "da9d0e985e1c85b57c30340cea57dbc81c047df92fcb4fc8d91a8eccb7b5c4b8"
+    },
+    {
+      "source": "publication/overlays/experiments/intent-difficulty-ladder/results/clinc.json",
+      "destination": "experiments/intent-difficulty-ladder/results/clinc.json",
+      "sha256": "d229fdb591c08c09f63ad7396e12a287210c9783df43f532c4c31d0b591956cf"
+    },
+    {
+      "source": "publication/overlays/experiments/intent-difficulty-ladder/results/ordering.json",
+      "destination": "experiments/intent-difficulty-ladder/results/ordering.json",
+      "sha256": "07863515d8ee4160eca83e57aebb57caf56dc380c6679c12a2b9473d850cc247"
+    },
+    {
+      "source": "publication/overlays/experiments/subq-adapter/README.md",
+      "destination": "experiments/subq-adapter/README.md",
+      "sha256": "cc6dece708c30a27dffc573f963eff918d0ecf7d28a73e1cfbb3a30911d83a72"
+    },
+    {
+      "source": "publication/overlays/experiments/subq-adapter/go.mod",
+      "destination": "experiments/subq-adapter/go.mod",
+      "sha256": "c30fde1f03a336cfaf0619bb760d66589892273bc84332d615d05e6406402430"
+    },
+    {
+      "source": "publication/overlays/experiments/subq-adapter/subq/body.go",
+      "destination": "experiments/subq-adapter/subq/body.go",
+      "sha256": "3752656ea44e7ca319f52d5383f84b56be724dce79368a935789534ce2b7224c"
+    },
+    {
+      "source": "publication/overlays/experiments/subq-adapter/subq/client.go",
+      "destination": "experiments/subq-adapter/subq/client.go",
+      "sha256": "1c90b3b9d82fd96cd44d5cd53ae099f73842c2b9c33b9b715da51437ce8dcecb"
+    },
+    {
+      "source": "publication/overlays/experiments/subq-adapter/subq/config.go",
+      "destination": "experiments/subq-adapter/subq/config.go",
+      "sha256": "ef11191e6828b33cd7b3c43b3214a28f1268450bcceb5363212295b3beeae9af"
+    },
+    {
+      "source": "publication/overlays/experiments/subq-adapter/subq/cost.go",
+      "destination": "experiments/subq-adapter/subq/cost.go",
+      "sha256": "83c0ea7ee8e72395e7c8cf4c46108ed6794ae2a9f9cde6a9f3f29656ddbd842f"
+    },
+    {
+      "source": "publication/overlays/experiments/subq-adapter/subq/endpoint_test.go",
+      "destination": "experiments/subq-adapter/subq/endpoint_test.go",
+      "sha256": "c49bb4e958274837f2d56d651474d8a7faa7244e6dc8e1429715e6d283a3f91c"
+    },
+    {
+      "source": "publication/overlays/experiments/subq-adapter/subq/headers_internal_test.go",
+      "destination": "experiments/subq-adapter/subq/headers_internal_test.go",
+      "sha256": "0add73432bdb643978b1edc3058caf669b3de37f94d96b4d4a9a6d81b5dd0f1b"
+    },
+    {
+      "source": "publication/overlays/experiments/subq-adapter/subq/probe.go",
+      "destination": "experiments/subq-adapter/subq/probe.go",
+      "sha256": "0805c28b08d5c930696fea6eaa60e0f5792225fe74581bb7c2d885fc91997f76"
+    },
+    {
+      "source": "publication/overlays/experiments/subq-adapter/subq/subq_test.go",
+      "destination": "experiments/subq-adapter/subq/subq_test.go",
+      "sha256": "b2e7655368d9998b40e9bf12a09d9632c566a8ed8d3aad1271bd2a4c6ce15904"
+    },
+    {
+      "source": "publication/overlays/experiments/subq-adapter/subq/subqfake/fake.go",
+      "destination": "experiments/subq-adapter/subq/subqfake/fake.go",
+      "sha256": "ccf9f5016d90fcbc8491098917a1282cff4a90e4337b3776d5deabb1d765e00f"
+    },
+    {
+      "source": "publication/overlays/experiments/subq-adapter/cmd/subq-probe/main.go",
+      "destination": "experiments/subq-adapter/cmd/subq-probe/main.go",
+      "sha256": "d31bc9bd563d3c29107c450df6f32408a159ff15e6460330d4f8faa598e5f120"
+    },
+    {
+      "source": "publication/overlays/experiments/subq-adapter/cmd/subq-fake/main.go",
+      "destination": "experiments/subq-adapter/cmd/subq-fake/main.go",
+      "sha256": "c7efddf2b0b13bc27d894d09f21f0366e724222027197b029d10390597a7e08c"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-vs-rerankers/results/subq-v1/README.md",
+      "destination": "experiments/jev-vs-rerankers/results/subq-v1/README.md",
+      "sha256": "74161dfd2e43f504b6d47f29dc65198d92dc26ac2d23ed8b6df6346361004544"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-vs-rerankers/results/subq-v1/summary.json",
+      "destination": "experiments/jev-vs-rerankers/results/subq-v1/summary.json",
+      "sha256": "51b80c620844ff3630b2878f3bbefba4bb420dfc19c90b1bc52c8e96674ad79a"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/results/state-position-subq-v1/REPORT.md",
+      "destination": "experiments/request-shaping/results/state-position-subq-v1/REPORT.md",
+      "sha256": "4828626a05488b758a1b0216d3317c8cd8dd9ecb95a26d90e71295abe0b71d75"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/results/question-fanout-subq-v1/REPORT.md",
+      "destination": "experiments/request-shaping/results/question-fanout-subq-v1/REPORT.md",
+      "sha256": "95f4bb227b036d465e3ccaab4334b42df51103dabb2b38423eb6187b6d87b32d"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/results/state-packing-subq-v1/REPORT.md",
+      "destination": "experiments/request-shaping/results/state-packing-subq-v1/REPORT.md",
+      "sha256": "b0fe91fa9c2c5a52cae6b5371c068da00d01f0b3d471ce1d1ff32bad41ced84e"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-vs-LLM-for-evals/results/subq-v1/README.md",
+      "destination": "experiments/jev-vs-LLM-for-evals/results/subq-v1/README.md",
+      "sha256": "f8842ed1e74e5ea52fa3cdd96ff68a8e2dc521dc20345a4cd1eef27b431acd02"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-vs-LLM-for-evals/results/subq-v1/summary.json",
+      "destination": "experiments/jev-vs-LLM-for-evals/results/subq-v1/summary.json",
+      "sha256": "bfcc588cc0f9252f4ef19c220a04f5a9bd182b09a177d3e4b59eb17322b655f9"
     }
   ]
 }

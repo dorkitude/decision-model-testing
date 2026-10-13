@@ -11,7 +11,7 @@ wire_version: guide-2026-10-06
 
 **Question:** if you send the exact requests these experiments sent to TypeSafe Jev to OpenAI's Decisions API instead, what changes?
 
-This folder holds the small Go package that makes that possible. It is a provider-neutral translator, not an experiment by itself: every other experiment in this repository was re-run through it on 2026-10-06, and their READMEs report the results (summary [below](#results-across-experiments)).
+This folder holds the small Go package that makes that possible. It is a provider-neutral translator, not an experiment by itself; experiment READMEs report the comparative results (summary [below](#results-across-experiments)).
 
 ## What OpenAI Decisions is
 
@@ -40,7 +40,7 @@ Question order follows the request body, so studies that vary question order kee
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {"background": "#1a1b26", "primaryColor": "#24283b", "primaryTextColor": "#c0caf5", "textColor": "#c0caf5", "primaryBorderColor": "#7aa2f7", "lineColor": "#a9b1d6", "edgeLabelBackground": "#1a1b26"}}}%%
 flowchart LR
-    B["Frozen Jev body<br/>model · state · questions"] --> P["decisions.ParsePlan<br/>context + ordered questions"]
+    B["Shared request content<br/>model · state · questions"] --> P["decisions.ParsePlan<br/>context + ordered questions"]
     P --> E["wire.go Encode<br/>noul → predicate<br/>choice → choice<br/>score → score"]
     E -->|"POST /v1/decisions"| O["OpenAI Decisions<br/>gpt-6-luna"]
     O --> D["wire.go Decode<br/>strict: one answer per question,<br/>allowed options, p in [0, 1]"]
@@ -56,7 +56,7 @@ flowchart LR
     class X score;
 ```
 
-Because every Decisions request is a translation of a byte-identical frozen Jev body, each Decisions answer pairs with the frozen Jev answer to the same request. The Jev results were not re-run; baselines (Qwen, the LLM judges, unfiltered RAG arms) were reused from frozen results.
+Every Decisions answer pairs with the Jev answer to the same byte-identical request content. Both provider arms use the same baselines: Qwen, the LLM judges, and the unfiltered RAG arms.
 
 ## What is in this folder
 
@@ -71,23 +71,23 @@ The module has no dependencies outside the Go standard library.
 
 ## Results across experiments
 
-Same frozen requests, same samples, same scoring. Jev numbers are the frozen published ones; differences are within-experiment and use each experiment's own metric.
+Same requests, same samples, same scoring. Differences are within-experiment and use each experiment's own metric.
 
-| Experiment | Metric | Baseline | Frozen Jev | Decisions | Decisions refusals |
+| Experiment | Metric | Baseline | Jev | Decisions | Decisions refusals |
 |---|---|---:|---:|---:|---:|
-| [Rerankers](../jev-vs-rerankers/README.md#openai-decisions-re-run-2026-10-06) (expected grade) | nDCG@10, 97 TREC queries | Qwen 0.6994 | 0.6917 | **0.7006** | 0 |
-| [LLM judges](../jev-vs-LLM-for-evals/README.md#openai-decisions-re-run-2026-10-06): LLMBar Vanilla | strict agreement | GPT-OSS 87.05% | 87.36% | 79.16% | 0 |
-| [LLM judges](../jev-vs-LLM-for-evals/README.md#openai-decisions-re-run-2026-10-06): JudgeBench vanilla | strict agreement | GPT-OSS 77.10% | 69.03% | **23.87%** | 0 |
-| [LLM judges](../jev-vs-LLM-for-evals/README.md#openai-decisions-re-run-2026-10-06): RewardBench 2 ratings | strict agreement | GPT-OSS 79.56% | 68.12% | 61.32% | 136 requests |
-| [Kimi RAG filtering](../jev-search-result-narrower/README.md#openai-decisions-re-run-2026-10-06) | answers accepted /100, same DeepSeek judge | 97 | 96 | 94 | 0 |
-| [Claude RAG, threshold](../jev-search-result-narrower-claude-RAG/README.md#openai-decisions-re-run-2026-10-06) | answers accepted /100, same DeepSeek judge | 94 | 95 | 94 | 0 |
-| [Claude RAG, categorical](../jev-search-result-narrower-claude-RAG/README.md#openai-decisions-re-run-2026-10-06) | answers accepted /100, same DeepSeek judge | 93 | 94 | 94 | 0 |
-| [Request shaping](../request-shaping/README.md#openai-decisions-re-run-2026-10-06): question fan-out | retest mean \|Δp\| | n/a | 0.0094 | **0.0000** | 0 scored (45 co-asked) |
+| [Rerankers](../jev-vs-rerankers/README.md#provider-comparison) (expected grade) | nDCG@10, 97 TREC queries | Qwen 0.6994 | 0.6917 | **0.7006** | 0 |
+| [LLM judges](../jev-vs-LLM-for-evals/README.md#provider-comparison): LLMBar Vanilla | strict agreement | GPT-OSS 87.05% | 87.36% | 79.16% | 0 |
+| [LLM judges](../jev-vs-LLM-for-evals/README.md#provider-comparison): JudgeBench vanilla | strict agreement | GPT-OSS 77.10% | 69.03% | **23.87%** | 0 |
+| [LLM judges](../jev-vs-LLM-for-evals/README.md#provider-comparison): RewardBench 2 ratings | strict agreement | GPT-OSS 79.56% | 68.12% | 61.32% | 136 requests |
+| [Kimi RAG filtering](../jev-search-result-narrower/README.md#provider-comparison) | answers accepted /100, same DeepSeek judge | 97 | 96 | 94 | 0 |
+| [Claude RAG, threshold](../jev-search-result-narrower-claude-RAG/README.md#provider-comparison) | answers accepted /100, same DeepSeek judge | 94 | 95 | 94 | 0 |
+| [Claude RAG, categorical](../jev-search-result-narrower-claude-RAG/README.md#provider-comparison) | answers accepted /100, same DeepSeek judge | 93 | 94 | 94 | 0 |
+| [Request shaping](../request-shaping/README.md#provider-comparison): question fan-out | retest mean \|Δp\| | n/a | 0.0094 | **0.0000** | 0 scored (45 co-asked) |
 
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {"background": "#1a1b26", "xyChart": {"backgroundColor": "#1a1b26", "titleColor": "#c0caf5", "xAxisLabelColor": "#c0caf5", "xAxisTitleColor": "#c0caf5", "xAxisLineColor": "#a9b1d6", "xAxisTickColor": "#a9b1d6", "yAxisLabelColor": "#c0caf5", "yAxisTitleColor": "#c0caf5", "yAxisLineColor": "#a9b1d6", "yAxisTickColor": "#a9b1d6", "plotColorPalette": "#bb9af7"}}}}%%
 xychart-beta
-    title "Decisions score as % of frozen Jev score, same requests"
+    title "Decisions score as % of Jev score, same requests"
     x-axis ["Rerank nDCG", "LLMBar Vanilla", "JudgeBench", "RB2 ratings", "Kimi RAG", "Claude thresh.", "Claude categ."]
     y-axis "Percent of Jev" 0 --> 110
     bar [101.3, 90.6, 34.6, 90.0, 97.9, 98.9, 100.0]
@@ -109,7 +109,7 @@ go run ./cmd/decisions-probe --url http://127.0.0.1:8787/v1/decisions   # needs 
 
 For the real API, export `OPENAI_API_KEY` (or `OPENAI_DECISIONS_KEY`) and pass `--url https://api.openai.com/v1/decisions`. The default `decisions.Endpoint` is the exe.dev `openai` integration route used for the published runs, which injects the key at the network edge; it is not usable elsewhere. `decisions.LogicalEndpoint` treats the two routes as one endpoint, so receipts do not depend on the route. `--smoke` costs a fraction of a cent. Keys are read from the environment only and are never written to receipts.
 
-To use the package from another Go module, import `github.com/dorkitude/decision-model-testing/experiments/openai-decisions-adapter/decisions` with a `replace` directive pointing at this folder, call `decisions.Client{...}.Do(ctx, jevBody)`, and store `Result.Normalized` where the experiment stores Jev responses. The per-experiment wiring used for the published re-runs will be released in a later export; see [reproduction notes](../../REPRODUCTION.md#openai-decisions-re-runs).
+To use the package from another Go module, import `github.com/dorkitude/decision-model-testing/experiments/openai-decisions-adapter/decisions` with a `replace` directive pointing at this folder, call `decisions.Client{...}.Do(ctx, jevBody)`, and store `Result.Normalized` where the experiment stores Jev responses. See [reproduction notes](../../REPRODUCTION.md#openai-decisions-interface).
 
 ## Limits
 

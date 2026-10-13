@@ -1,6 +1,6 @@
 {
   "data": {
-    "claude_route_note": "Decisions arms answered through Claude Code on a Team subscription; frozen arms used Claude Code Max. Same model and prompts.",
+    "claude_route_note": "Decisions arms answered through Claude Code on a Team subscription; the comparison arms used Claude Code Max. Same model and prompts.",
     "model": "openai-decisions/gpt-6-luna",
     "modes": {
       "categorical": {
@@ -269,7 +269,7 @@
     }
   },
   "generated_by": "publication/decisions-aggregates.py",
-  "note": "100 EnronQA questions, disjoint from the Kimi sample. Same-judge scores use deepseek-v4p1-flash for all three arms (frozen judge model retired). Claude costs are API-equivalent estimates, not subscription charges.",
+  "note": "100 EnronQA questions, disjoint from the Kimi sample. Same-judge scores use deepseek-v4p1-flash for all three arms because the prior judge model was retired. Claude costs are API-equivalent estimates, not subscription charges.",
   "projection": "openai-decisions-aggregates-v1",
   "sources": [
     {

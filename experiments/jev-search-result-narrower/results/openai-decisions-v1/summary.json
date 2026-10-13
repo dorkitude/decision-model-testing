@@ -255,7 +255,7 @@
     ]
   },
   "generated_by": "publication/decisions-aggregates.py",
-  "note": "100 EnronQA questions; baseline and Jev arms are the frozen run. All three arms judged by DeepSeek deepseek-v4p1-flash with the frozen judge prompt because the frozen judge model was retired. Intervals are paired cluster bootstrap by source document, descriptive. Costs are list-price estimates.",
+  "note": "100 EnronQA questions. All three arms were judged by DeepSeek deepseek-v4p1-flash with the same judge prompt because the prior judge model was retired. Intervals are paired cluster bootstrap by source document, descriptive. Costs are list-price estimates.",
   "projection": "openai-decisions-aggregates-v1",
   "sources": [
     {

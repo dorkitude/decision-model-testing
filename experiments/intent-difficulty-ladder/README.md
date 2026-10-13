@@ -1,0 +1,59 @@
+---
+title: Graded intent-routing difficulty
+type: public-release-documentation
+experiment: intent-difficulty-ladder
+author: Kyle Wild
+---
+
+# Graded intent routing
+
+How do decision models and a generative LLM control behave as objectively labeled intent menus grow, and how stable are their labels when the same options move?
+
+The study uses held-out examples from CLINC150 (CC BY 3.0) and BANKING77 (CC BY 4.0). Candidate descriptions and examples come only from each training split. For each dataset, the same 30 test utterances are classified against nested candidate menus, each in a seeded order and its exact reverse with two byte-identical calls per order. CLINC also has a separate 50-case in-scope/out-of-scope stage with a `NONE` option. Strict accuracy counts refusals and invalid labels as wrong. The generative control is Claude Haiku 5.5 with thinking disabled; the decision models are Jev, OpenAI Decisions, and SubQ Snap.
+
+## CLINC150
+
+Each menu-width cell contains 120 correlated requests from 30 independent examples. The `30 + NONE` cell contains 200 requests from 50 independent examples.
+
+| Provider | 2 intents | 4 | 8 | 15 | 30 | 30 + `NONE` |
+|---|---:|---:|---:|---:|---:|---:|
+| Haiku 5.5 | 116/120 | 116/120 | 114/120 | 116/120 | 100/120 | 112/200 |
+| Jev | 118/120 | 118/120 | 118/120 | 118/120 | **120/120** | **192/200** |
+| OpenAI Decisions | **120/120** | 114/120 | 118/120 | 116/120 | 114/120 | **192/200** |
+| **SubQ Snap** | **120/120** | **120/120** | **118/120** | **116/120** | **116/120** | **192/200** |
+
+On CLINC's OOS stage, SubQ selected `NONE` correctly for 94/100 native-OOS requests and selected the correct intent for 98/100 in-scope requests. Jev and Decisions also scored 192/200 overall; Haiku scored 112/200. Menu width is not strictly monotonic difficulty—several rows improve or fluctuate—so these data do not define a universal threshold.
+
+## BANKING77
+
+Each cell contains 120 correlated requests from the same 30 independent examples.
+
+| Provider | 2 intents | 4 | 8 | 16 | 32 | 77 |
+|---|---:|---:|---:|---:|---:|---:|
+| Haiku 5.5 | 107/120 | 106/120 | 105/120 | 97/120 | 98/120 | 90/120 |
+| Jev | 112/120 | 112/120 | 108/120 | 108/120 | 108/120 | 108/120 |
+| OpenAI Decisions | **114/120** | 108/120 | 108/120 | **110/120** | **108/120** | **110/120** |
+| **SubQ Snap** | **110/120** | **106/120** | **108/120** | **106/120** | **106/120** | **108/120** |
+
+At 77 intents, SubQ equaled Jev and trailed Decisions by two answers in this sample. With only 30 independent examples per width and multiple inspected contrasts, the result is descriptive rather than a general provider ranking.
+
+## Ordering consistency
+
+Ten cases in each of three settings—CLINC30, CLINC30+`NONE`, and BANKING77—receive ten byte-identical calls and ten distinct seeded candidate-order shuffles. A change means the selected label differs, not necessarily that it becomes wrong.
+
+| Provider | Changed label on identical calls | Changed label after shuffle |
+|---|---:|---:|
+| Haiku 5.5 | 51/270 | 116/298 |
+| Jev | 1/269 | 8/299 |
+| OpenAI Decisions | 0/270 | 5/299 |
+| **SubQ Snap** | **0/270** | **3/300** |
+
+All three SubQ shuffle changes occur on one in-scope CLINC+`NONE` case. Ordinary CLINC, BANKING77, and all 50 native-OOS shuffle pairs have no SubQ label flips. Its reported gold-option probability still moves when candidates move: mean absolute changes are 0.025 on CLINC30, 0.049 on CLINC+`NONE`, and 0.038 on BANKING77. Stable labels therefore do not imply invariant confidence.
+
+SubQ completed 2,120 benchmark calls without a refusal, retry, transport failure, or invalid answer. Its p50/p95 HTTP round trips were 175/216 ms for CLINC, 178/229 ms for BANKING77, and 183/245 ms for ordering consistency. At the published $0.05 per million input-token price, the calls cost an estimated **$0.1504** in total.
+
+## Evidence and limits
+
+[Source-free CLINC aggregates](results/clinc.json), [BANKING77 aggregates](results/banking.json), and [ordering aggregates](results/ordering.json) include all public provider arms, plan hashes, case-level intervals, reliability, usage, and latency. Dataset text, requests, and raw provider receipts are excluded. Public benchmark overlap with model training is possible, the provider interfaces differ, and the small samples do not establish statistical equivalence or architectural superiority.
+
+Upstream sources: [CLINC150](https://github.com/clinc/oos-eval) (Larson et al., EMNLP 2019) and [BANKING77](https://github.com/PolyAI-LDN/task-specific-datasets) (Casanueva et al., 2020).

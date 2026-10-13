@@ -2133,7 +2133,7 @@
     "wire_version": "guide-2026-10-06"
   },
   "generated_by": "publication/decisions-aggregates.py",
-  "note": "Decisions sent the frozen Jev arm's typed questions; Jev and the four LLM judges are frozen. Strict score counts any required-stage failure (including a refused required stage) as wrong. Accounting USD for Decisions includes reused frozen GPT-OSS helper calls on six LLMBar methods.",
+  "note": "Decision-model providers received the same typed question content. Strict score counts any required-stage failure (including a refused required stage) as wrong. Decisions accounting includes shared GPT-OSS helper calls on six LLMBar methods.",
   "projection": "openai-decisions-aggregates-v1",
   "sources": [
     {

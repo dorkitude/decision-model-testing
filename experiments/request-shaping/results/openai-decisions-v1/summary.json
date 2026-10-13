@@ -13,7 +13,7 @@
               "Crosses 0.5": "0.8990",
               "ECE": "0.2904",
               "Holm p": "—",
-              "Jev Δ vs Jev solo (frozen)": "—",
+              "Jev Δ vs Jev solo": "—",
               "Mean \\": "—",
               "Mean Δp": "—",
               "Questions": "1",
@@ -29,7 +29,7 @@
               "Crosses 0.5": "0.8977",
               "ECE": "0.2904",
               "Holm p": "—",
-              "Jev Δ vs Jev solo (frozen)": "0.0099",
+              "Jev Δ vs Jev solo": "0.0099",
               "Mean \\": "0.0000",
               "Mean Δp": "+0.0000 [-0.0159, +0.0136]",
               "Questions": "3",
@@ -45,7 +45,7 @@
               "Crosses 0.5": "0.8974",
               "ECE": "0.2904",
               "Holm p": "1.0000",
-              "Jev Δ vs Jev solo (frozen)": "0.0097",
+              "Jev Δ vs Jev solo": "0.0097",
               "Mean \\": "0.0000",
               "Mean Δp": "-0.0028 [-0.0115, +0.0053]",
               "Questions": "3",
@@ -61,7 +61,7 @@
               "Crosses 0.5": "0.8982",
               "ECE": "0.2904",
               "Holm p": "1.0000",
-              "Jev Δ vs Jev solo (frozen)": "0.0097",
+              "Jev Δ vs Jev solo": "0.0097",
               "Mean \\": "0.0000",
               "Mean Δp": "+0.0069 [-0.0023, +0.0164]",
               "Questions": "3",
@@ -77,7 +77,7 @@
               "Crosses 0.5": "0.8980",
               "ECE": "0.2904",
               "Holm p": "1.0000",
-              "Jev Δ vs Jev solo (frozen)": "0.0093",
+              "Jev Δ vs Jev solo": "0.0093",
               "Mean \\": "0.0000",
               "Mean Δp": "+0.0021 [-0.0064, +0.0107]",
               "Questions": "8",
@@ -93,7 +93,7 @@
               "Crosses 0.5": "0.8979",
               "ECE": "0.2904",
               "Holm p": "1.0000",
-              "Jev Δ vs Jev solo (frozen)": "0.0098",
+              "Jev Δ vs Jev solo": "0.0098",
               "Mean \\": "0.0000",
               "Mean Δp": "-0.0004 [-0.0095, +0.0084]",
               "Questions": "8",
@@ -109,7 +109,7 @@
               "Crosses 0.5": "0.8982",
               "ECE": "0.2904",
               "Holm p": "1.0000",
-              "Jev Δ vs Jev solo (frozen)": "0.0093",
+              "Jev Δ vs Jev solo": "0.0093",
               "Mean \\": "0.0000",
               "Mean Δp": "-0.0028 [-0.0231, +0.0118]",
               "Questions": "16",
@@ -125,7 +125,7 @@
               "Crosses 0.5": "0.8984",
               "ECE": "0.2904",
               "Holm p": "1.0000",
-              "Jev Δ vs Jev solo (frozen)": "0.0093",
+              "Jev Δ vs Jev solo": "0.0093",
               "Mean \\": "0.0000",
               "Mean Δp": "+0.0013 [-0.0085, +0.0115]",
               "Questions": "16",
@@ -141,7 +141,7 @@
               "Crosses 0.5": "0.8981",
               "ECE": "0.2904",
               "Holm p": "1.0000",
-              "Jev Δ vs Jev solo (frozen)": "0.0095",
+              "Jev Δ vs Jev solo": "0.0095",
               "Mean \\": "0.0000",
               "Mean Δp": "+0.0086 [+0.0023, +0.0158]",
               "Questions": "16",
@@ -157,7 +157,7 @@
               "Crosses 0.5": "0.8968",
               "ECE": "0.2904",
               "Holm p": "1.0000",
-              "Jev Δ vs Jev solo (frozen)": "0.0098",
+              "Jev Δ vs Jev solo": "0.0098",
               "Mean \\": "0.0000",
               "Mean Δp": "-0.0089 [-0.0214, +0.0007]",
               "Questions": "16",
@@ -211,42 +211,42 @@
               "useful > related": "20.35%"
             },
             {
-              "Arm": "Jev (frozen) `solo",
+              "Arm": "Jev `solo",
               "Items": "2000",
               "by > 0.1": "0.35%",
               "direct > useful": "2.65%",
               "useful > related": "2.75%"
             },
             {
-              "Arm": "Jev (frozen) `ordinal-joint",
+              "Arm": "Jev `ordinal-joint",
               "Items": "2000",
               "by > 0.1": "0.20%",
               "direct > useful": "3.40%",
               "useful > related": "2.55%"
             },
             {
-              "Arm": "Jev (frozen) `fan-3-rel-first",
+              "Arm": "Jev `fan-3-rel-first",
               "Items": "2000",
               "by > 0.1": "0.25%",
               "direct > useful": "2.85%",
               "useful > related": "2.65%"
             },
             {
-              "Arm": "Jev (frozen) `fan-8-rel-first",
+              "Arm": "Jev `fan-8-rel-first",
               "Items": "2000",
               "by > 0.1": "0.30%",
               "direct > useful": "2.65%",
               "useful > related": "2.50%"
             },
             {
-              "Arm": "Jev (frozen) `fan-16-rel-first",
+              "Arm": "Jev `fan-16-rel-first",
               "Items": "2000",
               "by > 0.1": "0.15%",
               "direct > useful": "2.50%",
               "useful > related": "2.50%"
             },
             {
-              "Arm": "Jev (frozen) `fan-16-rel-last",
+              "Arm": "Jev `fan-16-rel-last",
               "Items": "2000",
               "by > 0.1": "0.40%",
               "direct > useful": "2.40%",
@@ -263,14 +263,14 @@
             },
             {
               "": "1.20%",
-              "Comparison": "Frozen Jev retest vs. frozen Jev solo (`useful`)",
+              "Comparison": "Jev retest vs. Jev solo (`useful`)",
               "Decisions": "2000",
               "Mean \\": "0.0094",
               "Δp\\": "-0.0003"
             },
             {
               "": "11.20%",
-              "Comparison": "Decisions solo vs. frozen Jev solo (cross-model, not drift)",
+              "Comparison": "Decisions solo vs. Jev solo (cross-model)",
               "Decisions": "2000",
               "Mean \\": "0.1018",
               "Δp\\": "+0.0549"
@@ -304,7 +304,7 @@
               "Δp\\": "-0.0462"
             }
           ],
-          "OpenAI Decisions versus frozen Jev, same requests": [
+          "OpenAI Decisions versus Jev, same requests": [
             {
               "": "9.63%",
               "Arm": "fan-16-rel-first",
@@ -720,7 +720,7 @@
               "Distinct values": "100",
               "Exactly 0 or 1": "0.07%",
               "Multiples of 0.01": "100.00%",
-              "Provider": "Jev (frozen)",
+              "Provider": "Jev",
               "Tied within query": "76.18%"
             }
           ]
@@ -959,7 +959,7 @@
             },
             {
               "": "2.80%",
-              "Comparison": "Frozen Jev retest vs. frozen Jev atomic (same subset, 2026-09-25)",
+              "Comparison": "Jev retest vs. Jev atomic (same subset)",
               "Decisions": "2000",
               "Mean \\": "0.0094",
               "Mean Δp": "1.05%",
@@ -967,7 +967,7 @@
             },
             {
               "": "41.91%",
-              "Comparison": "Decisions atomic vs. frozen Jev atomic (cross-model, not drift)",
+              "Comparison": "Decisions atomic vs. Jev atomic (cross-model)",
               "Decisions": "9700",
               "Mean \\": "0.0889",
               "Mean Δp": "8.91%",
@@ -975,14 +975,14 @@
             },
             {
               "": "41.69%",
-              "Comparison": "Decisions atomic vs. frozen Jev 2026-09-18 `trec-v1` run (cross-model, not drift)",
+              "Comparison": "Decisions atomic vs. Jev reranker reference (cross-model)",
               "Decisions": "9700",
               "Mean \\": "0.0885",
               "Mean Δp": "8.81%",
               "Δp\\": "+0.0313"
             }
           ],
-          "OpenAI Decisions versus frozen Jev, same requests": [
+          "OpenAI Decisions versus Jev, same requests": [
             {
               "": "8.91%",
               "Arm": "atomic",
@@ -1267,7 +1267,7 @@
               "Arm": "pack-10-p1",
               "Crosses 0.5": "+0.0287 [+0.0114, +0.0455]",
               "ECE": "0.0931",
-              "Jev nDCG@10 (frozen)": "0.9001",
+              "Jev nDCG@10": "0.9001",
               "Jev Δ vs Jev atomic": "0.1694",
               "Mean \\": "0.1467",
               "Mean Δp": "0.7068",
@@ -1282,7 +1282,7 @@
               "Arm": "ref-index-10` [1 refused, excluded]",
               "Crosses 0.5": "+0.0253 [+0.0095, +0.0420]",
               "ECE": "0.1024",
-              "Jev nDCG@10 (frozen)": "0.8960",
+              "Jev nDCG@10": "0.8960",
               "Jev Δ vs Jev atomic": "0.1882",
               "Mean \\": "0.1637",
               "Mean Δp": "0.7034",
@@ -1297,7 +1297,7 @@
               "Arm": "ref-id-10",
               "Crosses 0.5": "+0.0295 [+0.0123, +0.0471]",
               "ECE": "0.1053",
-              "Jev nDCG@10 (frozen)": "0.9020",
+              "Jev nDCG@10": "0.9020",
               "Jev Δ vs Jev atomic": "0.1744",
               "Mean \\": "0.1477",
               "Mean Δp": "0.7076",
@@ -1312,7 +1312,7 @@
               "Arm": "swap-10",
               "Crosses 0.5": "+0.0260 [+0.0079, +0.0443]",
               "ECE": "0.0921",
-              "Jev nDCG@10 (frozen)": "0.8984",
+              "Jev nDCG@10": "0.8984",
               "Jev Δ vs Jev atomic": "0.1691",
               "Mean \\": "0.1464",
               "Mean Δp": "0.7042",
@@ -1327,7 +1327,7 @@
               "Arm": "cross-4",
               "Crosses 0.5": "+0.0166 [+0.0046, +0.0293]",
               "ECE": "0.2081",
-              "Jev nDCG@10 (frozen)": "0.8900",
+              "Jev nDCG@10": "0.8900",
               "Jev Δ vs Jev atomic": "0.2051",
               "Mean \\": "0.1033",
               "Mean Δp": "0.6948",
@@ -1342,7 +1342,7 @@
               "Arm": "cross-20",
               "Crosses 0.5": "+0.0201 [+0.0096, +0.0309]",
               "ECE": "0.2311",
-              "Jev nDCG@10 (frozen)": "0.8889",
+              "Jev nDCG@10": "0.8889",
               "Jev Δ vs Jev atomic": "0.2287",
               "Mean \\": "0.1124",
               "Mean Δp": "0.6982",
@@ -1820,7 +1820,7 @@
               "Distinct values": "100",
               "Exactly 0 or 1": "0.01%",
               "Multiples of 0.01": "100.00%",
-              "Provider": "Jev (frozen)",
+              "Provider": "Jev",
               "Tied within query": "77.48%"
             }
           ]
@@ -2095,7 +2095,7 @@
             {
               "AUC": "0.8452",
               "ECE": "0.4016",
-              "Jev AUC (frozen)": "0.2654",
+              "Jev AUC": "0.2654",
               "Mean p, non-relevant": "0.6372",
               "Mean p, relevant": "0.9449",
               "Mean Δp / mean \\": "—",
@@ -2108,7 +2108,7 @@
             {
               "AUC": "0.8328",
               "ECE": "0.4001",
-              "Jev AUC (frozen)": "0.2863",
+              "Jev AUC": "0.2863",
               "Mean p, non-relevant": "0.6375",
               "Mean p, relevant": "0.9399",
               "Mean Δp / mean \\": "—",
@@ -2121,7 +2121,7 @@
             {
               "AUC": "0.8276",
               "ECE": "0.3959",
-              "Jev AUC (frozen)": "0.2910",
+              "Jev AUC": "0.2910",
               "Mean p, non-relevant": "0.6348",
               "Mean p, relevant": "0.9327",
               "Mean Δp / mean \\": "—",
@@ -2134,7 +2134,7 @@
             {
               "AUC": "0.8239",
               "ECE": "0.3870",
-              "Jev AUC (frozen)": "0.2911",
+              "Jev AUC": "0.2911",
               "Mean p, non-relevant": "0.6259",
               "Mean p, relevant": "0.9237",
               "Mean Δp / mean \\": "—",
@@ -2147,7 +2147,7 @@
             {
               "AUC": "0.8224",
               "ECE": "0.3970",
-              "Jev AUC (frozen)": "0.2820",
+              "Jev AUC": "0.2820",
               "Mean p, non-relevant": "0.6400",
               "Mean p, relevant": "0.9258",
               "Mean Δp / mean \\": "—",
@@ -2160,7 +2160,7 @@
             {
               "AUC": "0.8317",
               "ECE": "0.3937",
-              "Jev AUC (frozen)": "0.2561",
+              "Jev AUC": "0.2561",
               "Mean p, non-relevant": "0.6314",
               "Mean p, relevant": "0.9330",
               "Mean Δp / mean \\": "—",
@@ -2173,7 +2173,7 @@
             {
               "AUC": "0.8243",
               "ECE": "0.3861",
-              "Jev AUC (frozen)": "0.2769",
+              "Jev AUC": "0.2769",
               "Mean p, non-relevant": "0.6291",
               "Mean p, relevant": "0.9151",
               "Mean Δp / mean \\": "—",
@@ -2186,7 +2186,7 @@
             {
               "AUC": "0.8280",
               "ECE": "0.3727",
-              "Jev AUC (frozen)": "0.2775",
+              "Jev AUC": "0.2775",
               "Mean p, non-relevant": "0.6136",
               "Mean p, relevant": "0.9056",
               "Mean Δp / mean \\": "—",
@@ -2199,7 +2199,7 @@
             {
               "AUC": "0.8248",
               "ECE": "0.3670",
-              "Jev AUC (frozen)": "0.2767",
+              "Jev AUC": "0.2767",
               "Mean p, non-relevant": "0.6078",
               "Mean p, relevant": "0.9000",
               "Mean Δp / mean \\": "—",
@@ -2212,7 +2212,7 @@
             {
               "AUC": "0.8327",
               "ECE": "0.3857",
-              "Jev AUC (frozen)": "0.2679",
+              "Jev AUC": "0.2679",
               "Mean p, non-relevant": "0.6305",
               "Mean p, relevant": "0.9111",
               "Mean Δp / mean \\": "—",
@@ -2223,7 +2223,7 @@
               "Δp\\": "0.8890"
             }
           ],
-          "OpenAI Decisions versus frozen Jev, same requests": [
+          "OpenAI Decisions versus Jev, same requests": [
             {
               "": "19.05%",
               "Arm": "needle-10-25%",
@@ -2595,7 +2595,7 @@
             {
               "AUC": "0.8633",
               "ECE": "0.2828",
-              "Jev AUC (frozen)": "0.2430",
+              "Jev AUC": "0.2430",
               "Mean p, non-relevant": "0.5072",
               "Mean p, relevant": "0.8478",
               "Mean Δp / mean \\": "-0.0075 / 0.1253",
@@ -2608,7 +2608,7 @@
             {
               "AUC": "0.8670",
               "ECE": "0.2881",
-              "Jev AUC (frozen)": "0.2466",
+              "Jev AUC": "0.2466",
               "Mean p, non-relevant": "0.5136",
               "Mean p, relevant": "0.8507",
               "Mean Δp / mean \\": "-0.0023 / 0.1408",
@@ -2621,7 +2621,7 @@
             {
               "AUC": "0.8660",
               "ECE": "0.2749",
-              "Jev AUC (frozen)": "0.2547",
+              "Jev AUC": "0.2547",
               "Mean p, non-relevant": "0.5017",
               "Mean p, relevant": "0.8353",
               "Mean Δp / mean \\": "-0.0155 / 0.1502",
@@ -2634,7 +2634,7 @@
             {
               "AUC": "0.8623",
               "ECE": "0.2730",
-              "Jev AUC (frozen)": "0.2572",
+              "Jev AUC": "0.2572",
               "Mean p, non-relevant": "0.5006",
               "Mean p, relevant": "0.8315",
               "Mean Δp / mean \\": "-0.0174 / 0.1483",
@@ -2647,7 +2647,7 @@
             {
               "AUC": "0.8581",
               "ECE": "0.2576",
-              "Jev AUC (frozen)": "0.2532",
+              "Jev AUC": "0.2532",
               "Mean p, non-relevant": "0.4787",
               "Mean p, relevant": "0.8289",
               "Mean Δp / mean \\": "-0.0328 / 0.1368",
@@ -2660,7 +2660,7 @@
             {
               "AUC": "0.8569",
               "ECE": "0.2659",
-              "Jev AUC (frozen)": "0.2317",
+              "Jev AUC": "0.2317",
               "Mean p, non-relevant": "0.4922",
               "Mean p, relevant": "0.8273",
               "Mean Δp / mean \\": "-0.0244 / 0.1369",
@@ -2673,7 +2673,7 @@
             {
               "AUC": "0.8529",
               "ECE": "0.2642",
-              "Jev AUC (frozen)": "0.2451",
+              "Jev AUC": "0.2451",
               "Mean p, non-relevant": "0.4983",
               "Mean p, relevant": "0.8103",
               "Mean Δp / mean \\": "-0.0262 / 0.1711",
@@ -2686,7 +2686,7 @@
             {
               "AUC": "0.8501",
               "ECE": "0.2583",
-              "Jev AUC (frozen)": "0.2456",
+              "Jev AUC": "0.2456",
               "Mean p, non-relevant": "0.4922",
               "Mean p, relevant": "0.8049",
               "Mean Δp / mean \\": "-0.0320 / 0.1770",
@@ -2699,7 +2699,7 @@
             {
               "AUC": "0.8617",
               "ECE": "0.2498",
-              "Jev AUC (frozen)": "0.2434",
+              "Jev AUC": "0.2434",
               "Mean p, non-relevant": "0.4796",
               "Mean p, relevant": "0.8043",
               "Mean Δp / mean \\": "-0.0405 / 0.1747",
@@ -2712,7 +2712,7 @@
             {
               "AUC": "0.8562",
               "ECE": "0.2132",
-              "Jev AUC (frozen)": "0.2405",
+              "Jev AUC": "0.2405",
               "Mean p, non-relevant": "0.4378",
               "Mean p, relevant": "0.7776",
               "Mean Δp / mean \\": "-0.0772 / 0.1724",
@@ -2727,7 +2727,7 @@
             {
               "AUC": "0.8897",
               "ECE": "0.1986",
-              "Jev AUC (frozen)": "0.2466",
+              "Jev AUC": "0.2466",
               "Mean p, non-relevant": "0.4045",
               "Mean p, relevant": "0.7993",
               "Mean Δp / mean \\": "-0.0918 / 0.1605",
@@ -2740,7 +2740,7 @@
             {
               "AUC": "0.9003",
               "ECE": "0.1676",
-              "Jev AUC (frozen)": "0.2810",
+              "Jev AUC": "0.2810",
               "Mean p, non-relevant": "0.3709",
               "Mean p, relevant": "0.7734",
               "Mean Δp / mean \\": "-0.1228 / 0.1851",
@@ -2753,7 +2753,7 @@
             {
               "AUC": "0.8991",
               "ECE": "0.1589",
-              "Jev AUC (frozen)": "0.2868",
+              "Jev AUC": "0.2868",
               "Mean p, non-relevant": "0.3609",
               "Mean p, relevant": "0.7594",
               "Mean Δp / mean \\": "-0.1341 / 0.1977",
@@ -2766,7 +2766,7 @@
             {
               "AUC": "0.8948",
               "ECE": "0.1657",
-              "Jev AUC (frozen)": "0.2856",
+              "Jev AUC": "0.2856",
               "Mean p, non-relevant": "0.3734",
               "Mean p, relevant": "0.7631",
               "Mean Δp / mean \\": "-0.1246 / 0.1917",
@@ -2779,7 +2779,7 @@
             {
               "AUC": "0.8916",
               "ECE": "0.1641",
-              "Jev AUC (frozen)": "0.2838",
+              "Jev AUC": "0.2838",
               "Mean p, non-relevant": "0.3755",
               "Mean p, relevant": "0.7543",
               "Mean Δp / mean \\": "-0.1262 / 0.1989",
@@ -3130,7 +3130,7 @@
               "Distinct values": "99",
               "Exactly 0 or 1": "0.00%",
               "Multiples of 0.01": "100.00%",
-              "Provider": "Jev (frozen)",
+              "Provider": "Jev",
               "Tied within query": "63.69%"
             }
           ],
@@ -3139,7 +3139,7 @@
               "AUC": "0.8726",
               "Brier": "0.2520",
               "ECE": "0.2904",
-              "State order": "passage, then question (frozen)",
+              "State order": "passage, then question",
               "Targets": "1202"
             },
             {
@@ -3153,14 +3153,14 @@
               "AUC": "0.8970",
               "Brier": "0.1895",
               "ECE": "0.2250",
-              "State order": "Jev (frozen): passage, then question",
+              "State order": "Jev: passage, then question",
               "Targets": "1202"
             },
             {
               "AUC": "0.9032",
               "Brier": "0.1891",
               "ECE": "0.2204",
-              "State order": "Jev (frozen): question, then passage",
+              "State order": "Jev: question, then passage",
               "Targets": "1202"
             }
           ]
@@ -3477,7 +3477,7 @@
     "wire_version": "guide-2026-10-06"
   },
   "generated_by": "publication/decisions-aggregates.py",
-  "note": "Every arm of the three frozen request-shaping studies re-run on Decisions with the frozen Jev request bodies. Tables are parsed from the generated reports, which also carry the frozen Jev columns.",
+  "note": "All three providers use the same request-shaping plans. Tables are parsed from the generated provider reports and include the corresponding Jev columns.",
   "projection": "openai-decisions-aggregates-v1",
   "sources": [
     {

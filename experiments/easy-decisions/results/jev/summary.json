@@ -1,0 +1,148 @@
+{
+  "provider": "jev",
+  "planned_requests": 560,
+  "attempted_requests": 560,
+  "total_attempts": 560,
+  "answered": 560,
+  "correct": 560,
+  "accuracy": 1,
+  "consistent_pairs": 280,
+  "complete_pairs": 280,
+  "cross_perturbation_identity_consistency": {
+    "choice": {
+      "complete": 20,
+      "consistent": 20,
+      "rate": 1
+    },
+    "lookup": {
+      "complete": 20,
+      "consistent": 20,
+      "rate": 1
+    }
+  },
+  "first_shown_selection_rate_by_gold": {
+    "X": {
+      "answered": 160,
+      "selected": 80,
+      "rate": 0.5
+    },
+    "Y": {
+      "answered": 160,
+      "selected": 80,
+      "rate": 0.5
+    },
+    "overall_balanced": {
+      "answered": 320,
+      "selected": 160,
+      "rate": 0.5
+    }
+  },
+  "first_option_selection_rate_by_gold": {
+    "X": {
+      "answered": 160,
+      "selected": 80,
+      "rate": 0.5
+    },
+    "Y": {
+      "answered": 160,
+      "selected": 80,
+      "rate": 0.5
+    },
+    "overall_balanced": {
+      "answered": 320,
+      "selected": 160,
+      "rate": 0.5
+    }
+  },
+  "refusals": 0,
+  "errors": 0,
+  "cost_usd": 0.011171999999999925,
+  "mean_latency_seconds": 0.10337806016964284,
+  "by_family": {
+    "choice": {
+      "N": 320,
+      "Answered": 320,
+      "Correct": 320,
+      "Refused": 0,
+      "Errors": 0
+    },
+    "lookup": {
+      "N": 240,
+      "Answered": 240,
+      "Correct": 240,
+      "Refused": 0,
+      "Errors": 0
+    }
+  },
+  "correct_candidate_position": {
+    "first": {
+      "N": 160,
+      "Answered": 160,
+      "Correct": 160,
+      "Refused": 0,
+      "Errors": 0
+    },
+    "second": {
+      "N": 160,
+      "Answered": 160,
+      "Correct": 160,
+      "Refused": 0,
+      "Errors": 0
+    }
+  },
+  "lookup_target_position": {
+    "end": {
+      "N": 80,
+      "Answered": 80,
+      "Correct": 80,
+      "Refused": 0,
+      "Errors": 0
+    },
+    "middle": {
+      "N": 80,
+      "Answered": 80,
+      "Correct": 80,
+      "Refused": 0,
+      "Errors": 0
+    },
+    "start": {
+      "N": 80,
+      "Answered": 80,
+      "Correct": 80,
+      "Refused": 0,
+      "Errors": 0
+    }
+  },
+  "options_array_order": {
+    "XY": {
+      "N": 160,
+      "Answered": 160,
+      "Correct": 160,
+      "Refused": 0,
+      "Errors": 0
+    },
+    "YX": {
+      "N": 160,
+      "Answered": 160,
+      "Correct": 160,
+      "Refused": 0,
+      "Errors": 0
+    }
+  },
+  "primary_question_order": {
+    "first": {
+      "N": 280,
+      "Answered": 280,
+      "Correct": 280,
+      "Refused": 0,
+      "Errors": 0
+    },
+    "last": {
+      "N": 280,
+      "Answered": 280,
+      "Correct": 280,
+      "Refused": 0,
+      "Errors": 0
+    }
+  }
+}

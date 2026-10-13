@@ -15,5 +15,6 @@ The MIT license covers this project's original code, not datasets, model outputs
 
 - TREC DL / MS MARCO passages used by the request-shaping studies are the same pinned RankLLM candidates and NIST qrels as the reranker study, downloaded locally by `prepare`; no passage text is bundled.
 - OpenAI Decisions: results from OpenAI's Decisions API (`gpt-6-luna`) appear only as aggregate measurements. Raw provider responses and receipts are not redistributed. The adapter is original code written against OpenAI's public guide; it does not include OpenAI code.
+- SubQ: results from the SubQ Snap decisions API (`subq-snap-preview`) appear only as aggregate measurements. Raw provider responses and receipts are not redistributed. The client is original code written against SubQ's documented Jev-compatible interface; it does not include SubQ code.
 
 Third-party prompt/config files retain their original extensions and bytes; they are runtime source artifacts, not maintained prose documentation. No upstream project or author endorses this study.
