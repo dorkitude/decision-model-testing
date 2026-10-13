@@ -1,0 +1,157 @@
+{
+  "answering_pipeline_cost_estimates": [
+    {
+      "baseline_usd_run_v1": "5.0632299",
+      "id": "primary",
+      "jev_filtered_usd_run_v1": "1.650866726",
+      "subq_filter_usd": "0.08774075",
+      "subq_filtered_usd": "1.59794755",
+      "subq_filtered_usd_per_question": "0.0159794755",
+      "subq_usd_is_placeholder": false
+    },
+    {
+      "baseline_usd_run_v1": "5.0632299",
+      "id": "no_cache",
+      "jev_filtered_usd_run_v1": "1.681563026",
+      "subq_filter_usd": "0.08774075",
+      "subq_filtered_usd": "1.59994555",
+      "subq_filtered_usd_per_question": "0.0159994555",
+      "subq_usd_is_placeholder": false
+    },
+    {
+      "baseline_usd_run_v1": "5.0178888",
+      "id": "qwen_default_cache",
+      "jev_filtered_usd_run_v1": "1.605160726",
+      "subq_filter_usd": "0.08774075",
+      "subq_filtered_usd": "1.55224155",
+      "subq_filtered_usd_per_question": "0.0155224155",
+      "subq_usd_is_placeholder": false
+    }
+  ],
+  "filter_resources": {
+    "attempts": 407,
+    "failed_attempts": 0,
+    "http_429": 0,
+    "input_tokens": 1754815,
+    "ok_requests": 407,
+    "output_tokens": 0,
+    "p50_round_trip_seconds": 0.307405347,
+    "p90_round_trip_seconds": 0.355040899,
+    "p99_round_trip_seconds": 0.443374222,
+    "requests": 407,
+    "retries": 0,
+    "service_limits_not_sent": 0,
+    "usd": 0.08774075,
+    "usd_per_mtok_input": 0.05,
+    "usd_per_mtok_output": 0
+  },
+  "filter_vs_jev_on_identical_inputs": {
+    "cohens_kappa": 0.8376763612183111,
+    "filter_sets": 101,
+    "id": "filter-comparison",
+    "jev_kept": 307,
+    "jev_only": 60,
+    "keep_agreement": 0.9603960396039604,
+    "kept_by_both": 247,
+    "kept_by_neither": 1693,
+    "mean_abs_probability_difference": 0.07266644738168263,
+    "pages": 407,
+    "results_scored": 2020,
+    "subq_kept": 267,
+    "subq_only": 20
+  },
+  "filtering": {
+    "calls": 101,
+    "initial_gold_source_hit_after_filter": 100,
+    "initial_gold_source_hit_before_filter": 100,
+    "pages": 407,
+    "results_kept": 267,
+    "results_scored": 2020,
+    "retained_fraction": 0.13217821782178218
+  },
+  "jev_judge_scores": [
+    {
+      "accuracy": 0.9,
+      "arm": "baseline",
+      "correct": 90,
+      "judge": "jev",
+      "n": 100,
+      "source": "frozen run-v1"
+    },
+    {
+      "accuracy": 0.94,
+      "arm": "jev_filtered",
+      "correct": 94,
+      "judge": "jev",
+      "n": 100,
+      "source": "frozen run-v1"
+    },
+    {
+      "accuracy": 0.94,
+      "arm": "subq_filtered",
+      "correct": 94,
+      "judge": "jev",
+      "n": 100,
+      "source": "this run"
+    }
+  ],
+  "judge_scope": "Jev scores are directly comparable across all three arms. The SubQ arm's DeepSeek judge version differs from the frozen controls and is excluded.",
+  "latency": {
+    "kimi_question_to_final_answer": {
+      "failed_attempts": 0,
+      "kimi_attempts": 101,
+      "mean_s": 5.4722705752600005,
+      "median_s": 4.691385472,
+      "n": 100,
+      "p95_s": 9.393409737
+    },
+    "subq_failed_attempts": 0,
+    "subq_filter_page_round_trip": {
+      "mean_s": 0.30680627326535626,
+      "median_s": 0.307405347,
+      "n": 407,
+      "p95_s": 0.370507362
+    }
+  },
+  "model": "subq-snap-preview",
+  "paired_comparisons": [
+    {
+      "baseline_only_correct": 0,
+      "cluster": "source_document_id",
+      "cluster_bootstrap_95_percent_pp": [
+        1,
+        8
+      ],
+      "comparison": "subq_filtered_minus_baseline",
+      "difference_pp": 4,
+      "judge": "jev",
+      "resamples": 5000,
+      "subq_only_correct": 4
+    },
+    {
+      "cluster": "source_document_id",
+      "cluster_bootstrap_95_percent_pp": [
+        -4,
+        4
+      ],
+      "comparison": "subq_filtered_minus_jev_filtered",
+      "difference_pp": 0,
+      "jev_filtered_only_correct": 2,
+      "judge": "jev",
+      "resamples": 5000,
+      "subq_only_correct": 2
+    }
+  ],
+  "projection": "subq-public-aggregates-v1",
+  "questions": 100,
+  "sources": [
+    {
+      "path": "experiments/rag-filtering-kimi/results/run-subq-v1/summary.jsonl",
+      "sha256": "296d6615be8cb66b2cb6f1f0fe6de2ff6aaa75851fb960a20cb3a903a53cf141"
+    },
+    {
+      "path": "experiments/rag-filtering-kimi/results/cost-estimate-subq-v1/summary.jsonl",
+      "sha256": "9e2ef19f6c4382fad587c539fa265664fb62c47a3a383a2971a9378d67de7155"
+    }
+  ]
+}

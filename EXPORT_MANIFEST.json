@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "source_commit": "ad77f7eaefe30c23fac665ab6ebbfe91c3286083",
+  "source_commit": "63240e0",
   "files": [
     {
       "source": "publication/overlays/.github/workflows/ci.yml",
@@ -15,7 +15,7 @@
     {
       "source": "publication/overlays/AGENTS.md",
       "destination": "AGENTS.md",
-      "sha256": "b1ed6fc352fce94532adb139a6f58980abd998acd574cc4a97d7ea36725768eb"
+      "sha256": "79866c0037b8d76326e349d98abf1b0bffbfa52b95880f84974a04e51bf9af6f"
     },
     {
       "source": "LICENSE",
@@ -25,12 +25,12 @@
     {
       "source": "publication/overlays/README.md",
       "destination": "README.md",
-      "sha256": "00937b6b1070f42913aa55b153b90aeb84b2d6dc499d60ecbdbe08e46e35cfc9"
+      "sha256": "3082b3ee1d2e5521da55c99cf2d2d18d430b068854ad784246359ef6e25b5287"
     },
     {
       "source": "publication/overlays/REPRODUCTION.md",
       "destination": "REPRODUCTION.md",
-      "sha256": "dcaa61c244208385c0790654cfb65a586682dfc92567d09a883a8df3dcd69746"
+      "sha256": "be02d378bb0b6b758d90c3998ba706bce36fccde126ea9b643ae998eec8b3adf"
     },
     {
       "source": "publication/overlays/THIRD_PARTY_NOTICES.md",
@@ -40,7 +40,7 @@
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower-claude-RAG/README.md",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/README.md",
-      "sha256": "c138624512960c9a4519a4cc26d2f0f10b01e9ca7d66abc2f08663b0f2b603e9"
+      "sha256": "965fa2b67559968a57d1e8d7bde5e29f7938f31001864782188936683a802c49"
     },
     {
       "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower-claude-RAG/analysis.go",
@@ -165,7 +165,7 @@
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower/README.md",
       "destination": "experiments/jev-search-result-narrower/README.md",
-      "sha256": "35e887b9f22c2ceff20d4357b6b5f024c3c48d5323241fc8416361c1d630e123"
+      "sha256": "7c19636487051b69f32280133b02ac1dde050510e3b1c9e45e40c8fa635e5714"
     },
     {
       "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower/audit.go",
@@ -1226,6 +1226,26 @@
       "source": "publication/overlays/experiments/jev-vs-LLM-for-evals/results/subq-v1/summary.json",
       "destination": "experiments/jev-vs-LLM-for-evals/results/subq-v1/summary.json",
       "sha256": "bfcc588cc0f9252f4ef19c220a04f5a9bd182b09a177d3e4b59eb17322b655f9"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-search-result-narrower/results/subq-v1/README.md",
+      "destination": "experiments/jev-search-result-narrower/results/subq-v1/README.md",
+      "sha256": "079132fcb9a751d2138747ac6c57f2cdf8fb5bfe65508183dfbc30b79293a630"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-search-result-narrower/results/subq-v1/summary.json",
+      "destination": "experiments/jev-search-result-narrower/results/subq-v1/summary.json",
+      "sha256": "7ce14bc8b0fdc414d29d50cd52a1b3039830aad773f794ac9fefda9bb1a589bc"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-search-result-narrower-claude-RAG/results/subq-v1/README.md",
+      "destination": "experiments/jev-search-result-narrower-claude-RAG/results/subq-v1/README.md",
+      "sha256": "3d9d04af9251851fb0613d7f8699e317c2985cf806690d4eace6b1dc9fd0e568"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-search-result-narrower-claude-RAG/results/subq-v1/summary.json",
+      "destination": "experiments/jev-search-result-narrower-claude-RAG/results/subq-v1/summary.json",
+      "sha256": "17d5d7f01751ea56b6885be98aeda0357e478bab61939c13b6433ce42ec1fd4a"
     }
   ]
 }

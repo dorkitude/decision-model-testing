@@ -1,0 +1,152 @@
+{
+  "answer_scope": "The SubQ arms re-filter the identical frozen chunks. No Claude answers were generated for these filter-only comparisons, so answer-accuracy claims are not made.",
+  "filter_modes": {
+    "categorical": {
+      "per_result_on_identical_inputs": {
+        "both_drop": 1563,
+        "both_keep": 275,
+        "category_confusion_jev_rows_subq_columns": {
+          "direct_evidence": {
+            "direct_evidence": 223,
+            "irrelevant": 25,
+            "supporting_evidence": 3
+          },
+          "irrelevant": {
+            "direct_evidence": 8,
+            "irrelevant": 1563,
+            "supporting_evidence": 9
+          },
+          "supporting_evidence": {
+            "direct_evidence": 31,
+            "irrelevant": 120,
+            "supporting_evidence": 18
+          }
+        },
+        "cohen_kappa_keep": 0.7251255599294151,
+        "filter_sets": 100,
+        "jev_only_keep": 145,
+        "keep_agreement": 0.919,
+        "kept_jev": 420,
+        "kept_subq": 292,
+        "results": 2000,
+        "subq_only_keep": 17
+      },
+      "resources": {
+        "attempts": 416,
+        "failed_attempts": 0,
+        "http_429": 0,
+        "input_tokens": 1983254,
+        "ok_requests": 416,
+        "output_tokens": 0,
+        "p50_round_trip_seconds": 0.26993299,
+        "p90_round_trip_seconds": 0.334071503,
+        "p99_round_trip_seconds": 0.398106659,
+        "questions_answered": 2000,
+        "requests": 416,
+        "retries": 0,
+        "service_limits_not_sent": 0,
+        "usd": 0.09916270000000002,
+        "usd_per_mtok_input": 0.05,
+        "usd_per_mtok_output": 0
+      }
+    },
+    "threshold": {
+      "per_result_on_identical_inputs": {
+        "both_drop": 1666,
+        "both_keep": 252,
+        "cohen_kappa_keep": 0.8363247317322431,
+        "filter_sets": 100,
+        "jev_only_keep": 70,
+        "keep_agreement": 0.959,
+        "kept_jev": 322,
+        "kept_subq": 264,
+        "probability_mean_abs_diff": 0.07585459276024262,
+        "probability_pairs": 2000,
+        "probability_pearson": 0.924001276396349,
+        "results": 2000,
+        "subq_only_keep": 12
+      },
+      "resources": {
+        "attempts": 407,
+        "failed_attempts": 0,
+        "http_429": 0,
+        "input_tokens": 1773917,
+        "ok_requests": 407,
+        "output_tokens": 0,
+        "p50_round_trip_seconds": 0.308087997,
+        "p90_round_trip_seconds": 0.366912332,
+        "p99_round_trip_seconds": 0.466800297,
+        "questions_answered": 2000,
+        "requests": 407,
+        "retries": 0,
+        "service_limits_not_sent": 0,
+        "usd": 0.08869585000000002,
+        "usd_per_mtok_input": 0.05,
+        "usd_per_mtok_output": 0
+      }
+    }
+  },
+  "model": "subq-snap-preview",
+  "projection": "subq-public-aggregates-v1",
+  "questions": 100,
+  "rescore_judge": {
+    "cost_usd": 0.010697449999999997,
+    "failed_attempts": 0,
+    "input_tokens": 213949,
+    "judgments": 200,
+    "output_tokens": 0,
+    "request_latency": {
+      "mean_s": 0.18260256023500004,
+      "median_s": 0.177059141,
+      "n": 200,
+      "p95_s": 0.214978312,
+      "sum_s": 36.52051204700001
+    },
+    "requests": 200,
+    "retries": 0,
+    "scores": {
+      "baseline": 93,
+      "jev_filtered": 90
+    },
+    "vs_deepseek": {
+      "agreement": 0.96,
+      "agreement_by_arm": {
+        "baseline": 97,
+        "jev_filtered": 95
+      },
+      "both_correct": 183,
+      "both_incorrect": 9,
+      "cohen_kappa": 0.6730690641601961,
+      "other_only_correct": 8,
+      "paired_judgments": 200,
+      "subq_only_correct": 0
+    },
+    "vs_jev": {
+      "agreement": 0.91,
+      "agreement_by_arm": {
+        "baseline": 90,
+        "jev_filtered": 92
+      },
+      "both_correct": 167,
+      "both_incorrect": 15,
+      "cohen_kappa": 0.578750292534519,
+      "other_only_correct": 2,
+      "paired_judgments": 200,
+      "subq_only_correct": 16
+    }
+  },
+  "sources": [
+    {
+      "path": "experiments/rag-filtering-claude/results/run-subq-v1/comparison-vs-jev.jsonl",
+      "sha256": "43b93c8eba1da7764edcaaf0962637b0db4cb62afbc80f7cb6bb94bd6e822499"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/categorical-subq-v1/comparison-vs-jev.jsonl",
+      "sha256": "73d8ea7f65c7a12b866bb37a032da2aa449f8b7dcf769d02b6acb88e0a09f08b"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/rescore-subq-v1/comparison-vs-jev.jsonl",
+      "sha256": "8f4bdb2aac52b8a3a55b289cdd2f277d34a1ef578d325dde43eef2ab77fd8b3f"
+    }
+  ]
+}
