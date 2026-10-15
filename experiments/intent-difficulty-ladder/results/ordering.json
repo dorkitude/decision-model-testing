@@ -42,6 +42,25 @@
       "usage_reported_list_price_usd": 0.0711522420000001,
       "valid": 599
     },
+    "jev-1.14.0": {
+      "attempts": 600,
+      "correct_strict": 569,
+      "input_tokens": 1695920,
+      "invalid_or_failed": 0,
+      "latency_p50_ms": 80.20540199999999,
+      "latency_p95_ms": 101.84505200000001,
+      "list_price_usd": 0.0712286400000001,
+      "output_tokens": 287028,
+      "refused": 0,
+      "requests_attempted": 600,
+      "requests_planned": 600,
+      "reserved_unknown_usage_usd": 0.0,
+      "success_latency_p50_ms": 80.20540199999999,
+      "success_latency_p95_ms": 101.84505200000001,
+      "unreported_usage_attempts": 0,
+      "usage_reported_list_price_usd": 0.0712286400000001,
+      "valid": 600
+    },
     "openai-decisions": {
       "attempts": 600,
       "correct_strict": 580,
@@ -483,6 +502,163 @@
         "typed_p_gold_shuffle_deltas_gt_0p2": 1
       }
     },
+    "jev-1.14.0": {
+      "banking77": {
+        "cases_with_matched_flips": [],
+        "consistency": {
+          "cases": 10,
+          "fixed_baseline_flips": 0,
+          "fixed_baseline_pairs": 90,
+          "fixed_unanimous_cases": 10,
+          "matched_flips": 0,
+          "matched_pairs": 100,
+          "original_vs_new_fixed_changes": 0,
+          "original_vs_new_fixed_pairs": 10,
+          "shuffle_unanimous_cases": 10,
+          "shuffle_vs_fixed_modal_flips": 0,
+          "shuffle_vs_fixed_modal_pairs": 100
+        },
+        "oos_subgroups": null,
+        "resources": {
+          "attempts": 200,
+          "correct_strict": 200,
+          "input_tokens": 973440,
+          "invalid_or_failed": 0,
+          "latency_p50_ms": 91.863328,
+          "latency_p95_ms": 105.41700800000001,
+          "list_price_usd": 0.04088448000000012,
+          "output_tokens": 158000,
+          "refused": 0,
+          "requests_attempted": 200,
+          "requests_planned": 200,
+          "reserved_unknown_usage_usd": 0.0,
+          "success_latency_p50_ms": 91.863328,
+          "success_latency_p95_ms": 105.41700800000001,
+          "unreported_usage_attempts": 0,
+          "usage_reported_list_price_usd": 0.04088448000000012,
+          "usd_per_1000_planned_requests": 0.2044224000000006,
+          "valid": 200
+        },
+        "typed_p_gold_max_abs_matched_shuffle": 0.15999999999999992,
+        "typed_p_gold_mean_abs_fixed_retest": 0.002111111111111113,
+        "typed_p_gold_mean_abs_matched_shuffle": 0.009600000000000003,
+        "typed_p_gold_mean_signed_delta_moved_earlier": -0.016499999999999994,
+        "typed_p_gold_mean_signed_delta_moved_later": 0.002051282051282056,
+        "typed_p_gold_n_moved_earlier": 20,
+        "typed_p_gold_n_moved_later": 78,
+        "typed_p_gold_p50_abs_matched_shuffle": 0.0,
+        "typed_p_gold_p90_abs_matched_shuffle": 0.030000000000000027,
+        "typed_p_gold_shuffle_deltas_gt_0p2": 0
+      },
+      "clinc30": {
+        "cases_with_matched_flips": [],
+        "consistency": {
+          "cases": 10,
+          "fixed_baseline_flips": 0,
+          "fixed_baseline_pairs": 90,
+          "fixed_unanimous_cases": 10,
+          "matched_flips": 0,
+          "matched_pairs": 100,
+          "original_vs_new_fixed_changes": 0,
+          "original_vs_new_fixed_pairs": 10,
+          "shuffle_unanimous_cases": 10,
+          "shuffle_vs_fixed_modal_flips": 0,
+          "shuffle_vs_fixed_modal_pairs": 100
+        },
+        "oos_subgroups": null,
+        "resources": {
+          "attempts": 200,
+          "correct_strict": 200,
+          "input_tokens": 360280,
+          "invalid_or_failed": 0,
+          "latency_p50_ms": 76.643749,
+          "latency_p95_ms": 94.65932000000001,
+          "list_price_usd": 0.015131759999999972,
+          "output_tokens": 64000,
+          "refused": 0,
+          "requests_attempted": 200,
+          "requests_planned": 200,
+          "reserved_unknown_usage_usd": 0.0,
+          "success_latency_p50_ms": 76.643749,
+          "success_latency_p95_ms": 94.65932000000001,
+          "unreported_usage_attempts": 0,
+          "usage_reported_list_price_usd": 0.015131759999999972,
+          "usd_per_1000_planned_requests": 0.07565879999999986,
+          "valid": 200
+        },
+        "typed_p_gold_max_abs_matched_shuffle": 0.21999999999999997,
+        "typed_p_gold_mean_abs_fixed_retest": 0.004999999999999998,
+        "typed_p_gold_mean_abs_matched_shuffle": 0.027700000000000002,
+        "typed_p_gold_mean_signed_delta_moved_earlier": -0.002173913043478268,
+        "typed_p_gold_mean_signed_delta_moved_later": -0.03274509803921569,
+        "typed_p_gold_n_moved_earlier": 46,
+        "typed_p_gold_n_moved_later": 51,
+        "typed_p_gold_p50_abs_matched_shuffle": 0.0,
+        "typed_p_gold_p90_abs_matched_shuffle": 0.10000000000000009,
+        "typed_p_gold_shuffle_deltas_gt_0p2": 2
+      },
+      "clinc_oos": {
+        "cases_with_matched_flips": [
+          {
+            "case_id": "known-in-00",
+            "matched_label_flips": 9
+          }
+        ],
+        "consistency": {
+          "cases": 10,
+          "fixed_baseline_flips": 4,
+          "fixed_baseline_pairs": 90,
+          "fixed_unanimous_cases": 9,
+          "matched_flips": 9,
+          "matched_pairs": 100,
+          "original_vs_new_fixed_changes": 0,
+          "original_vs_new_fixed_pairs": 10,
+          "shuffle_unanimous_cases": 9,
+          "shuffle_vs_fixed_modal_flips": 7,
+          "shuffle_vs_fixed_modal_pairs": 100
+        },
+        "oos_subgroups": {
+          "known": {
+            "matched_flips": 9,
+            "matched_pairs": 50
+          },
+          "native": {
+            "matched_flips": 0,
+            "matched_pairs": 50
+          }
+        },
+        "resources": {
+          "attempts": 200,
+          "correct_strict": 169,
+          "input_tokens": 362200,
+          "invalid_or_failed": 0,
+          "latency_p50_ms": 73.75013299999999,
+          "latency_p95_ms": 86.35649099999999,
+          "list_price_usd": 0.015212400000000013,
+          "output_tokens": 65028,
+          "refused": 0,
+          "requests_attempted": 200,
+          "requests_planned": 200,
+          "reserved_unknown_usage_usd": 0.0,
+          "success_latency_p50_ms": 73.75013299999999,
+          "success_latency_p95_ms": 86.35649099999999,
+          "unreported_usage_attempts": 0,
+          "usage_reported_list_price_usd": 0.015212400000000013,
+          "usd_per_1000_planned_requests": 0.07606200000000006,
+          "valid": 200
+        },
+        "typed_p_gold_max_abs_matched_shuffle": 0.35,
+        "typed_p_gold_mean_abs_fixed_retest": 0.008555555555555558,
+        "typed_p_gold_mean_abs_matched_shuffle": 0.024,
+        "typed_p_gold_mean_signed_delta_moved_earlier": -0.016304347826086956,
+        "typed_p_gold_mean_signed_delta_moved_later": 0.0018367346938775533,
+        "typed_p_gold_n_moved_earlier": 46,
+        "typed_p_gold_n_moved_later": 49,
+        "typed_p_gold_p50_abs_matched_shuffle": 0.0,
+        "typed_p_gold_p90_abs_matched_shuffle": 0.07,
+        "typed_p_gold_shuffle_deltas_gt_0p2": 1
+      }
+    },
     "openai-decisions": {
       "banking77": {
         "cases_with_matched_flips": [
@@ -809,7 +985,7 @@
     }
   },
   "source": {
-    "path": "experiments/intent-difficulty-ladder/aggregates/ordering-consistency-with-subq.json",
-    "sha256": "13617e85d381bf525e715b024d06ef864fe673f1aabfa02e86d2292334c51c73"
+    "path": "experiments/intent-difficulty-ladder/aggregates/ordering-consistency-with-jev-1.14.0.json",
+    "sha256": "dc13f9d85736f25d50d646c52c611c984691a95cdb0243ebee26c59beb2d587a"
   }
 }

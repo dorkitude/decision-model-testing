@@ -1,0 +1,3 @@
+[submodule "experiments/order-blind-decisions"]
+	path = experiments/order-blind-decisions
+	url = https://github.com/dorkitude/order-blind-decisions.git

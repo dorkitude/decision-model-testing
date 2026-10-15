@@ -5,11 +5,11 @@ type: public-release-documentation
 
 # Decision models vs. rerankers
 
-Compare Qwen3 Reranker 8B with general-purpose decision-model probability, expected-grade and ordinal scores over the same 100 BM25 candidate passages for all 97 TREC DL 2019/2020 judged queries. Human qrels determine nDCG@10, MRR and recall; no answer-model judge is involved. SubQ's expected-grade score reached nDCG@10 0.7206, compared with 0.7006 for OpenAI Decisions, 0.6994 for Qwen and 0.6917 for Jev. This small public benchmark does not establish general superiority or equivalence.
+Compare Qwen3 Reranker 8B with general-purpose decision-model probability, expected-grade and ordinal scores over the same 100 BM25 candidate passages for all 97 TREC DL 2019/2020 judged queries. Human qrels determine nDCG@10, MRR and recall; no answer-model judge is involved. SubQ's expected-grade score reached nDCG@10 0.7206, compared with 0.7006 for OpenAI Decisions, 0.6994 for Qwen, 0.6917 for Jev 1.13 and 0.6896 for Jev 1.14. This small public benchmark does not establish general superiority or equivalence.
 
 ## TL;DR
 
-SubQ produced the best relevance ranking in this 97-query TREC DL comparison: its expected-grade score reached 0.7206 nDCG@10, ahead of Decisions at 0.7006, Qwen3 Reranker 8B at 0.6994, and Jev at 0.6917. Against Jev, SubQ's expected-grade gain was +0.0289 with a 95% interval of [+0.0124, +0.0470]; its +0.0212 interval against Qwen narrowly included zero. Expected grade was the strongest frozen scoring formulation for every decision-model provider, while probability was weakest. Decisions roughly matched Qwen and Jev on the primary arms, and 23 refusals hurt one exploratory ordinal prompt. SubQ also had the lowest estimated list cost for its three primary arms, at $0.46 total versus $0.62 for Jev, $1.28 for Decisions, and $0.33 for Qwen. The benchmark is small, public, and potentially present in model training; prompt variants were inspected on the same queries, so the exploratory best-prompt results are not held-out validation.
+SubQ produced the best relevance ranking in this 97-query TREC DL comparison: its expected-grade score reached 0.7206 nDCG@10, ahead of Decisions at 0.7006, Qwen3 Reranker 8B at 0.6994, Jev 1.13 at 0.6917 and Jev 1.14 at 0.6896. Against Jev 1.13, SubQ's expected-grade gain was +0.0289 with a 95% interval of [+0.0124, +0.0470]; its +0.0212 interval against Qwen narrowly included zero. Expected grade was the strongest frozen scoring formulation for every decision-model provider; probability was weakest everywhere except Jev 1.14, where ordinal was lowest. Jev 1.14 ranked within noise of Jev 1.13: across the twelve Jev arms the mean nDCG@10 difference was +0.0017, and on expected grade it was −0.0021 [−0.0101, +0.0060]. Decisions roughly matched Qwen and Jev on the primary arms, and 23 refusals hurt one exploratory ordinal prompt. Among the decision models, SubQ had the lowest estimated list cost for its three primary arms, at $0.46 total versus $0.62 for each Jev version, $1.28 for Decisions, and $0.33 for Qwen. The benchmark is small, public, and potentially present in model training; prompt variants were inspected on the same queries, so the exploratory best-prompt results are not held-out validation.
 
 Aggregate JSON retains cost, timing, coverage and ranking metrics; source-bearing candidate text and receipts are omitted.
 
@@ -23,9 +23,9 @@ After dependency bootstrap, `go run . prepare` downloads upstream data without i
 flowchart LR
     T["TREC DL19 + DL20<br/>97 judged queries"] --> C["100 pinned BM25<br/>candidates per query"]
     C --> Q["Qwen3 Reranker 8B"]
-    C --> J1["Jev probability<br/>p(useful)"]
-    C --> J2["Jev expected grade<br/>4-grade choice"]
-    C --> J3["Jev ordinal<br/>p(related)+p(useful)+p(direct)"]
+    C --> J1["Jev 1.13 / 1.14 probability<br/>p(useful)"]
+    C --> J2["Jev 1.13 / 1.14 expected grade<br/>4-grade choice"]
+    C --> J3["Jev 1.13 / 1.14 ordinal<br/>p(related)+p(useful)+p(direct)"]
     J1 -. "same request content" .-> D["OpenAI Decisions gpt-6-luna<br/>predicate / choice"]
     J2 -.-> D
     J3 -.-> D
@@ -51,50 +51,55 @@ flowchart LR
     class R,E score;
 ```
 
-BM25 order is the control and a label-based oracle measures the candidate-set ceiling. No answer model or LLM judge is involved. Each provider receives the same request content; the [OpenAI adapter](../openai-decisions-adapter/README.md) maps Noul questions to Decisions predicates and grade choices to Decisions choices, while the [SubQ adapter](../subq-adapter/README.md) validates and sends the Jev-compatible request directly.
+BM25 order is the control and a label-based oracle measures the candidate-set ceiling. No answer model or LLM judge is involved. Jev arms run on two pinned versions, Jev 1.13 (`jev-1.13.0`) and Jev 1.14 (`jev-1.14.0`), with identical request bodies apart from the model id. Each provider receives the same request content; the [OpenAI adapter](../openai-decisions-adapter/README.md) maps Noul questions to Decisions predicates and grade choices to Decisions choices, while the [SubQ adapter](../subq-adapter/README.md) validates and sends the Jev-compatible request directly.
 
 ## Provider comparison
 
-Jev, OpenAI's [Decisions API](https://developers.openai.com/api/docs/guides/decisions) (`gpt-6-luna`, wire format `guide-2026-10-06`) and SubQ Snap receive the same content. For Decisions, Noul questions become predicates and the four-grade question becomes a choice whose per-option probabilities feed the shared expected-grade rule. Queries, candidates, qrels, prompts, tie handling, retry policy, metrics, and bootstrap are fixed across provider arms.
+Jev 1.13, Jev 1.14, OpenAI's [Decisions API](https://developers.openai.com/api/docs/guides/decisions) (`gpt-6-luna`, wire format `guide-2026-10-06`) and SubQ Snap receive the same content. For Decisions, Noul questions become predicates and the four-grade question becomes a choice whose per-option probabilities feed the shared expected-grade rule. Queries, candidates, qrels, prompts, tie handling, retry policy, metrics, and bootstrap are fixed across provider arms.
 
 | Method | Combined nDCG@10 | DL19 | DL20 | MRR@10 | List cost (97 queries) |
 |---|---:|---:|---:|---:|---:|
 | Qwen3 Reranker 8B | 0.6994 | 0.7343 | 0.6716 | 0.8593 | $0.325 |
-| Jev expected grade | 0.6917 | 0.7026 | 0.6831 | 0.8604 | $0.224 |
+| Jev 1.13 expected grade | 0.6917 | 0.7026 | 0.6831 | 0.8604 | $0.224 |
+| Jev 1.14 expected grade | 0.6896 | 0.6945 | 0.6857 | 0.8478 | $0.224 |
 | **Decisions expected grade** | **0.7006** | 0.7088 | 0.6941 | 0.8561 | $0.318 |
 | **SubQ expected grade** | **0.7206** | 0.7340 | 0.7099 | 0.8619 | $0.147 |
-| Jev probability | 0.6814 | 0.6932 | 0.6721 | 0.8593 | $0.178 |
+| Jev 1.13 probability | 0.6814 | 0.6932 | 0.6721 | 0.8593 | $0.178 |
+| Jev 1.14 probability | 0.6836 | 0.6932 | 0.6759 | 0.8508 | $0.178 |
 | Decisions probability | 0.6812 | 0.6844 | 0.6786 | 0.8595 | $0.306 |
 | SubQ probability | 0.6962 | 0.7024 | 0.6912 | 0.8558 | $0.119 |
-| Jev ordinal | 0.6857 | 0.7004 | 0.6740 | 0.8606 | $0.215 |
+| Jev 1.13 ordinal | 0.6857 | 0.7004 | 0.6740 | 0.8606 | $0.215 |
+| Jev 1.14 ordinal | 0.6800 | 0.6972 | 0.6663 | 0.8231 | $0.215 |
 | Decisions ordinal | 0.6933 | 0.7111 | 0.6791 | 0.8562 | $0.658 |
 | SubQ ordinal | 0.7093 | 0.7209 | 0.7001 | 0.8628 | $0.193 |
 | BM25 order | 0.4912 | 0.5058 | 0.4796 | 0.6751 | – |
 
 Paired differences (95% bootstrap over queries, stratified by year, individually unadjusted):
 
-- Decisions expected grade minus Qwen: **+0.0012 [−0.0207, +0.0226]**; minus Jev expected grade: +0.0089 [−0.0082, +0.0280].
-- Decisions probability minus Jev probability: −0.0002 [−0.0226, +0.0225]. Decisions ordinal minus Jev ordinal: +0.0076 [−0.0107, +0.0269].
-- SubQ expected grade minus Qwen: **+0.0212 [−0.0006, +0.0419]**; minus Jev expected grade: **+0.0289 [+0.0124, +0.0470]**.
-- SubQ probability minus Jev probability: +0.0148 [−0.0012, +0.0318]. SubQ ordinal minus Jev ordinal: **+0.0236 [+0.0080, +0.0410]**.
+- Jev 1.14 minus Jev 1.13: expected grade −0.0021 [−0.0101, +0.0060]; probability +0.0022 [−0.0079, +0.0126]; ordinal −0.0057 [−0.0154, +0.0035].
+- Jev 1.14 minus Qwen: expected grade −0.0098 [−0.0346, +0.0131]; probability −0.0158 [−0.0435, +0.0095]; ordinal −0.0194 [−0.0451, +0.0041]. Jev 1.13 minus Qwen: −0.0077 [−0.0333, +0.0154], −0.0180 [−0.0429, +0.0049] and −0.0137 [−0.0393, +0.0095].
+- Decisions expected grade minus Qwen: **+0.0012 [−0.0207, +0.0226]**; minus Jev 1.13 expected grade: +0.0089 [−0.0082, +0.0280].
+- Decisions probability minus Jev 1.13 probability: −0.0002 [−0.0226, +0.0225]. Decisions ordinal minus Jev 1.13 ordinal: +0.0076 [−0.0107, +0.0269].
+- SubQ expected grade minus Qwen: **+0.0212 [−0.0006, +0.0419]**; minus Jev 1.13 expected grade: **+0.0289 [+0.0124, +0.0470]**.
+- SubQ probability minus Jev 1.13 probability: +0.0148 [−0.0012, +0.0318]. SubQ ordinal minus Jev 1.13 ordinal: **+0.0236 [+0.0080, +0.0410]**.
 
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {"background": "#1a1b26", "xyChart": {"backgroundColor": "#1a1b26", "titleColor": "#c0caf5", "xAxisLabelColor": "#c0caf5", "xAxisTitleColor": "#c0caf5", "xAxisLineColor": "#a9b1d6", "xAxisTickColor": "#a9b1d6", "yAxisLabelColor": "#c0caf5", "yAxisTitleColor": "#c0caf5", "yAxisLineColor": "#a9b1d6", "yAxisTickColor": "#a9b1d6", "plotColorPalette": "#bb9af7"}}}}%%
 xychart-beta
     title "Combined nDCG@10, 97 TREC DL queries"
-    x-axis ["Qwen", "Jev grade", "Decisions grade", "SubQ grade", "Jev prob.", "Decisions prob.", "SubQ prob.", "Jev ordinal", "Decisions ordinal", "SubQ ordinal"]
+    x-axis ["Qwen", "Jev 1.13 grade", "Jev 1.14 grade", "Decisions grade", "SubQ grade", "Jev 1.13 prob.", "Jev 1.14 prob.", "Decisions prob.", "SubQ prob.", "Jev 1.13 ordinal", "Jev 1.14 ordinal", "Decisions ordinal", "SubQ ordinal"]
     y-axis "nDCG@10" 0.66 --> 0.73
-    bar [0.6994, 0.6917, 0.7006, 0.7206, 0.6814, 0.6812, 0.6962, 0.6857, 0.6933, 0.7093]
+    bar [0.6994, 0.6917, 0.6896, 0.7006, 0.7206, 0.6814, 0.6836, 0.6812, 0.6962, 0.6857, 0.6800, 0.6933, 0.7093]
 ```
 
-**Prompt study.** The nine exploratory variants scored 0.6563–0.6999 on Decisions, 0.6804–0.6962 on Jev and 0.6947–0.7208 on SubQ. SubQ's best observed variant was the short grade prompt at 0.7208, +0.0214 [+0.0004, +0.0410] over Qwen and +0.0340 [+0.0142, +0.0550] over the corresponding Jev arm. These are benchmark-selected results, not held-out prompt validation. Every prompt was written for Jev; none was tuned for Decisions or SubQ.
+**Prompt study.** The nine exploratory variants scored 0.6563–0.6999 on Decisions, 0.6804–0.6962 on Jev 1.13, 0.6873–0.6943 on Jev 1.14 and 0.6947–0.7208 on SubQ. SubQ's best observed variant was the short grade prompt at 0.7208, +0.0214 [+0.0004, +0.0410] over Qwen and +0.0340 [+0.0142, +0.0550] over the corresponding Jev 1.13 arm. The two Jev versions ranked the prompts differently. Jev 1.13's best variant was explicit ordinal criteria (0.6962); Jev 1.14's was the ordinal statement prompt (0.6943, −0.0051 [−0.0291, +0.0168] versus Qwen). Of the twelve paired Jev 1.14 − Jev 1.13 differences, seven were positive and five negative, with a mean of +0.0017. Only two intervals excluded zero, and they point in opposite directions: short ordinal +0.0099 [+0.0017, +0.0184] and explicit ordinal −0.0089 [−0.0164, −0.0017]. At this unadjusted rate, that pattern is consistent with chance. Every Jev arm's interval against Qwen included zero on both versions. These are benchmark-selected results, not held-out prompt validation. Every prompt was written for Jev 1.13; none was tuned for Jev 1.14, Decisions or SubQ.
 
-**Refusals.** Decisions refused the `related` predicate of the ordinal-statement prompt on 23 passages, spread over 13 queries. Under the frozen policy a refusal is never retried or given a value, and those 13 query jobs fell back to BM25 order. There were no refusals in the other eleven Decisions arms. Excluding the 13 affected queries (84 remain), ordinal-statement scores 0.6725 on Decisions vs. 0.6844 on Jev (−0.0119 [−0.0358, +0.0129]) and 0.6964 for Qwen: the fallback explains about two-thirds of that prompt's gap to Jev, not all of it.
+**Refusals.** Decisions refused the `related` predicate of the ordinal-statement prompt on 23 passages, spread over 13 queries. Under the frozen policy a refusal is never retried or given a value, and those 13 query jobs fell back to BM25 order. There were no refusals in the other eleven Decisions arms. Excluding the 13 affected queries (84 remain), ordinal-statement scores 0.6725 on Decisions vs. 0.6844 on Jev 1.13 (−0.0119 [−0.0358, +0.0129]) and 0.6964 for Qwen: the fallback explains about two-thirds of that prompt's gap to Jev 1.13, not all of it.
 
-**Cost and latency.** The twelve Decisions arms made 116,418 requests (18 transient failed attempts, all retried successfully) for **$5.30** at $0.10 per million input tokens. The twelve SubQ arms made 116,400 requests, all successful on the first attempt, and used 37.91 million billed input tokens for an estimated **$1.90** at $0.05 per million. The three primary SubQ arms used 9.18 million input tokens and cost an estimated **$0.46**. Median SubQ request latency was 0.17 s for one-question arms and 0.23 s for the three-question ordinal arm. Decisions' median request took 0.12 s (p95 about 0.4 s). Whole-query timings include provider-specific client pacing and are not directly comparable.
+**Cost and latency.** Jev 1.13 and Jev 1.14 billed identical input tokens on every arm, 60.72 million across the twelve arms, for **$2.55** at $0.042 per million input tokens (output free); the three primary arms cost **$0.62** on either version. All 116,400 Jev 1.14 requests succeeded on the first attempt; Jev 1.13 made 116,408 requests, with 8 transient 5xx errors that all succeeded on retry. Median Jev request latency was 67–69 ms on Jev 1.14 and 122–155 ms on Jev 1.13, and median query wall time was 0.57–0.66 s versus 1.17–1.48 s. The two Jev versions were timed on different days (2026-09-18 for 1.13, 2026-10-14 for 1.14) at the same concurrency, so the difference is descriptive, not a controlled speed comparison. The twelve Decisions arms made 116,418 requests (18 transient failed attempts, all retried successfully) for **$5.30** at $0.10 per million input tokens. The twelve SubQ arms made 116,400 requests, all successful on the first attempt, and used 37.91 million billed input tokens for an estimated **$1.90** at $0.05 per million. The three primary SubQ arms used 9.18 million input tokens and cost an estimated **$0.46**. Median SubQ request latency was 0.17 s for one-question arms and 0.23 s for the three-question ordinal arm. Decisions' median request took 0.12 s (p95 about 0.4 s). Whole-query timings include provider-specific client pacing and are not directly comparable.
 
-**Caveats.** 97 public queries that may overlap model training; intervals are individual, not familywise, and no equivalence is claimed; selecting any provider's best prompt after seeing results is not held-out validation; Decisions probabilities are rounded to 0.01; ties are broken by BM25 order for every provider. Source-free numbers are in [`results/openai-decisions-v1/`](results/openai-decisions-v1/README.md) and [`results/subq-v1/`](results/subq-v1/README.md).
+**Caveats.** 97 public queries that may overlap model training; intervals are individual, not familywise, and no equivalence is claimed; selecting any provider's best prompt after seeing results is not held-out validation; Decisions and Jev probabilities are rounded to 0.01; ties are broken by BM25 order for every provider, and Jev 1.14 produced slightly more top-10 ties than Jev 1.13 (+0.01 to +0.02 of the tie fraction). Jev 1.14 lowered ordinal MRR@10 from 0.8606 to 0.8231, the largest single-metric difference between the two Jev versions on the primary arms. Source-free numbers are in [`results/openai-decisions-v1/`](results/openai-decisions-v1/README.md), [`results/subq-v1/`](results/subq-v1/README.md) and [`results/jev-1.14.0-v1/`](results/jev-1.14.0-v1/README.md).
 
 ## Reproduce
 
-See [shared setup and limits](../../REPRODUCTION.md). From this directory, build with `go build ./...`, run synthetic checks with `go test ./...`, and inspect CLI help before any paid run. Numerical reports are under `results/`. No original receipt archive is required or available in this distribution.
+See [shared setup and limits](../../REPRODUCTION.md). From this directory, build with `go build ./...`, run synthetic checks with `go test ./...`, and inspect CLI help before any paid run. Jev requests use `jev-1.13.0` by default; set `JEV_MODEL=jev-1.14.0` to run the Jev 1.14 arms, and use a new output directory for each model. Numerical reports are under `results/`. No original receipt archive is required or available in this distribution.

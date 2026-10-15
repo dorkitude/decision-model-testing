@@ -8,6 +8,7 @@ import (
 	"math"
 	"os"
 	"path/filepath"
+	"regexp"
 	"sort"
 	"strings"
 
@@ -29,6 +30,17 @@ func (s Study) Command() *cobra.Command {
 	dataDir := "data"
 	sibling := "../jev-vs-rerankers/data"
 	root.PersistentFlags().StringVar(&dataDir, "data", dataDir, "pinned TREC DL input directory")
+	root.PersistentFlags().StringVar(&WireModel, "jev-model", Model, "Jev model sent in place of "+Model+" (only the body's model member changes); another model defaults to results/<study>-<model>")
+	var out string
+	root.PersistentPreRunE = func(c *cobra.Command, _ []string) error {
+		if !regexp.MustCompile(`^jev-[0-9A-Za-z.-]+$`).MatchString(WireModel) {
+			return fmt.Errorf("invalid --jev-model %q", WireModel)
+		}
+		if f := c.Flags().Lookup("out"); Override() && f != nil && !f.Changed {
+			out = filepath.Join("results", s.Name+"-"+WireModel)
+		}
+		return nil
+	}
 
 	root.AddCommand(&cobra.Command{Use: "prepare", Short: "Fetch and verify pinned inputs (no model calls)", RunE: func(*cobra.Command, []string) error {
 		if e := Prepare(dataDir, sibling); e != nil {
@@ -48,7 +60,6 @@ func (s Study) Command() *cobra.Command {
 		return nil
 	}})
 
-	var out string
 	var budget, rpm float64
 	var workers, guard int
 	run := &cobra.Command{Use: "run", Short: "Run or resume the benchmark (paid inference)", RunE: func(*cobra.Command, []string) error {
@@ -73,6 +84,9 @@ func (s Study) Command() *cobra.Command {
 	smoke := &cobra.Command{Use: "smoke", Short: "Run synthetic smoke requests (paid, tiny)", RunE: func(*cobra.Command, []string) error {
 		jobs, check := s.Smoke()
 		dir := filepath.Join("results", s.Name+"-smoke-v1")
+		if Override() {
+			dir = filepath.Join("results", s.Name+"-smoke-"+WireModel)
+		}
 		r := &Runner{Out: dir, Budget: 0.05, Workers: 4, RPM: 300, Guard: guard}
 		if e := r.Run(jobs); e != nil {
 			return e

@@ -1,0 +1,641 @@
+{
+  "answer_model": "claude-opus-5",
+  "answer_routes": {
+    "jev-1.13.0": "claude-code-max",
+    "jev-1.13.0_team": "claude-code-team",
+    "jev-1.14.0": "claude-code-team",
+    "unfiltered": "claude-code-max"
+  },
+  "bootstrap": {
+    "cluster": "source_document_id",
+    "interval": "descriptive_unadjusted_95_percent",
+    "resamples": 5000,
+    "seed": 20260918
+  },
+  "comparison_model": "jev-1.13.0",
+  "experiment": "jev-search-result-narrower-claude-RAG",
+  "model": "jev-1.14.0",
+  "modes": {
+    "categorical": {
+      "audit_passed": true,
+      "claude_answers": {
+        "jev_1_13_max": {
+          "chunks_returned_to_claude": 421,
+          "claude_list_usd": 6.6414,
+          "input_tokens": 659333,
+          "output_tokens": 32158,
+          "time_to_answer_s": {
+            "mean_s": 6.19548,
+            "median_s": 5.160805,
+            "n": 100,
+            "p95_s": 13.141687
+          },
+          "total_api_equivalent_usd": 7.4366
+        },
+        "jev_1_13_team": {
+          "chunks_returned_to_claude": 420,
+          "claude_list_usd": 6.5245,
+          "input_tokens": 682726,
+          "output_tokens": 24350,
+          "time_to_answer_s": {
+            "mean_s": 3.65133,
+            "median_s": 3.106177,
+            "n": 100,
+            "p95_s": 6.745754
+          },
+          "total_api_equivalent_usd": 7.2334
+        },
+        "jev_1_14_team": {
+          "chunks_returned_to_claude": 378,
+          "claude_list_usd": 6.09,
+          "input_tokens": 639764,
+          "output_tokens": 24650,
+          "time_to_answer_s": {
+            "mean_s": 3.76369,
+            "median_s": 3.027695,
+            "n": 100,
+            "p95_s": 7.326116
+          },
+          "total_api_equivalent_usd": 6.8865
+        },
+        "unfiltered_max": {
+          "chunks_returned_to_claude": 2040,
+          "claude_list_usd": 26.2051,
+          "input_tokens": 2609669,
+          "output_tokens": 34572,
+          "time_to_answer_s": {
+            "mean_s": 5.948258,
+            "median_s": 5.05011,
+            "n": 100,
+            "p95_s": 10.753946
+          },
+          "total_api_equivalent_usd": 26.9111
+        }
+      },
+      "filter_resources": {
+        "jev-1.13.0": {
+          "input_tokens": 2134045,
+          "list_usd": 0.08963,
+          "page_round_trip_s": {
+            "mean_s": 0.161388,
+            "median_s": 0.139503,
+            "n": 424,
+            "p95_s": 0.297864
+          },
+          "per_search_filter_s": {
+            "mean_s": 0.758518,
+            "median_s": 0.689626,
+            "n": 102,
+            "p95_s": 1.109452
+          },
+          "requests": 424
+        },
+        "jev-1.14.0": {
+          "http_status_counts": {
+            "200": 424
+          },
+          "input_tokens": 2137160,
+          "list_usd": 0.089761,
+          "ok": 424,
+          "page_round_trip_s": {
+            "mean_s": 0.093278,
+            "median_s": 0.093027,
+            "n": 424,
+            "p95_s": 0.110472
+          },
+          "per_search_filter_s": {
+            "mean_s": 0.516085,
+            "median_s": 0.482775,
+            "n": 102,
+            "p95_s": 0.665448
+          },
+          "requests": 424,
+          "response_model_counts": {
+            "jev-1.14.0": 424
+          }
+        },
+        "usd_per_mtok_input": 0.042
+      },
+      "filtering": {
+        "jev-1.13.0": {
+          "categories": {
+            "direct_evidence": 251,
+            "irrelevant": 1619,
+            "supporting_evidence": 170
+          },
+          "keep_rate": 0.2064,
+          "pages": 424,
+          "results_kept": 421,
+          "results_scored": 2040
+        },
+        "jev-1.13.0_team_route_result_sets": 103,
+        "jev-1.14.0": {
+          "categories": {
+            "direct_evidence": 255,
+            "irrelevant": 1662,
+            "supporting_evidence": 123
+          },
+          "initial_source_coverage_after": 97,
+          "initial_source_coverage_before": 97,
+          "keep_rate": 0.1853,
+          "max_proxy_tokens": 5988,
+          "max_serialized_bytes": 23988,
+          "pages": 424,
+          "results_kept": 378,
+          "results_scored": 2040
+        }
+      },
+      "jev_1_14_vs_jev_1_13_on_identical_inputs": {
+        "both_drop": 1572,
+        "both_keep": 370,
+        "category_confusion_jev_1_13_rows_jev_1_14_columns": {
+          "direct_evidence": {
+            "direct_evidence": 243,
+            "irrelevant": 4,
+            "supporting_evidence": 4
+          },
+          "irrelevant": {
+            "direct_evidence": 2,
+            "irrelevant": 1572,
+            "supporting_evidence": 6
+          },
+          "supporting_evidence": {
+            "direct_evidence": 10,
+            "irrelevant": 46,
+            "supporting_evidence": 113
+          }
+        },
+        "cohen_kappa_keep": 0.9093,
+        "filter_sets": 100,
+        "jev_1_13_only_keep": 50,
+        "jev_1_14_only_keep": 8,
+        "keep_agreement": 0.971,
+        "kept_jev_1_13": 420,
+        "kept_jev_1_14": 378,
+        "results": 2000
+      },
+      "provider_table_common_judge": {
+        "correct": {
+          "jev-1.13.0": 81,
+          "jev-1.14.0": 91,
+          "unfiltered": 80
+        },
+        "jev_1_14_minus_jev_1_13": {
+          "cluster_bootstrap_95_percent_pp": [
+            2.0,
+            18.0
+          ],
+          "difference_pp": 10.0,
+          "earlier_arm_only_correct": 3,
+          "later_arm_only_correct": 13
+        },
+        "jev_1_14_minus_unfiltered": {
+          "cluster_bootstrap_95_percent_pp": [
+            4.0,
+            18.0
+          ],
+          "difference_pp": 11.0,
+          "earlier_arm_only_correct": 2,
+          "later_arm_only_correct": 13
+        },
+        "scope": "unfiltered_and_jev_1_13_answers_on_max_route_jev_1_14_on_team_route"
+      },
+      "route_effect_jev_1_13_team_minus_max": {
+        "cluster_bootstrap_95_percent_pp": [
+          -1.0,
+          13.0
+        ],
+        "difference_pp": 6.0,
+        "earlier_arm_only_correct": 4,
+        "later_arm_only_correct": 10
+      },
+      "same_route_common_judge": {
+        "answer_text_repeatability": {
+          "byte_identical_answers_all_questions": 4,
+          "byte_identical_answers_same_kept_set": 2,
+          "same_kept_set_questions": 66
+        },
+        "correct": {
+          "jev-1.13.0": 87,
+          "jev-1.14.0": 93
+        },
+        "identical_keep_set_split": {
+          "different_kept_set": {
+            "jev_1_13_team_correct": 26,
+            "jev_1_14_correct": 29,
+            "jev_1_14_minus_jev_1_13": {
+              "cluster_bootstrap_95_percent_pp": [
+                -2.9412,
+                20.5882
+              ],
+              "difference_pp": 8.8235,
+              "earlier_arm_only_correct": 1,
+              "later_arm_only_correct": 4
+            },
+            "n": 34
+          },
+          "same_kept_set": {
+            "jev_1_13_team_correct": 61,
+            "jev_1_14_correct": 64,
+            "jev_1_14_minus_jev_1_13": {
+              "cluster_bootstrap_95_percent_pp": [
+                0.0,
+                10.6061
+              ],
+              "difference_pp": 4.5455,
+              "earlier_arm_only_correct": 0,
+              "later_arm_only_correct": 3
+            },
+            "n": 66
+          }
+        },
+        "jev_1_14_minus_jev_1_13": {
+          "cluster_bootstrap_95_percent_pp": [
+            1.0,
+            12.0
+          ],
+          "difference_pp": 6.0,
+          "earlier_arm_only_correct": 1,
+          "later_arm_only_correct": 7
+        },
+        "jev_1_14_verdict_repeatability_across_two_passes": {
+          "agree": 98,
+          "n": 100
+        },
+        "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+        "judge_prompt_sha256": "4e89f31cb86458448b9e7313a788c45b9e917eb6be4581a9216e6803ced881d1",
+        "judge_reasoning_effort": "low",
+        "scope": "jev_1_13_team_and_jev_1_14_team_one_shared_pass"
+      },
+      "secondary_judge_deepseek_v4p1_flash": {
+        "model": "accounts/fireworks/models/deepseek-v4p1-flash",
+        "same_route_correct": {
+          "jev-1.13.0": 95,
+          "jev-1.14.0": 94
+        },
+        "same_route_jev_1_14_minus_jev_1_13": {
+          "cluster_bootstrap_95_percent_pp": [
+            -3.0,
+            0.0
+          ],
+          "difference_pp": -1.0,
+          "earlier_arm_only_correct": 1,
+          "later_arm_only_correct": 0
+        }
+      }
+    },
+    "threshold": {
+      "audit_passed": true,
+      "claude_answers": {
+        "jev_1_13_max": {
+          "chunks_returned_to_claude": 323,
+          "claude_list_usd": 5.4326,
+          "input_tokens": 542162,
+          "output_tokens": 30673,
+          "time_to_answer_s": {
+            "mean_s": 5.814561,
+            "median_s": 5.066146,
+            "n": 100,
+            "p95_s": 9.754486
+          },
+          "total_api_equivalent_usd": 6.2136
+        },
+        "jev_1_13_team": {
+          "chunks_returned_to_claude": 322,
+          "claude_list_usd": 5.3225,
+          "input_tokens": 549081,
+          "output_tokens": 23501,
+          "time_to_answer_s": {
+            "mean_s": 3.624987,
+            "median_s": 3.117773,
+            "n": 100,
+            "p95_s": 6.086758
+          },
+          "total_api_equivalent_usd": 6.0295
+        },
+        "jev_1_14_team": {
+          "chunks_returned_to_claude": 309,
+          "claude_list_usd": 5.1994,
+          "input_tokens": 549730,
+          "output_tokens": 24542,
+          "time_to_answer_s": {
+            "mean_s": 3.710798,
+            "median_s": 3.064961,
+            "n": 100,
+            "p95_s": 6.537684
+          },
+          "total_api_equivalent_usd": 5.9811
+        },
+        "unfiltered_max": {
+          "chunks_returned_to_claude": 2040,
+          "claude_list_usd": 26.2051,
+          "input_tokens": 2609669,
+          "output_tokens": 34572,
+          "time_to_answer_s": {
+            "mean_s": 5.948258,
+            "median_s": 5.05011,
+            "n": 100,
+            "p95_s": 10.753946
+          },
+          "total_api_equivalent_usd": 26.9111
+        }
+      },
+      "filter_resources": {
+        "jev-1.13.0": {
+          "input_tokens": 1808779,
+          "list_usd": 0.075969,
+          "page_round_trip_s": {
+            "mean_s": 0.190328,
+            "median_s": 0.14106,
+            "n": 415,
+            "p95_s": 0.333962
+          },
+          "per_search_filter_s": {
+            "mean_s": 0.86536,
+            "median_s": 0.71027,
+            "n": 102,
+            "p95_s": 1.407012
+          },
+          "requests": 415
+        },
+        "jev-1.14.0": {
+          "http_status_counts": {
+            "200": 415
+          },
+          "input_tokens": 1813058,
+          "list_usd": 0.076148,
+          "ok": 415,
+          "page_round_trip_s": {
+            "mean_s": 0.091192,
+            "median_s": 0.091036,
+            "n": 415,
+            "p95_s": 0.106232
+          },
+          "per_search_filter_s": {
+            "mean_s": 0.492249,
+            "median_s": 0.457749,
+            "n": 102,
+            "p95_s": 0.667212
+          },
+          "requests": 415,
+          "response_model_counts": {
+            "jev-1.14.0": 415
+          }
+        },
+        "usd_per_mtok_input": 0.042
+      },
+      "filtering": {
+        "jev-1.13.0": {
+          "categories": null,
+          "keep_rate": 0.1583,
+          "pages": 415,
+          "results_kept": 323,
+          "results_scored": 2040
+        },
+        "jev-1.13.0_team_route_result_sets": 104,
+        "jev-1.14.0": {
+          "categories": null,
+          "initial_source_coverage_after": 97,
+          "initial_source_coverage_before": 97,
+          "keep_rate": 0.1515,
+          "max_proxy_tokens": 5980,
+          "max_serialized_bytes": 24000,
+          "pages": 415,
+          "results_kept": 309,
+          "results_scored": 2040
+        }
+      },
+      "jev_1_14_vs_jev_1_13_on_identical_inputs": {
+        "both_drop": 1669,
+        "both_keep": 299,
+        "cohen_kappa_keep": 0.9397,
+        "filter_sets": 100,
+        "jev_1_13_only_keep": 23,
+        "jev_1_14_only_keep": 9,
+        "keep_agreement": 0.984,
+        "kept_jev_1_13": 322,
+        "kept_jev_1_14": 308,
+        "probability_mean_abs_diff": 0.0288,
+        "probability_pearson": 0.9866,
+        "results": 2000
+      },
+      "provider_table_common_judge": {
+        "correct": {
+          "jev-1.13.0": 87,
+          "jev-1.14.0": 87,
+          "unfiltered": 80
+        },
+        "jev_1_14_minus_jev_1_13": {
+          "cluster_bootstrap_95_percent_pp": [
+            -5.0,
+            6.0
+          ],
+          "difference_pp": 0.0,
+          "earlier_arm_only_correct": 4,
+          "later_arm_only_correct": 4
+        },
+        "jev_1_14_minus_unfiltered": {
+          "cluster_bootstrap_95_percent_pp": [
+            0.0,
+            15.0
+          ],
+          "difference_pp": 7.0,
+          "earlier_arm_only_correct": 4,
+          "later_arm_only_correct": 11
+        },
+        "scope": "unfiltered_and_jev_1_13_answers_on_max_route_jev_1_14_on_team_route"
+      },
+      "route_effect_jev_1_13_team_minus_max": {
+        "cluster_bootstrap_95_percent_pp": [
+          -2.0,
+          8.0
+        ],
+        "difference_pp": 3.0,
+        "earlier_arm_only_correct": 2,
+        "later_arm_only_correct": 5
+      },
+      "same_route_common_judge": {
+        "answer_text_repeatability": {
+          "byte_identical_answers_all_questions": 7,
+          "byte_identical_answers_same_kept_set": 5,
+          "same_kept_set_questions": 74
+        },
+        "correct": {
+          "jev-1.13.0": 90,
+          "jev-1.14.0": 87
+        },
+        "identical_keep_set_split": {
+          "different_kept_set": {
+            "jev_1_13_team_correct": 23,
+            "jev_1_14_correct": 22,
+            "jev_1_14_minus_jev_1_13": {
+              "cluster_bootstrap_95_percent_pp": [
+                -11.5385,
+                0.0
+              ],
+              "difference_pp": -3.8462,
+              "earlier_arm_only_correct": 1,
+              "later_arm_only_correct": 0
+            },
+            "n": 26
+          },
+          "same_kept_set": {
+            "jev_1_13_team_correct": 67,
+            "jev_1_14_correct": 65,
+            "jev_1_14_minus_jev_1_13": {
+              "cluster_bootstrap_95_percent_pp": [
+                -8.1081,
+                2.7027
+              ],
+              "difference_pp": -2.7027,
+              "earlier_arm_only_correct": 3,
+              "later_arm_only_correct": 1
+            },
+            "n": 74
+          }
+        },
+        "jev_1_14_minus_jev_1_13": {
+          "cluster_bootstrap_95_percent_pp": [
+            -8.0,
+            1.0
+          ],
+          "difference_pp": -3.0,
+          "earlier_arm_only_correct": 4,
+          "later_arm_only_correct": 1
+        },
+        "jev_1_14_verdict_repeatability_across_two_passes": {
+          "agree": 96,
+          "n": 100
+        },
+        "judge_model": "accounts/fireworks/models/glm-5p3-flash",
+        "judge_prompt_sha256": "4e89f31cb86458448b9e7313a788c45b9e917eb6be4581a9216e6803ced881d1",
+        "judge_reasoning_effort": "low",
+        "scope": "jev_1_13_team_and_jev_1_14_team_one_shared_pass"
+      },
+      "secondary_judge_deepseek_v4p1_flash": {
+        "model": "accounts/fireworks/models/deepseek-v4p1-flash",
+        "same_route_correct": {
+          "jev-1.13.0": 94,
+          "jev-1.14.0": 94
+        },
+        "same_route_jev_1_14_minus_jev_1_13": {
+          "cluster_bootstrap_95_percent_pp": [
+            0.0,
+            0.0
+          ],
+          "difference_pp": 0.0,
+          "earlier_arm_only_correct": 0,
+          "later_arm_only_correct": 0
+        }
+      }
+    }
+  },
+  "projection": "jev-1.14.0-public-aggregates-v1",
+  "questions": 100,
+  "sources": [
+    {
+      "path": "experiments/rag-filtering-claude/results/categorical-jev-1.13.0-team/cost-estimate.jsonl",
+      "sha256": "13ff94c029f2b27af1371a6a2fd39c54a56f2d1e6866d88836fd031b940846fe"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/categorical-jev-1.13.0-team/summary.jsonl",
+      "sha256": "18e87806720caac1f776a0e5fe83620d7eac75f02e0502265c39a8563d71c588"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/categorical-jev-1.14.0/audit.jsonl",
+      "sha256": "ebb34a3177713f0275ba6b02ea6a2f9c016af773705c3da0d037835e563ae827"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/categorical-jev-1.14.0/comparison-vs-jev.jsonl",
+      "sha256": "2f2ced2c4cb4daecacb37af44961ec975dac21bb57eb22161e5fd97c033acad0"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/categorical-jev-1.14.0/cost-estimate.jsonl",
+      "sha256": "4348464b95f76fb31e656914c33b5cc9bf62288b86d68e16109116f0142fe8a7"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/categorical-jev-1.14.0/summary.jsonl",
+      "sha256": "d57405025b13749191469087bca42d011594255a23d6ea8a4719c9d62178ffa2"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/jev-1.14.0-analysis/analysis-jev-1.14.0-same-route.json",
+      "sha256": "f84a43c22df52d161f6a638aef5e6e3d77635604695783d654b48e99b79bcd19"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/jev-1.14.0-analysis/analysis-jev-1.14.0.json",
+      "sha256": "58b31c42a6d2918fcd2b17bc7ae6f3341172b9bb6c4703d9c795a58c84022b2a"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/rejudge-categorical-glm-5p3-jev-1.14.0/manifest.jsonl",
+      "sha256": "bf8fb41f4741551e699886ab78ee0fc10c0c2972e362191d9a9fb91f16a8badc"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/rejudge-categorical-glm-5p3-same-route-jev-1.14.0/manifest.jsonl",
+      "sha256": "2e1109480947046458469659e182ea42dcd92274f9df83800a98f2b6e7183ad0"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/rejudge-threshold-glm-5p3-jev-1.14.0/manifest.jsonl",
+      "sha256": "1557b6e4f5a538f480ae25e063a5bc5c409805507f4257c13a65ead0aa3d1430"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/rejudge-threshold-glm-5p3-same-route-jev-1.14.0/manifest.jsonl",
+      "sha256": "9cae399259fb4d098d983b332520e8a4690c034bdf0446f06d9b4463a7985366"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/run-jev-1.13.0-team/cost-estimate.jsonl",
+      "sha256": "58c34e3fc1f7127ee75aebe62d23b8840110fb5dc3fc1e416ca3145c51d91a0a"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/run-jev-1.13.0-team/summary.jsonl",
+      "sha256": "4b327f6b4beb35c764cd210deb66356e8a56fed92849889c05132319e90fb751"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/run-jev-1.14.0/audit.jsonl",
+      "sha256": "43a4ab141d03979be297fdd2ea0b46a7063c43361c51607270458c4c77d9f92e"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/run-jev-1.14.0/comparison-vs-jev.jsonl",
+      "sha256": "5423e6c1186bf6d203c2bf03960be436157b00792effd8e5dcb9fa2abb68c297"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/run-jev-1.14.0/cost-estimate.jsonl",
+      "sha256": "58fd327decc92b30b4422a613da3ce9f8005688657648f4e778a4198221787e6"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/run-jev-1.14.0/summary.jsonl",
+      "sha256": "c7855d409643a85026ac1e8f9ce95b2d7a6dd2de4d287e47ca77b3b089a1a144"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/runs/categorical-jev-1.13.0-team/answers.jsonl",
+      "sha256": "55a34fc887dad12ed279e180afdb113c31e4e7da774f7c86ca84183b094a0edf"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/runs/categorical-jev-1.13.0-team/filters.jsonl",
+      "sha256": "5af685ef6ee9c01c9d3e0dcb2ec83c4d3448119376ebfd20f5e1aa1d8f600199"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/runs/categorical-jev-1.14.0/answers.jsonl",
+      "sha256": "d13c8d89ae76362ecb37d635d2daddbf29e5abc2058cdd35ffd2623284eb4cfa"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/runs/categorical-jev-1.14.0/filters.jsonl",
+      "sha256": "e0a47f74e4cbbeec24d1216efb421cba71f3e8c0460b44651beac6c5b5b9f2db"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/runs/run-jev-1.13.0-team/answers.jsonl",
+      "sha256": "ceb17c4ede731833cad60bbba08560e81f6873572534b780deb31e711c11d732"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/runs/run-jev-1.13.0-team/filters.jsonl",
+      "sha256": "18644c2d35dd20e57bfff95d9bf7852d98ed29bb51a7742838a8314268bec63f"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/runs/run-jev-1.14.0/answers.jsonl",
+      "sha256": "03de4400b4bddfdca8eae99a9c52d0bdab66139b5783217a77b37e6382c04c00"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/runs/run-jev-1.14.0/filters.jsonl",
+      "sha256": "c114d1063b81f06b45251c4cf230d1cf0dd12346985457868fec8a0f7efa8465"
+    }
+  ]
+}

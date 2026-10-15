@@ -1,6 +1,7 @@
 package bench
 
 import (
+	"bytes"
 	"math"
 	"testing"
 )
@@ -71,6 +72,33 @@ func TestParseNoulsRejectsMissing(t *testing.T) {
 	n, _, e := ParseNouls([]byte(`{"model":"jev-1.13.0","answers":{"a":{"noul":0}}}`), []string{"a"})
 	if e != nil || n["a"] != 0 {
 		t.Fatal("zero probability rejected")
+	}
+}
+
+func TestJevModelOverride(t *testing.T) {
+	j := NewJob("x", "a", Request(M{"passage": "p"}, Obj{P("useful", Noul(Relevance))}), nil)
+	if w, e := WireBody(j.Body); e != nil || !bytes.Equal(w, j.Body) || attempts() != MaxAttempts || checkModel(Receipt{ProviderModel: "jev-1.14.0"}, "p") == nil {
+		t.Fatal("default model must send the planned body unchanged")
+	}
+	WireModel = "jev-1.14.0"
+	defer func() { WireModel = Model }()
+	w, e := WireBody(j.Body)
+	if e != nil || !bytes.Equal(bytes.Replace(w, []byte("jev-1.14.0"), []byte(Model), 1), j.Body) || attempts() != OverrideMaxAttempts {
+		t.Fatalf("wire body: %v\n%s", e, w)
+	}
+	if checkModel(Receipt{}, "p") == nil || checkModel(Receipt{ProviderModel: "jev-1.14.0"}, "p") != nil {
+		t.Fatal("receipts of different Jev models must not mix")
+	}
+	if _, _, e := ParseNoulsAs([]byte(`{"model":"jev-1.13.0","answers":{"a":{"noul":0.2}}}`), []string{"a"}, WireModel); e == nil {
+		t.Fatal("answer from another model accepted")
+	}
+	ie := Receipt{Status: 499, Response: []byte(`{"detail":{"error_type":"internal_error"}}`)}
+	if !retryable(ie) || retryable(Receipt{Status: 499, Response: []byte(`{}`)}) || retryable(Receipt{Status: 400}) {
+		t.Fatal("retryable")
+	}
+	WireModel = Model
+	if retryable(ie) {
+		t.Fatal("499 must stay permanent on the default model")
 	}
 }
 

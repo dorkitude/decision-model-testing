@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "source_commit": "82b34119e15573431772abe8751cf72ae84552a0",
+  "source_commit": "df2e99b82c2f88cc52c6a0dc29707125e06fce40",
   "files": [
     {
       "source": "publication/overlays/.github/workflows/ci.yml",
@@ -11,6 +11,11 @@
       "source": "publication/overlays/.gitignore",
       "destination": ".gitignore",
       "sha256": "5a8991daecce98fc5779f00f33f3e9ca781973fd627d4a12c417b2bc87c6b3b7"
+    },
+    {
+      "source": "publication/overlays/.gitmodules",
+      "destination": ".gitmodules",
+      "sha256": "6e2e5f77d79c0cbce5196119ab3d327f734758e8e274d1e9e34e07bb22a959a8"
     },
     {
       "source": "publication/overlays/AGENTS.md",
@@ -25,7 +30,7 @@
     {
       "source": "publication/overlays/README.md",
       "destination": "README.md",
-      "sha256": "56a035387664fc6b359e28edc665623fd5a1850d1a3108045244bb436ba0d444"
+      "sha256": "23861e8438bbd5176062ac394d0eaeb3140df9b3ee48b283da5d1cd751ad4c17"
     },
     {
       "source": "publication/overlays/REPRODUCTION.md",
@@ -40,7 +45,7 @@
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower-claude-RAG/README.md",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/README.md",
-      "sha256": "1dbde4203f8f52f31510cb5c317c5168f38892324cf6d2c3f63cc6a9a03d9204"
+      "sha256": "1c2986f51481325321d701682bd3804913102233467148abc3eacaaeabf68842"
     },
     {
       "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower-claude-RAG/analysis.go",
@@ -165,7 +170,7 @@
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower/README.md",
       "destination": "experiments/jev-search-result-narrower/README.md",
-      "sha256": "e23ff43427f1b8df9950107202ba2126abb7662412bf8d4fe608d1bc4bd25f98"
+      "sha256": "cea6581fab9fd36e6acab824d468f2175eaa4ed429740e9122512312455efc2e"
     },
     {
       "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower/audit.go",
@@ -250,7 +255,7 @@
     {
       "source": "publication/overlays/experiments/jev-vs-LLM-for-evals/README.md",
       "destination": "experiments/jev-vs-LLM-for-evals/README.md",
-      "sha256": "72e2b61f8041d02ce6c652ac6573af45210d4ebda3c5548154123cd201be0c4a"
+      "sha256": "02ee599fc42845675b654d08674370f49996290530aafa08ce730664a08ca4cc"
     },
     {
       "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/cmd/evalevaluation/main.go",
@@ -770,7 +775,7 @@
     {
       "source": "publication/overlays/experiments/jev-vs-rerankers/README.md",
       "destination": "experiments/jev-vs-rerankers/README.md",
-      "sha256": "30328770ab7e51fcdfe0414486b9da0a46ff91c5281815fce99f391f8c3c8dfb"
+      "sha256": "69e48ec4bdaa36db420c92526774d6cbaec80ef4fbe517f4bdae4af58c51f730"
     },
     {
       "source": "publication/overlays/public-v1/experiments/jev-vs-rerankers/analysis.go",
@@ -785,7 +790,7 @@
     {
       "source": "publication/overlays/public-v1/experiments/jev-vs-rerankers/client.go",
       "destination": "experiments/jev-vs-rerankers/client.go",
-      "sha256": "e520b3e6c24b5d76df4148266b8d32d9b0871f3bc503d3c05d3f4c17987d97f8"
+      "sha256": "c5560f1f2a1abc09a5605809e97ad256606e79ee2f49a3d204289683e2f4f0bc"
     },
     {
       "source": "experiments/passage-reranking/data.go",
@@ -895,7 +900,7 @@
     {
       "source": "publication/overlays/experiments/request-shaping/README.md",
       "destination": "experiments/request-shaping/README.md",
-      "sha256": "3569a90753148fca6e09dbaef36a0b74f8a180f6adeab407ae94d63ec51f7cbc"
+      "sha256": "857c689c9762c7a7eb472314b49eebd930bf37438a1fbc461a6b0ce9afb21605"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/go.mod",
@@ -910,12 +915,12 @@
     {
       "source": "publication/overlays/experiments/request-shaping/SPEC.md",
       "destination": "experiments/request-shaping/SPEC.md",
-      "sha256": "04abeb0b57b7048d9ac7ae98195827306266d8bcbe8eac16ee2548c35a7d786c"
+      "sha256": "1649d7f0e9d3eadae8c831a520ec58ff61ffe936d00d9f9257fbe55b0064e610"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/cmd/question-fanout/main.go",
       "destination": "experiments/request-shaping/cmd/question-fanout/main.go",
-      "sha256": "c715d2471c5f2c34f2b09c3e298819d567e54107bd6024626fd445d1ed88c3fe"
+      "sha256": "e13424c5ee35d146e7bf7725a2666c545c88e1476b355f4b2d88a14e45bebdb2"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/cmd/question-fanout/main_test.go",
@@ -930,7 +935,7 @@
     {
       "source": "publication/overlays/experiments/request-shaping/cmd/state-packing/main.go",
       "destination": "experiments/request-shaping/cmd/state-packing/main.go",
-      "sha256": "14570a4b5e10a5ab3dd75fb615f9452c7120820f21e2ce043f2ad72afbfc311a"
+      "sha256": "93b9c60f8e6f4affb9f98cfad429fe9429554dbe3d6a9bdb0d67b460c467e6e0"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/cmd/state-packing/main_test.go",
@@ -945,7 +950,7 @@
     {
       "source": "publication/overlays/experiments/request-shaping/cmd/state-position/main.go",
       "destination": "experiments/request-shaping/cmd/state-position/main.go",
-      "sha256": "eb2059065f3941be4bcc5f2cdb64c20a7410bf2e455ef44c6f8ba3a34d47a450"
+      "sha256": "027532e9d816096bea0c7cb50af930800d24c2b5ec264f51762981eae1324b8b"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/cmd/state-position/report_test.go",
@@ -960,17 +965,17 @@
     {
       "source": "publication/overlays/experiments/request-shaping/internal/bench/bench_test.go",
       "destination": "experiments/request-shaping/internal/bench/bench_test.go",
-      "sha256": "582f3f961b4578d1e7584b4fcfa3839edc63e44c6732aca811ab827c6da3eabd"
+      "sha256": "44a80b030f4acde23de134877e4d4d3aa68718ed370e605328d4ad48787b0532"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/internal/bench/cli.go",
       "destination": "experiments/request-shaping/internal/bench/cli.go",
-      "sha256": "416569c12a17f6f296506bf6b6f9212fc6e0c232c15e94b7fa8ce83516a13f0b"
+      "sha256": "cb9ec935ccec1c6cd7c829abee9e67cb9877ddc32a36bd9d08298fc87f81c564"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/internal/bench/client.go",
       "destination": "experiments/request-shaping/internal/bench/client.go",
-      "sha256": "390e9dc23a8003cf3ff168c2da04552fe95d09515b55f234b19ec60a26025513"
+      "sha256": "96a330c31f53d4dd8f3a3c52b26c5cc89b3c0a929192bd91f66c07ecf0796af1"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/internal/bench/data.go",
@@ -985,7 +990,7 @@
     {
       "source": "publication/overlays/experiments/request-shaping/internal/bench/jev.go",
       "destination": "experiments/request-shaping/internal/bench/jev.go",
-      "sha256": "7502584bf466d36f8ca49c2c78110eb018b26c7214bd561e4c787aa0cb672d33"
+      "sha256": "6416aad9dee0bb3796a62ad853f5dc853b7225ef1d055da36d8c4642542a0cc2"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/internal/bench/metrics.go",
@@ -1010,7 +1015,7 @@
     {
       "source": "publication/overlays/experiments/request-shaping/results/openai-decisions-v1/README.md",
       "destination": "experiments/request-shaping/results/openai-decisions-v1/README.md",
-      "sha256": "9302e3a791e077d10b11d09c9f0940f145421342878a24a86e467af3df36f67d"
+      "sha256": "7c0f05f434b24c85a63cd16594b5fe9a0ab59afcdbd1923e1bfa5eb032787415"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/results/openai-decisions-v1/summary.json",
@@ -1045,7 +1050,7 @@
     {
       "source": "publication/overlays/experiments/jev-vs-LLM-for-evals/results/openai-decisions-v1/README.md",
       "destination": "experiments/jev-vs-LLM-for-evals/results/openai-decisions-v1/README.md",
-      "sha256": "f856820288e0a72c69a61f2eaec824fbcf1db398c4ecb5c4c285f7322e5fbbe6"
+      "sha256": "0575e3230d84050358bdeca096d586dd7c9fd779b6f1a3613c2627937fc95f52"
     },
     {
       "source": "publication/overlays/experiments/jev-vs-LLM-for-evals/results/openai-decisions-v1/summary.json",
@@ -1055,7 +1060,7 @@
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower/results/openai-decisions-v1/README.md",
       "destination": "experiments/jev-search-result-narrower/results/openai-decisions-v1/README.md",
-      "sha256": "842313ef34541b3af934a2b1a73671261567016752e81ca7bbc2fc09b05307c7"
+      "sha256": "1c806df1fe7032d0ede6aa7b0040f6874d9aec4225448656737e0b9b9016a9c0"
     },
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower/results/openai-decisions-v1/summary.json",
@@ -1065,7 +1070,7 @@
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower-claude-RAG/results/openai-decisions-v1/README.md",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/results/openai-decisions-v1/README.md",
-      "sha256": "bb160bc01f6919da51fe2f99dde444cf7db9e14de73afaf056c1cf4b65b2d5de"
+      "sha256": "ce6cdd54ec28c48ab9b73e8adc452e972ec677f6b7ed6ceed98b071cf162605c"
     },
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower-claude-RAG/results/openai-decisions-v1/summary.json",
@@ -1075,7 +1080,7 @@
     {
       "source": "publication/overlays/experiments/easy-decisions/README.md",
       "destination": "experiments/easy-decisions/README.md",
-      "sha256": "3081382b8fbf78f0e235c36ac70ef104bf6247743a4c7b1a33e1aba02dc084f0"
+      "sha256": "ac815e3b6bb8a55daf1db0365228e91d1d1cbb47e01523a80c4a3b7f72059873"
     },
     {
       "source": "publication/overlays/experiments/easy-decisions/results/jev/summary.json",
@@ -1110,22 +1115,22 @@
     {
       "source": "publication/overlays/experiments/intent-difficulty-ladder/README.md",
       "destination": "experiments/intent-difficulty-ladder/README.md",
-      "sha256": "20bd7752e2b57be324f3d5272812e6a848c12e6060166b027b21b64fcbc43504"
+      "sha256": "8f984edd0db7ab498e92463b9ae906092b1e129712ee514497b2ef73ba86e05e"
     },
     {
       "source": "publication/overlays/experiments/intent-difficulty-ladder/results/banking.json",
       "destination": "experiments/intent-difficulty-ladder/results/banking.json",
-      "sha256": "da9d0e985e1c85b57c30340cea57dbc81c047df92fcb4fc8d91a8eccb7b5c4b8"
+      "sha256": "2eb575ba8e15233cbdf4deb96ef13b5f9cfc04423a39785ee186dfcd46d05902"
     },
     {
       "source": "publication/overlays/experiments/intent-difficulty-ladder/results/clinc.json",
       "destination": "experiments/intent-difficulty-ladder/results/clinc.json",
-      "sha256": "d229fdb591c08c09f63ad7396e12a287210c9783df43f532c4c31d0b591956cf"
+      "sha256": "51730aa06df13024af26fb357cb2da2720e34820d87ac1054730655cd4088b1e"
     },
     {
       "source": "publication/overlays/experiments/intent-difficulty-ladder/results/ordering.json",
       "destination": "experiments/intent-difficulty-ladder/results/ordering.json",
-      "sha256": "07863515d8ee4160eca83e57aebb57caf56dc380c6679c12a2b9473d850cc247"
+      "sha256": "8c74a7317ad8caefc574df31aca4776d76b0e0b729b52eee823e4a4aa28d91bd"
     },
     {
       "source": "publication/overlays/experiments/subq-adapter/README.md",
@@ -1220,7 +1225,7 @@
     {
       "source": "publication/overlays/experiments/jev-vs-LLM-for-evals/results/subq-v1/README.md",
       "destination": "experiments/jev-vs-LLM-for-evals/results/subq-v1/README.md",
-      "sha256": "14e52a8999a1fb1e2a1148a43576c150636c865dd498adf0e8f78b4338ee6ade"
+      "sha256": "1f9b8ba124b79cc29f8036ae9eb47dfa3e7bcbcc4a12e5f17a2c50cef4b426fa"
     },
     {
       "source": "publication/overlays/experiments/jev-vs-LLM-for-evals/results/subq-v1/summary.json",
@@ -1230,7 +1235,7 @@
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower/results/subq-v1/README.md",
       "destination": "experiments/jev-search-result-narrower/results/subq-v1/README.md",
-      "sha256": "3e5c43c109ca3ee96f491b5bbc9604ee31b2e47d4d2e30d320cff0ff9964e4eb"
+      "sha256": "b75b63f449e30a7fd11c688bb31369e3cc1f4877543aa252887888a055beede9"
     },
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower/results/subq-v1/summary.json",
@@ -1240,7 +1245,7 @@
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower-claude-RAG/results/subq-v1/README.md",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/results/subq-v1/README.md",
-      "sha256": "bd6922c8cbcadf8a4b9b06845a03a26faced18e1da97703935372d7d955b1ff4"
+      "sha256": "bc31b3277ea6debddc5c9b1d31bbe7ea42ba51f80430f26daba13f170f4d50e0"
     },
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower-claude-RAG/results/subq-v1/summary.json",
@@ -1276,6 +1281,81 @@
       "source": "experiments/rag-filtering-claude/results/rejudge-categorical-glm-5p3-public-v1/rejudge-section.md",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/results/glm-5p3-categorical-common-judge-v1/rejudge-section.md",
       "sha256": "0c1b03c890372a222d3cf4ba0997172d0b6dd3fb30c6fa9d93eba34ad56df960"
+    },
+    {
+      "source": "publication/overlays/experiments/easy-decisions/results/jev-1.14.0/summary.json",
+      "destination": "experiments/easy-decisions/results/jev-1.14.0/summary.json",
+      "sha256": "f665ef3919a3d771e8816e06d8fec5cfd20c5f5a844c3b84ba5e79b0ccb63bed"
+    },
+    {
+      "source": "publication/overlays/experiments/easy-decisions/results/arithmetic/jev-1.14.0/summary.json",
+      "destination": "experiments/easy-decisions/results/arithmetic/jev-1.14.0/summary.json",
+      "sha256": "1123d8669f7bc79e7aaebcedfe3ce155fa2ab93d5c1f3ec8e05359fea1965e02"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-vs-rerankers/results/jev-1.14.0-v1/README.md",
+      "destination": "experiments/jev-vs-rerankers/results/jev-1.14.0-v1/README.md",
+      "sha256": "fd7b7311e4159f1018aaf13e93a365da28dc80a8fb9120e6e1e517de38b0f7b9"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-vs-rerankers/results/jev-1.14.0-v1/summary.json",
+      "destination": "experiments/jev-vs-rerankers/results/jev-1.14.0-v1/summary.json",
+      "sha256": "9672176953a651919bab9b4ed5155d8d782d92b8bead6890521bedb83225de71"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-vs-LLM-for-evals/results/jev-1.14.0-v1/README.md",
+      "destination": "experiments/jev-vs-LLM-for-evals/results/jev-1.14.0-v1/README.md",
+      "sha256": "f0a5b371d678ae90ca77b1e8e707502cfc23149e158e3e208e24f89498bf5494"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-vs-LLM-for-evals/results/jev-1.14.0-v1/summary.json",
+      "destination": "experiments/jev-vs-LLM-for-evals/results/jev-1.14.0-v1/summary.json",
+      "sha256": "ccf5fd93f77d11f1f286e0433ae230802cad5073e6ac22e0dfc8ccf19925fd65"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-search-result-narrower/results/jev-1.14.0-v1/README.md",
+      "destination": "experiments/jev-search-result-narrower/results/jev-1.14.0-v1/README.md",
+      "sha256": "98ff07a9d96ccf30c2052983a7abcd53005d6b67d90251ac2c06a2bddded2425"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-search-result-narrower/results/jev-1.14.0-v1/summary.json",
+      "destination": "experiments/jev-search-result-narrower/results/jev-1.14.0-v1/summary.json",
+      "sha256": "61fab7cdd018b730df8f698557e95ad16c869efb2d34849e17370c35a5565aeb"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-search-result-narrower-claude-RAG/results/jev-1.14.0-v1/README.md",
+      "destination": "experiments/jev-search-result-narrower-claude-RAG/results/jev-1.14.0-v1/README.md",
+      "sha256": "0cdc730cdc1d46b3ac527f25f87feacf75423285911f9265e634b957cbcd88c3"
+    },
+    {
+      "source": "publication/overlays/experiments/jev-search-result-narrower-claude-RAG/results/jev-1.14.0-v1/summary.json",
+      "destination": "experiments/jev-search-result-narrower-claude-RAG/results/jev-1.14.0-v1/summary.json",
+      "sha256": "19fab7cc3d102eabc0301f629f95912a7009329bec3dcf1f7b7dae9a55ac492f"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/results/jev-1.14.0-v1/README.md",
+      "destination": "experiments/request-shaping/results/jev-1.14.0-v1/README.md",
+      "sha256": "61a718ab3810b513dafa3a4775276294180feb1a2348f107436db2bfff1ad7d4"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/results/jev-1.14.0-v1/summary.json",
+      "destination": "experiments/request-shaping/results/jev-1.14.0-v1/summary.json",
+      "sha256": "b3c2f73382a72518b04190991f5da4e9bd3e74075288cd5e877fda418bb11c6a"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/results/state-packing-jev-1.14.0/REPORT.md",
+      "destination": "experiments/request-shaping/results/state-packing-jev-1.14.0/REPORT.md",
+      "sha256": "def260883cf2a4c17af4e1f8a8679429cf492a8eb08c6f4d610011f2fdbb4614"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/results/question-fanout-jev-1.14.0/REPORT.md",
+      "destination": "experiments/request-shaping/results/question-fanout-jev-1.14.0/REPORT.md",
+      "sha256": "42e60a1ce785befd42e809bdf7319a799b88efef67211d18aa6fab3a67dd8f68"
+    },
+    {
+      "source": "publication/overlays/experiments/request-shaping/results/state-position-jev-1.14.0/REPORT.md",
+      "destination": "experiments/request-shaping/results/state-position-jev-1.14.0/REPORT.md",
+      "sha256": "84a733e4b47cf2f420691c1bbabf0a16c7079f5b215a34c9e48c43c34d4fb203"
     }
   ]
 }

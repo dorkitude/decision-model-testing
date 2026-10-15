@@ -4,6 +4,7 @@ type: research-specification
 experiment: request-shaping
 created: 2026-09-25
 author: Kyle Wild
+updated: 2026-10-15
 status: protocol-v1-run
 ---
 
@@ -43,7 +44,7 @@ The data loader is copied with its provenance rather than imported, so the two e
 - We already have an atomic baseline under a pinned model (`trec-v1`, `trec-prompts-v1`).
 - Passages are short, so large packs fit well under Jev's limits.
 
-All arms use `jev-1.13.0` and the frozen Noul relevance prompt from `jev-vs-rerankers` (`jev-noul`). The only new text is a per-item reference wrapper. It is frozen after synthetic smoke tests only; no benchmark label informs prompt or wrapper choices.
+All arms are planned with `jev-1.13.0` (and run unchanged on `jev-1.14.0`; see [Protocol v1 as run](#protocol-v1-as-run)) and the frozen Noul relevance prompt from `jev-vs-rerankers` (`jev-noul`). The only new text is a per-item reference wrapper. It is frozen after synthetic smoke tests only; no benchmark label informs prompt or wrapper choices.
 
 **What labels may do.** Qrels are used only to measure outcomes and to build Study 1's controlled-neighbor packs, which are a deliberate manipulation. They never enter the text Jev sees.
 
@@ -213,6 +214,8 @@ Frozen on 2026-09-25, before any benchmark outcome was seen. Source: `cmd/*/main
 **Execution:**
 - `jev-1.13.0`, 16 workers, a client-side limit of 1,000 requests per minute, jobs in seeded interleaved order across arms, run one study at a time.
 - Conservative budget ceilings: $15, $8 and $25. These bound reservations; they are not expected costs.
+
+**Jev versions:** the same plans also run on `jev-1.14.0` (`--jev-model`). Plans, seeds, request bodies and `payload_sha256` are unchanged. Only the top-level `model` member of each sent body differs, and its hash is recorded as `wire_request_sha256`. Responses must report the requested model. Execution matches the settings above, except that up to eight attempts are allowed and HTTP 499 `internal_error` is also retried. Budget ceilings were $11.76, $3.58 and $18.87. Each version is read against its own retest noise floor, and its answers are paired with the other version's answers to the same requests.
 
 **Reproduce:** `go run ./cmd/<study> prepare|plan|smoke|run|status|report`.
 

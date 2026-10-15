@@ -1,0 +1,114 @@
+{
+  "provider": "jev-1.14.0",
+  "planned_requests": 320,
+  "attempted_requests": 320,
+  "total_attempts": 320,
+  "answered": 320,
+  "correct": 320,
+  "accuracy": 1,
+  "consistent_pairs": 160,
+  "complete_pairs": 160,
+  "cross_perturbation_identity_consistency": {
+    "arithmetic": {
+      "complete": 20,
+      "consistent": 20,
+      "rate": 1
+    }
+  },
+  "first_shown_selection_rate_by_gold": {
+    "X": {
+      "answered": 160,
+      "selected": 80,
+      "rate": 0.5
+    },
+    "Y": {
+      "answered": 160,
+      "selected": 80,
+      "rate": 0.5
+    },
+    "overall_balanced": {
+      "answered": 320,
+      "selected": 160,
+      "rate": 0.5
+    }
+  },
+  "first_option_selection_rate_by_gold": {
+    "X": {
+      "answered": 160,
+      "selected": 80,
+      "rate": 0.5
+    },
+    "Y": {
+      "answered": 160,
+      "selected": 80,
+      "rate": 0.5
+    },
+    "overall_balanced": {
+      "answered": 320,
+      "selected": 160,
+      "rate": 0.5
+    }
+  },
+  "refusals": 0,
+  "errors": 0,
+  "cost_usd": 0.0055110720000000205,
+  "mean_latency_seconds": 0.07071854112812502,
+  "by_family": {
+    "arithmetic": {
+      "N": 320,
+      "Answered": 320,
+      "Correct": 320,
+      "Refused": 0,
+      "Errors": 0
+    }
+  },
+  "correct_candidate_position": {
+    "first": {
+      "N": 160,
+      "Answered": 160,
+      "Correct": 160,
+      "Refused": 0,
+      "Errors": 0
+    },
+    "second": {
+      "N": 160,
+      "Answered": 160,
+      "Correct": 160,
+      "Refused": 0,
+      "Errors": 0
+    }
+  },
+  "lookup_target_position": {},
+  "options_array_order": {
+    "XY": {
+      "N": 160,
+      "Answered": 160,
+      "Correct": 160,
+      "Refused": 0,
+      "Errors": 0
+    },
+    "YX": {
+      "N": 160,
+      "Answered": 160,
+      "Correct": 160,
+      "Refused": 0,
+      "Errors": 0
+    }
+  },
+  "primary_question_order": {
+    "first": {
+      "N": 160,
+      "Answered": 160,
+      "Correct": 160,
+      "Refused": 0,
+      "Errors": 0
+    },
+    "last": {
+      "N": 160,
+      "Answered": 160,
+      "Correct": 160,
+      "Refused": 0,
+      "Errors": 0
+    }
+  }
+}

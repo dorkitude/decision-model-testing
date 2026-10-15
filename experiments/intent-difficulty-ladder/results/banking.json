@@ -13,6 +13,17 @@
         ],
         "right_better_cases": 0
       },
+      "jev vs jev-1.14.0": {
+        "cases_with_different_scores": 0,
+        "independent_cases": 30,
+        "left_better_cases": 0,
+        "mean_accuracy_difference": 0.0,
+        "paired_case_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "right_better_cases": 0
+      },
       "jev vs openai-decisions": {
         "cases_with_different_scores": 1,
         "independent_cases": 30,
@@ -25,6 +36,39 @@
         "right_better_cases": 1
       },
       "jev vs subq": {
+        "cases_with_different_scores": 1,
+        "independent_cases": 30,
+        "left_better_cases": 1,
+        "mean_accuracy_difference": 0.016666666666666666,
+        "paired_case_bootstrap_95pct": [
+          0.0,
+          0.05
+        ],
+        "right_better_cases": 0
+      },
+      "jev-1.14.0 vs haiku": {
+        "cases_with_different_scores": 5,
+        "independent_cases": 30,
+        "left_better_cases": 5,
+        "mean_accuracy_difference": 0.09166666666666666,
+        "paired_case_bootstrap_95pct": [
+          0.016666666666666666,
+          0.175
+        ],
+        "right_better_cases": 0
+      },
+      "jev-1.14.0 vs openai-decisions": {
+        "cases_with_different_scores": 1,
+        "independent_cases": 30,
+        "left_better_cases": 0,
+        "mean_accuracy_difference": -0.016666666666666666,
+        "paired_case_bootstrap_95pct": [
+          -0.05,
+          0.0
+        ],
+        "right_better_cases": 1
+      },
+      "jev-1.14.0 vs subq": {
         "cases_with_different_scores": 1,
         "independent_cases": 30,
         "left_better_cases": 1,
@@ -81,6 +125,17 @@
         ],
         "right_better_cases": 0
       },
+      "jev vs jev-1.14.0": {
+        "cases_with_different_scores": 1,
+        "independent_cases": 30,
+        "left_better_cases": 0,
+        "mean_accuracy_difference": -0.03333333333333333,
+        "paired_case_bootstrap_95pct": [
+          -0.1,
+          0.0
+        ],
+        "right_better_cases": 1
+      },
       "jev vs openai-decisions": {
         "cases_with_different_scores": 1,
         "independent_cases": 30,
@@ -102,6 +157,39 @@
           0.1
         ],
         "right_better_cases": 1
+      },
+      "jev-1.14.0 vs haiku": {
+        "cases_with_different_scores": 3,
+        "independent_cases": 30,
+        "left_better_cases": 3,
+        "mean_accuracy_difference": 0.075,
+        "paired_case_bootstrap_95pct": [
+          0.0,
+          0.16666666666666666
+        ],
+        "right_better_cases": 0
+      },
+      "jev-1.14.0 vs openai-decisions": {
+        "cases_with_different_scores": 1,
+        "independent_cases": 30,
+        "left_better_cases": 1,
+        "mean_accuracy_difference": 0.016666666666666666,
+        "paired_case_bootstrap_95pct": [
+          0.0,
+          0.05
+        ],
+        "right_better_cases": 0
+      },
+      "jev-1.14.0 vs subq": {
+        "cases_with_different_scores": 2,
+        "independent_cases": 30,
+        "left_better_cases": 2,
+        "mean_accuracy_difference": 0.05,
+        "paired_case_bootstrap_95pct": [
+          0.0,
+          0.13333333333333333
+        ],
+        "right_better_cases": 0
       },
       "openai-decisions vs haiku": {
         "cases_with_different_scores": 3,
@@ -149,6 +237,17 @@
         ],
         "right_better_cases": 0
       },
+      "jev vs jev-1.14.0": {
+        "cases_with_different_scores": 0,
+        "independent_cases": 30,
+        "left_better_cases": 0,
+        "mean_accuracy_difference": 0.0,
+        "paired_case_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "right_better_cases": 0
+      },
       "jev vs openai-decisions": {
         "cases_with_different_scores": 0,
         "independent_cases": 30,
@@ -161,6 +260,39 @@
         "right_better_cases": 0
       },
       "jev vs subq": {
+        "cases_with_different_scores": 1,
+        "independent_cases": 30,
+        "left_better_cases": 1,
+        "mean_accuracy_difference": 0.016666666666666666,
+        "paired_case_bootstrap_95pct": [
+          0.0,
+          0.05
+        ],
+        "right_better_cases": 0
+      },
+      "jev-1.14.0 vs haiku": {
+        "cases_with_different_scores": 4,
+        "independent_cases": 30,
+        "left_better_cases": 4,
+        "mean_accuracy_difference": 0.08333333333333333,
+        "paired_case_bootstrap_95pct": [
+          0.016666666666666666,
+          0.175
+        ],
+        "right_better_cases": 0
+      },
+      "jev-1.14.0 vs openai-decisions": {
+        "cases_with_different_scores": 0,
+        "independent_cases": 30,
+        "left_better_cases": 0,
+        "mean_accuracy_difference": 0.0,
+        "paired_case_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "right_better_cases": 0
+      },
+      "jev-1.14.0 vs subq": {
         "cases_with_different_scores": 1,
         "independent_cases": 30,
         "left_better_cases": 1,
@@ -217,6 +349,17 @@
         ],
         "right_better_cases": 0
       },
+      "jev vs jev-1.14.0": {
+        "cases_with_different_scores": 0,
+        "independent_cases": 30,
+        "left_better_cases": 0,
+        "mean_accuracy_difference": 0.0,
+        "paired_case_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "right_better_cases": 0
+      },
       "jev vs openai-decisions": {
         "cases_with_different_scores": 1,
         "independent_cases": 30,
@@ -229,6 +372,39 @@
         "right_better_cases": 0
       },
       "jev vs subq": {
+        "cases_with_different_scores": 2,
+        "independent_cases": 30,
+        "left_better_cases": 2,
+        "mean_accuracy_difference": 0.05,
+        "paired_case_bootstrap_95pct": [
+          0.0,
+          0.13333333333333333
+        ],
+        "right_better_cases": 0
+      },
+      "jev-1.14.0 vs haiku": {
+        "cases_with_different_scores": 3,
+        "independent_cases": 30,
+        "left_better_cases": 3,
+        "mean_accuracy_difference": 0.05,
+        "paired_case_bootstrap_95pct": [
+          0.0,
+          0.11666666666666667
+        ],
+        "right_better_cases": 0
+      },
+      "jev-1.14.0 vs openai-decisions": {
+        "cases_with_different_scores": 1,
+        "independent_cases": 30,
+        "left_better_cases": 1,
+        "mean_accuracy_difference": 0.03333333333333333,
+        "paired_case_bootstrap_95pct": [
+          0.0,
+          0.1
+        ],
+        "right_better_cases": 0
+      },
+      "jev-1.14.0 vs subq": {
         "cases_with_different_scores": 2,
         "independent_cases": 30,
         "left_better_cases": 2,
@@ -285,6 +461,17 @@
         ],
         "right_better_cases": 1
       },
+      "jev vs jev-1.14.0": {
+        "cases_with_different_scores": 0,
+        "independent_cases": 30,
+        "left_better_cases": 0,
+        "mean_accuracy_difference": 0.0,
+        "paired_case_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "right_better_cases": 0
+      },
       "jev vs openai-decisions": {
         "cases_with_different_scores": 1,
         "independent_cases": 30,
@@ -297,6 +484,39 @@
         "right_better_cases": 1
       },
       "jev vs subq": {
+        "cases_with_different_scores": 0,
+        "independent_cases": 30,
+        "left_better_cases": 0,
+        "mean_accuracy_difference": 0.0,
+        "paired_case_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "right_better_cases": 0
+      },
+      "jev-1.14.0 vs haiku": {
+        "cases_with_different_scores": 10,
+        "independent_cases": 30,
+        "left_better_cases": 9,
+        "mean_accuracy_difference": 0.15,
+        "paired_case_bootstrap_95pct": [
+          0.058333333333333334,
+          0.25
+        ],
+        "right_better_cases": 1
+      },
+      "jev-1.14.0 vs openai-decisions": {
+        "cases_with_different_scores": 1,
+        "independent_cases": 30,
+        "left_better_cases": 0,
+        "mean_accuracy_difference": -0.016666666666666666,
+        "paired_case_bootstrap_95pct": [
+          -0.05,
+          0.0
+        ],
+        "right_better_cases": 1
+      },
+      "jev-1.14.0 vs subq": {
         "cases_with_different_scores": 0,
         "independent_cases": 30,
         "left_better_cases": 0,
@@ -353,6 +573,17 @@
         ],
         "right_better_cases": 0
       },
+      "jev vs jev-1.14.0": {
+        "cases_with_different_scores": 0,
+        "independent_cases": 30,
+        "left_better_cases": 0,
+        "mean_accuracy_difference": 0.0,
+        "paired_case_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "right_better_cases": 0
+      },
       "jev vs openai-decisions": {
         "cases_with_different_scores": 2,
         "independent_cases": 30,
@@ -365,6 +596,39 @@
         "right_better_cases": 1
       },
       "jev vs subq": {
+        "cases_with_different_scores": 2,
+        "independent_cases": 30,
+        "left_better_cases": 1,
+        "mean_accuracy_difference": 0.0,
+        "paired_case_bootstrap_95pct": [
+          -0.05,
+          0.05
+        ],
+        "right_better_cases": 1
+      },
+      "jev-1.14.0 vs haiku": {
+        "cases_with_different_scores": 2,
+        "independent_cases": 30,
+        "left_better_cases": 2,
+        "mean_accuracy_difference": 0.025,
+        "paired_case_bootstrap_95pct": [
+          0.0,
+          0.06666666666666667
+        ],
+        "right_better_cases": 0
+      },
+      "jev-1.14.0 vs openai-decisions": {
+        "cases_with_different_scores": 2,
+        "independent_cases": 30,
+        "left_better_cases": 1,
+        "mean_accuracy_difference": 0.0,
+        "paired_case_bootstrap_95pct": [
+          -0.05,
+          0.05
+        ],
+        "right_better_cases": 1
+      },
+      "jev-1.14.0 vs subq": {
         "cases_with_different_scores": 2,
         "independent_cases": 30,
         "left_better_cases": 1,
@@ -649,6 +913,124 @@
         "refusals": 0
       }
     },
+    "jev-1.14.0": {
+      "stages": {
+        "ladder:w16": {
+          "accuracy_strict": 0.9,
+          "answered": 120,
+          "case_bootstrap_95pct": [
+            0.7666666666666667,
+            1.0
+          ],
+          "complete_order_pairs": 60,
+          "complete_retest_pairs": 60,
+          "correct": 108,
+          "first_order_correct": 54,
+          "independent_cases": 30,
+          "requests": 120,
+          "retests_agree": 60,
+          "reverse_order_agree": 60,
+          "second_order_correct": 54
+        },
+        "ladder:w2": {
+          "accuracy_strict": 0.9666666666666667,
+          "answered": 120,
+          "case_bootstrap_95pct": [
+            0.9,
+            1.0
+          ],
+          "complete_order_pairs": 60,
+          "complete_retest_pairs": 60,
+          "correct": 116,
+          "first_order_correct": 58,
+          "independent_cases": 30,
+          "requests": 120,
+          "retests_agree": 60,
+          "reverse_order_agree": 60,
+          "second_order_correct": 58
+        },
+        "ladder:w32": {
+          "accuracy_strict": 0.9,
+          "answered": 120,
+          "case_bootstrap_95pct": [
+            0.7666666666666667,
+            1.0
+          ],
+          "complete_order_pairs": 60,
+          "complete_retest_pairs": 60,
+          "correct": 108,
+          "first_order_correct": 54,
+          "independent_cases": 30,
+          "requests": 120,
+          "retests_agree": 60,
+          "reverse_order_agree": 60,
+          "second_order_correct": 54
+        },
+        "ladder:w4": {
+          "accuracy_strict": 0.9333333333333333,
+          "answered": 120,
+          "case_bootstrap_95pct": [
+            0.8333333333333334,
+            1.0
+          ],
+          "complete_order_pairs": 60,
+          "complete_retest_pairs": 60,
+          "correct": 112,
+          "first_order_correct": 56,
+          "independent_cases": 30,
+          "requests": 120,
+          "retests_agree": 60,
+          "reverse_order_agree": 60,
+          "second_order_correct": 56
+        },
+        "ladder:w77": {
+          "accuracy_strict": 0.9,
+          "answered": 120,
+          "case_bootstrap_95pct": [
+            0.7666666666666667,
+            1.0
+          ],
+          "complete_order_pairs": 60,
+          "complete_retest_pairs": 60,
+          "correct": 108,
+          "first_order_correct": 54,
+          "independent_cases": 30,
+          "requests": 120,
+          "retests_agree": 60,
+          "reverse_order_agree": 60,
+          "second_order_correct": 54
+        },
+        "ladder:w8": {
+          "accuracy_strict": 0.9,
+          "answered": 120,
+          "case_bootstrap_95pct": [
+            0.7666666666666667,
+            1.0
+          ],
+          "complete_order_pairs": 60,
+          "complete_retest_pairs": 60,
+          "correct": 108,
+          "first_order_correct": 54,
+          "independent_cases": 30,
+          "requests": 120,
+          "retests_agree": 60,
+          "reverse_order_agree": 60,
+          "second_order_correct": 54
+        }
+      },
+      "totals": {
+        "attempts": 720,
+        "completed": 720,
+        "input_tokens": 1203712,
+        "invalid_or_failed": 0,
+        "latency_p50_ms": 72.50492899999999,
+        "latency_p95_ms": 96.327335,
+        "list_price_usd": 0.05055590400000006,
+        "output_tokens": 181200,
+        "planned": 720,
+        "refusals": 0
+      }
+    },
     "openai-decisions": {
       "stages": {
         "ladder:w16": {
@@ -887,7 +1269,7 @@
     }
   },
   "source": {
-    "path": "experiments/intent-difficulty-ladder/aggregates/banking-summary-with-subq.json",
-    "sha256": "0c60852fc26c6597d10dd5fc27939b7dc6cc95641250791f46a021491e2f4749"
+    "path": "experiments/intent-difficulty-ladder/aggregates/banking-summary-with-jev-1.14.0.json",
+    "sha256": "e8962e19aea4dda9130d1a6bd8e8348a15729e71bfc87f30141bfc81f63a38e0"
   }
 }

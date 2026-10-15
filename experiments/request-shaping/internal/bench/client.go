@@ -37,12 +37,45 @@ type Receipt struct {
 	Response   json.RawMessage `json:"response,omitempty"`
 	Error      string          `json:"error,omitempty"`
 	UpperUSD   float64         `json:"reserved_upper_usd"`
+
+	// Set only when --jev-model replaces Model on the wire.
+	ProviderModel string `json:"provider_model,omitempty"`
+	WireSHA       string `json:"wire_request_sha256,omitempty"`
+	WireBytes     int    `json:"wire_request_bytes,omitempty"`
 }
 
 func (r Receipt) OK() bool { return r.Error == "" && r.Status >= 200 && r.Status < 300 }
 
 func transient(status int) bool {
 	return status == 0 || status == 408 || status == 429 || status >= 500
+}
+
+// OverrideMaxAttempts is the attempt limit of a --jev-model run.
+const OverrideMaxAttempts = 8
+
+func attempts() int {
+	if Override() {
+		return OverrideMaxAttempts
+	}
+	return MaxAttempts
+}
+
+// retryable is transient, plus, on a --jev-model run, HTTP 499 with
+// error_type "internal_error" (a server-side failure).
+func retryable(rc Receipt) bool {
+	return transient(rc.Status) || Override() && rc.Status == 499 && bytes.Contains(rc.Response, []byte(`"internal_error"`))
+}
+
+// checkModel keeps receipts of different Jev models out of one directory.
+func checkModel(rc Receipt, path string) error {
+	want := ""
+	if Override() {
+		want = WireModel
+	}
+	if rc.ProviderModel != want {
+		return fmt.Errorf("receipt %s is from Jev model %q, not %q; use a new output directory", path, rc.ProviderModel, WireModel)
+	}
+	return nil
 }
 
 // UpperCost bounds billable input tokens by UTF-8 bytes plus fixed overhead.
@@ -209,20 +242,27 @@ func (r *Runner) call(j Job) (Receipt, error) {
 	if r.Guard > 0 && len(j.Body) > r.Guard {
 		return Receipt{}, fmt.Errorf("request is %d bytes, over the %d-byte guard", len(j.Body), r.Guard)
 	}
-	for attempt := 1; attempt <= MaxAttempts; attempt++ {
+	sent, e := WireBody(j.Body)
+	if e != nil {
+		return Receipt{}, e
+	}
+	for attempt := 1; attempt <= attempts(); attempt++ {
 		path := r.receiptPath(j.ID, attempt)
 		var rc Receipt
 		if e := ReadJSON(path, &rc); e == nil {
 			if rc.PayloadSHA != h {
 				return rc, fmt.Errorf("receipt payload mismatch %s", path)
 			}
+			if e := checkModel(rc, path); e != nil {
+				return rc, e
+			}
 			if rc.OK() {
-				if _, _, e := ParseNouls(rc.Response, j.Keys()); e != nil {
+				if _, _, e := ParseNoulsAs(rc.Response, j.Keys(), WireModel); e != nil {
 					return rc, fmt.Errorf("cached malformed answer: %w", e)
 				}
 				return rc, nil
 			}
-			if !transient(rc.Status) {
+			if !retryable(rc) {
 				return rc, fmt.Errorf("cached permanent failure: %s", rc.Error)
 			}
 			continue
@@ -238,13 +278,16 @@ func (r *Runner) call(j Job) (Receipt, error) {
 		r.reserved += upper
 		r.mu.Unlock()
 		rc = Receipt{ID: j.ID, Arm: j.Arm, Attempt: attempt, URL: Endpoint, PayloadSHA: h, Bytes: len(j.Body), UpperUSD: upper}
+		if Override() {
+			rc.ProviderModel, rc.WireSHA, rc.WireBytes = WireModel, Digest(sent), len(sent)
+		}
 		reservation := filepath.Join(r.Out, "reservations", j.ID+"-"+strconv.Itoa(attempt)+".json")
 		if e := WriteJSON(reservation, rc); e != nil {
 			return rc, e
 		}
 		r.wait()
 		rc.Started = time.Now().UTC().Format(time.RFC3339Nano)
-		req, e := http.NewRequest("POST", Endpoint, bytes.NewReader(j.Body))
+		req, e := http.NewRequest("POST", Endpoint, bytes.NewReader(sent))
 		if e != nil {
 			return rc, e
 		}
@@ -282,13 +325,13 @@ func (r *Runner) call(j Job) (Receipt, error) {
 		}
 		os.Remove(reservation)
 		if rc.OK() {
-			if _, _, e := ParseNouls(rc.Response, j.Keys()); e != nil {
+			if _, _, e := ParseNoulsAs(rc.Response, j.Keys(), WireModel); e != nil {
 				return rc, fmt.Errorf("malformed answer: %w", e)
 			}
 			return rc, nil
 		}
 		r.failures.Add(1)
-		if !transient(rc.Status) {
+		if !retryable(rc) {
 			return rc, fmt.Errorf("permanent failure: %s %s", rc.Error, truncate(string(raw), 300))
 		}
 		backoff := time.Duration(1<<attempt) * time.Second
@@ -328,9 +371,10 @@ func Replay(out string, jobs []Job) ([]Answer, error) {
 	for _, j := range jobs {
 		h := Digest(j.Body)
 		a := Answer{Job: j}
-		for attempt := 1; attempt <= MaxAttempts; attempt++ {
+		for attempt := 1; attempt <= attempts(); attempt++ {
 			var rc Receipt
-			if e := ReadJSON(r.receiptPath(j.ID, attempt), &rc); e != nil {
+			path := r.receiptPath(j.ID, attempt)
+			if e := ReadJSON(path, &rc); e != nil {
 				if os.IsNotExist(e) {
 					break
 				}
@@ -339,9 +383,12 @@ func Replay(out string, jobs []Job) ([]Answer, error) {
 			if rc.PayloadSHA != h {
 				return nil, fmt.Errorf("payload mismatch for %s", j.ID)
 			}
+			if e := checkModel(rc, path); e != nil {
+				return nil, e
+			}
 			a.Attempts = attempt
 			if rc.OK() {
-				n, tok, e := ParseNouls(rc.Response, j.Keys())
+				n, tok, e := ParseNoulsAs(rc.Response, j.Keys(), WireModel)
 				if e != nil {
 					return nil, fmt.Errorf("%s: %w", j.ID, e)
 				}
@@ -370,6 +417,9 @@ func Manifest(out, study string, jobs []Job, params M) error {
 		if old["plan_sha256"] != h {
 			return fmt.Errorf("plan changed since %s was created; use a new output directory", out)
 		}
+		if m, _ := old["model"].(string); m != WireModel {
+			return fmt.Errorf("%s was created for %s, not %s; use a new output directory", out, m, WireModel)
+		}
 		return nil
 	}
 	arms := map[string]int{}
@@ -378,7 +428,11 @@ func Manifest(out, study string, jobs []Job, params M) error {
 		arms[j.Arm]++
 		decisions[j.Arm] += len(j.Decisions)
 	}
-	return WriteJSON(path, M{"study": study, "model": Model, "dataset_revision": DatasetRevision, "sources": Sources, "plan_sha256": h, "jobs": len(jobs), "requests_by_arm": arms, "decisions_by_arm": decisions, "params": params, "created_utc": time.Now().UTC().Format(time.RFC3339)})
+	m := M{"study": study, "model": WireModel, "dataset_revision": DatasetRevision, "sources": Sources, "plan_sha256": h, "jobs": len(jobs), "requests_by_arm": arms, "decisions_by_arm": decisions, "params": params, "created_utc": time.Now().UTC().Format(time.RFC3339)}
+	if Override() {
+		m["request_model"], m["max_attempts"] = Model, OverrideMaxAttempts
+	}
+	return WriteJSON(path, m)
 }
 
 func sha256Jobs(jobs []Job) string {

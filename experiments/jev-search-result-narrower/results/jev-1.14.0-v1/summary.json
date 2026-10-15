@@ -1,0 +1,293 @@
+{
+  "answering_pipeline_cost_estimates": [
+    {
+      "baseline_usd_run_v1": "5.0632299",
+      "id": "primary",
+      "jev_1_13_filtered_usd_run_v1": "1.650866726",
+      "jev_1_14_filter_usd": "0.073398696",
+      "jev_1_14_filtered_usd": "1.626961596",
+      "jev_1_14_filtered_usd_per_question": "0.01626961596",
+      "jev_1_14_kimi_usd": "0.858375",
+      "jev_1_14_savings_vs_baseline_percent": "67.8671",
+      "jev_1_14_search_usd": "0.6951879"
+    },
+    {
+      "baseline_usd_run_v1": "5.0632299",
+      "id": "no_cache",
+      "jev_1_13_filtered_usd_run_v1": "1.681563026",
+      "jev_1_14_filter_usd": "0.073398696",
+      "jev_1_14_filtered_usd": "1.626961596",
+      "jev_1_14_filtered_usd_per_question": "0.01626961596",
+      "jev_1_14_kimi_usd": "0.858375",
+      "jev_1_14_savings_vs_baseline_percent": "67.8671",
+      "jev_1_14_search_usd": "0.6951879"
+    },
+    {
+      "baseline_usd_run_v1": "5.0178888",
+      "id": "qwen_default_cache",
+      "jev_1_13_filtered_usd_run_v1": "1.605160726",
+      "jev_1_14_filter_usd": "0.073398696",
+      "jev_1_14_filtered_usd": "1.581620496",
+      "jev_1_14_filtered_usd_per_question": "0.01581620496",
+      "jev_1_14_kimi_usd": "0.858375",
+      "jev_1_14_savings_vs_baseline_percent": "68.4804",
+      "jev_1_14_search_usd": "0.6498468"
+    }
+  ],
+  "common_judge": {
+    "attempts_by_http_status": {
+      "0": 4,
+      "200": 300,
+      "502": 28,
+      "504": 64,
+      "530": 4
+    },
+    "bootstrap": {
+      "cluster": "source_document_id",
+      "resamples": 5000,
+      "seed": 20260918
+    },
+    "input_tokens": 268814,
+    "jev_1_13_vs_jev_1_14_verdict_differences": 3,
+    "judgments_this_model": 300,
+    "model": "accounts/fireworks/models/glm-5p3-flash",
+    "ok_latency_s": {
+      "max": 126.109082,
+      "p50": 1.205126,
+      "p90": 3.695627
+    },
+    "output_tokens": 3221,
+    "primary_paired": {
+      "jev-1.13.0_minus_unfiltered": {
+        "cluster_bootstrap_95_percent_pp": [
+          -7.0,
+          5.0
+        ],
+        "difference_pp": -1
+      },
+      "jev-1.14.0_minus_jev-1.13.0": {
+        "cluster_bootstrap_95_percent_pp": [
+          -2.0,
+          5.0
+        ],
+        "difference_pp": 1
+      },
+      "jev-1.14.0_minus_unfiltered": {
+        "cluster_bootstrap_95_percent_pp": [
+          -5.0,
+          5.0
+        ],
+        "difference_pp": 0
+      }
+    },
+    "primary_scores": {
+      "jev-1.13.0": 93,
+      "jev-1.14.0": 94,
+      "unfiltered": 94
+    },
+    "reasoning_effort": "low",
+    "repeatability_single_pass_vs_primary": {
+      "jev-1.13.0": {
+        "primary_correct": 93,
+        "single_pass_correct": 95,
+        "verdict_agreement": 98
+      },
+      "unfiltered": {
+        "primary_correct": 94,
+        "single_pass_correct": 91,
+        "verdict_agreement": 97
+      }
+    },
+    "single_pass_all_arms_paired": {
+      "jev-1.13.0_minus_unfiltered": {
+        "cluster_bootstrap_95_percent_pp": [
+          -1.0,
+          10.0
+        ],
+        "difference_pp": 4
+      },
+      "jev-1.14.0_minus_jev-1.13.0": {
+        "cluster_bootstrap_95_percent_pp": [
+          -5.0,
+          2.0
+        ],
+        "difference_pp": -1
+      },
+      "jev-1.14.0_minus_unfiltered": {
+        "cluster_bootstrap_95_percent_pp": [
+          -2.0,
+          8.0
+        ],
+        "difference_pp": 3
+      }
+    },
+    "single_pass_all_arms_scores": {
+      "jev-1.13.0": 95,
+      "jev-1.14.0": 94,
+      "unfiltered": 91
+    },
+    "usd_upper_estimate": 0.268202
+  },
+  "comparison_model": "jev-1.13.0",
+  "filter_resources": {
+    "jev-1.13.0": {
+      "input_tokens": 1762053,
+      "page_round_trip_s": {
+        "mean": 0.161407,
+        "p50": 0.140226,
+        "p90": 0.20125
+      },
+      "requests": 407,
+      "usd": 0.074006
+    },
+    "jev-1.14.0": {
+      "failed_attempts": 0,
+      "input_tokens": 1747588,
+      "ok_requests": 403,
+      "output_tokens_reported_unbilled": 35612,
+      "page_round_trip_s": {
+        "max": 0.197105,
+        "mean": 0.090526,
+        "p50": 0.090367,
+        "p90": 0.102862,
+        "p99": 0.118467
+      },
+      "requests": 403,
+      "response_model_field": {
+        "jev-1.14.0": 403
+      },
+      "retries": 0,
+      "usd": 0.073399,
+      "usd_per_mtok_input": 0.042,
+      "usd_per_mtok_output": 0
+    }
+  },
+  "filtering": {
+    "initial_gold_source_hit_after_filter": 100,
+    "initial_gold_source_hit_before_filter": 100,
+    "jev-1.13.0_all_sets": {
+      "decisions": 2020,
+      "filter_sets": 101,
+      "keep_rate": 0.15198,
+      "kept": 307,
+      "pages": 407
+    },
+    "jev-1.13.0_initial_searches": {
+      "decisions": 2000,
+      "filter_sets": 100,
+      "keep_rate": 0.153,
+      "kept": 306,
+      "pages": 403
+    },
+    "jev-1.14.0": {
+      "decisions": 2000,
+      "filter_sets": 100,
+      "keep_rate": 0.1415,
+      "kept": 283,
+      "pages": 403
+    },
+    "max_page_proxy_tokens": 5989,
+    "max_page_serialized_bytes": 23879
+  },
+  "generated_by": "experiments/rag-filtering-kimi/scripts/jev-1.14.0-public-aggregates.py",
+  "jev_1_14_vs_jev_1_13_on_identical_inputs": {
+    "cohens_kappa": 0.930335,
+    "decisions": 2000,
+    "filter_sets_with_changed_keep_set": 19,
+    "keep_agreement": 0.9825,
+    "kept_by_1_13": 306,
+    "kept_by_1_14": 283,
+    "kept_by_both": 277,
+    "kept_by_neither": 1688,
+    "mean_abs_probability_difference": 0.02785,
+    "only_1_13": 29,
+    "only_1_14": 6,
+    "shared_filter_sets": 100
+  },
+  "kimi": {
+    "jev-1.13.0": {
+      "answers": 100,
+      "cached_tokens": 11369,
+      "completion_tokens": 10872,
+      "elapsed_s_mean": 5.651201,
+      "elapsed_s_p50": 5.426285,
+      "elapsed_s_p90": 7.667774,
+      "model_resolved": {
+        "accounts/fireworks/models/kimi-k3": 100
+      },
+      "prompt_tokens": 247705,
+      "requests": 101,
+      "returned_chunks": 307,
+      "returned_context_proxy_tokens": 199277,
+      "search_calls": 101,
+      "usd": 0.875499
+    },
+    "jev-1.14.0": {
+      "answers": 100,
+      "cached_tokens": 0,
+      "completion_tokens": 10922,
+      "elapsed_s_mean": 5.055066,
+      "elapsed_s_p50": 4.837494,
+      "elapsed_s_p90": 7.35478,
+      "model_resolved": {
+        "accounts/fireworks/models/kimi-k3": 100
+      },
+      "prompt_tokens": 231515,
+      "requests": 100,
+      "returned_chunks": 283,
+      "returned_context_proxy_tokens": 183955,
+      "search_calls": 100,
+      "usd": 0.858375
+    },
+    "unfiltered": {
+      "answers": 100,
+      "cached_tokens": 0,
+      "completion_tokens": 12135,
+      "elapsed_s_mean": 5.529944,
+      "elapsed_s_p50": 5.204192,
+      "elapsed_s_p90": 7.937724,
+      "model_resolved": {
+        "accounts/fireworks/models/kimi-k3": 100
+      },
+      "prompt_tokens": 1395339,
+      "requests": 100,
+      "returned_chunks": 2000,
+      "returned_context_proxy_tokens": 1351041,
+      "search_calls": 100,
+      "usd": 4.368042
+    }
+  },
+  "model": "jev-1.14.0",
+  "projection": "jev-1.14.0-public-aggregates-v1",
+  "questions": 100,
+  "scope": "All arms share the same 100 questions, initial retrieval and filter pages. Unfiltered and jev-1.13.0 answers are the study's saved answers; jev-1.14.0 answers are separate Kimi K3 generations. Primary common-judge scores use saved GLM verdicts for unfiltered and jev-1.13.0 and GLM verdicts for jev-1.14.0 under the same judge protocol; single_pass_all_arms judges all three arms in one pass. Kimi elapsed_s includes the initial filter stage. Costs are list-price estimates, not invoices.",
+  "secondary_in_run_judges_two_arms": {
+    "deepseek-v4p1-flash": {
+      "jev-1.14.0": 98,
+      "unfiltered": 96
+    },
+    "deepseek_transport_failures_recovered": 27,
+    "jev-1.14.0": {
+      "jev-1.14.0": 90,
+      "unfiltered": 88
+    }
+  },
+  "sources": [
+    {
+      "path": "experiments/rag-filtering-kimi/results/run-jev-1.14.0-v1/summary.json",
+      "sha256": "3ae57c0061d8dd1483e97a4727969196fddc47a28fb82ae40537a75ca6cb2eea"
+    },
+    {
+      "path": "experiments/rag-filtering-kimi/results/run-jev-1.14.0-v1/summary.jsonl",
+      "sha256": "ad5cdc48df1615a6802f527ff18cb07bcec0eb7aa7cd9a9b4c5ff6ffd6ee6a9f"
+    },
+    {
+      "path": "experiments/rag-filtering-kimi/results/cost-estimate-v1/model_costs.jsonl",
+      "sha256": "2c7164d4a9b97129e7d82b51291b721a9b8c4457f7d7104b96a02e90a8bb1e52"
+    },
+    {
+      "path": "experiments/rag-filtering-kimi/results/cost-estimate-v1/summary.jsonl",
+      "sha256": "505e5cbc3167ff7937e728b61ca645a8f4010f42090a6f4b3b6c0af7d8ac6ea2"
+    }
+  ]
+}
