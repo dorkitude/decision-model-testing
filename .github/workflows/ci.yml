@@ -17,7 +17,7 @@ jobs:
           persist-credentials: false
       - uses: actions/setup-go@40f1582b2485089dde7abd97c1529aa768e1baff
         with:
-          go-version: '1.27.1'
+          go-version: '1.27.3'
           cache-dependency-path: experiments/${{ matrix.experiment }}/go.mod
       - run: go test -race ./...
       - run: go vet ./...
