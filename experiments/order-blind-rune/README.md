@@ -16,7 +16,7 @@ RewardBench 2: all 1,865 prompts, four response positions, response-order and qu
 | Model | Verdict | Choice accuracy | Exact ties: earlier answer wins |
 |---|---|---|---|
 | Jev | **order-blind** | 80.9% | 71.5% [66.5, 76.5] (n=400) |
-| Rune | **position-biased** | 69.7% | 64.0% [59.8, 68.2] (n=400) |
+| [Rune](https://fireworks.ai/models/fireworks/rune) | **position-biased** | 69.7% | 64.0% [59.8, 68.2] (n=400) |
 | OpenAI Decisions | **position-biased** | 78.2% | 88.6% [84.7, 92.2] (n=404) |
 | Clef-flash | **inconclusive** | 62.7% | 69.1% [63.5, 74.8] (n=398) |
 

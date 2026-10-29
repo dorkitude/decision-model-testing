@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "source_commit": "cf52014d9ea30caf6dfc0d6a5d3a60a8c369db27",
+  "source_commit": "1081cb8c1100ae84b0e770ede6aa238ce603618a",
   "files": [
     {
       "source": "publication/overlays/.github/workflows/ci.yml",
@@ -30,12 +30,12 @@
     {
       "source": "publication/overlays/README.md",
       "destination": "README.md",
-      "sha256": "478fd735e8d206d309ec3b0de111d8daaffd49233b1f63a14b860f6a426af2d0"
+      "sha256": "142d320b6d28256581bd49a28e6689e0f81990f6381e94284fe895ebc56a85df"
     },
     {
       "source": "publication/overlays/REPRODUCTION.md",
       "destination": "REPRODUCTION.md",
-      "sha256": "1a3cb9ba6aba951e5c45b4f16d4ffd0c3fa5b710a26c973ac5c113649d6160ff"
+      "sha256": "e602964482a8a4529bebdd318a6d88372dfc7a150300b9cb02c6323f42de5ad5"
     },
     {
       "source": "publication/overlays/THIRD_PARTY_NOTICES.md",
@@ -45,7 +45,7 @@
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower-claude-RAG/README.md",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/README.md",
-      "sha256": "fa01a59091200e9e28c06d2d671d942e66476bcd9f03b46db02483f754f08c63"
+      "sha256": "6b592ef63806b4dfa13b0f371784d54008fbd4de93f1b4929974b651df4f28cf"
     },
     {
       "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower-claude-RAG/analysis.go",
@@ -170,7 +170,7 @@
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower/README.md",
       "destination": "experiments/jev-search-result-narrower/README.md",
-      "sha256": "0332e798c3ba2714975e13ccd7e3fc5eed1991c225d435f54ab3b5778bda545e"
+      "sha256": "a58e07411520a92d745f21b7e996df3120d3a90546c2510f2bc68c66a7b4abfb"
     },
     {
       "source": "publication/overlays/public-v1/experiments/jev-search-result-narrower/audit.go",
@@ -255,7 +255,7 @@
     {
       "source": "publication/overlays/experiments/jev-vs-LLM-for-evals/README.md",
       "destination": "experiments/jev-vs-LLM-for-evals/README.md",
-      "sha256": "7a0159750dae0c7442a0a0b2f6b955ca04781a29bb4c4820289724e83cc784a8"
+      "sha256": "9278feee6ad2dbdfa9d5056ff81eb7812d60cac0d7d9c489dd8b5865587fd41f"
     },
     {
       "source": "publication/overlays/public-v1/experiments/jev-vs-LLM-for-evals/cmd/evalevaluation/main.go",
@@ -775,7 +775,7 @@
     {
       "source": "publication/overlays/experiments/jev-vs-rerankers/README.md",
       "destination": "experiments/jev-vs-rerankers/README.md",
-      "sha256": "e4b5bd3b93af5d0398deaa8d39d46a3e349d4e001ad9f0edc772c37219d69b4b"
+      "sha256": "6d932aec22a21d4dc24c4eeba2fb0d088a46eddd8697282b81f354b73bd81f25"
     },
     {
       "source": "publication/overlays/public-v1/experiments/jev-vs-rerankers/analysis.go",
@@ -900,7 +900,7 @@
     {
       "source": "publication/overlays/experiments/request-shaping/README.md",
       "destination": "experiments/request-shaping/README.md",
-      "sha256": "70b906ca68bfe19946169f9dc1d24e16e7768a94673048a571af3728648e9287"
+      "sha256": "77443e0979c6141eece5a1f3b7ef372eda717b9a4dffb011db23c7a7a4ba1c39"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/go.mod",
@@ -1080,7 +1080,7 @@
     {
       "source": "publication/overlays/experiments/easy-decisions/README.md",
       "destination": "experiments/easy-decisions/README.md",
-      "sha256": "c471d3bd18ec4071983916ef3fea5189847d0f73c1633bc2db35bdeb4a2f2122"
+      "sha256": "7eaeadb36843e4093c04f9f214279807f9b9a3383ad7e88228ea5385bb3700b6"
     },
     {
       "source": "publication/overlays/experiments/easy-decisions/results/jev/summary.json",
@@ -1115,7 +1115,7 @@
     {
       "source": "publication/overlays/experiments/intent-difficulty-ladder/README.md",
       "destination": "experiments/intent-difficulty-ladder/README.md",
-      "sha256": "bdc9ed28ac646f88bd1bfc263ba8437035a0402eaf950f276e72c31845a311bc"
+      "sha256": "8801d21d02a4355ee242d54c6f6b9ab35a1201119682e1daf6948d620fa9458b"
     },
     {
       "source": "publication/overlays/experiments/intent-difficulty-ladder/results/banking.json",
@@ -1360,7 +1360,7 @@
     {
       "source": "publication/overlays/experiments/fireworks-systemone-adapter/README.md",
       "destination": "experiments/fireworks-systemone-adapter/README.md",
-      "sha256": "70ea3a8f8ad54f56be8824531b5fb8b07a3682cebebc729329739e5578cfa58e"
+      "sha256": "ccbce3e7ce22f5f1ea18192df2320530a78554c9d2af586338110f9c63f9fe09"
     },
     {
       "source": "publication/overlays/experiments/fireworks-systemone-adapter/go.mod",
@@ -1425,57 +1425,57 @@
     {
       "source": "publication/overlays/experiments/order-blind-rune/README.md",
       "destination": "experiments/order-blind-rune/README.md",
-      "sha256": "8cecbf550248d8731d07b633bcd79e1ade1b4d11adc5f59dee89370c14f369a6"
+      "sha256": "891e42e01c0a8d885f31c34ef2b0a74ddcdbe1e71c7e6d188f629f615e1e8def"
     },
     {
       "source": "publication/overlays/experiments/easy-decisions/results/rune-v1/summary.json",
       "destination": "experiments/easy-decisions/results/rune-v1/summary.json",
-      "sha256": "93de4a7dda0dcc92b0403b8e27291ad647012e8132ebf3ee7ff88fd192f4c452"
+      "sha256": "2310c7048b227bb06934a404614d92e1d3e1cbb4a3a64896f41f636cdcfa16cc"
     },
     {
       "source": "publication/overlays/experiments/easy-decisions/results/arithmetic/rune/summary.json",
       "destination": "experiments/easy-decisions/results/arithmetic/rune/summary.json",
-      "sha256": "b6f734e97a96f37b1bbfe6785e2086f4606fb1a704c18f60b47e67051472afdf"
+      "sha256": "187cf444818a5587378644884baaddd5d6806cceb89c5c21feb9542b4ddc4531"
     },
     {
       "source": "publication/overlays/experiments/intent-difficulty-ladder/results/rune-v1/summary.json",
       "destination": "experiments/intent-difficulty-ladder/results/rune-v1/summary.json",
-      "sha256": "c71cfe09f7a56f78c297654537037d2a52c38764c23c29eed3dc319c29ed6f88"
+      "sha256": "6bb7b26422644af3667d2ceb22a8d273b19f6a651ca91454f66a6d49969c7d3e"
     },
     {
       "source": "publication/overlays/experiments/jev-vs-rerankers/results/rune-v1/summary.json",
       "destination": "experiments/jev-vs-rerankers/results/rune-v1/summary.json",
-      "sha256": "6c2ba78f8329ccb1cb5954f2ee45018232f71a8f543b3535cdafcfdbaa5bd614"
+      "sha256": "58172c9614e57ce89fe0271d7d6d94f6d1f7d09697a05eb629eebfbece4ed1d0"
     },
     {
       "source": "publication/overlays/experiments/jev-vs-LLM-for-evals/results/rune-v1/summary.json",
       "destination": "experiments/jev-vs-LLM-for-evals/results/rune-v1/summary.json",
-      "sha256": "1006940a18693a6b9b98f88a8baaf887cc6cfa6c2a70a697f47403de85a0bb3c"
+      "sha256": "f7287c1892dd3b80d92537e0f2c890e632fd879f3486ae9f7d7b1f38ec7dc925"
     },
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower/results/rune-v1/summary.json",
       "destination": "experiments/jev-search-result-narrower/results/rune-v1/summary.json",
-      "sha256": "e944fdea82f86f6573019ee63b3dfea31fcf328e8ed414ac147e488e8d55dbe2"
+      "sha256": "a368083a9dd5db5df6d09abba44c56697a55b1282aaf23dd0ca4b1f60c6e7103"
     },
     {
       "source": "publication/overlays/experiments/jev-search-result-narrower-claude-RAG/results/rune-v1/summary.json",
       "destination": "experiments/jev-search-result-narrower-claude-RAG/results/rune-v1/summary.json",
-      "sha256": "905071940d2e7908faad64b7701d9cdd0ddc94f8040d924d56783ef2531e3f18"
+      "sha256": "f42c5fbeb9703b99ab22530734ec174c509e9ba559924ec8a7f80c97ffcb9ac7"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/results/rune-v1/question-fanout.md",
       "destination": "experiments/request-shaping/results/rune-v1/question-fanout.md",
-      "sha256": "72d5562b13ddb5b96caf4cbc8f55f1c15fb80a571f203a80c318dafa1b8292ba"
+      "sha256": "cf4be6c92244f7844661688cc9b3c864697959b9d296ddd38a283755f89516f3"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/results/rune-v1/state-packing.md",
       "destination": "experiments/request-shaping/results/rune-v1/state-packing.md",
-      "sha256": "6c4d07533983c3e2f2a8641038426706bcbebc7c3dadb1642be0aaf7c2261d99"
+      "sha256": "3cf2f45e432a195a37d0914a5f0388ade8f58f64d698041fd78ca2c4b1298c33"
     },
     {
       "source": "publication/overlays/experiments/request-shaping/results/rune-v1/state-position.md",
       "destination": "experiments/request-shaping/results/rune-v1/state-position.md",
-      "sha256": "e1629efcb16b89e6fc5762d27a9e06b1a02976a0d861228c64de2a7b7d46d56a"
+      "sha256": "f8ee21415a0b808e70e12823341a0c0a36f0e0cd5d20f1293cf9cc830b8d0580"
     }
   ]
 }

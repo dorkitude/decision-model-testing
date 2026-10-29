@@ -6,7 +6,7 @@ author: Kyle Wild
 
 # Fireworks System One adapter
 
-Rune (`accounts/fireworks/routers/rune`) accepts Jev-compatible `state` and typed `questions`. The client preserves their bytes and order, sets `model`, validates limits, records preparation edits and hashes, normalizes answers and records usage and failures. The fake server and tests run offline.
+[Rune](https://fireworks.ai/models/fireworks/rune) (`accounts/fireworks/routers/rune`) accepts Jev-compatible `state` and typed `questions`. The client preserves their bytes and order, sets `model`, validates limits, records preparation edits and hashes, normalizes answers and records usage and failures. The fake server and tests run offline.
 
 ```sh
 go test -race ./...

@@ -7,7 +7,7 @@ type: public-release-documentation
 
 ## Intro
 
-General-purpose decision models such as TypeSafe Jev (versions 1.13 and 1.14), OpenAI Decisions, Fireworks Rune and SubQ Snap work like fuzzy switches or scoring systems driven by natural-language prompts. That is a significant part of how LLMs are used in knowledge and context engineering, often at much greater cost.
+General-purpose decision models such as TypeSafe Jev (versions 1.13 and 1.14), OpenAI Decisions, Fireworks [Rune](https://fireworks.ai/models/fireworks/rune) and SubQ Snap work like fuzzy switches or scoring systems driven by natural-language prompts. That is a significant part of how LLMs are used in knowledge and context engineering, often at much greater cost.
 
 The research questions are empirical: how well do these models work, where are they already useful, and on which tasks can they replace larger language models?
 
