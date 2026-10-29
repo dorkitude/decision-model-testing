@@ -14,6 +14,8 @@ updated: 2026-10-15
 
 ## TL;DR
 
+Rune benefited from small packs (+0.0183 nDCG@10 at K=4) but not progressively larger packs, and packing saved requests without saving tokens. A 16,384-token packed-length limit excluded pack-100 and one pack-50 ordering. Co-asking related questions improved Rune’s ranking by about +0.02 nDCG@10; its retest mean |Δp| was 0.026–0.028, about 2.7× Jev 1.13’s. Position effects in long states were within roughly ±0.006 AUC.
+
 Request shape changed model behavior, but the useful pattern depended on the provider. Packing 100 passages raised Jev 1.13 nDCG@10 by +0.036 and Jev 1.14 by +0.032, and cut input tokens per decision from 438 to 189 on both. Decisions gained only +0.015 with no token saving. SubQ gained +0.015 at 10 passages but could not run larger packed-question arms because of a 16-question service limit. Co-asked questions were effectively independent when the target came first. Mean probability changes matched each Jev version's retest noise (0.009 on 1.13, 0.012 on 1.14), were zero for Decisions, and were about 0.0001 for SubQ. SubQ's target moved about 0.013 when placed last among 16 questions. Long states showed no general “lost in the middle” effect. Both Jev versions lost a little AUC at the end of a 40-passage state, SubQ favored the start of that state by +0.0196 AUC over the middle, and putting the question before the state helped Decisions most. The two Jev versions agreed on these main findings and had the same ranking quality and token counts; Jev 1.14's probabilities ran 0.005 to 0.011 lower on average and its retest noise was about 30% higher. Practical guidance is therefore provider-specific: use named references, freeze layout and ordering, validate packing empirically, and do not treat multi-question independence as position independence.
 
 Three controlled studies on TREC DL passage relevance, with human labels, compare two TypeSafe Jev versions (Jev 1.13, `jev-1.13.0`, and Jev 1.14, `jev-1.14.0`), OpenAI Decisions (`gpt-6-luna`), and SubQ Snap (`subq-snap-preview`) under the same plan. Every study uses the fixed relevance prompt from [`jev-vs-rerankers`](../jev-vs-rerankers/README.md):
@@ -78,7 +80,7 @@ The findings below are stated for Jev, with Jev 1.13 figures first and Jev 1.14 
 - **Referencing passages:** named keys (`passages.p007`) and quoted ids work about equally well. Bare indices (`passages[6]`) inflate probabilities and worsen calibration on both versions (Jev 1.13: +0.014, ECE 0.188 vs. 0.169; Jev 1.14: +0.005, ECE 0.176 vs. 0.161). On Jev 1.14 they also lose most of the packing gain: +0.008 [−0.013, +0.029] at K = 10, against +0.025 with quoted ids.
 - **Mixing unrelated queries** (`cross-K`) inflates probabilities and worsens calibration on both versions (ECE 0.205 to 0.229 vs. 0.181 on Jev 1.13; 0.205 to 0.220 vs. 0.178 on Jev 1.14). It still helps nDCG on Jev 1.13 (+0.017 to +0.020); the Jev 1.14 gains (+0.006 and +0.010) are not significant.
 
-### 2. Co-asked questions really are independent
+### 2. Co-question effects depend on the provider
 
 Asking the target question alone, or alongside 2, 7, or 15 other questions, changed its probability by a mean |Δp| of 0.0093–0.0099 on Jev 1.13 and 0.0122–0.0127 on Jev 1.14. A plain retest of the solo request moves it by 0.0094 and 0.0122 respectively, so on both versions the difference is indistinguishable from noise. AUC is flat. On Jev 1.14 all eight fan-out contrasts in nDCG@10 have Holm p = 1.00. On Jev 1.13, one contrast survives Holm correction: the target asked last among 16 related questions gains +0.0086 [+0.0023, +0.0158] (p = 0.019), although its probabilities move no more than retest noise (|Δp| 0.0095). The three-question ordinal request is outside the Holm family. Its uncorrected nDCG interval excludes zero on Jev 1.14 (−0.016 [−0.033, −0.001]) but not on Jev 1.13. Neither of these effects appears on the other version. Asking the three ordinal questions together does not make the answers more coherent. On Jev 1.13, violations of direct ≤ useful ≤ related stay at about 2.5%. On Jev 1.14, p(direct) exceeds p(useful) for 8–10% of items in every arm, including the solo requests, and almost never by more than 0.1. Fan-out is cheap on both versions: 16 questions cost 815 input tokens against 435 for one.
 
@@ -113,7 +115,7 @@ On the 9,700 atomic requests, Jev 1.14 scores nDCG@10 0.6827 and AUC 0.8930, aga
 
 ## Provider comparison
 
-Every arm, including each study's baseline and retest, uses the same content and plan for all three providers and both Jev versions. Jev 1.13 and Jev 1.14 receive identical request bodies apart from `model`. The [OpenAI adapter](../openai-decisions-adapter/README.md) maps the state to Decisions `input` and each Noul question to a `predicate`; the [SubQ adapter](../subq-adapter/README.md) sends the Jev-compatible body directly. Plan hashes, seeds, subsets, metrics, and bootstrap rules are shared. SubQ's observed 16-question service limit excludes the K=20, 50, and 100 packed-question arms without changing the remaining requests.
+Every arm, including each study's baseline and retest, uses the same content and plan for the compared providers and both Jev versions. Jev 1.13 and Jev 1.14 receive identical request bodies apart from `model`. The [OpenAI adapter](../openai-decisions-adapter/README.md) maps the state to Decisions `input` and each Noul question to a `predicate`; the [SubQ adapter](../subq-adapter/README.md) sends the Jev-compatible body directly. Plan hashes, seeds, subsets, metrics, and bootstrap rules are shared. SubQ's observed 16-question service limit excludes the K=20, 50, and 100 packed-question arms without changing the remaining requests.
 
 | Measure | Jev 1.13 | Jev 1.14 | Decisions | SubQ |
 |---|---:|---:|---:|---:|
@@ -130,6 +132,18 @@ Every arm, including each study's baseline and retest, uses the same content and
 | 40 passages, pointed AUC at start / middle | 0.897 / 0.897 | 0.8982 / 0.8995 | 0.875 / 0.850 | **0.901 / 0.882** |
 | Refused questions | 0 | 0 | 46 of 401,710 | 0 |
 | Estimated list-price cost | $7.54 | $7.54 | $19.98 | $7.34 |
+
+Rune uses identical planned Jev state/question bytes through the [Fireworks client](../fireworks-systemone-adapter/README.md). Its 42,218 packing, 26,000 fan-out and 32,454 position requests use the same samples and query-stratified bootstrap rules. [Packing](results/rune-v1/state-packing.md), [fan-out](results/rune-v1/question-fanout.md), and [position](results/rune-v1/state-position.md) reports give every arm, interval, excluded service-limit arm, retry/usage count and latency. Their USD columns retain explicitly labeled $1/Mtok placeholder units; multiply Rune USD by 0.042 for the dated input-price estimate. Context-limit exclusions are whole arms, not silently split requests.
+
+| Rune measure | Result |
+|---|---:|
+| Packing K=4 gain vs atomic | +0.0183 [+0.0015, +0.0369] nDCG@10 |
+| Packing K=10 gain vs atomic | +0.0066 [−0.0113, +0.0252] nDCG@10 |
+| Three related questions, target ranking gain | +0.020 [+0.006, +0.035] nDCG@10 |
+| Sixteen related questions, target ranking gain | +0.021 [+0.008, +0.037] nDCG@10 |
+| Tokens per decision, every pack size | about 264–281 |
+
+Provider-specific noise, tokenization and context limits matter: the Jev packing gain does not generalize to Rune, and co-question independence is not universal.
 
 ### Cross-provider interpretation
 

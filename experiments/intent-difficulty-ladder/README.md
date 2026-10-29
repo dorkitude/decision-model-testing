@@ -11,9 +11,11 @@ How do decision models and a generative LLM control behave as objectively labele
 
 ## TL;DR
 
+Rune scored 192/200 on CLINC’s 30-intent plus out-of-scope task and 95/120 at 77 BANKING intents, compared with Jev’s 108/120 and Decisions’ 110/120. The Decisions − Rune gap at 77 intents was +12.5 pp, descriptive paired case-bootstrap 95% interval [+3.3, +25.0]; only 30 independent cases support that comparison. Rune changed 4/270 labels on identical repeats and 7/300 after shuffling.
+
 The decision models were more accurate and substantially more label-stable than Haiku 5.5 on these held-out intent-routing samples. On CLINC's 30-intent plus out-of-scope task, Jev 1.14 scored 194/200 and Jev 1.13, Decisions, and SubQ each scored 192/200, versus 112/200 for Haiku. At all 77 BANKING intents, Decisions led with 110/120, while both Jev versions and SubQ scored 108/120 and Haiku scored 90/120. Candidate shuffling changed 116/298 Haiku labels, compared with 8/299 for Jev 1.13, 9/300 for Jev 1.14, 5/299 for Decisions, and 3/300 for SubQ; byte-identical repeats changed 51/270 Haiku labels, 1/269 for Jev 1.13, 4/270 for Jev 1.14, and none for Decisions or SubQ. All of Jev 1.14's label changes came from a single in-scope CLINC+`NONE` case. SubQ's labels were the most stable, yet its gold-option probabilities still moved by mean absolute 0.025–0.049 when candidates were reordered. Jev 1.14 matched or slightly exceeded Jev 1.13 on menu-width accuracy, with no width showing a reliable difference, and it completed every call without an error or retry. The samples contain only 30 independent examples per menu width, so small provider differences are descriptive, and the non-monotonic results do not support a universal menu-size cutoff.
 
-The study uses held-out examples from CLINC150 (CC BY 3.0) and BANKING77 (CC BY 4.0). Candidate descriptions and examples come only from each training split. For each dataset, the same 30 test utterances are classified against nested candidate menus, each in a seeded order and its exact reverse with two byte-identical calls per order. CLINC also has a separate 50-case in-scope/out-of-scope stage with a `NONE` option. Strict accuracy counts refusals and invalid labels as wrong. The generative control is Claude Haiku 5.5 with thinking disabled; the decision models are Jev 1.13 (`jev-1.13.0`), Jev 1.14 (`jev-1.14.0`), OpenAI Decisions, and SubQ Snap. Both Jev versions receive identical planned request bodies except for the pinned `model` value, and every Jev response reported the requested version.
+The study uses held-out examples from CLINC150 (CC BY 3.0) and BANKING77 (CC BY 4.0). Candidate descriptions and examples come only from each training split. For each dataset, the same 30 test utterances are classified against nested candidate menus, each in a seeded order and its exact reverse with two byte-identical calls per order. CLINC also has a separate 50-case in-scope/out-of-scope stage with a `NONE` option. Strict accuracy counts refusals and invalid labels as wrong. The generative control is Claude Haiku 5.5 with thinking disabled; the decision models are Jev 1.13 (`jev-1.13.0`), Jev 1.14 (`jev-1.14.0`), OpenAI Decisions, Rune, and SubQ Snap. Both Jev versions receive identical planned request bodies except for the pinned `model` value, and every Jev response reported the requested version.
 
 ## CLINC150
 
@@ -24,6 +26,7 @@ Each menu-width cell contains 120 correlated requests from 30 independent exampl
 | Haiku 5.5 | 116/120 | 116/120 | 114/120 | 116/120 | 100/120 | 112/200 |
 | Jev 1.13 | 118/120 | 118/120 | 118/120 | 118/120 | **120/120** | 192/200 |
 | Jev 1.14 | 117/120 | **120/120** | **120/120** | **120/120** | 119/120 | **194/200** |
+| Rune | **120/120** | 116/120 | 116/120 | 116/120 | 116/120 | 192/200 |
 | OpenAI Decisions | **120/120** | 114/120 | 118/120 | 116/120 | 114/120 | 192/200 |
 | SubQ Snap | **120/120** | **120/120** | 118/120 | 116/120 | 116/120 | 192/200 |
 
@@ -38,6 +41,7 @@ Each cell contains 120 correlated requests from the same 30 independent examples
 | Haiku 5.5 | 107/120 | 106/120 | 105/120 | 97/120 | 98/120 | 90/120 |
 | Jev 1.13 | 112/120 | **112/120** | **108/120** | 108/120 | **108/120** | 108/120 |
 | Jev 1.14 | **116/120** | **112/120** | **108/120** | 108/120 | **108/120** | 108/120 |
+| Rune | **116/120** | **112/120** | **108/120** | 108/120 | **108/120** | 95/120 |
 | OpenAI Decisions | 114/120 | 108/120 | **108/120** | **110/120** | **108/120** | **110/120** |
 | SubQ Snap | 110/120 | 106/120 | **108/120** | 106/120 | 106/120 | 108/120 |
 
@@ -52,6 +56,7 @@ Ten cases in each of three settings—CLINC30, CLINC30+`NONE`, and BANKING77—r
 | Haiku 5.5 | 51/270 | 116/298 |
 | Jev 1.13 | 1/269 | 8/299 |
 | Jev 1.14 | 4/270 | 9/300 |
+| Rune | 4/270 | 7/300 |
 | OpenAI Decisions | **0/270** | 5/299 |
 | SubQ Snap | **0/270** | **3/300** |
 
@@ -63,8 +68,10 @@ SubQ completed 2,120 benchmark calls without a refusal, retry, transport failure
 
 Jev 1.14 also completed 2,120 benchmark calls with no HTTP error, retry, refusal, or invalid answer. Its p50/p95 HTTP round trips were 72.1/86.6 ms for CLINC, 72.5/96.3 ms for BANKING77, and 80.2/101.8 ms for ordering consistency (Jev 1.13: 93.6/135.3, 95.9/132.6, and 129.6/4,105 ms). Jev 1.13's ordering-consistency calls included 25 transient HTTP 5xx attempts and one request that exhausted its four attempts, which inflates that tail. These are client-observed round trips under different loads, not intrinsic model speed. At $0.042 per million input tokens for both Jev versions, Jev 1.14's 3,795,448 input tokens cost an estimated **$0.1594** in total; output tokens are not priced.
 
+Rune uses the same held-out samples, candidate descriptions, order crossings and strict scoring through the [Fireworks client](../fireworks-systemone-adapter/README.md). [Rune aggregate projections](results/rune-v1/summary.json) include plan hashes, accuracy, uncertainty, ordering stability, token use, latency and cost. Native-OOS accuracy was 96/100 and in-scope accuracy was 96/100. Its 77-intent drop and ten-case ordering sample measure different properties; stable labels in the latter do not negate the accuracy gap. Costs use $0.042/M input and no output charge on zero output usage. Dataset text and raw provider outputs remain excluded.
+
 ## Evidence and limits
 
-[Source-free CLINC aggregates](results/clinc.json), [BANKING77 aggregates](results/banking.json), and [ordering aggregates](results/ordering.json) include all public provider arms, plan hashes, case-level intervals, reliability, usage, and latency. In these files the `jev` provider is Jev 1.13 (`jev-1.13.0`) and the `jev-1.14.0` provider is Jev 1.14. Dataset text, requests, and raw provider receipts are excluded. Public benchmark overlap with model training is possible, the provider interfaces differ, and the small samples do not establish statistical equivalence or architectural superiority. The Jev 1.14 versus Jev 1.13 differences amount to one or two cases per cell and cannot be distinguished from case-level noise, and the single unstable CLINC+`NONE` case shows that Jev 1.14 is not fully deterministic at a fixed input.
+[Source-free CLINC aggregates](results/clinc.json), [BANKING77 aggregates](results/banking.json), and [ordering aggregates](results/ordering.json) include Jev, Decisions, SubQ and Haiku arms; the linked Rune projection supplies the Rune arm. They include plan hashes, case-level intervals, reliability, usage, and latency. In these files the `jev` provider is Jev 1.13 (`jev-1.13.0`) and the `jev-1.14.0` provider is Jev 1.14. Dataset text, requests, and raw provider receipts are excluded. Public benchmark overlap with model training is possible, the provider interfaces differ, and the small samples do not establish statistical equivalence or architectural superiority. The Jev 1.14 versus Jev 1.13 differences amount to one or two cases per cell and cannot be distinguished from case-level noise, and the single unstable CLINC+`NONE` case shows that Jev 1.14 is not fully deterministic at a fixed input.
 
 Upstream sources: [CLINC150](https://github.com/clinc/oos-eval) (Larson et al., EMNLP 2019) and [BANKING77](https://github.com/PolyAI-LDN/task-specific-datasets) (Casanueva et al., 2020).

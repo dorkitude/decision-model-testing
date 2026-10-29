@@ -56,3 +56,7 @@ uv run --project EnronQA-cli --frozen enronqa questions export \
 ```
 
 These commands acquire source material directly from upstream for local use. They do not build the required dense index or run inference. Both `data/` and `.local/` are ignored. Review upstream terms before use.
+
+## Rune comparisons
+
+The [Fireworks adapter](experiments/fireworks-systemone-adapter/README.md) includes the client, offline fake and tests. Acquire each experiment’s upstream inputs under its terms; send the same planned Jev body, changing only `model` to `accounts/fireworks/routers/rune`, then use the experiment’s scoring. Published Rune projections preserve aggregate metrics and source-file hashes, not original requests, answers or complete experiment-specific run orchestration. They do not provide offline replay of restricted evidence. No new live inference is required to inspect these results. Context-limit exclusions, service errors, dated cost accounting, judge versions and route confounds are documented beside the results.

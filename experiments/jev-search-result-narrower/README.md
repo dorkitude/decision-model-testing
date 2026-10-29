@@ -7,6 +7,8 @@ type: public-release-documentation
 
 ## TL;DR
 
+With DeepSeek v4p1 judging every arm, Kimi answered 97/100 correctly using Rune’s filter, versus 96/100 with Jev 1.13 and 96/100 unfiltered. Rune − Jev was +1 pp [−2, +5], a descriptive paired 95% interval. Rune kept 389 chunks and cut Kimi input by 78%; estimated pipeline cost was $1.87 per 100 questions, versus $1.65 with Jev and $5.06 unfiltered.
+
 Filtering cut the estimated cost of the Kimi pipeline by about two-thirds, with no clear loss in answer quality on this 100-question sample. Under one common GLM 5p3 Flash judge, SubQ-filtered answers scored highest at 95/100. Unfiltered and Jev 1.14-filtered answers scored 94, Jev 1.13-filtered 93, and Decisions-filtered 90. None of the paired differences from unfiltered excluded zero: SubQ was +1 point [−3, +5], Jev 1.14 0 [−5, +5], Jev 1.13 −1 [−7, +5], and Decisions −4 [−11, +2]. Jev 1.14 − Jev 1.13 was +1 [−2, +5], and a second all-arm GLM pass moved individual arms by up to 3 points. Jev 1.13 kept 307 of 2,020 chunks, Jev 1.14 kept 283 of 2,000, SubQ kept 267 of 2,020, and Decisions kept 263 of 2,040. On identical keep/drop decisions, Jev 1.14, SubQ and Decisions agreed with Jev 1.13 on 98.25%, 96.0% and 95.6% of chunks. Estimated whole-pipeline costs were $1.60–$1.69 for the filtered arms, against $5.06 unfiltered. GLM is a model judge rather than human ground truth, and all judgments used its supported low-reasoning mode. These results therefore support the cost reduction more strongly than any ranking of the filters.
 
 Jev 1.13 (`jev-1.13.0`), Jev 1.14 (`jev-1.14.0`), OpenAI Decisions and SubQ Snap score retrieved chunks and return only those with relevance probability ≥0.5 to Kimi K3. Dense top50 + BM25 top50 → RRF → Qwen rerank → top20. All arms share initial retrieval; Kimi may make up to three searches. Whole chunks are paged under 6,000 proxy tokens, 24,000 bytes and six decisions.
@@ -95,6 +97,16 @@ The SubQ filter used 1.75M input tokens and cost $0.0877 at $0.05 per million; i
 The Jev 1.14 filter used 1,747,588 input tokens on 403 pages and cost $0.0734 at $0.042 per million, against 1,762,053 tokens and $0.0740 for Jev 1.13 on its 407 pages. Because it kept fewer chunks, Kimi read 231,515 input tokens instead of 247,705, and the estimated whole-pipeline cost was $1.63. Jev 1.14 filter pages averaged 0.091 s (p50 0.090 s, p90 0.103 s), against 0.161 s (p50 0.140 s) for Jev 1.13. Kimi answer time, including the initial filter stage, averaged 5.06 s for Jev 1.14, 5.65 s for Jev 1.13 and 5.53 s unfiltered. The Jev 1.14 timings were measured under different service conditions, so this is descriptive.
 
 **Caveats.** This is one 100-question sample; GLM and Jev judgments are model assessments, not human truth; the filter prompt was written for Jev; and the paired intervals are descriptive. GLM's variation across passes is as large as the differences between filters, so the study cannot rank Jev 1.13 against Jev 1.14. Each filter arm's Kimi answers are separate generations, so Kimi's own variation is part of every arm difference. Source-free aggregates: [Jev 1.14](results/jev-1.14.0-v1/README.md) · [Decisions](results/openai-decisions-v1/README.md) · [SubQ](results/subq-v1/README.md).
+
+### Answer quality under DeepSeek v4p1
+
+| Pipeline | Accepted /100 | Kimi input tokens | Estimated pipeline cost |
+|---|---:|---:|---:|
+| Unfiltered | 96 | 1,395,339 | $5.06 |
+| Jev 1.13 filter | 96 | 247,705 | $1.65 |
+| Rune filter | 97 | 306,578 | $1.87 |
+
+Rune uses the same frozen retrieval pages, 100 questions, prompts and threshold via the [Fireworks client](../fireworks-systemone-adapter/README.md). All 407 filter pages succeeded on their first attempt. The original DeepSeek 0731 judge is retired; this panel applies v4p1 to all three arms and must be interpreted separately from the GLM comparison above. Source-document paired bootstrap intervals use 5,000 resamples (seed 20260918). [Source-free scores and contrasts](results/rune-v1/summary.json) contain no answers. Model judgments are not human ground truth. Rune costs use $0.042/M input; Kimi/reranking/embedding use the rate card described above, excluding judges and index setup. Worker counts and service load differ, so latency is descriptive. Identical filter requests agreed on 97.3% of chunks across repeated collections (κ 0.91).
 
 ## Reproduce
 

@@ -9,6 +9,8 @@ Compare Jev 1.13, Jev 1.14, OpenAI Decisions, SubQ Snap and four LLM judges on b
 
 ## TL;DR
 
+Rune scored 84.94% on LLMBar Vanilla, 65.97% on JudgeBench vanilla and 65.89% on RewardBench 2 ratings, completing all 11,255 primary jobs. Against Jev 1.13 with failed service jobs recovered, the gaps were −2.4, −3.1 and −2.2 points; their paired 95% intervals include zero. Rune was significantly worse on RewardBench four-way (−6.9 pp [−9.4, −4.3]) and JudgeBench arena-hard (−4.7 pp [−8.4, −1.3]), while four LLMBar rating methods favored Rune.
+
 No judge dominated every benchmark. Qwen3p8 Max led the three headline LLMBar, JudgeBench, and RewardBench 2 methods at 92.53%, 88.39%, and 81.57% strict agreement. Among decision models, SubQ and Jev 1.14 were strongest: SubQ scored 88.06%, 72.10%, and 69.39%, and Jev 1.14 scored 88.24%, 70.81%, and 69.14%, both above Jev 1.13's 87.36%, 69.03%, and 68.12%. Jev 1.14's point estimate exceeded Jev 1.13 on all 19 primary methods, SubQ's on 18 of 19. Decisions was competitive on some LLMBar rating prompts but fell to 23.87% on JudgeBench vanilla because it selected the first-shown response in both presentation orders for 71.1% of pairs. SubQ showed a much smaller 9.2% version of that bias and Jev 1.14 2.9%; both completed every job without refusal or invalid answer, while Decisions refused 159 RewardBench requests. A held-out Jev 1.13-first JudgeBench cascade improved GPT-OSS from 76.41% to 80.12% while reducing accounting cost by 43.69%; other cascades were weaker or inconclusive. Scores measure benchmark-label agreement, not independently verified correctness, and reported intervals are not multiplicity-adjusted.
 
 [Aggregate measurements](results/primary/) retain numerical quality, reliability, native-interface comparisons and rating sensitivity. Benchmark examples, submitted answers, frozen request receipts and full archives are not bundled. The private originals remain unchanged; numerical projections cannot substitute for receipt-level audit.
@@ -52,6 +54,8 @@ Every judge sees the same examples through the same protocol adapter. The cascad
 
 See [shared setup and limits](../../REPRODUCTION.md). From this directory, build with `go build ./...`, run synthetic checks with `go test ./...`, and inspect CLI help before any paid run. Numerical reports are under `results/`. No original receipt archive is required or available in this distribution.
 
+Rune uses the [Fireworks client](../fireworks-systemone-adapter/README.md) with the same planned Jev requests, changing only `model`. Strict agreement counts required-stage failures as wrong; model-judge agreement is distinct from independent correctness. [Rune primary/native aggregates](results/rune-v1/summary.json) include usage, latency and paired first-pass contrasts. Those paired JSON contrasts use Jev’s original pass; the headline comparison uses Jev’s service-error recovery policy. Rune needed no service-error recovery. Costs are input tokens × the dated $0.042/M rate; helper LLM costs are separate, and round trips are deployment observations.
+
 ## Provider comparison
 
 The 19 primary methods contain 11,255 jobs, and the native Compact and Atomic interfaces contain 838. Samples, typed question content, option order, analysis plan, and GPT-OSS helper outputs are shared across decision-model providers. Jev is evaluated in two versions, Jev 1.13 (`jev-1.13.0`) and Jev 1.14 (`jev-1.14.0`), with byte-identical request bodies apart from the model field (except Swap and Swap_CoT synthesis stages, which embed each judge's own earlier answers).
@@ -62,6 +66,7 @@ The 19 primary methods contain 11,255 jobs, and the native Compact and Atomic in
 | **SubQ Snap** | **88.06%** | **72.10%** | **69.39%** |
 | Jev 1.13 | 87.36% | 69.03% | 68.12% |
 | Jev 1.14 | 88.24% | 70.81% | 69.14% |
+| Rune | 84.94% | 65.97% | 65.89% |
 | GPT-OSS 120B | 87.05% | 77.10% | 79.56% |
 | DeepSeek V4 Flash | 88.73% | 75.81% | 65.99% |
 | GLM 5p3 | 91.18% | 74.19% | 27.59% |

@@ -9,6 +9,8 @@ Compare Qwen3 Reranker 8B with general-purpose decision-model probability, expec
 
 ## TL;DR
 
+Rune’s expected-grade nDCG@10 was 0.6815, versus Jev 1.13’s 0.6917 and Qwen’s 0.6994. Its three main methods were within about ±0.01 of Jev, with every paired 95% interval including zero. Prompt choices were provider-specific: Rune’s best of nine tested prompts reached 0.6917; Jev’s best prompts did not transfer reliably.
+
 SubQ produced the best relevance ranking in this 97-query TREC DL comparison: its expected-grade score reached 0.7206 nDCG@10, ahead of Decisions at 0.7006, Qwen3 Reranker 8B at 0.6994, Jev 1.13 at 0.6917 and Jev 1.14 at 0.6896. Against Jev 1.13, SubQ's expected-grade gain was +0.0289 with a 95% interval of [+0.0124, +0.0470]; its +0.0212 interval against Qwen narrowly included zero. Expected grade was the strongest frozen scoring formulation for every decision-model provider; probability was weakest everywhere except Jev 1.14, where ordinal was lowest. Jev 1.14 ranked within noise of Jev 1.13: across the twelve Jev arms the mean nDCG@10 difference was +0.0017, and on expected grade it was −0.0021 [−0.0101, +0.0060]. Decisions roughly matched Qwen and Jev on the primary arms, and 23 refusals hurt one exploratory ordinal prompt. Among the decision models, SubQ had the lowest estimated list cost for its three primary arms, at $0.46 total versus $0.62 for each Jev version, $1.28 for Decisions, and $0.33 for Qwen. The benchmark is small, public, and potentially present in model training; prompt variants were inspected on the same queries, so the exploratory best-prompt results are not held-out validation.
 
 Aggregate JSON retains cost, timing, coverage and ranking metrics; source-bearing candidate text and receipts are omitted.
@@ -72,6 +74,9 @@ Jev 1.13, Jev 1.14, OpenAI's [Decisions API](https://developers.openai.com/api/d
 | Jev 1.14 ordinal | 0.6800 | 0.6972 | 0.6663 | 0.8231 | $0.215 |
 | Decisions ordinal | 0.6933 | 0.7111 | 0.6791 | 0.8562 | $0.658 |
 | SubQ ordinal | 0.7093 | 0.7209 | 0.7001 | 0.8628 | $0.193 |
+| Rune expected grade | 0.6815 | 0.6900 | 0.6746 | 0.8426 | $0.131 |
+| Rune probability | 0.6795 | 0.6817 | 0.6778 | 0.8183 | $0.109 |
+| Rune ordinal | 0.6831 | 0.6934 | 0.6749 | 0.8370 | $0.215 |
 | BM25 order | 0.4912 | 0.5058 | 0.4796 | 0.6751 | – |
 
 Paired differences (95% bootstrap over queries, stratified by year, individually unadjusted):
@@ -99,6 +104,8 @@ xychart-beta
 **Cost and latency.** Jev 1.13 and Jev 1.14 billed identical input tokens on every arm, 60.72 million across the twelve arms, for **$2.55** at $0.042 per million input tokens (output free); the three primary arms cost **$0.62** on either version. All 116,400 Jev 1.14 requests succeeded on the first attempt; Jev 1.13 made 116,408 requests, with 8 transient 5xx errors that all succeeded on retry. Median Jev request latency was 67–69 ms on Jev 1.14 and 122–155 ms on Jev 1.13, and median query wall time was 0.57–0.66 s versus 1.17–1.48 s. The two Jev versions were timed on different days (2026-09-18 for 1.13, 2026-10-14 for 1.14) at the same concurrency, so the difference is descriptive, not a controlled speed comparison. The twelve Decisions arms made 116,418 requests (18 transient failed attempts, all retried successfully) for **$5.30** at $0.10 per million input tokens. The twelve SubQ arms made 116,400 requests, all successful on the first attempt, and used 37.91 million billed input tokens for an estimated **$1.90** at $0.05 per million. The three primary SubQ arms used 9.18 million input tokens and cost an estimated **$0.46**. Median SubQ request latency was 0.17 s for one-question arms and 0.23 s for the three-question ordinal arm. Decisions' median request took 0.12 s (p95 about 0.4 s). Whole-query timings include provider-specific client pacing and are not directly comparable.
 
 **Caveats.** 97 public queries that may overlap model training; intervals are individual, not familywise, and no equivalence is claimed; selecting any provider's best prompt after seeing results is not held-out validation; Decisions and Jev probabilities are rounded to 0.01; ties are broken by BM25 order for every provider, and Jev 1.14 produced slightly more top-10 ties than Jev 1.13 (+0.01 to +0.02 of the tie fraction). Jev 1.14 lowered ordinal MRR@10 from 0.8606 to 0.8231, the largest single-metric difference between the two Jev versions on the primary arms. Source-free numbers are in [`results/openai-decisions-v1/`](results/openai-decisions-v1/README.md), [`results/subq-v1/`](results/subq-v1/README.md) and [`results/jev-1.14.0-v1/`](results/jev-1.14.0-v1/README.md).
+
+Rune receives the same 97 queries × 100 candidates and all nine prompt variants through the [Fireworks client](../fireworks-systemone-adapter/README.md), preserving state/question bytes and scoring. [Rune aggregates](results/rune-v1/summary.json) include query-stratified bootstrap contrasts, relevance metrics, token usage and estimated input cost at $0.042/M. It made 29,100 main and 87,300 prompt-study requests. All three main-method differences from Qwen also span zero; round-trip latency and provider load are not controlled.
 
 ## Reproduce
 

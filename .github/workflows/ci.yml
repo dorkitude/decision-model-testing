@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        experiment: [jev-vs-LLM-for-evals, jev-search-result-narrower, jev-search-result-narrower-claude-RAG, jev-vs-rerankers, request-shaping, openai-decisions-adapter]
+        experiment: [jev-vs-LLM-for-evals, jev-search-result-narrower, jev-search-result-narrower-claude-RAG, jev-vs-rerankers, request-shaping, openai-decisions-adapter, fireworks-systemone-adapter]
     defaults:
       run:
         working-directory: experiments/${{ matrix.experiment }}
