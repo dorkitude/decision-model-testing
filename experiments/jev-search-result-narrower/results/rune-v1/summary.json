@@ -1,0 +1,119 @@
+{
+  "data": {
+    "probability": {
+      "filtering": {
+        "calls": 101,
+        "initial_gold_source_hit_after_filter": 99,
+        "initial_gold_source_hit_before_filter": 100,
+        "pages": 407,
+        "results_kept": 389,
+        "results_scored": 2020,
+        "retained_fraction": 0.19257425742574258
+      },
+      "judge": "accounts/fireworks/models/deepseek-v4p1-flash",
+      "paired": [
+        {
+          "cluster_bootstrap_95_percent_pp": [
+            -2,
+            5
+          ],
+          "comparison": "fireworks_systemone_filtered_minus_jev_filtered",
+          "difference_pp": 1,
+          "resamples": 5000
+        },
+        {
+          "cluster_bootstrap_95_percent_pp": [
+            -2,
+            5
+          ],
+          "comparison": "fireworks_systemone_filtered_minus_baseline",
+          "difference_pp": 1,
+          "resamples": 5000
+        },
+        {
+          "cluster_bootstrap_95_percent_pp": [
+            -3,
+            3
+          ],
+          "comparison": "jev_filtered_minus_baseline",
+          "difference_pp": 0,
+          "resamples": 5000
+        }
+      ],
+      "questions": 100,
+      "repeatability": [
+        {
+          "agree": 100,
+          "cohens_kappa": 1,
+          "n": 100,
+          "pipeline_correct": 97,
+          "rejudged_correct": 97
+        }
+      ],
+      "resources": {
+        "filter": {
+          "input_tokens": 1953600,
+          "output_tokens": 0,
+          "requests": 407,
+          "requests_without_usage": 0,
+          "summed_api_seconds": 61.391604587999964
+        },
+        "mean_search_calls": 1.01,
+        "qa": {
+          "input_tokens": 306578,
+          "output_tokens": 11167,
+          "requests": 101,
+          "requests_without_usage": 0,
+          "summed_api_seconds": 448.72565229800017
+        },
+        "returned_chunks": 389,
+        "returned_context_proxy_tokens": 258293,
+        "search_calls": 101,
+        "search_live": {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "requests": 0,
+          "requests_without_usage": 0,
+          "summed_api_seconds": 0
+        },
+        "search_reused_from_run_v1": {
+          "embedding_input_tokens": 5216,
+          "rerank_input_tokens": 3504201,
+          "searches": 101
+        }
+      },
+      "scores": [
+        {
+          "accuracy": 0.96,
+          "arm": "baseline",
+          "correct": 96,
+          "n": 100
+        },
+        {
+          "accuracy": 0.96,
+          "arm": "jev_filtered",
+          "correct": 96,
+          "n": 100
+        },
+        {
+          "accuracy": 0.97,
+          "arm": "fireworks_systemone_filtered",
+          "correct": 97,
+          "n": 100
+        }
+      ]
+    }
+  },
+  "model": "accounts/fireworks/routers/rune",
+  "projection": "rune-aggregates-v1",
+  "sources": [
+    {
+      "path": "experiments/rag-filtering-kimi/results/rejudge-deepseek-v4p1-v1/rejudge-comparison.jsonl",
+      "sha256": "4c5a5a267733860e4aeebf3c7e51db3ba4b7a0f06721bccbd7f9a4845607f5d0"
+    },
+    {
+      "path": "experiments/rag-filtering-kimi/results/run-fireworks-systemone-full-v1/summary.jsonl",
+      "sha256": "2838baa958ab85ea71daf3a109ad14f0056f6690b1128b4cc0f4da721ffa2419"
+    }
+  ]
+}

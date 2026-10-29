@@ -1,0 +1,306 @@
+{
+  "data": {
+    "categorical": {
+      "filtering": {
+        "calls": 103,
+        "initial_gold_source_hit_baseline": 97,
+        "initial_gold_source_hit_filtered": 96,
+        "pages": 428,
+        "results_kept": 434,
+        "results_scored": 2060,
+        "retained_fraction": 0.21067961165048543
+      },
+      "judge": "accounts/fireworks/models/deepseek-v4p1-flash",
+      "paired": [
+        {
+          "cluster_bootstrap_95_percent_pp": [
+            -5,
+            0
+          ],
+          "comparison": "fireworks_systemone_filtered_minus_jev_filtered",
+          "difference_pp": -2,
+          "resamples": 5000
+        },
+        {
+          "cluster_bootstrap_95_percent_pp": [
+            -3,
+            0
+          ],
+          "comparison": "fireworks_systemone_filtered_minus_baseline",
+          "difference_pp": -1,
+          "resamples": 5000
+        },
+        {
+          "cluster_bootstrap_95_percent_pp": [
+            -2,
+            5
+          ],
+          "comparison": "jev_filtered_minus_baseline",
+          "difference_pp": 1,
+          "resamples": 5000
+        }
+      ],
+      "questions": 100,
+      "repeatability": [
+        {
+          "agree": 98,
+          "cohens_kappa": 0.8641304347826085,
+          "n": 100,
+          "pipeline_correct": 92,
+          "rejudged_correct": 92
+        }
+      ],
+      "resources": {
+        "baseline": {
+          "filter": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "requests": 0,
+            "requests_without_usage": 0,
+            "summed_api_seconds": 0
+          },
+          "mean_search_calls": 1.02,
+          "qa": {
+            "input_tokens": 2609669,
+            "output_tokens": 34572,
+            "requests": 102,
+            "requests_without_usage": 0,
+            "summed_api_seconds": 589.9770639150001
+          },
+          "returned_chunks": 2040,
+          "returned_context_proxy_tokens": 1410588,
+          "search": {
+            "input_tokens": 3532587,
+            "output_tokens": 0,
+            "requests": 408,
+            "requests_without_usage": 204,
+            "summed_api_seconds": 142.16935145899993
+          },
+          "search_calls": 102,
+          "total": {
+            "input_tokens": 6142256,
+            "output_tokens": 34572,
+            "requests": 510,
+            "requests_without_usage": 204,
+            "summed_api_seconds": 732.1464153739992
+          }
+        },
+        "jev_filtered": {
+          "filter": {
+            "input_tokens": 2225664,
+            "output_tokens": 0,
+            "requests": 428,
+            "requests_without_usage": 0,
+            "summed_api_seconds": 57.21166625899996
+          },
+          "mean_search_calls": 1.03,
+          "qa": {
+            "input_tokens": 668373,
+            "output_tokens": 23391,
+            "requests": 103,
+            "requests_without_usage": 0,
+            "summed_api_seconds": 366.7005134470001
+          },
+          "returned_chunks": 434,
+          "returned_context_proxy_tokens": 296580,
+          "search": {
+            "input_tokens": 3565954,
+            "output_tokens": 0,
+            "requests": 412,
+            "requests_without_usage": 206,
+            "summed_api_seconds": 144.7130258149999
+          },
+          "search_calls": 103,
+          "total": {
+            "input_tokens": 6459991,
+            "output_tokens": 23391,
+            "requests": 943,
+            "requests_without_usage": 206,
+            "summed_api_seconds": 568.6252055209995
+          }
+        }
+      },
+      "scores": [
+        {
+          "accuracy": 0.93,
+          "arm": "baseline",
+          "correct": 93,
+          "n": 100
+        },
+        {
+          "accuracy": 0.94,
+          "arm": "jev_filtered",
+          "correct": 94,
+          "n": 100
+        },
+        {
+          "accuracy": 0.92,
+          "arm": "fireworks_systemone_filtered",
+          "correct": 92,
+          "n": 100
+        }
+      ]
+    },
+    "probability": {
+      "filtering": {
+        "calls": 105,
+        "initial_gold_source_hit_baseline": 97,
+        "initial_gold_source_hit_filtered": 95,
+        "pages": 427,
+        "results_kept": 357,
+        "results_scored": 2100,
+        "retained_fraction": 0.17
+      },
+      "judge": "accounts/fireworks/models/deepseek-v4p1-flash",
+      "paired": [
+        {
+          "cluster_bootstrap_95_percent_pp": [
+            -5,
+            0
+          ],
+          "comparison": "fireworks_systemone_filtered_minus_jev_filtered",
+          "difference_pp": -2,
+          "resamples": 5000
+        },
+        {
+          "cluster_bootstrap_95_percent_pp": [
+            -3,
+            0
+          ],
+          "comparison": "fireworks_systemone_filtered_minus_baseline",
+          "difference_pp": -1,
+          "resamples": 5000
+        },
+        {
+          "cluster_bootstrap_95_percent_pp": [
+            0,
+            3
+          ],
+          "comparison": "jev_filtered_minus_baseline",
+          "difference_pp": 1,
+          "resamples": 5000
+        }
+      ],
+      "questions": 100,
+      "repeatability": [
+        {
+          "agree": 99,
+          "cohens_kappa": 0.9279538904899135,
+          "n": 100,
+          "pipeline_correct": 92,
+          "rejudged_correct": 93
+        }
+      ],
+      "resources": {
+        "baseline": {
+          "filter": {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "requests": 0,
+            "requests_without_usage": 0,
+            "summed_api_seconds": 0
+          },
+          "mean_search_calls": 1.02,
+          "qa": {
+            "input_tokens": 2609669,
+            "output_tokens": 34572,
+            "requests": 102,
+            "requests_without_usage": 0,
+            "summed_api_seconds": 589.9770639150001
+          },
+          "returned_chunks": 2040,
+          "returned_context_proxy_tokens": 1410588,
+          "search": {
+            "input_tokens": 3532587,
+            "output_tokens": 0,
+            "requests": 408,
+            "requests_without_usage": 204,
+            "summed_api_seconds": 142.16935145899993
+          },
+          "search_calls": 102,
+          "total": {
+            "input_tokens": 6142256,
+            "output_tokens": 34572,
+            "requests": 510,
+            "requests_without_usage": 204,
+            "summed_api_seconds": 732.1464153739992
+          }
+        },
+        "jev_filtered": {
+          "filter": {
+            "input_tokens": 2079552,
+            "output_tokens": 0,
+            "requests": 427,
+            "requests_without_usage": 0,
+            "summed_api_seconds": 54.20194035700003
+          },
+          "mean_search_calls": 1.05,
+          "qa": {
+            "input_tokens": 603736,
+            "output_tokens": 23588,
+            "requests": 105,
+            "requests_without_usage": 0,
+            "summed_api_seconds": 365.22920155700007
+          },
+          "returned_chunks": 357,
+          "returned_context_proxy_tokens": 240190,
+          "search": {
+            "input_tokens": 3636945,
+            "output_tokens": 0,
+            "requests": 420,
+            "requests_without_usage": 210,
+            "summed_api_seconds": 155.76168491599998
+          },
+          "search_calls": 105,
+          "total": {
+            "input_tokens": 6320233,
+            "output_tokens": 23588,
+            "requests": 952,
+            "requests_without_usage": 210,
+            "summed_api_seconds": 575.1928268299991
+          }
+        }
+      },
+      "scores": [
+        {
+          "accuracy": 0.94,
+          "arm": "baseline",
+          "correct": 94,
+          "n": 100
+        },
+        {
+          "accuracy": 0.95,
+          "arm": "jev_filtered",
+          "correct": 95,
+          "n": 100
+        },
+        {
+          "accuracy": 0.93,
+          "arm": "fireworks_systemone_filtered",
+          "correct": 93,
+          "n": 100
+        }
+      ]
+    }
+  },
+  "model": "accounts/fireworks/routers/rune",
+  "projection": "rune-aggregates-v1",
+  "sources": [
+    {
+      "path": "experiments/rag-filtering-claude/results/rejudge-deepseek-v4p1-v1/rejudge-comparison.jsonl",
+      "sha256": "1a51f23cd5a2aa63dd9ffb2c52e242c423bcb8c2dc5960e5d4193ab590a34b64"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/rejudge-categorical-deepseek-v4p1-v1/rejudge-comparison.jsonl",
+      "sha256": "74b499bbd57c3e424c6dc948028aa5dde19c62c5a50d34319ee2eed0eb92d217"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/run-fireworks-systemone-full-v1/summary.jsonl",
+      "sha256": "c60bb4e40b6f24832f5bd986c042b1dfe9a4c9bd491004bc29794e2d5ace5de0"
+    },
+    {
+      "path": "experiments/rag-filtering-claude/results/categorical-fireworks-systemone-full-v1/summary.jsonl",
+      "sha256": "7c456f5404b4cf1f800d256d472c5cf667d2f283b8b4467cb66952e241ab9979"
+    }
+  ]
+}

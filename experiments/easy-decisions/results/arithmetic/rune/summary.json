@@ -1,0 +1,123 @@
+{
+  "data": {
+    "accuracy": 1,
+    "answered": 320,
+    "attempted_requests": 320,
+    "by_family": {
+      "arithmetic": {
+        "Answered": 320,
+        "Correct": 320,
+        "Errors": 0,
+        "N": 320,
+        "Refused": 0
+      }
+    },
+    "complete_pairs": 160,
+    "consistent_pairs": 160,
+    "correct": 320,
+    "correct_candidate_position": {
+      "first": {
+        "Answered": 160,
+        "Correct": 160,
+        "Errors": 0,
+        "N": 160,
+        "Refused": 0
+      },
+      "second": {
+        "Answered": 160,
+        "Correct": 160,
+        "Errors": 0,
+        "N": 160,
+        "Refused": 0
+      }
+    },
+    "cost_usd": 0.004300799999999994,
+    "cross_perturbation_identity_consistency": {
+      "arithmetic": {
+        "complete": 20,
+        "consistent": 20,
+        "rate": 1
+      }
+    },
+    "errors": 0,
+    "first_option_selection_rate_by_gold": {
+      "X": {
+        "answered": 160,
+        "rate": 0.5,
+        "selected": 80
+      },
+      "Y": {
+        "answered": 160,
+        "rate": 0.5,
+        "selected": 80
+      },
+      "overall_balanced": {
+        "answered": 320,
+        "rate": 0.5,
+        "selected": 160
+      }
+    },
+    "first_shown_selection_rate_by_gold": {
+      "X": {
+        "answered": 160,
+        "rate": 0.5,
+        "selected": 80
+      },
+      "Y": {
+        "answered": 160,
+        "rate": 0.5,
+        "selected": 80
+      },
+      "overall_balanced": {
+        "answered": 320,
+        "rate": 0.5,
+        "selected": 160
+      }
+    },
+    "lookup_target_position": {},
+    "mean_latency_seconds": 0.10048598006874998,
+    "options_array_order": {
+      "XY": {
+        "Answered": 160,
+        "Correct": 160,
+        "Errors": 0,
+        "N": 160,
+        "Refused": 0
+      },
+      "YX": {
+        "Answered": 160,
+        "Correct": 160,
+        "Errors": 0,
+        "N": 160,
+        "Refused": 0
+      }
+    },
+    "planned_requests": 320,
+    "primary_question_order": {
+      "first": {
+        "Answered": 160,
+        "Correct": 160,
+        "Errors": 0,
+        "N": 160,
+        "Refused": 0
+      },
+      "last": {
+        "Answered": 160,
+        "Correct": 160,
+        "Errors": 0,
+        "N": 160,
+        "Refused": 0
+      }
+    },
+    "refusals": 0,
+    "total_attempts": 320
+  },
+  "model": "accounts/fireworks/routers/rune",
+  "projection": "rune-aggregates-v1",
+  "sources": [
+    {
+      "path": "experiments/easy-decisions/aggregates/arithmetic/rune.json",
+      "sha256": "b791f00ec428a116655d45c062f089e858370b640aeea868abdf9536f51d4884"
+    }
+  ]
+}
